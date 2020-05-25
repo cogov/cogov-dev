@@ -9,7 +9,7 @@
 	</div>
 	<div class="VisionBody__levels">
 		<p class="VisionBody__levels--title">Levels of Consciousness:</p>
-		<img src="../../../assets/images/cogov__consciousness-levels.png" alt="" class="VisionBody__levels--photo">
+		<img src="/assets/images/cogov__consciousness-levels.png" alt="" class="VisionBody__levels--photo">
 	</div>
 
 	<div class="VisionBody__text">
