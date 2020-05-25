@@ -1,0 +1,16 @@
+{
+	"name": "@cogov/dev",
+	"private": true,
+	"devDependencies": {
+		"@ctx-core/jetbrains": "^1.2.11",
+		"@ctx-core/lerna": "^3.0.12",
+		"@ctx-core/monorepo": "^7.0.7",
+		"lerna": "^3.22.0"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"packages/@ctx-core/*"
+		]
+	}
+}
