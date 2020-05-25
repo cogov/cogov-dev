@@ -1,9 +1,9 @@
 <script>
 import Nav from '@cogov/home-ui/Nav.svelte'
-import HomeHeader from '@cogov/home-ui/HomeHeader.svelte'
-import HomeAbout from '@cogov/home-ui/HomeAbout.svelte'
-import HomeDetails from '@cogov/home-ui/HomeDetails.svelte'
-import HomeCollaborators from '@cogov/home-ui/HomeCollaborators.svelte'
+import Header from './index/_header.svelte'
+import About from './index/_about.svelte'
+import Details from './index/_details.svelte'
+import Collaborators from './index/_collaborators.svelte'
 import Footer from '@cogov/home-ui/Footer.svelte'
 </script>
 
@@ -21,14 +21,14 @@ import Footer from '@cogov/home-ui/Footer.svelte'
 <div class="home-page">
 	<Nav></Nav>
 
-	<HomeHeader></HomeHeader>
+	<Header></Header>
 
-	<HomeAbout></HomeAbout>
+	<About></About>
 
-	<HomeDetails></HomeDetails>
+	<Details></Details>
 
 	<!-- home collaborators -->
-	<HomeCollaborators></HomeCollaborators>
+	<Collaborators></Collaborators>
 
 	<!-- footer -->
 	<Footer></Footer>
