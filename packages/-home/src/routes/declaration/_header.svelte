@@ -1,0 +1,40 @@
+<div class="DeclarationHeader">
+	<p class="DeclarationHeader__title">The Declaration of Collaborative Governance</p>
+	<p class="DeclarationHeader__subtitle">
+			Written by <a href="/founder" class="removelink underline">Raymond D. Powell</a> - based on <a
+		target="_blank" class="removelink underline" href="https://constitution.org/us_doi.htm">The Declaration of Independence</a> by <a
+		target="_blank" class="removelink underline"
+		href="https://en.wikipedia.org/wiki/Thomas_Jefferson">Thomas Jefferson</a>
+	</p>
+</div>
+
+<style type="text/scss">
+@import "~@cogov/home-scss/base";
+.DeclarationHeader {
+	padding: 12%;
+	height: 85vh;
+	background-image: linear-gradient(to right, rgba(#333, .4), rgba(#222, .4)), url('/assets/images/cogov__declaration.png');
+	background-position: center;
+	background-size: cover;
+	@include respond(tab-port) {
+		padding: 12% 4rem;
+	}
+	@include respond(phone) {
+		background-image: linear-gradient(to right, rgba(#333, .4), rgba(#222, .4)), url('/assets/images/cogov__declaration--mobile.png');
+	}
+	&__title {
+		font-size: 5rem;
+		font-weight: 600;
+		color: white;
+		margin-bottom: 1rem;
+		@include respond(phone) {
+			font-size: 4rem;
+		}
+	}
+	&__subtitle {
+		font-size: 2rem;
+		color: white;
+		font-weight: 500;
+	}
+}
+</style>

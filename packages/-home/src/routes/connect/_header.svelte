@@ -1,0 +1,61 @@
+<div class="connectHeader">
+	<p class="connectHeader__title">Let's do something special!</p>
+	<p class="connectHeader__subtitle">
+			Hello and thanks for reaching out! Feel free to reach out to us directly through Messenger or by filling out this form below.
+			We look forward to hearing from you!
+	</p>
+	<a href="https://www.facebook.com/messages/t/cogov.tech" target="blank" class="removelink"><button
+		class="connectHeader__button">MESSENGER</button></a>
+	<a href="https://chat.holochain.org/appsup/channels/dgsc" target="blank" class="removelink"><button
+		class="connectHeader__button">MATTERMOST</button></a>
+	<a href="https://cogov.typeform.com/to/kMtTYt" target="blank" class="removelink"><button
+		class="connectHeader__button">FORM</button></a>
+</div>
+
+<style type="text/scss">
+@import "~@cogov/home-scss/base";
+.connectHeader {
+	padding: 12%;
+	height: 85vh;
+	background-image: linear-gradient(to right, rgba(#333, .5), rgba(#222, .5)), url('/assets/images/cogov__mandala--three.png');
+	background-position: center;
+	background-size: cover;
+	@include respond(tab-port) {
+		padding: 12% 4rem;
+	}
+	@include respond(phone) {
+		background-image: linear-gradient(to right, rgba(#333, .5), rgba(#222, .5)), url('/assets/images/cogov__mandala--three--mobile.png');
+	}
+	&__title {
+		font-size: 5rem;
+		font-weight: 600;
+		color: white;
+		margin-bottom: 1rem;
+		@include respond(phone) {
+			font-size: 4rem;
+		}
+	}
+	&__subtitle {
+		font-size: 2rem;
+		color: white;
+		font-weight: 500;
+	}
+	&__button {
+		background-color: transparent;
+		color: white;
+		margin-top: 2rem;
+		padding: 1.5rem 3rem;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border: 3px solid white;
+		border-radius: 25px;
+		margin-right: 1rem;
+		outline: none;
+		cursor: pointer;
+		transition: all .2s;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+</style>

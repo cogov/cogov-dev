@@ -1,21 +1,54 @@
 <script>
-	import Nav from '@cogov/home-layout/Nav.svelte'
+	import Nav from '@cogov/home-ui/Nav.svelte'
 	export let segment
 </script>
-
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
 
 <Nav {segment}/>
 
 <main>
 	<slot></slot>
 </main>
+
+<style type="text/scss" global>
+@import "~@cogov/home-scss/base";
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+	@include respond(big-desktop) {
+		font-size: 70%;
+	}
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+	font-weight: 400;
+	line-height: 1.6;
+	overflow-x: hidden;
+	outline: none;
+	letter-spacing: .5px;
+}
+.addlink {
+	text-decoration: none;
+	outline: none;
+	border-bottom: 1px solid $cogov-primary;
+	font-weight: 600;
+	color: $cogov-primary;
+}
+.removelink {
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+}
+.underline {
+	border-bottom: 2px solid white;
+}
+</style>

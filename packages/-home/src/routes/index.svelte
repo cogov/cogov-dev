@@ -1,39 +1,44 @@
+<script>
+import Nav from '@cogov/home-ui/Nav.svelte'
+import HomeHeader from '@cogov/home-ui/HomeHeader.svelte'
+import HomeAbout from '@cogov/home-ui/HomeAbout.svelte'
+import HomeDetails from '@cogov/home-ui/HomeDetails.svelte'
+import HomeCollaborators from '@cogov/home-ui/HomeCollaborators.svelte'
+import Footer from '@cogov/home-ui/Footer.svelte'
+</script>
+
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>CoGov.Tech: Collaborative Governance Technologies</title>
+	<meta property="og:title" content="CoGov.Tech: Collaborative Governance Technologies"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://cogov.tech"/>
+	<meta property="og:image" content="http://cogov.tech/src/assets/images/cogov__logo--blue-large.png"/>
+	<meta property="og:site_name" content="Collaborative Governance Technologies"/>
+	<meta property="og:description"
+				content="CoGov fosters the emergence of coherent collective intelligence by enabling the rapid iteration of governance and social coordination systems that YOU design!"/>
 </svelte:head>
 
-<h1>Great success!</h1>
+<div class="home-page">
+	<Nav></Nav>
 
-<figure>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
+	<HomeHeader></HomeHeader>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+	<HomeAbout></HomeAbout>
 
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+	<HomeDetails></HomeDetails>
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
+	<!-- home collaborators -->
+	<HomeCollaborators></HomeCollaborators>
 
-	figure {
-		margin: 0 0 1em 0;
-	}
+	<!-- footer -->
+	<Footer></Footer>
+</div>
 
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+<style type="text/scss">
+.home-page {
+	// margin-top: 7rem;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
 </style>

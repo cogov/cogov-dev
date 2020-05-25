@@ -1,0 +1,9 @@
+{
+	"name": "@cogov/home-ui",
+	"description": "cogov.tech navigation",
+	"version": "0.0.1",
+	"devDependencies": {
+		"@cogov/home-scss": "^0.0.1",
+		"svelte": "^3.22.3"
+	}
+}

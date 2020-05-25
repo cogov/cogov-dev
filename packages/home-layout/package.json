@@ -1,9 +1,0 @@
-{
-	"name": "@cogov/home-layout",
-	"description": "cogov.tech site",
-	"version": "0.0.1",
-	"dependencies": {},
-	"devDependencies": {
-		"svelte": "^3.22.3"
-	}
-}
