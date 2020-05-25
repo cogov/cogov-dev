@@ -33,27 +33,5 @@
 		color: white;
 		font-weight: 500;
 	}
-	// &__left {
-	//     margin-right: 3rem;
-	//     width: 50%;
-	// }
-	// &__video {
-	//     width: 100%;
-	//     height: 100%;
-	// }
-	// &__right {
-	//     width: 50%;
-	//     margin-left: 3rem;
-	// }
-	// &__title {
-	//     font-size: 3.3rem;
-	//     font-weight: 600;
-	//     color: $cogov-grey;
-	//     margin-bottom: 1rem;
-	// }
-	// &__body {
-	//     font-size: 1.7rem;
-	//     font-weight: 100500;
-	// }
 }
 </style>

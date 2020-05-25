@@ -12,16 +12,15 @@ The <a href="/vision" target="blank" class="addlink">core principles</a> that ha
 		href="https://docs.google.com/document/d/1Rh02JzKhQ5sA6V500cQm74kb-jd4VcS8bskDDUsBpQA/edit" target="blank"
 		class="addlink">Collective Foundational Document</a> that creates fertile ground for your organization to thrive. We at CoGov believe that “slow is the new fast”, and while there may be a tendency to want to jump into “doing-ness”, we believe in establishing practices of “being-ness” first. And our experience shows that in the end, things ultimately get done expontentially faster when the proper human energetic coherence patterns have been established early on.
 <br><br>
-Click <a href="/connect" class="addlink">here</a> to receive a free 1 hour consultation  to see how CoGov can support your organizational start-up.
+Click <a href="/connect" class="addlink">here</a> to receive a free 1 hour consultation to see how CoGov can support your organizational start-up.
 <br><br>
 	</p> 
 	<p class="ServicesContent__subtitle">App Development</p>
 	<p class="ServicesContent__body">
-Do you need a custom application that has an element of decision making or sensing user coherence? The CoGov dev team can work with you to build it!
-<br><br>
-Click <a href="/connect" class="addlink">here</a> to receive a free 1 hour consultation to see how CoGov can support your application development needs.
-
-	</p>     
+		Do you need a custom application that has an element of decision making or sensing user coherence? The CoGov dev team can work with you to build it!
+		<br><br>
+		Click <a href="/connect" class="addlink">here</a> to receive a free 1 hour consultation to see how CoGov can support your application development needs.
+	</p>
 </div>
 
 <style type="text/scss">

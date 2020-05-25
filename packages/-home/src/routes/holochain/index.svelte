@@ -10,7 +10,7 @@ import CoGov from './_cogov.svelte'
 
 	<Header></Header>
 
-  <CoGov></CoGov>
+	<CoGov></CoGov>
 
 	<Footer></Footer>
 </div>
