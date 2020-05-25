@@ -11,7 +11,6 @@ import Footer from '@cogov/home-ui/Footer.svelte'
 	<VisionHeader></VisionHeader>
 	<VisionBody></VisionBody>
 
-	<!-- footer -->
 	<Footer></Footer>
 </div>
 

@@ -27,10 +27,8 @@ import Footer from '@cogov/home-ui/Footer.svelte'
 
 	<Details></Details>
 
-	<!-- home collaborators -->
 	<Collaborators></Collaborators>
 
-	<!-- footer -->
 	<Footer></Footer>
 </div>
 
