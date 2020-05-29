@@ -3,6 +3,6 @@
 	"description": "cogov.tech scss",
 	"version": "0.0.1",
 	"devDependencies": {
-		"sass": "^1.26.5"
+		"sass": "^1.26.7"
 	}
 }
