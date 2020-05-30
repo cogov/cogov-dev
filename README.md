@@ -11,6 +11,10 @@ This library uses [lerna](https://lerna.js.org/) & [yarn workspaces](https://cla
 To install the packages, run:
 
 ```shell
+git clone git@github.com:cogov/cogov-dev.git
+cd cogov-dev
+git submodule init
+git submodule update
 yarn
 ```
 
