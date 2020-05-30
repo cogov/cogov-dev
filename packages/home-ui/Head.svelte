@@ -1,4 +1,4 @@
-<script>
+<script context="module">
 export async function preload({ path }) {
   return {
   	path,
