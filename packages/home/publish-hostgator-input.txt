@@ -1,3 +1,4 @@
-cd __sapper__/export
+lcd __sapper__/export
+cd public_html
 put -r *
 quit
