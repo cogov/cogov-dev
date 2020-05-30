@@ -1,0 +1,3 @@
+[submodule "packages/-home/static/assets"]
+	path = packages/-home/static/assets
+	url = git@github.com:cogov/cogov-home-assets.git
