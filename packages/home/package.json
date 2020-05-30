@@ -3,9 +3,9 @@
 	"description": "cogov.tech site",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "sapper dev",
-		"build": "sapper build --legacy",
-		"export": "sapper export --legacy",
+		"dev": "./node_modules/.bin/sapper dev",
+		"build": "./node_modules/.bin/ build --legacy",
+		"export": "./node_modules/.bin/ export --legacy",
 		"start": "node __sapper__/build",
 		"cy:run": "cypress run",
 		"cy:open": "cypress open",
