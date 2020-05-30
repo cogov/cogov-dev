@@ -33,6 +33,6 @@ bin/tmux-web.sh
 ### cogov.tech site
 
 ```shell
-cd packages/-home
+cd packages/home
 yarn run dev
 ```
