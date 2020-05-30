@@ -1,0 +1,3 @@
+cd __sapper__/export
+put -r *
+quit
