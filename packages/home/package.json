@@ -12,6 +12,7 @@
 		"test": "run-p --race dev cy:run",
 		"publish:hostgator": "NODE_ENV=production npm run export && rm -rf __sapper__/exports/assets && sftp -P 2222 cogov@cogov.tech < publish-hostgator-input.txt",
 		"publishall:hostgator": "NODE_ENV=production npm run export && sftp -P 2222 cogov@cogov.tech < publish-hostgator-input.txt",
+		"ftp:mkdir": "find  __sapper__/export -type d | sed -n '1!p' | sed 's/__sapper__\\/export\\///g' | awk '{print \"mkdir public_html/\"$1}' | sftp -P 2222 cogov@cogov.tech",
 		"ftp": "echo \"cd public_html\" | ftp -P 2222 cogov@cogov.tech"
 	},
 	"dependencies": {
