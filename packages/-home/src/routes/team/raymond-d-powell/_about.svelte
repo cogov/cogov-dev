@@ -1,12 +1,12 @@
-<div class="FounderAbout">
-	<div class="FounderAbout__left">
-		<img class="FounderAbout__left--image" src="/assets/images/cogov__founder.png" alt="">
+<div class="aboutFounder">
+	<div class="aboutFounder__left">
+		<img class="aboutFounder__left--image" src="/assets/images/cogov__founder.png" alt="">
 	</div>
 
-	<div class="FounderAbout__right">
-		<div class="FounderAbout__container">
-			<p class="FounderAbout__title">Raymond D. Powell, Founder</p>
-			<p class="FounderAbout__body">
+	<div class="aboutFounder__right">
+		<div class="aboutFounder__container">
+			<p class="aboutFounder__title">Raymond D. Powell, Founder</p>
+			<p class="aboutFounder__body">
 				Ray started programming computers in 1980 at the age of 7 and by the age of 19 was hired as a professional software engineer. Since then, he has stayed on the cutting edge of industry trends and he now applies that knowledge to co-create systems and blueprints that take on some of today’s most complex social problems.
 				<br><br>
 
@@ -27,7 +27,7 @@
 
 <style type="text/scss">
 @import "~@cogov/home-scss/base";
-.FounderAbout {
+.aboutFounder {
 	padding: 8rem 12%;
 	background-color: white;
 	height: 100%;

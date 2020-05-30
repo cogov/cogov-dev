@@ -1,41 +1,36 @@
-<div class="HolochainCoGov">
-	<div class="HolochainCoGov__body">
-		<div class="HolochainCoGov__left">
-			<div class="HolochainCoGov__logo--container">
-				<img class="HolochainCoGov__logo" src="/assets/images/holochain-logo.png" alt="Holochain"/>
-				<p class="HolochainCoGov__title">Holochain</p>
-			</div>
+<div class="holochainCoGov">
+	<div class="holochainCoGov__body">
+		<div class="holochainCoGov__left">
+				<div class="holochainCoGov__logo--container">   
+					<img class="holochainCoGov__logo" src="/assets/images/holochain-logo.png"/>
+					<p class="holochainCoGov__title">Holochain</p>                    
+				</div>
 
-			<p class="HolochainCoGov__body">
-					Holochain is an opensource distributed application development and execution environment. It is free to download, install, use, and distribute. There is not, and can never be, an inherent cost associated with building or running a Holochain application.
-			</p>
-		</div>
-		<div class="HolochainCoGov__right">
-			<div class="HolochainCoGov__logo--container">
-				<img class="HolochainCoGov__logo" src="/assets/images/holo-logo.png" alt="Holo"/>
-				<p class="HolochainCoGov__title"
-				>Holo</p>
-			</div>
-
-				<p class="HolochainCoGov__column--body"
-				>
-					Holo is the new cloud. A cloud that is built and maintained by the crowd.
-					Literally—the Holo cloud was actually crowdsourced into (pre-)existence.
-					If a developer wants to share their app with the world, Holo delivers.
+				<p class="holochainCoGov__body">
+					Holochain is an opensource distributed application development and execution environment. It is free to download, install, use, and distribute. There is not, and can never be, an inherent cost associated with building or running a Holochain application.                    
 				</p>
+		</div>
+		<div class="holochainCoGov__right">
+			<div class="holochainCoGov__logo--container">
+				<img class="holochainCoGov__logo" src="/assets/images/holo-logo.png"/>
+				<p class="holochainCoGov__title">
+					Holo
+				</p>                    
+			</div>
+
+			<p class="holochainCoGov__column--body">
+				Holo is the new cloud. A cloud that is built and maintained by the crowd. Literally—the Holo cloud was actually crowdsourced into (pre-)existence. If a developer wants to share their app with the world, Holo delivers.                     
+			</p>                
 		</div>
 	</div>
 
-	<iframe class="HolochainCoGov__video" src="https://www.youtube.com/embed/2FJL3ibnZlY" frameborder="0"
-					title="Holo and Holochain"
-					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-	></iframe>
-
+	<iframe class="holochainCoGov__video" src="https://www.youtube.com/embed/2FJL3ibnZlY" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <style type="text/scss">
 @import "~@cogov/home-scss/base";
-.HolochainCoGov {
+.holochainCoGov {
 	padding: 4rem 12% 8rem 12%;;
 	@include respond(tab-port) {
 		padding: 4rem;
@@ -49,6 +44,9 @@
 			align-items: center;
 			// margin-bottom: 1rem;
 		}
+	}
+	&__text {
+		margin-bottom: 2rem;
 	}
 	&__title {
 		text-align: center;
@@ -91,6 +89,12 @@
 		}
 	}
 	&__column {
+		&--title {
+			color: #333;
+			font-size: 2rem;
+			font-weight: 600;
+			margin-bottom: .5rem;
+		}
 		&--body {
 			font-size: 1.7rem;
 			color: #333;

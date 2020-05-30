@@ -13,14 +13,17 @@ export let navOpen = false
 	</a>
 	<div class="nav__items">
 		<div class="nav__item">
-			<a href='/vision' class="removelink"
-				 aria-current={segment === 'vision' ? 'page' : undefined}
-			>Vision</a>
+			<a href='/protocol.love' class="removelink">Protocol.Love</a>
 		</div>
 		<div class="nav__item">
-			<a href='/protocol' class="removelink"
-				 aria-current={segment === 'protocol' ? 'page' : undefined}
-			>Protocol</a>
+			<a href='/specs' class="removelink"
+				 aria-current={segment === 'specs' ? "page" : undefined}
+			>Tech Specs</a>
+		</div>
+		<div class="nav__item">
+			<a href='/ecosystem' class="removelink"
+				 aria-current={segment === 'ecosystem' ? "page" : undefined}
+			>Ecosystem</a>
 		</div>
 		<div class="nav__item">
 			<a href='/services' class="removelink"
@@ -33,11 +36,6 @@ export let navOpen = false
 			>Founder</a>
 		</div>
 		<div class="nav__item">
-			<a href='/holochain' class="removelink"
-				 aria-current={segment === 'holochain' ? "page" : undefined}
-			>Holochain</a>
-		</div>
-		<div class="nav__item">
 			<a href='/declaration' class="removelink"
 				 aria-current={segment === 'declaration' ? "page" : undefined}
 			>Declaration</a>
@@ -47,13 +45,22 @@ export let navOpen = false
 				 aria-current={segment === 'connect' ? "page" : undefined}
 			>Connect</a>
 		</div>
-
-
 		<a href="https://cogov.typeform.com/to/kMtTYt" target="blank" class="removelink">
 			<div class="nav__button">
 				Whitepaper
 			</div>
 		</a>
+
+<!--		<div class="nav__item">-->
+<!--			<a href='/vision' class="removelink"-->
+<!--				 aria-current={segment === 'vision' ? 'page' : undefined}-->
+<!--			>Vision</a>-->
+<!--		</div>-->
+<!--		<div class="nav__item">-->
+<!--			<a href='/holochain' class="removelink"-->
+<!--				 aria-current={segment === 'holochain' ? "page" : undefined}-->
+<!--			>Holochain</a>-->
+<!--		</div>-->
 
 		<slot name="navIcon">
 			<div class="nav__icon" on:click={navOpen = true}>

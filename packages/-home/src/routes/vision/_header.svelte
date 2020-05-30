@@ -1,7 +1,7 @@
 <div class="VisionHeader">
 	<div class="VisionHeader__title">Seeking the Highest Consciousness</div>
 	<p class="VisionHeader__subtitle">
-			CoGov enables highly conscious organizational behavior through the rapid iterative experimentation and creation of new forms of social coordination.
+		CoGov enables highly conscious organizational behavior through the rapid iterative experimentation and creation of new forms of social coordination.
 	</p>
 </div>
 

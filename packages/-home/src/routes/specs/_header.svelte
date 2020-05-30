@@ -1,16 +1,16 @@
-<div class="servicesHeader">
-	<p class="servicesHeader__title">Our Services</p>
-	<p class="servicesHeader__subtitle">
-		Get in touch and see how we can help you!
+<div class="techSpecsHeader">
+	<p class="techSpecsHeader__title">Technical Specifications</p>
+	<p class="techSpecsHeader__subtitle">
+			CoGov is optimized for <a href="/holochain" class="removelink" style="text-decoration: underline">Holochain</a>.
 	</p>
 </div>
 
 <style type="text/scss">
 @import "~@cogov/home-scss/base";
-.servicesHeader {
+.techSpecsHeader {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(#333, .4), rgba(#222, .4)), url('/assets/images/cogov__services.png');
+	background-image: linear-gradient(to right, rgba(#333, .4), rgba(#222, .4)), url('/assets/images/cogov__protocol.png');
 	background-position: center;
 	background-size: cover;
 	@include respond(tab-port) {
