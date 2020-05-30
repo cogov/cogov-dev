@@ -1,4 +1,5 @@
 <script>
+import Head from '@cogov/home-ui/Head.svelte'
 import Nav from '@cogov/home-ui/Nav.svelte'
 import Header from './index/_header.svelte'
 import About from './index/_about.svelte'
@@ -8,14 +9,7 @@ import Footer from '@cogov/home-ui/Footer.svelte'
 </script>
 
 <svelte:head>
-	<title>CoGov.Tech: Collaborative Governance Technologies</title>
-	<meta property="og:title" content="CoGov.Tech: Collaborative Governance Technologies"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="http://cogov.tech"/>
-	<meta property="og:image" content="http://cogov.tech/assets/images/cogov__logo--blue-large.png"/>
-	<meta property="og:site_name" content="Collaborative Governance Technologies"/>
-	<meta property="og:description"
-				content="CoGov fosters the emergence of coherent collective intelligence by enabling the rapid iteration of governance and social coordination systems that YOU design!"/>
+	<Head></Head>
 </svelte:head>
 
 <div class="home-page">
