@@ -1,7 +1,7 @@
 <div class="homeAbout" id="homeAbout">
 	<div class="homeAbout__header">
 		<h2 class="homeAbout__title">What is CoGov?</h2>
-		<h3 class="homeAbout__body">
+		<p class="homeAbout__body">
 			<span class="homeAbout__subtitle">CoGov</span> is a proposal for a
 			<a href="/ecosystem">ecosystem of startups</a>, with each startup modeling its operations to be infused with
 			<a
@@ -27,7 +27,7 @@
 
 			As each of our partner projects (many of which are also startup ecosystems) reach maturity, we will create a magnetic attraction field
 			that can ultimately lead to the total transformation of the global socioeconomic paradigm.
-		</h3>
+		</p>
 		<br/>
 		<br/>
 		<h2 class="homeAbout__title">Our Goals</h2>
