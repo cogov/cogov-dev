@@ -8,7 +8,7 @@ import Content from './_content.svelte'
 
 <svelte:head>
 	<Head
-		title="Protocol.love"
+		title="Protocol.Love: Fostering the emergence of a socioeconomic system infused with Loving Kindness"
 	></Head>
 </svelte:head>
 
