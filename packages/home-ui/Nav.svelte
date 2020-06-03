@@ -63,7 +63,7 @@ export let navOpen = false
 <!--		</div>-->
 
 		<slot name="navIcon">
-			<div class="nav__icon" on:click={navOpen = true}>
+			<div class="nav__icon" on:click={() => navOpen = true}>
 				<a class="removelink">
 					<img src="/assets/images/cogov__menu.png" alt="" class="nav__mobile">
 				</a>
@@ -72,7 +72,7 @@ export let navOpen = false
 
 		{#if navOpen}
 			<NavOpen>
-				<img on:click={navOpen = false} slot="navClose" class="navOpen__nav--icon"
+				<img on:click={() => navOpen = false} slot="navClose" class="navOpen__nav--icon"
 						 src="/assets/images/cogov__menu.png"
 						 alt=""
 				>
