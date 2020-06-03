@@ -1,4 +1,4 @@
-<div class="homeCollaborators">
+<div class="homeCollaborators page-body">
 	<h2 class="homeCollaborators__title">Collaboration is our jam! Here's who with:</h2>
 	<div class="homeCollaborators__collaborators">
 		<div class="homeCollaborators__collaborator">
@@ -114,6 +114,9 @@
 		font-size: 2.7rem;
 		font-weight: 600;
 		color: $cogov-grey;
+		@include respond(phone) {
+			font-size: 1.2rem;
+		}
 	}
 	&__collaborators {
 		display: flex;
@@ -141,6 +144,9 @@
 			font-size: 1.4rem;
 			font-weight: 500;
 			text-align: center;
+			@include respond(phone) {
+				font-size: $phone-font-size
+			}
 		}
 	}
 }

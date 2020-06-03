@@ -1,4 +1,4 @@
-<section class="homeDetails">
+<section class="homeDetails page-body">
 	<h2 class="homeDetails__title">Let's Connect! What role are you playing in the transition?</h2>
 	<p>&nbsp;</p>
 	<div class="homeDetails__types">
@@ -41,6 +41,9 @@
 		color: $cogov-grey;
 		text-align: center;
 		margin-bottom: 1rem;
+		@include respond(phone) {
+			font-size: 1.2rem;
+		}
 	}
 	&__subtitle {
 		padding: 0 15%;
@@ -50,6 +53,9 @@
 		margin-bottom: 4rem;
 		@include respond(tab-port) {
 			padding: 0;
+		}
+		@include respond(phone) {
+			font-size: $phone-font-size
 		}
 	}
 	&__types {
@@ -89,11 +95,14 @@
 			font-weight: 600;
 			padding-top: 25%;
 			text-align: center;
+			@include respond(phone) {
+				font-size: 1.2rem;
+			}
 		}
 	}
 	&__cta {
 		padding: 1rem 2rem;
-		font-size: 1.2rem;
+		font-size: $phone-font-size;
 		font-weight: 600;
 		margin-left: 50%;
 		margin-top: 1.875rem;

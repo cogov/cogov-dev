@@ -1,11 +1,11 @@
-<div class="DeclarationHeader">
-	<p class="DeclarationHeader__title">The Declaration of Collaborative Governance</p>
-	<p class="DeclarationHeader__subtitle">
+<div class="DeclarationHeader page-header">
+	<h2 class="DeclarationHeader__title">The Declaration of Collaborative Governance</h2>
+	<h3 class="DeclarationHeader__subtitle">
 			Written by <a href="/team/raymond-d-powell" class="removelink underline">Raymond D. Powell</a> - based on <a
 		target="_blank" class="removelink underline" href="https://constitution.org/us_doi.htm">The Declaration of Independence</a> by <a
 		target="_blank" class="removelink underline"
 		href="https://en.wikipedia.org/wiki/Thomas_Jefferson">Thomas Jefferson</a>
-	</p>
+	</h3>
 </div>
 
 <style type="text/scss">
@@ -28,13 +28,16 @@
 		color: white;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: $phone-font-size;
 		}
 	}
 	&__subtitle {
 		font-size: 2rem;
 		color: white;
 		font-weight: 500;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 }
 </style>

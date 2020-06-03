@@ -1,6 +1,5 @@
 <script>
 import Head from '@cogov/home-ui/Head.svelte'
-import Nav from '@cogov/home-ui/Nav.svelte'
 import Footer from '@cogov/home-ui/Footer.svelte'
 import Header from './_header.svelte'
 import Content from './_content.svelte'
@@ -12,8 +11,7 @@ import Content from './_content.svelte'
 	></Head>
 </svelte:head>
 
-<div class="protocol-page">
-	<Nav></Nav>
+<div class="protocol-page page">
 	<Header></Header>
 	<Content></Content>
 

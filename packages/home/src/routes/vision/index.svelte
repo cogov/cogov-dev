@@ -1,13 +1,10 @@
 <script>
-import Nav from '@cogov/home-ui/Nav.svelte'
 import VisionHeader from './_header.svelte'
 import VisionBody from './_body.svelte'
 import Footer from '@cogov/home-ui/Footer.svelte'
 </script>
 
-<div class="vision-page">
-	<Nav></Nav>
-
+<div class="vision-page page">
 	<VisionHeader></VisionHeader>
 	<VisionBody></VisionBody>
 

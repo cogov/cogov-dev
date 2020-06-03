@@ -1,4 +1,4 @@
-<div class="homeHeader">
+<div class="homeHeader page-header">
 	<!-- backdrop -->
 	<div class="homeHeader__backdrop--cover"></div>
 	<div class="homeHeader__backdrop">
@@ -33,13 +33,13 @@
 		top: 0;
 		left: 0;
 		height: 98vh;
-		width: 100vw;
+		width: 100%;
 		&--cover {
 			position: absolute;
 			top: 0;
 			left: 0;
 			height: 98vh;
-			width: 100vw;
+			width: 100%;
 			background-image: linear-gradient(to right, $cogov-primary, $cogov-grey);
 			opacity: .9;
 			z-index: 200;
@@ -55,15 +55,16 @@
 	&__content {
 		position: absolute;
 		top: 30%;
-		left: 50%;
-		transform: translateX(-50%);
 		text-align: center;
 		z-index: 300;
 		height: 50rem;
-		width: 70vw;
+		width: 100%;
 		@include respond(tab-port) {
 			top: 24%;
-			width: 85vw;
+			padding: 0 4rem;
+		}
+		@include respond(phone) {
+			padding: 0 1rem;
 		}
 	}
 	&__logo {

@@ -1,4 +1,4 @@
-<div class="DeclarationContent">
+<div class="DeclarationContent page-body">
 	<p class="DeclarationContent__title">The Declaration of Collaborative Governance</p>
 	<div class="DeclarationContent__body">
 		<p>
@@ -35,14 +35,19 @@
 		font-weight: 1000;
 		margin-bottom: 1rem;
 		font-family: 'Parisienne', cursive;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__body {
 		font-size: 2.4rem;
 		color: #333;
 		font-weight: 500;
-		text-align: justify;
 		font-family: 'Parisienne', cursive;
 		text-align: left;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	& li {
 		margin-left: 8rem;

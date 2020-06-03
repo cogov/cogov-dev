@@ -1,4 +1,4 @@
-<div class="aboutQuote">
+<div class="aboutQuote page-header">
 	<p class="aboutQuote__title">Raymond D. Powell</p>
 	<p class="aboutQuote__quote">
 		"The CoGov mission is to build systems that allow humans to recognize the
@@ -26,13 +26,16 @@
 		color: white;
 		font-weight: 600;
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: $phone-font-size;
 		}
 	}
 	&__quote {
 		font-size: 2rem;
 		color: white;
 		font-weight: 500;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 }
 </style>

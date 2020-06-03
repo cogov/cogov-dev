@@ -1,4 +1,4 @@
-<div class="HolochainHeader">
+<div class="HolochainHeader page-header">
 	<p class="HolochainHeader__title">CoGov is Powered By Holochain</p>
 	<p class="HolochainHeader__subtitle">
 		Holochain is the new Internet. Holo is the new Cloud.
@@ -25,13 +25,16 @@
 		color: white;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: $phone-font-size;
 		}
 	}
 	&__subtitle {
 		font-size: 2rem;
 		color: white;
 		font-weight: 500;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 }
 </style>

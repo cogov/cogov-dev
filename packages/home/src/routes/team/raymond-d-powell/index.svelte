@@ -1,13 +1,10 @@
 <script>
-import Nav from '@cogov/home-ui/Nav.svelte'
 import Footer from '@cogov/home-ui/Footer.svelte'
 import Quote from './_quote.svelte'
 import About from './_about.svelte'
 </script>
 
-<div class="raymond-d-powell-page">
-	<Nav></Nav>
-
+<div class="raymond-d-powell-page page">
 	<Quote></Quote>
 
 	<About></About>

@@ -1,4 +1,4 @@
-<div class="servicesHeader">
+<div class="servicesHeader page-header">
 	<p class="servicesHeader__title">Our Services</p>
 	<p class="servicesHeader__subtitle">
 		Get in touch and see how we can help you!
@@ -22,13 +22,16 @@
 		color: white;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: $phone-font-size;
 		}
 	}
 	&__subtitle {
 		font-size: 2rem;
 		color: white;
 		font-weight: 500;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 }
 </style>

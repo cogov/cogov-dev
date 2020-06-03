@@ -1,4 +1,4 @@
-<div class="holochainCoGov">
+<div class="holochainCoGov page-body">
 	<div class="holochainCoGov__body">
 		<div class="holochainCoGov__left">
 				<div class="holochainCoGov__logo--container">   
@@ -54,6 +54,9 @@
 		font-size: 3.3rem;
 		font-weight: 600;
 		margin-bottom: 2rem;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__body {
 		text-align-last: left;
@@ -62,6 +65,9 @@
 		display: flex;
 		@include respond(tab-port) {
 			flex-direction: column;
+		}
+		@include respond(phone) {
+			font-size: $phone-font-size;
 		}
 	}
 	&__left {
@@ -94,10 +100,16 @@
 			font-size: 2rem;
 			font-weight: 600;
 			margin-bottom: .5rem;
+			@include respond(phone) {
+				font-size: $phone-font-size;
+			}
 		}
 		&--body {
 			font-size: 1.7rem;
 			color: #333;
+			@include respond(phone) {
+				font-size: $phone-font-size;
+			}
 		}
 	}
 	&__video {

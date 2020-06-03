@@ -1,4 +1,4 @@
-<div class="visionBody">
+<div class="visionBody page-body">
 	<div class="visionBody__text">
 		<p class="visionBody__title">Highly conscious interaction allows group decisions to be a win at all levels.</p>
 		<p class="visionBody__body">
@@ -41,11 +41,17 @@
 		color: $cogov-primary;
 		font-weight: 600;
 		margin-bottom: 1rem;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__body {
 		font-size: 1.7rem;
 		color: #333;
 		font-weight: 500;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__levels {
 		margin-top: 4rem;
@@ -58,6 +64,9 @@
 			text-align: center;
 			font-weight: 600;
 			margin-bottom: 2rem;
+			@include respond(phone) {
+				font-size: $phone-font-size;
+			}
 		}
 		&--photo {
 			width: 50%;

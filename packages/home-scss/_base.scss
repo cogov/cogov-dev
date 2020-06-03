@@ -4,29 +4,36 @@ $cogov-primary-light: #195C89;
 $cogov-primary-dark: #683B7A;
 $cogov-secondary: #805691;
 $cogov-grey: #333;
+$phone-max-width: 600px;
+$tab-port-max-width: 900px;
+$pack-max-width: 960px;
+$tab-land-max-width: 1200px;
+$big-desktop-min-width: 1800px;
+$phone-font-size: 1.2rem;
+$nav-height: 120px;
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
-		@media (max-width: 37.5em) {
+		@media (max-width: $phone-max-width) {
 			@content
 		}; //600px
 	}
 	@if $breakpoint == tab-port {
-		@media (max-width: 56.25em) {
+		@media (max-width: $tab-port-max-width) {
 			@content
 		}; //900px
 	}
 	@if $breakpoint == pack {
-		@media (max-width: 62em) {
+		@media (max-width: $pack-max-width) {
 			@content
 		}; //960px
 	}
 	@if $breakpoint == tab-land {
-		@media (max-width: 75em) {
+		@media (max-width: $tab-land-max-width) {
 			@content
 		}; //1200px
 	}
 	@if $breakpoint == big-desktop {
-		@media (min-width: 112.5em) {
+		@media (min-width: $big-desktop-min-width) {
 			@content
 		}; //1800px
 	}

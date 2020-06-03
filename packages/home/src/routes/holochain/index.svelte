@@ -1,13 +1,10 @@
 <script>
-import Nav from '@cogov/home-ui/Nav.svelte'
 import Footer from '@cogov/home-ui/Footer.svelte'
 import Header from './_header.svelte'
 import CoGov from './_cogov.svelte'
 </script>
 
-<div class="holochain-page">
-	<Nav></Nav>
-
+<div class="holochain-page page">
 	<Header></Header>
 
 	<CoGov></CoGov>

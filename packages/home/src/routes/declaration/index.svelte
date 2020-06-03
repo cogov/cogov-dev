@@ -1,5 +1,4 @@
 <script>
-import Nav from '@cogov/home-ui/Nav.svelte'
 import Footer from '@cogov/home-ui/Footer.svelte'
 import Header from './_header.svelte'
 import Content from './_content.svelte'
@@ -9,9 +8,7 @@ import Content from './_content.svelte'
 	<link href="https://fonts.googleapis.com/css?family=Muli|Parisienne|Roboto&display=swap" rel="stylesheet">
 </svelte:head>
 
-<div class="declaration-page">
-	<Nav></Nav>
-
+<div class="declaration-page page">
 	<Header></Header>
 	<Content></Content>
 

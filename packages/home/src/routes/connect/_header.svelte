@@ -1,9 +1,9 @@
-<div class="connectHeader">
-	<p class="connectHeader__title">Let's do something special!</p>
-	<p class="connectHeader__subtitle">
+<div class="connectHeader page-header">
+	<h3 class="connectHeader__title">Let's do something special!</h3>
+	<h2 class="connectHeader__subtitle">
 		Hello and thanks for reaching out! Feel free to reach out to us directly through Messenger or by filling out this form below.
 		We look forward to hearing from you!
-	</p>
+	</h2>
 	<a href="https://www.facebook.com/messages/t/cogov.tech" target="blank" class="removelink"><button
 		class="connectHeader__button">MESSENGER</button></a>
 	<a href="https://chat.holochain.org/appsup/channels/dgsc" target="blank" class="removelink"><button
@@ -32,13 +32,16 @@
 		color: white;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: $phone-font-size;
 		}
 	}
 	&__subtitle {
 		font-size: 2rem;
 		color: white;
 		font-weight: 500;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__button {
 		background-color: transparent;
@@ -53,6 +56,9 @@
 		outline: none;
 		cursor: pointer;
 		transition: all .2s;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 		&:hover {
 			transform: scale(1.05);
 		}

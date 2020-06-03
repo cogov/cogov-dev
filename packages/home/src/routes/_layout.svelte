@@ -35,6 +35,34 @@ body {
 	overflow-x: hidden;
 	outline: none;
 	letter-spacing: .5px;
+	#sapper {
+		width: 100%;
+		overflow: hidden;
+		main {
+			width: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			.page {
+				margin-top: $nav-height;
+			}
+			.page-header {
+				h2 {
+					@include respond(phone) {
+						font-size: 1.8rem;
+					}
+				}
+				h3 {
+					@include respond(phone) {
+						font-size: 1.4rem;
+					}
+				}
+			}
+			.page-body {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}
+	}
 }
 .addlink {
 	text-decoration: none;

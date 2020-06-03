@@ -1,8 +1,8 @@
-<div class="VisionHeader">
-	<div class="VisionHeader__title">Seeking the Highest Consciousness</div>
-	<p class="VisionHeader__subtitle">
+<div class="VisionHeader page-header">
+	<h2 class="VisionHeader__title">Seeking the Highest Consciousness</h2>
+	<h3 class="VisionHeader__subtitle">
 		CoGov enables highly conscious organizational behavior through the rapid iterative experimentation and creation of new forms of social coordination.
-	</p>
+	</h3>
 </div>
 
 <style type="text/scss">
@@ -17,6 +17,8 @@
 		padding: 12% 4rem;
 	}
 	@include respond(phone) {
+		padding-left: 1rem;
+		padding-right: 1rem;
 		background-image: linear-gradient(to right, rgba(#333, .4), rgba(#222, .4)), url('/assets/images/cogov__stars--mobile.png');
 	}
 	&__title {

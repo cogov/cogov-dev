@@ -1,12 +1,9 @@
 <script>
-import Nav from '@cogov/home-ui/Nav.svelte'
 import Footer from '@cogov/home-ui/Footer.svelte'
 import Header from './_header.svelte'
 </script>
 
-<div class="connect-page">
-	<Nav></Nav>
-
+<div class="connect-page page">
 	<Header></Header>
 
 	<Footer></Footer>

@@ -1,11 +1,19 @@
 <script>
 import NavOpen from './NavOpen.svelte'
+import MenuHandle from './MenuHandle.svelte'
 export let segment
 export let navOpen = false
+$: segment, navOpen = false
+function set__navOpen__false() {
+	console.debug('set__navOpen__false|debug|1')
+  navOpen = false
+}
 </script>
 
 <div class="nav">
-	<a href="/" class="removelink" aria-current={segment === undefined ? 'page' : undefined}>
+	<a href="/" class="removelink" on:click={set__navOpen__false}
+		 aria-current={segment === undefined ? 'page' : undefined}
+	>
 		<div class="nav__logo--container">
 			<img class="nav__logo--image" src="/assets/images/cogov__logo--blue.png" alt="">
 			<p class="nav__logo--text">CoGov</p>
@@ -13,36 +21,38 @@ export let navOpen = false
 	</a>
 	<div class="nav__items">
 		<div class="nav__item">
-			<a href='/protocol.love' class="removelink">Protocol.Love</a>
+			<a href='/protocol.love' class="removelink" on:click={set__navOpen__false}
+				 aria-current={segment === 'protocol-love' ? 'page' : undefined}
+			>Protocol.Love</a>
 		</div>
 		<div class="nav__item">
-			<a href='/specs' class="removelink"
-				 aria-current={segment === 'specs' ? "page" : undefined}
+			<a href='/specs' class="removelink" on:click={set__navOpen__false}
+				 aria-current={segment === 'specs' ? 'page' : undefined}
 			>Tech Specs</a>
 		</div>
 		<div class="nav__item">
-			<a href='/ecosystem' class="removelink"
-				 aria-current={segment === 'ecosystem' ? "page" : undefined}
+			<a href='/ecosystem' class="removelink" on:click={set__navOpen__false}
+				 aria-current={segment === 'ecosystem' ? 'page' : undefined}
 			>Ecosystem</a>
 		</div>
 		<div class="nav__item">
-			<a href='/services' class="removelink"
-				 aria-current={segment === 'services' ? "page" : undefined}
+			<a href='/services' class="removelink" on:click={set__navOpen__false}
+				 aria-current={segment === 'services' ? 'page' : undefined}
 			>Services</a>
 		</div>
 		<div class="nav__item">
-			<a href='/team/raymond-d-powell' class="removelink"
-				 aria-current={segment === 'team/raymond-d-powell' ? "page" : undefined}
+			<a href='/team/raymond-d-powell' class="removelink" on:click={set__navOpen__false}
+				 aria-current={segment === 'team/raymond-d-powell' ? 'page' : undefined}
 			>Founder</a>
 		</div>
 		<div class="nav__item">
-			<a href='/declaration' class="removelink"
-				 aria-current={segment === 'declaration' ? "page" : undefined}
+			<a href='/declaration' class="removelink" on:click={set__navOpen__false}
+				 aria-current={segment === 'declaration' ? 'page' : undefined}
 			>Declaration</a>
 		</div>
 		<div class="nav__item">
-			<a href='/connect' class="removelink"
-				 aria-current={segment === 'connect' ? "page" : undefined}
+			<a href='/connect' class="removelink" on:click={set__navOpen__false}
+				 aria-current={segment === 'connect' ? 'page' : undefined}
 			>Connect</a>
 		</div>
 		<a href="https://cogov.typeform.com/to/kMtTYt" target="blank" class="removelink">
@@ -51,31 +61,30 @@ export let navOpen = false
 			</div>
 		</a>
 
-<!--		<div class="nav__item">-->
-<!--			<a href='/vision' class="removelink"-->
-<!--				 aria-current={segment === 'vision' ? 'page' : undefined}-->
-<!--			>Vision</a>-->
-<!--		</div>-->
-<!--		<div class="nav__item">-->
-<!--			<a href='/holochain' class="removelink"-->
-<!--				 aria-current={segment === 'holochain' ? "page" : undefined}-->
-<!--			>Holochain</a>-->
-<!--		</div>-->
+		<!--		<div class="nav__item">-->
+		<!--			<a href='/vision' class="removelink"-->
+		<!--				 aria-current={segment === 'vision' ? 'page' : undefined}-->
+		<!--			>Vision</a>-->
+		<!--		</div>-->
+		<!--		<div class="nav__item">-->
+		<!--			<a href='/holochain' class="removelink"-->
+		<!--				 aria-current={segment === 'holochain' ? 'page' : undefined}-->
+		<!--			>Holochain</a>-->
+		<!--		</div>-->
 
 		<slot name="navIcon">
 			<div class="nav__icon" on:click={() => navOpen = true}>
 				<a class="removelink">
-					<img src="/assets/images/cogov__menu.png" alt="" class="nav__mobile">
+					<MenuHandle class="nav__mobile"></MenuHandle>
 				</a>
 			</div>
 		</slot>
 
 		{#if navOpen}
-			<NavOpen>
-				<img on:click={() => navOpen = false} slot="navClose" class="navOpen__nav--icon"
-						 src="/assets/images/cogov__menu.png"
-						 alt=""
-				>
+			<NavOpen on:click={set__navOpen__false}>
+				<div slot="navClose">
+					<MenuHandle on:click={() => navOpen = false} class="navOpen__nav--icon"}></MenuHandle>
+				</div>
 			</NavOpen>
 		{/if}
 </div>
@@ -90,13 +99,17 @@ export let navOpen = false
 	left: 0;
 	z-index: 1000;
 	width: 100%;
-	height: 8rem;
+	height: $nav-height;
 	background-color: white;
 	display: flex;
 	padding: 0 4rem;
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	@include respond(phone) {
+		padding: 0 1rem;
+	}
 	&__logo {
 		&--container {
 			height: 3rem;
@@ -127,7 +140,7 @@ export let navOpen = false
 		&:hover {
 			color: $cogov-primary;
 		}
-		@include respond(tab-port) {
+		@media (max-width: 1400px) {
 			display: none;
 		}
 	}
@@ -141,6 +154,14 @@ export let navOpen = false
 		font-weight: 500;
 		cursor: pointer;
 		transition: all .2s;
+		@media (max-width: 1400px) {
+			margin-left: 1rem;
+		}
+		@include respond(phone) {
+			padding: 0.2rem 0.6rem;
+			border: 0;
+			font-size: $phone-font-size
+		}
 		&:hover {
 			transform: scale(1.05);
 		}
@@ -148,8 +169,7 @@ export let navOpen = false
 	&__mobile {
 		display: none;
 		cursor: pointer;
-		@include respond(tab-port) {
-			// background-color:   green;
+		@media (max-width: 1400px) {
 			height: 2rem;
 			margin-left: 2rem;
 			display: block;

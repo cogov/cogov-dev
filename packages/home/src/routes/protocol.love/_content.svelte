@@ -1,4 +1,4 @@
-<div class="protocolLoveContent">
+<div class="protocolLoveContent page-body">
 	<p class="protocolLoveContent__title">A Protocol for a New Paradigm in Business and Government</p>
 	<p class="protocolLoveContent__body">
 
@@ -152,22 +152,34 @@
 		color: $cogov-primary;
 		font-weight: 600;
 		margin-bottom: 1rem;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__subtitle {
 		font-size: 2.8rem;
 		color: #333;
 		font-weight: 600;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__caption {
 		font-size: 2.4rem;
 		color: #555;
 		font-weight: 500;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__body {
 		font-size: 1.7rem;
 		color: #333;
 		font-weight: 500;
 		text-align: justify;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 	&__image {
 		margin: 1.5rem 0;

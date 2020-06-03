@@ -1,4 +1,4 @@
-<div class="protocolLoveHeader">
+<div class="protocolLoveHeader page-header">
 	<p class="protocolLoveHeader__title">Protocol.Love</p>
 	<p class="protocolLoveHeader__subtitle">
 			Protocol.Love fosters the emergence of a socioeconomic system infused with <a
@@ -28,13 +28,16 @@
 		color: white;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: $phone-font-size;
 		}
 	}
 	&__subtitle {
 		font-size: 2rem;
 		color: white;
 		font-weight: 500;
+		@include respond(phone) {
+			font-size: $phone-font-size;
+		}
 	}
 }
 </style>
