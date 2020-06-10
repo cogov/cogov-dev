@@ -4,6 +4,6 @@
 	"version": "0.0.1",
 	"devDependencies": {
 		"@cogov/home-scss": "^0.0.1",
-		"svelte": "^3.23.0"
+		"svelte": "^3.23.1"
 	}
 }
