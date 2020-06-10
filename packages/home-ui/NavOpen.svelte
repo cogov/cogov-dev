@@ -7,10 +7,6 @@ function dispatch__click(event) {
 </script>
 
 <div class="navOpen">
-	<div class="navOpen-nav">
-		<p class="navOpen-nav-item">&nbsp;</p>
-		<slot name="navClose"></slot>
-	</div>
 	<div class="navOpen-body">
 		<a href="/" class="navOpen-body-item removelink" on:click={dispatch__click}
 		>Home</a>
@@ -60,6 +56,7 @@ function dispatch__click(event) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding: 2rem 0;
 		&-item {
 			margin-bottom: 1.6rem;
 			color: #333 !important;
