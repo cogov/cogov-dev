@@ -23,7 +23,7 @@
 		"compression": "^1.7.4",
 		"esm": "^3.2.25",
 		"polka": "next",
-		"sirv": "^0.4.6"
+		"sirv": "^1.0.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.10.2",
@@ -33,7 +33,7 @@
 		"@babel/runtime": "^7.10.2",
 		"@cogov/home-scss": "^0.0.1",
 		"@ctx-core/sass": "^6.4.35",
-		"@ctx-core/svelte": "^5.3.19",
+		"@ctx-core/svelte": "^5.3.20",
 		"@rollup/plugin-babel": "^5.0.3",
 		"@rollup/plugin-commonjs": "^13.0.0",
 		"@rollup/plugin-node-resolve": "^8.0.1",
@@ -44,7 +44,7 @@
 		"rollup-plugin-node-globals": "^1.4.0",
 		"rollup-plugin-svelte": "^5.2.2",
 		"rollup-plugin-terser": "^6.1.0",
-		"sapper": "^0.27.14",
-		"svelte": "^3.23.1"
+		"sapper": "^0.27.15",
+		"svelte": "^3.23.2"
 	}
 }
