@@ -103,6 +103,7 @@ function set__navOpen__false() {
 	border-bottom: 1px solid #eee;
 	overflow: hidden;
 	@include respond(phone) {
+		height: $nav-height--mobile;
 		padding: 0 1rem;
 	}
 	&-logo {
