@@ -74,17 +74,11 @@
 		color: $cogov-primary;
 		// text-transform: uppercase;
 		margin-bottom: .5rem;
-		@include respond(phone) {
-			font-size: $phone-font-size;
-		}
 	}
 	&__body {
 		font-size: 1.7rem;
 		color: #333;
 		text-align: justify;
-		@include respond(phone) {
-			font-size: $phone-font-size;
-		}
 	}
 	&__contact {
 		padding: 1rem 2rem;
@@ -95,9 +89,6 @@
 		background-color: transparent;
 		transition: all .2s;
 		cursor: pointer;
-		@include respond(phone) {
-			font-size: $phone-font-size;
-		}
 		&:hover {
 			border: 1.5px solid $cogov-secondary;
 			background-color: $cogov-secondary;
@@ -106,3 +97,4 @@
 	}
 }
 </style>
+3

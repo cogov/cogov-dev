@@ -28,7 +28,7 @@
 		color: white;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: $phone-font-size;
+			font-size: 4rem;
 		}
 	}
 	&__subtitle {
@@ -36,7 +36,7 @@
 		color: white;
 		font-weight: 500;
 		@include respond(phone) {
-			font-size: $phone-font-size;
+			font-size: 2rem;
 		}
 	}
 }

@@ -32,16 +32,13 @@
 		color: white;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: $phone-font-size;
+			font-size: 4rem;
 		}
 	}
 	&__subtitle {
 		font-size: 2rem;
 		color: white;
 		font-weight: 500;
-		@include respond(phone) {
-			font-size: $phone-font-size;
-		}
 	}
 	&__button {
 		background-color: transparent;
@@ -56,9 +53,6 @@
 		outline: none;
 		cursor: pointer;
 		transition: all .2s;
-		@include respond(phone) {
-			font-size: $phone-font-size;
-		}
 		&:hover {
 			transform: scale(1.05);
 		}

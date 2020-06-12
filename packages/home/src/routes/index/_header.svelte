@@ -54,17 +54,19 @@
 	}
 	&__content {
 		position: absolute;
-		top: 30%;
+		top: 18%;
+		left: 50%;
+		transform: translateX(-50%);
 		text-align: center;
 		z-index: 300;
 		height: 50rem;
-		width: 100%;
+		width: 90%;
 		@include respond(tab-port) {
-			top: 24%;
+			top: 13%;
 			padding: 0 4rem;
 		}
 		@include respond(phone) {
-			padding: 0 1rem;
+			padding: 0;
 		}
 	}
 	&__logo {

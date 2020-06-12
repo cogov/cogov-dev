@@ -102,10 +102,6 @@ function set__navOpen__false() {
 	justify-content: space-between;
 	border-bottom: 1px solid #eee;
 	overflow: hidden;
-	@include respond(phone) {
-		height: $nav-height--mobile;
-		padding: 0 1rem;
-	}
 	&-logo {
 		&-container {
 			height: 3rem;
@@ -129,7 +125,7 @@ function set__navOpen__false() {
 	&-item {
 		margin-left: 3rem;
 		font-size: 1.4rem;
-		font-weight: 500;
+		font-weight: bold;
 		color: #555;
 		cursor: pointer;
 		transition: all .2s;
@@ -157,11 +153,6 @@ function set__navOpen__false() {
 		transition: all .2s;
 		@media (max-width: 1400px) {
 			margin-left: 1rem;
-		}
-		@include respond(phone) {
-			padding: 0.2rem 0.6rem;
-			border: 0;
-			font-size: $phone-font-size
 		}
 		&:hover {
 			transform: scale(1.05);

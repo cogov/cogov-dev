@@ -153,7 +153,7 @@
 		font-weight: 600;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: $phone-font-size;
+			//font-size: $phone-font-size;
 		}
 	}
 	&__subtitle {
@@ -161,7 +161,7 @@
 		color: #333;
 		font-weight: 600;
 		@include respond(phone) {
-			font-size: $phone-font-size;
+			//font-size: $phone-font-size;
 		}
 	}
 	&__caption {
@@ -169,7 +169,7 @@
 		color: #555;
 		font-weight: 500;
 		@include respond(phone) {
-			font-size: $phone-font-size;
+			//font-size: $phone-font-size;
 		}
 	}
 	&__body {
@@ -178,7 +178,7 @@
 		font-weight: 500;
 		text-align: justify;
 		@include respond(phone) {
-			font-size: $phone-font-size;
+			//font-size: $phone-font-size;
 		}
 	}
 	&__image {

@@ -198,36 +198,23 @@
 		letter-spacing: normal;
 	}
 	&__header {
-		padding: 8rem 0;
 		background-color: white;
 		display: flex;
 		flex-direction: column;
-		@include respond(tab-port) {
-			padding: 6rem 0;
-		}
 	}
 	&__title {
 		font-size: 1.7rem;
 		color: $cogov-grey;
-		@include respond(phone) {
-			font-size: 1.2rem;
-		}
 	}
 	&__subtitle {
 		font-size: 3rem;
 		font-weight: 600;
 		color: $cogov-primary;
-		@include respond(phone) {
-			font-size: $phone-font-size
-		}
 	}
 	&__body {
 		font-size: 2rem;
 		font-weight: 400;
 		color: $cogov-grey;
-		@include respond(phone) {
-			font-size: 1.2rem;
-		}
 	}
 	&__pillars {
 		display: flex;
@@ -238,9 +225,6 @@
 			font-size: 3rem;
 			font-weight: 500;
 			margin-bottom: 2rem;
-			@include respond(phone) {
-				font-size: $phone-font-size
-			}
 		}
 		&--left {
 			padding-right: 4rem;
@@ -272,9 +256,6 @@
 		&--text {
 			font-size: 1.7rem;
 			font-weight: 500;
-			@include respond(phone) {
-				font-size: 1.2rem;
-			}
 		}
 	}
 	&__items {
@@ -285,9 +266,6 @@
 			font-weight: 600;
 			color: #333;
 			margin-bottom: 2rem;
-			@include respond(phone) {
-				font-size: $phone-font-size
-			}
 		}
 	}
 	&__item {
@@ -361,16 +339,10 @@
 			font-weight: 600;
 			color: $cogov-grey;
 			text-transform: uppercase;
-			@include respond(phone) {
-				font-size: 1.2rem;
-			}
 		}
 		&--body {
 			font-size: 1.7rem;
 			font-weight: 400;
-			@include respond(phone) {
-				font-size: $phone-font-size
-			}
 		}
 		&--video {
 			width: 40vw;

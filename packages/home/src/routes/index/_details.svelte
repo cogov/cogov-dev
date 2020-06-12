@@ -41,9 +41,6 @@
 		color: $cogov-grey;
 		text-align: center;
 		margin-bottom: 1rem;
-		@include respond(phone) {
-			font-size: 1.2rem;
-		}
 	}
 	&__subtitle {
 		padding: 0 15%;
@@ -53,9 +50,6 @@
 		margin-bottom: 4rem;
 		@include respond(tab-port) {
 			padding: 0;
-		}
-		@include respond(phone) {
-			font-size: $phone-font-size
 		}
 	}
 	&__types {
@@ -95,9 +89,6 @@
 			font-weight: 600;
 			padding-top: 25%;
 			text-align: center;
-			@include respond(phone) {
-				font-size: 1.2rem;
-			}
 		}
 	}
 	&__cta {

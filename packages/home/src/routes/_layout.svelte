@@ -44,25 +44,15 @@ body {
 			overflow-y: auto;
 			.page {
 				margin-top: $nav-height;
-				@include respond(phone) {
-					margin-top: $nav-height--mobile;
-				}
 			}
 			.page-header {
-				h2 {
-					@include respond(phone) {
-						font-size: 1.8rem;
-					}
-				}
-				h3 {
-					@include respond(phone) {
-						font-size: 1.4rem;
-					}
-				}
+				margin-bottom: 6rem;
 			}
 			.page-body {
-				padding-left: 1rem;
-				padding-right: 1rem;
+				padding: 0 17%;
+				@include respond(phone) {
+					padding: 0 4rem;
+				}
 			}
 		}
 	}

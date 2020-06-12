@@ -9,9 +9,9 @@ $tab-port-max-width: 900px;
 $pack-max-width: 960px;
 $tab-land-max-width: 1200px;
 $big-desktop-min-width: 1800px;
-$phone-font-size: 1.2rem;
-$nav-height: 120px;
-$nav-height--mobile: 70px;
+$phone-font-size: 2rem;
+$nav-height: 108px;
+$nav-height--mobile: $nav-height;
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
 		@media (max-width: $phone-max-width) {

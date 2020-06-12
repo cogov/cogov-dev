@@ -37,27 +37,18 @@ Click <a href="/connect" class="addlink">here</a> to receive a free 1 hour consu
 		color: $cogov-primary;
 		font-weight: 600;
 		margin-bottom: 1rem;
-		@include respond(phone) {
-			font-size: $phone-font-size;
-		}
 	}
 	&__subtitle {
 		font-size: 2.7rem;
 		color: #333;
 		font-weight: 600;
 		margin-bottom: 1rem;
-		@include respond(phone) {
-			font-size: $phone-font-size;
-		}
 	}
 	&__body {
 		font-size: 1.7rem;
 		color: #333;
 		font-weight: 500;
 		text-align: justify;
-		@include respond(phone) {
-			font-size: $phone-font-size;
-		}
 	}
 }
 </style>

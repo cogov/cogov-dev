@@ -144,9 +144,6 @@
 			font-size: 1.4rem;
 			font-weight: 500;
 			text-align: center;
-			@include respond(phone) {
-				font-size: $phone-font-size
-			}
 		}
 	}
 }
