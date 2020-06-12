@@ -5,7 +5,6 @@ export let segment
 export let navOpen = false
 $: segment, navOpen = false
 function set__navOpen__false() {
-	console.debug('set__navOpen__false|debug|1')
   navOpen = false
 }
 </script>
