@@ -72,7 +72,6 @@
 		font-size: 3.3rem;
 		font-weight: 600;
 		color: $cogov-primary;
-		// text-transform: uppercase;
 		margin-bottom: .5rem;
 	}
 	&__body {
@@ -97,4 +96,3 @@
 	}
 }
 </style>
-3

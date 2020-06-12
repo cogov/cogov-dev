@@ -24,6 +24,9 @@
 		font-weight: 600;
 		color: white;
 		margin-bottom: 1rem;
+		@include respond(phone) {
+			font-size: 4rem;
+		}
 	}
 	&__subtitle {
 		font-size: 2rem;

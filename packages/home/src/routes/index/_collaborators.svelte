@@ -114,9 +114,6 @@
 		font-size: 2.7rem;
 		font-weight: 600;
 		color: $cogov-grey;
-		@include respond(phone) {
-			font-size: 1.2rem;
-		}
 	}
 	&__collaborators {
 		display: flex;
