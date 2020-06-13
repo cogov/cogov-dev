@@ -44,6 +44,9 @@ body {
 			overflow-y: auto;
 			.page {
 				margin-top: $nav-height;
+				@include respond(phone) {
+					margin-top: $nav-height--mobile;
+				}
 			}
 			.page-header {
 				margin-bottom: 6rem;

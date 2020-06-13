@@ -97,11 +97,14 @@ function set__navOpen__false() {
 	height: $nav-height;
 	background-color: white;
 	display: flex;
-	padding: 0 4rem;
+	padding: 0 4rem 0 2rem;
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid #eee;
 	overflow: hidden;
+	@include respond(phone) {
+		height: $nav-height--mobile;
+	}
 	&-logo {
 		&-container {
 			height: 3rem;

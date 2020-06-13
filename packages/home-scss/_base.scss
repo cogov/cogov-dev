@@ -11,7 +11,7 @@ $tab-land-max-width: 1200px;
 $big-desktop-min-width: 1800px;
 $phone-font-size: 2rem;
 $nav-height: 108px;
-$nav-height--mobile: $nav-height;
+$nav-height--mobile: 72px;
 @mixin respond($breakpoint) {
 	@if $breakpoint == phone {
 		@media (max-width: $phone-max-width) {

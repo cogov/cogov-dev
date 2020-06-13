@@ -42,6 +42,7 @@ function dispatch__click(event) {
 	left: 0;
 	@include respond(phone) {
 		top: $nav-height--mobile;
+		height: calc(100vh - #{$nav-height--mobile});
 	}
 	&-nav {
 		padding: 0 1rem;
