@@ -26,7 +26,7 @@
 		color: white;
 		font-weight: 600;
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: 3.4rem;
 		}
 	}
 	&__quote {

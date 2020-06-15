@@ -32,7 +32,7 @@
 		color: white;
 		margin-bottom: 1rem;
 		@include respond(phone) {
-			font-size: 4rem;
+			font-size: 3.4rem;
 		}
 	}
 	&__subtitle {
