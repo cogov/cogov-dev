@@ -72,19 +72,19 @@ function set__navOpen__false() {
 		<!--		</div>-->
 
 		<slot name="navIcon">
-			<div class="nav-icon" on:click={() => navOpen = !navOpen}>
-				<a class="removelink">
+			<div class="nav-icon">
+				<a href="." class="removelink" on:click|preventDefault={() => navOpen = !navOpen}>
 					<MenuHandle class="nav-mobile"></MenuHandle>
 				</a>
 			</div>
 		</slot>
-
-		{#if navOpen}
-			<NavOpen on:click={set__navOpen__false}></NavOpen>
-		{/if}
-</div>
+	</div>
 
 </div>
+
+{#if navOpen}
+	<NavOpen on:click={set__navOpen__false}></NavOpen>
+{/if}
 
 <style type="text/scss" global>
 @import "~@cogov/home-scss/base";
@@ -141,8 +141,16 @@ function set__navOpen__false() {
 	}
 	&-icon {
 		position: absolute;
+		top: 0;
 		right: 1rem;
 		z-index: 1;
+		height: $nav-height;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include respond(phone) {
+			height: $nav-height--mobile;
+		}
 	}
 	&-button {
 		margin: 0 3rem;
