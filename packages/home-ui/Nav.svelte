@@ -97,7 +97,7 @@ function set__navOpen__false() {
 	height: $nav-height;
 	background-color: white;
 	display: flex;
-	padding: 0 4rem 0 2rem;
+	padding: 0 2rem;
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid #eee;
@@ -124,9 +124,12 @@ function set__navOpen__false() {
 	&-items {
 		display: flex;
 		align-items: center;
+		width: 100%;
+		max-width: 980px;
+		padding: 0 0 0 3rem;
 	}
 	&-item {
-		margin-left: 3rem;
+		flex-grow: 1;
 		font-size: 1.2rem;
 		font-weight: bold;
 		color: #555;
@@ -135,7 +138,7 @@ function set__navOpen__false() {
 		&:hover {
 			color: $cogov-primary;
 		}
-		@media (max-width: 1300px) {
+		@media (max-width: $tab-port-max-width) {
 			display: none;
 		}
 	}
@@ -153,7 +156,6 @@ function set__navOpen__false() {
 		}
 	}
 	&-button {
-		margin: 0 3rem;
 		padding: 1rem 2rem;
 		color: #333;
 		border-radius: 25px;
@@ -162,7 +164,7 @@ function set__navOpen__false() {
 		font-weight: 500;
 		cursor: pointer;
 		transition: all .2s;
-		@media (max-width: 1300px) {
+		@media (max-width: $tab-port-max-width) {
 			margin-left: 1rem;
 		}
 		&:hover {
@@ -172,7 +174,7 @@ function set__navOpen__false() {
 	&-mobile {
 		display: none;
 		cursor: pointer;
-		@media (max-width: 1300px) {
+		@media (max-width: $tab-port-max-width) {
 			height: 2rem;
 			margin-left: 2rem;
 			display: block;
