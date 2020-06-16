@@ -19,42 +19,24 @@ function set__navOpen__false() {
 		</div>
 	</a>
 	<div class="nav-items">
-		<div class="nav-item">
-			<a href='/protocol.love' class="removelink" on:click={set__navOpen__false}
-				 aria-current={segment === 'protocol-love' ? 'page' : undefined}
-			>Protocol.Love</a>
-		</div>
-		<div class="nav-item">
-			<a href='/specs' class="removelink" on:click={set__navOpen__false}
-				 aria-current={segment === 'specs' ? 'page' : undefined}
-			>Tech Specs</a>
-		</div>
-		<div class="nav-item">
-			<a href='/ecosystem' class="removelink" on:click={set__navOpen__false}
-				 aria-current={segment === 'ecosystem' ? 'page' : undefined}
-			>Ecosystem</a>
-		</div>
-		<div class="nav-item">
-			<a href='/services' class="removelink" on:click={set__navOpen__false}
-				 aria-current={segment === 'services' ? 'page' : undefined}
-			>Services</a>
-		</div>
-		<div class="nav-item">
-			<a href='/team/raymond-d-powell' class="removelink" on:click={set__navOpen__false}
-				 aria-current={segment === 'team/raymond-d-powell' ? 'page' : undefined}
-			>Founder</a>
-		</div>
-		<div class="nav-item">
-			<a href='/declaration' class="removelink" on:click={set__navOpen__false}
-				 aria-current={segment === 'declaration' ? 'page' : undefined}
-			>Declaration</a>
-		</div>
-		<div class="nav-item">
-			<a href='/connect' class="removelink" on:click={set__navOpen__false}
-				 aria-current={segment === 'connect' ? 'page' : undefined}
-			>Connect</a>
-		</div>
-		<a href="https://cogov.typeform.com/to/kMtTYt" target="blank" class="removelink">
+		{#each [
+			['/protocol.love', 'protocol-love', 'Protocol.Love'],
+			['/specs', 'specs', 'Tech Specs'],
+			['/ecosystem', 'ecosystem', 'Ecosystem'],
+			['/services', 'services', 'Services'],
+			['/team/raymond-d-powell', 'team/raymond-d-powell', 'Founder'],
+			['/declaration', 'declaration', 'Declaration'],
+			['/connect', 'connect', 'Connect'],
+		] as item}
+			<div class="spacer"></div>
+			<div class="nav-item">
+				<a href={item[0]} class="removelink" on:click={set__navOpen__false}
+					 aria-current={segment === item[1] ? 'page' : undefined}
+				>{item[2]}</a>
+			</div>
+		{/each}
+		<div class="spacer"></div>
+		<a href="https://cogov.typeform.com/to/kMtTYt" target="blank" class="removelink whitepaper">
 			<div class="nav-button">
 				Whitepaper
 			</div>
@@ -124,12 +106,16 @@ function set__navOpen__false() {
 	&-items {
 		display: flex;
 		align-items: center;
+		justify-content: flex-end;
 		width: 100%;
-		max-width: 980px;
 		padding: 0 0 0 3rem;
+		@media (max-width: $tab-port-max-width) {
+			padding-left: 1rem;
+			justify-content: flex-start;
+		}
 	}
 	&-item {
-		flex-grow: 1;
+		flex-grow: 0;
 		font-size: 1.2rem;
 		font-weight: bold;
 		color: #555;
@@ -138,6 +124,13 @@ function set__navOpen__false() {
 		&:hover {
 			color: $cogov-primary;
 		}
+		@media (max-width: $tab-port-max-width) {
+			display: none;
+		}
+	}
+	.spacer {
+		flex-grow: 1;
+		max-width: 3rem;
 		@media (max-width: $tab-port-max-width) {
 			display: none;
 		}
