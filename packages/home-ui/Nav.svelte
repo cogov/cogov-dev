@@ -127,7 +127,7 @@ function set__navOpen__false() {
 	}
 	&-item {
 		margin-left: 3rem;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		font-weight: bold;
 		color: #555;
 		cursor: pointer;
@@ -135,7 +135,7 @@ function set__navOpen__false() {
 		&:hover {
 			color: $cogov-primary;
 		}
-		@media (max-width: 1400px) {
+		@media (max-width: 1300px) {
 			display: none;
 		}
 	}
@@ -162,7 +162,7 @@ function set__navOpen__false() {
 		font-weight: 500;
 		cursor: pointer;
 		transition: all .2s;
-		@media (max-width: 1400px) {
+		@media (max-width: 1300px) {
 			margin-left: 1rem;
 		}
 		&:hover {
@@ -172,7 +172,7 @@ function set__navOpen__false() {
 	&-mobile {
 		display: none;
 		cursor: pointer;
-		@media (max-width: 1400px) {
+		@media (max-width: 1300px) {
 			height: 2rem;
 			margin-left: 2rem;
 			display: block;
