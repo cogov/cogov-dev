@@ -1,11 +1,15 @@
 {
 	"name": "@cogov/dev",
 	"private": true,
+	"version": "1.0.0",
+	"bin": {
+		"tmux-dev": "./bin/tmux-dev.sh"
+	},
 	"devDependencies": {
-		"@ctx-core/jetbrains": "^1.2.12",
-		"@ctx-core/lerna": "^3.0.14",
-		"@ctx-core/monorepo": "^7.0.8",
-		"lerna": "^3.22.1"
+		"@cogov/dev": "^1.0.0",
+		"@ctx-core/jetbrains": "^7.1.67",
+		"@ctx-core/lerna": "^5.1.34",
+		"@ctx-core/monorepo": "^18.4.49"
 	},
 	"workspaces": {
 		"packages": [
