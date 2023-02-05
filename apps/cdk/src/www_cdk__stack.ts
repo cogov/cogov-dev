@@ -2,6 +2,7 @@ import { param_r_ } from '@ctx-core/cli-args'
 import { be_, type Ctx } from '@ctx-core/object'
 import { CfnOutput, Duration, Stack } from 'aws-cdk-lib'
 import { EndpointType, LambdaIntegration, LambdaRestApi, MethodLoggingLevel } from 'aws-cdk-lib/aws-apigateway'
+import { Certificate, CertificateValidation } from 'aws-cdk-lib/aws-certificatemanager'
 import { Distribution } from 'aws-cdk-lib/aws-cloudfront'
 import { RestApiOrigin } from 'aws-cdk-lib/aws-cloudfront-origins'
 import { type ISecurityGroup } from 'aws-cdk-lib/aws-ec2'
@@ -13,6 +14,7 @@ import { cdk__app_ } from './cdk__app_.js'
 import { cdk__env } from './cdk__env.js'
 import { www_cdk__id_ } from './cdk__id_.js'
 import { NODE_ENV_, type stage_T } from './stage.js'
+const domainName = 'protocollove.life'
 const args = process.argv.slice(2)
 const { stage_a } = param_r_(
 	args,
@@ -31,7 +33,7 @@ export const www_cdk__stack_ = be_<
 	return new Stack(cdk__app_(ctx), www_cdk__id_('Stack'), {
 		env: {
 			account: cdk__env.CDK_DEFAULT_ACCOUNT,
-			region: cdk__env.CDK_DEFAULT_REGION || 'us-east-1',
+			region: 'us-east-1',
 		},
 		tags: {
 			stage: stage as stage_T,
@@ -103,6 +105,18 @@ export const www_cdk__apigw_ = be_<
 	})
 	return www_cdk__apigw
 })
+export const www_cdk__certificate_ = be_<
+	Certificate
+>('www_cdk__certificate_', ctx=>{
+	const certificate = new Certificate(www_cdk__construct_(ctx), www_cdk__id_('Certificate'), {
+		domainName,
+		validation: CertificateValidation.fromDns(),
+	})
+	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('CertificateArn'), {
+		value: certificate.certificateArn
+	})
+	return certificate
+})
 export const www_cdk__app__distribution_ = be_<
 	Distribution
 >('www_cdk__app__distribution_', ctx=>{
@@ -110,6 +124,8 @@ export const www_cdk__app__distribution_ = be_<
 		defaultBehavior: {
 			origin: new RestApiOrigin(www_cdk__apigw_(ctx)),
 		},
+		domainNames: [domainName],
+		certificate: www_cdk__certificate_(ctx),
 	})
 	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('AppDistributionDomainName'), {
 		value: distribution.distributionDomainName,
