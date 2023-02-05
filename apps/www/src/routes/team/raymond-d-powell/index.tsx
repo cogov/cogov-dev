@@ -28,7 +28,11 @@ export default function C_raymond_d_powell() {
 			<AboutStyle/>,
 			<div class="aboutFounder page-body">
 				<div class="aboutFounder__left">
-					<img class="aboutFounder__left--image" src="/assets/images/cogov__founder.png" alt=""/>
+					<img
+						class="aboutFounder__left--image"
+						src="/assets/images/cogov__founder.png"
+						alt="Cogov Founder: Raymond Powell"
+					/>
 				</div>
 				<div class="aboutFounder__right">
 					<div class="aboutFounder__container">
@@ -144,9 +148,10 @@ const AboutStyle = Style_(()=>var__css__replace(`
 		}
 	}
 	.aboutFounder__left--image {
-		width: 100%;
+		width: auto;
+		max-height: 700px;
 		position: absolute;
-		top: 0;
+		top: 12px;
 		right: 0;
 	}
 	@media (max-width: var(--port--tab--max-width)) {

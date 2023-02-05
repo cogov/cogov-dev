@@ -1,7 +1,6 @@
 // @refresh reload
 import { var__css__replace } from '@cogov/css'
 import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
-import { createEffect, Suspense } from 'solid-js'
 import {
 	Body,
 	ErrorBoundary,
@@ -15,6 +14,7 @@ import {
 	Title,
 	useLocation,
 } from 'solid-start'
+import { createEffect, Suspense } from 'solid-js'
 import { isServer } from 'solid-js/web'
 import './root.css'
 import { Nav, url_, url__ } from '~/_ui'
