@@ -3,7 +3,7 @@ import { Style_ } from '@ctx-core/ui-solid'
 import { Footer } from '~/_ui'
 export default function C_Home() {
 	return (
-		<main class="home-page page h-full w-full relative text-center mx-auto text-gray-700 p-4">
+		<main class="home-page page">
 			<Header/>
 			<About/>
 			<Details/>
@@ -15,31 +15,31 @@ export default function C_Home() {
 		return [
 			<HeaderStyle/>,
 			<div class="homeHeader page-header">
-			{/*backdrop*/}
+				{/*backdrop*/}
 				<div class="homeHeader__backdrop--cover"></div>
-			<div class="homeHeader__backdrop">
-				<video class="homeHeader__backdrop--video" playsinline autoplay muted loop>
-					<source src="/assets/videos/sacred-geo.mp4" type="video/mp4"/>
-				</video>
-			</div>
-			<div class="homeHeader__content">
-				{/*<img class="homeHeader__logo" src="/assets/images/cogov__home-logo.png" />*/}
-				<a href="#homeAbout" class="removelink">
-					<img class="homeHeader__logo" src="/assets/images/cogov__home-logo.png"/>
-				</a>
-				<h2 class="homeHeader__title">Collaborative Governance Technologies</h2>
-				<h3 class="homeHeader__subtitle">
-					Modeling Scalable Social Coordination Systems Infused with
-					<a
-						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-						class="removelink underline"
-						target="_blank"
-					>Loving Kindness</a>
-					{/*CoGov fosters the emergence of coherent collective intelligence by enabling the rapid iteration*/}
-					{/*of governance and social coordination systems that YOU design!*/}
-				</h3>
-			</div>
-		</div>,
+				<div class="homeHeader__backdrop">
+					<video class="homeHeader__backdrop--video" playsinline autoplay muted loop>
+						<source src="/assets/videos/sacred-geo.mp4" type="video/mp4"/>
+					</video>
+				</div>
+				<div class="homeHeader__content">
+					{/*<img class="homeHeader__logo" src="/assets/images/cogov__home-logo.png" />*/}
+					<a href="#homeAbout" class="removelink">
+						<img class="homeHeader__logo" src="/assets/images/cogov__home-logo.png"/>
+					</a>
+					<h2 class="homeHeader__title">Collaborative Governance Technologies</h2>
+					<h3 class="homeHeader__subtitle">
+						Modeling Scalable Social Coordination Systems Infused with{' '}
+						<a
+							href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+							class="removelink underline"
+							target="_blank"
+						>Loving Kindness</a>
+						{/*CoGov fosters the emergence of coherent collective intelligence by enabling the rapid iteration*/}
+						{/*of governance and social coordination systems that YOU design!*/}
+					</h3>
+				</div>
+			</div>,
 		]
 	}
 	function About() {
@@ -356,6 +356,14 @@ export default function C_Home() {
 		]
 	}
 }
+//language=CSS
+const Style = Style_(()=>var__css__replace(`
+	.home-page {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+`))
 //language=CSS
 const HeaderStyle = Style_(()=>var__css__replace(`
 	.homeHeader {

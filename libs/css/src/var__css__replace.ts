@@ -5,12 +5,12 @@ import {
 	cogov__primary_dark__color,
 	cogov__primary_light__color,
 	cogov__secondary__color,
+	land__tab__max_width,
 	mobile__nav__height,
 	nav__height,
 	pack__max_width,
 	phone__font_size,
 	phone__max_width,
-	land__tab__max_width,
 	port__tab__max_width
 } from './_const'
 const var_R:Record<string, string> = {
@@ -29,5 +29,5 @@ const var_R:Record<string, string> = {
 	'var(--mobile--nav--height)': mobile__nav__height,
 }
 export function var__css__replace(css:string):string {
-	return css.replaceAll(/var\((.$)\)/g, $=>var_R[$])
+	return css.replaceAll(/var\(([^)]*)\)/g, $=>var_R[$])
 }

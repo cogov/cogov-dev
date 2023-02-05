@@ -1,7 +1,7 @@
 // @refresh reload
 import { var__css__replace } from '@cogov/css'
 import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
-import { Suspense } from 'solid-js'
+import { createEffect, Suspense } from 'solid-js'
 import {
 	Body,
 	ErrorBoundary,
@@ -16,11 +16,18 @@ import {
 	useLocation,
 } from 'solid-start'
 import './root.css'
-import { Nav, url_ } from '~/_ui'
+import { Nav, url_, url__ } from '~/_ui'
+import { isServer } from 'solid-js/web'
 export default function Root() {
 	const ctx = ctx__Context__use()
 	const location = useLocation()
-	location.toString()
+	if (!isServer) {
+		url__set()
+	}
+	createEffect(()=>{
+		location
+		url__set()
+	})
 	const title = 'CoGov.Tech: Collaborative Governance Technologies'
 	const image = 'https://cogov.tech/assets/images/cogov__logo--blue-large.png'
 	const site_name = 'Collaborative Governance Technologies'
@@ -56,6 +63,9 @@ export default function Root() {
       </Body>
     </Html>
 	)
+	function url__set() {
+		url__(ctx).$ = new URL(window.location.href)
+	}
 }
 //language=CSS
 const Style = Style_(()=>var__css__replace(`
