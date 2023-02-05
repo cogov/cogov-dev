@@ -7,14 +7,9 @@
 		"moduleResolution": "node",
 		"jsxImportSource": "solid-js",
 		"jsx": "preserve",
-		"lib": [
-			"dom",
-			"ESNext"
-		],
-		"strict": true,
 		"types": [
 			"node",
-			"solid-start/env"
+			"vite/client"
 		],
 		"baseUrl": "./",
 		"paths": {
