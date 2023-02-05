@@ -25,7 +25,6 @@ const { stage_a } = param_r_(
 const dir = new URL(await resolve('.', import.meta.url)).pathname
 export async function www_cdk__stack__build(ctx:Ctx) {
 	process.chdir(join(dir, '..'))
-	www_cdk__app__distribution_(ctx)
 	www_cdk__www__distribution_(ctx)
 	cdk__app_(ctx).synth()
 }
@@ -120,25 +119,6 @@ export const www_cdk__certificate_ = be_<
 	})
 	return certificate
 })
-export const www_cdk__app__distribution_ = be_<
-	Distribution
->('www_cdk__app__distribution_', ctx=>{
-	const distribution = new Distribution(www_cdk__construct_(ctx), www_cdk__id_('AppDistribution'), {
-		defaultBehavior: {
-			origin: new RestApiOrigin(www_cdk__apigw_(ctx)),
-			viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-		},
-		domainNames: [protocollovelife__domainName],
-		certificate: www_cdk__certificate_(ctx),
-	})
-	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('AppDistributionDomainName'), {
-		value: distribution.distributionDomainName,
-	})
-	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('AppDistributionId'), {
-		value: distribution.distributionId,
-	})
-	return distribution
-})
 export const www_cdk__cogovme__certificate_ = be_<
 	Certificate
 >('www_cdk__cogovme__certificate_', ctx=>{
@@ -146,7 +126,7 @@ export const www_cdk__cogovme__certificate_ = be_<
 		domainName: cogovme__domainName,
 		subjectAlternativeNames: [
 			protocolloveme__domainName,
-			// protocollovelife__domainName,
+			protocollovelife__domainName,
 		],
 		validation: CertificateValidation.fromDns()
 	})
@@ -166,7 +146,7 @@ export const www_cdk__www__distribution_ = be_<
 		domainNames: [
 			cogovme__domainName,
 			protocolloveme__domainName,
-			// protocollovelife__domainName,
+			protocollovelife__domainName,
 		],
 		certificate: www_cdk__cogovme__certificate_(ctx),
 	})
