@@ -20,12 +20,16 @@ export default function C_protocol_love() {
 			<div class="protocolLoveHeader page-header">
 				<p class="protocolLoveHeader__title">Protocol.Love</p>
 				<p class="protocolLoveHeader__subtitle">
-						Protocol.Love fosters the emergence of a socioeconomic system infused with <a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank" class="removelink" style="text-decoration: underline">Loving Kindness</a>
-						for organizations who choose a commitment to <a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank" class="removelink" style="text-decoration: underline">Vulnerable Transparency</a>.
+					Protocol.Love fosters the emergence of a socioeconomic system infused with{' '}
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank" class="removelink" style="text-decoration: underline"
+					>Loving Kindness</a>{' '}
+					for organizations who choose a commitment to{' '}
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank" class="removelink" style="text-decoration: underline"
+					>Vulnerable Transparency</a>.
 				</p>
 			</div>
 		]
@@ -36,19 +40,24 @@ export default function C_protocol_love() {
 			<div class="protocolLoveContent page-body">
 				<p class="protocolLoveContent__title">A Protocol for a New Paradigm in Business and Government</p>
 				<p class="protocolLoveContent__body">
-					A lot of what we rely on existing government and banking infrastructure to do for us is to act as a registry of information. The costs of relying on large, centralized structures for this relatively simple task is becoming more apparent each day. In order to allow for the emergence of something new that does not revert back into the dysfunctional standards, CoGov proposes a protocol for the transparent sharing of operations.
+					A lot of what we rely on existing government and banking infrastructure to do
+					for us is to act as a registry of information.
+					The costs of relying on large, centralized structures for this relatively simple task is
+					becoming more apparent each day.
+					In order to allow for the emergence of something new that does not revert back into the dysfunctional standards,
+					CoGov proposes a protocol for the transparent sharing of operations.
 					<br/><br/>
-					Protocol.Love is a proposal to imbue
+					Protocol.Love is a proposal to imbue{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
 					>Loving Kindness</a> into socioeconomic systems.
-					It does so by providing standards through which organizations can embody their commitment to
+					It does so by providing standards through which organizations can embody their commitment to{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
 					>Vulnerable Transparency</a>.
-					Ultimately, by having large amounts of data shared on distributed ledgers with a standard protocol for
+					Ultimately, by having large amounts of data shared on distributed ledgers with a standard protocol for{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
@@ -56,7 +65,7 @@ export default function C_protocol_love() {
 					we will be able to algorithmically identify Loving and Kind behavior –
 					which is inherently anti-rivalrous, and omni-win.
 					<br/><br/>
-					Read the background here:
+					Read the background here:{' '}
 					<a
 						target="_blank"
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
@@ -90,23 +99,34 @@ export default function C_protocol_love() {
 					and the associated limitations of central control (enclosability).
 					<br/><br/>
 				</p>
-				<p class="protocolLoveContent__subtitle">
-					The Reality of Transparency
-				</p>
+				<p class="protocolLoveContent__subtitle">The Reality of Transparency</p>
 				<p class="protocolLoveContent__body">
-					We should understand that <a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank">Vulnerable Transparency</a> is always a choice– a choice that takes extra effort. CoGov does not suggest that there should be any punitive approach or attempt to enforce <a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank">Vulnerable Transparency</a>. The fact is, as more and more data flows into ledgers, we will have the opportunity to test the hypothesis that resistance to transparency is inherently rivalrous behavior. But this is certainly not a given. There are plenty of reasons that a person or group might not make the extra effort to adhere to <a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank">Vulnerable Transparency</a>.<br/>
-					<br/>
-					Just like in nature, a chameleon can stay mostly invisible, but there is still a chance to notice a movement, and to inspect further to see if there is a deception afoot. The same principle applies here.
+					We should understand that{' '}
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank"
+					>Vulnerable Transparency</a> is always a choice – a choice that takes extra effort.
+					CoGov does not suggest that there should be any punitive approach or attempt to enforce{' '}
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank"
+					>Vulnerable Transparency</a>.{' '}
+					The fact is, as more and more data flows into ledgers,
+					we will have the opportunity to test the hypothesis that resistance to transparency is inherently rivalrous behavior.
+					But this is certainly not a given.
+					There are plenty of reasons that a person or group might not make the extra effort to adhere to{' '}
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank"
+					>Vulnerable Transparency</a>.
+					<br/><br/>
+					Just like in nature, a chameleon can stay mostly invisible,
+					but there is still a chance to notice a movement, and to inspect further to see if there is a deception afoot.
+					The same principle applies here.
 				</p>
 				<br/><br/>
 				<p class="protocolLoveContent__subtitle">
-					In order for a Collective to operate with
+					In order for a Collective to operate with{' '}
 					<a
 						class="removelink underline"
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
@@ -147,13 +167,11 @@ export default function C_protocol_love() {
 					Upon completion of the CFD, the group is ready to begin fully transparent operations.
 				</p>
 				<br/><br/>
-				<p class="protocolLoveContent__subtitle">
-					How does it work?
-				</p>
+				<p class="protocolLoveContent__subtitle">How does it work?</p>
 				<p class="protocolLoveContent__body">
 					<span class="protocolLoveContent__caption">Collective Foundational Document</span>
 					<br/>
-					Protocol.love brings
+					Protocol.love brings{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
@@ -162,7 +180,7 @@ export default function C_protocol_love() {
 					This document is a combination of something like articles of incorporation,
 					combined with something like a lean business plan.
 					<br/><br/>
-					Read more:
+					Read more:{' '}
 					<a target="_blank"
 						 href="https://docs.google.com/document/d/1Rh02JzKhQ5sA6V500cQm74kb-jd4VcS8bskDDUsBpQA"
 					>Collective Foundational Document Template</a>
@@ -175,7 +193,7 @@ export default function C_protocol_love() {
 					<br/><br/>
 					<span class="protocolLoveContent__caption">Influence Currency</span>
 					<br/>
-					An Influence Currency enhances
+					An Influence Currency enhances{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
@@ -184,19 +202,19 @@ export default function C_protocol_love() {
 					When people have influence but do not have a corresponding passion and/or expertise,
 					power dynamics exist that create unnecessary tensions.
 					<br/><br/>
-					Read more:
+					Read more:{' '}
 					<a target="_blank"
 						 href="https://medium.com/metacurrency-project/broken-assumptions-of-governance-63cc946ccc6c"
 					>Broken Assumptions of Governance.</a>
 					<br/><br/>
 					<span class="protocolLoveContent__caption">Equity Currency</span>
 					<br/>
-					An Equity Currency enhances
+					An Equity Currency enhances{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
-					>Vulnerable Transparency</a>
-					by sharing flows around who holds the value of an asset or set of assets (Game A “ownership).
+					>Vulnerable Transparency</a> by sharing flows around who holds
+					the value of an asset or set of assets (Game A “ownership).
 					Often times, it is the same people who made value contributions to an asset, but not necessarily.
 					Much like how we think of equity in the form of a share of stock,
 					an Equity Currency is a representation of a portion of value of an asset, or a set of assets.
@@ -207,7 +225,7 @@ export default function C_protocol_love() {
 					<br/><br/>
 					<span class="protocolLoveContent__caption">Impact Currency</span>
 					<br/>
-					Protocol.love defines impact as: that which affects the lives of real people. Impact Currency brings
+					Protocol.love defines impact as: that which affects the lives of real people. Impact Currency brings{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
@@ -229,12 +247,12 @@ export default function C_protocol_love() {
 					<br/><br/>
 					<span class="protocolLoveContent__caption">Decision Making</span>
 					<br/>
-					Protocol.love enhances
+					Protocol.love enhances{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
-					>Vulnerable Transparency</a>
-					in decision making by naming the 3 fundamental steps that happen in any group decision making process,
+					>Vulnerable Transparency</a> in decision making by naming the 3 fundamental steps
+					that happen in any group decision making process,
 					and providing the means to share these processes in a way that deeply informs interested parties.
 					<br/><br/>
 					First, there is a proposal made (instantiated). Second, the proposal is discussed (Iterated).

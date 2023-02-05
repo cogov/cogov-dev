@@ -32,17 +32,17 @@ export default function C_specs() {
 			<div class="techSpecsContent">
 				<p class="techSpecsContent__title">Some Technical Details</p>
 				<p class="techSpecsContent__body">
-					While Protocol.Love is technically distributed ledger agnostic, it is optimally designed for
-					<a href="/holochain">Holochain</a>, which acts as an unenclosable carrier for entries made using
+					While Protocol.Love is technically distributed ledger agnostic, it is optimally designed for{' '}
+					<a href="/holochain">Holochain</a>, which acts as an unenclosable carrier for entries made using{' '}
 					<a href="/protocol.love">Protocol.Love</a>.
 					<br/><br/>
-					A short article:
+					A short article:{' '}
 					<a
 						href="https://medium.com/@rayzer42/cogov-defining-what-actually-happens-when-people-do-stuff-together-56a0d07c8a32"
 					>What Actually Happens When People “Do Stuff Together”</a>
 					<br/><br/>
-					One way to describe <a href="/holochain" class="addlink" target="blank">Holochain</a>
-					is the “protocol for protocols”.
+					One way to describe{' '}
+					<a href="/holochain" class="addlink" target="blank">Holochain</a> is the “protocol for protocols”.
 					It allows developers to define protocols for information sharing,
 					and then provides an ecosystem within which other developers can interact and iterate those protocols
 					and their definitions with relative ease.
@@ -51,11 +51,17 @@ export default function C_specs() {
 					<br/><br/>
 					With Holochain, every application is made up of one or more protocols.
 					Each application runs its own holochain on its own terms.
-					Each device that is running an application has a private source
-					<a href="https://medium.com/@rayzer42/9039eba653a1" class="addlink" target="blank">chain</a>
-					that holds the app's “DNA”—the code that runs the app and ensures the protocols are being adhered to.
-					Each app stores its data using methods of
-					<a href="https://en.wikipedia.org/wiki/BitTorrent" target="blank" class="addlink"
+					Each device that is running an application has a private source{' '}
+					<a
+						href="https://medium.com/@rayzer42/9039eba653a1"
+						class="addlink"
+						target="blank">chain</a> that holds the app's “DNA” —
+					the code that runs the app and ensures the protocols are being adhered to.
+					Each app stores its data using methods of{' '}
+					<a
+						href="https://en.wikipedia.org/wiki/BitTorrent"
+						target="blank"
+						class="addlink"
 					>distributed storage standards</a> that have been in operation for decades.
 					This creates redundancy and validation of application data across randomized nodes.
 				</p>
@@ -71,7 +77,7 @@ export default function C_specs() {
 					and then provides the base for other kinds of entries that share properties and operational data
 					to be associated with that Collective.
 					<br/><br/>
-					The CoGov Collective Base Entries “hang off” the DNA entry of any holochain using
+					The CoGov Collective Base Entries “hang off” the DNA entry of any holochain using{' '}
 					<a
 						href="https://developer.holochain.org/api/latest/hdk/api/fn.link_entries.html"
 						class="addlink"
@@ -110,7 +116,7 @@ export default function C_specs() {
 					we can actually always break it down into one or more of these fundamental operations:
 					<br/><br/>
 					<strong>
-						Actions:
+						Actions:{' '}
 						<a
 							href="https://docs.google.com/spreadsheets/d/13gwZp_jv9m76Ga3-4j68P-evyVByZjawVAyH3TU4kyw/edit#gid=0"
 							class="addlink" target="blank"
@@ -137,7 +143,7 @@ export default function C_specs() {
 					<br/>SubmitProposalForResolution
 					<br/>TransferCurrency
 					<br/><br/>
-					<br/>A very early 2016 mock-up of what a CoGov Ledger Browser might look like can be found at
+					<br/>A very early 2016 mock-up of what a CoGov Ledger Browser might look like can be found at{' '}
 					<a href="http://demo.cogov.tech/" class="addlink" target="blank">http://demo.cogov.tech/</a>
 					<br/><br/>
 					<img src="/assets/images/cogov__protocol--three.png" alt=""
@@ -161,7 +167,8 @@ const HeaderStyle = Style_(()=>var__css__replace(`
 	.techSpecsHeader {
 		padding: 12%;
 		height: 85vh;
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__protocol.png');
+		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)),
+		url('/assets/images/cogov__protocol.png');
 		background-position: center;
 		background-size: cover;
 	}
