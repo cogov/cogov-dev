@@ -1,0 +1,15 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#333333",
+	"name": "Collaborative Governance Technologies",
+	"short_name": "CoGov",
+	"display": "minimal-ui",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "./assets/images/cogov__logo--blue.png",
+			"sizes": "100x89",
+			"type": "image/png"
+		}
+	]
+}

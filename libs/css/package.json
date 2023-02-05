@@ -1,0 +1,7 @@
+{
+	"name": "@cogov/css",
+	"type": "module",
+	"main": "./src/index.ts",
+	"module": "./src/index.ts",
+	"types": "./src/index.ts"
+}
