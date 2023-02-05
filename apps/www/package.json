@@ -1,49 +1,28 @@
 {
-	"name": "@cogov/www",
-	"description": "cogov.tech site",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "./node_modules/.bin/sapper dev",
-		"build": "./node_modules/.bin/sapper build --legacy",
-		"export": "./node_modules/.bin/sapper export --legacy",
-		"start": "node __sapper__/build",
-		"cy:run": "cypress run",
-		"cy:open": "cypress open",
-		"test": "run-p --race dev cy:run",
-		"publish:hostgator": "NODE_ENV=production npm run export && rm -rf __sapper__/export/assets && npm run put:hostgator",
-		"publishall:hostgator": "NODE_ENV=production npm run export && npm run put:hostgator",
-		"put:hostgator": "sftp -P 2222 cogov@cogov.tech < publish-hostgator-input.txt",
-		"ftp:mkdir": "npm run export && find  __sapper__/export -type d | sed -n '1!p' | sed 's/__sapper__\\/export\\///g' | awk '{print \"mkdir public_html/\"$1}' | sftp -P 2222 cogov@cogov.tech",
-		"ftp": "echo \"cd public_html\" | ftp -P 2222 cogov@cogov.tech"
-	},
-	"dependencies": {
-		"@solidjs/meta": "^0.28.2",
-		"@solidjs/router": "^0.7.0",
-		"solid-js": "1.6.10",
-		"solid-start": "^0.2.19",
-		"undici": "^5.17.1"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.20.12",
-		"@babel/plugin-syntax-dynamic-import": "^7.8.3",
-		"@babel/plugin-transform-runtime": "^7.19.6",
-		"@babel/preset-env": "^7.20.2",
-		"@babel/runtime": "^7.20.13",
-		"@cogov/home-scss": "^0.0.1",
-		"@cogov/home-ui": "^0.0.1",
-		"@ctx-core/array": "^26.8.15",
-		"@ctx-core/object": "^24.1.2",
-		"@ctx-core/sass": "^12.1.94",
-		"@ctx-core/svelte": "^13.4.22",
-		"@rollup/plugin-babel": "^6.0.3",
-		"@rollup/plugin-commonjs": "^24.0.1",
-		"@rollup/plugin-node-resolve": "^15.0.1",
-		"@rollup/plugin-replace": "^5.0.2",
-		"npm-run-all": "^4.1.5",
-		"rollup": "^3.13.0",
-		"rollup-plugin-node-builtins": "^2.1.2",
-		"rollup-plugin-node-globals": "^1.4.0",
-		"rollup-plugin-svelte": "^7.1.0",
-		"rollup-plugin-terser": "^7.0.2"
-	}
+  "name": "@cogov/www",
+  "scripts": {
+    "dev": "solid-start dev -p $PROTOCOLLOVELIFE_MI_PORT --verbose",
+    "start": "solid-start start"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@cogov/css": "workspace:*",
+    "@ctx-core/nanostores": "^2.2.20",
+    "@ctx-core/object": "^24.1.2",
+    "@ctx-core/solid-nanostores": "^1.1.38",
+    "@ctx-core/ui-solid": "^4.1.0",
+    "solid-start-node": "^0.2.19",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.7.0",
+    "solid-js": "^1.6.10",
+    "solid-start": "^0.2.19",
+    "undici": "^5.17.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
 }
