@@ -15,9 +15,9 @@ import {
 	Title,
 	useLocation,
 } from 'solid-start'
+import { isServer } from 'solid-js/web'
 import './root.css'
 import { Nav, url_, url__ } from '~/_ui'
-import { isServer } from 'solid-js/web'
 export default function Root() {
 	const ctx = ctx__Context__use()
 	const location = useLocation()
@@ -28,8 +28,8 @@ export default function Root() {
 		location
 		url__set()
 	})
-	const title = 'CoGov.Tech: Collaborative Governance Technologies'
-	const image = 'https://cogov.tech/assets/images/cogov__logo--blue-large.png'
+	const title = 'CoGov: Collaborative Governance Technologies'
+	const image = `https://${url_(ctx).hostname}/assets/images/cogov__logo--blue-large.png`
 	const site_name = 'Collaborative Governance Technologies'
 	const description = 'CoGov fosters the emergence of coherent collective intelligence by enabling the rapid iteration of governance and social coordination systems that YOU design!'
 	return (

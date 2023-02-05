@@ -1,17 +1,22 @@
 import common_ from '@rollup/plugin-commonjs'
-import esbuild_ from 'rollup-plugin-esbuild'
 import json_ from '@rollup/plugin-json'
 import node_resolve_ from '@rollup/plugin-node-resolve'
 import replace_plugin_ from '@rollup/plugin-replace'
+import esbuild_ from 'rollup-plugin-esbuild'
 import { copyFileSync, renameSync } from 'fs'
 import { join } from 'path'
 import { rollup } from 'rollup'
+import node_ from 'solid-start-node'
 import solid_start_ from 'solid-start/vite'
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
 export default defineConfig({
 	// TODO: remove `as any` when https://github.com/solidjs/solid-start/issues/719 is fixed
-	plugins: [solid_start_({ adapter: aws_() as any, islands: true })],
+	plugins: [
+		solid_start_({
+			adapter: process.env.NODE_ENV === 'production' ? aws_() : node_(),
+			islands: true,
+		})],
 })
 function aws_({ edge }:{ edge?:boolean } = {}) {
 	return {

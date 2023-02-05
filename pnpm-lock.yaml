@@ -4298,7 +4298,7 @@ packages:
       '@solidjs/meta': ^0.28.0
       '@solidjs/router': ^0.7.0
       solid-js: ^1.6.2
-      vite: latest
+      vite: ^3.1.8
     dependencies:
       '@babel/core': 7.20.12
       '@babel/generator': 7.20.14
