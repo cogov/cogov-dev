@@ -1,17 +1,26 @@
 {
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "jsxImportSource": "solid-js",
-    "jsx": "preserve",
-    "strict": true,
-    "types": ["solid-start/env"],
-    "baseUrl": "./",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
-  }
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"jsxImportSource": "solid-js",
+		"jsx": "preserve",
+		"lib": [
+			"dom",
+			"ESNext"
+		],
+		"strict": true,
+		"types": [
+			"node",
+			"solid-start/env"
+		],
+		"baseUrl": "./",
+		"paths": {
+			"~/*": [
+				"./src/*"
+			]
+		}
+	}
 }
