@@ -26,6 +26,7 @@
     "@types/node": "18.11.19",
     "aws-cdk": "2.63.2",
     "import-meta-resolve": "^2.2.1",
+    "ts-node": "^10.9.1",
     "tsx": "^3.12.2",
     "typescript": "4.9.5"
   }

@@ -6,18 +6,18 @@ import replace_plugin_ from '@rollup/plugin-replace'
 import { copyFileSync, renameSync } from 'fs'
 import { join } from 'path'
 import { rollup } from 'rollup'
-import solid from 'solid-start/vite'
+import solid_start_ from 'solid-start/vite'
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
 export default defineConfig({
-	plugins: [aws_(), solid({
-		islands: true,
-	})],
+	// TODO: remove `as any` when https://github.com/solidjs/solid-start/issues/719 is fixed
+	plugins: [solid_start_({ adapter: aws_() as any, islands: true })],
 })
 function aws_({ edge }:{ edge?:boolean } = {}) {
 	return {
 		name: 'aws',
-		start() {},
+		async start() {},
+		dev: process.env.NODE_ENV === 'development',
 		async build(config, builder) {
 			const dirname = fileURLToPath(new URL('.', import.meta.url))
 			// SSR Edge Function
