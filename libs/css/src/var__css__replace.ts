@@ -29,5 +29,5 @@ const var_R:Record<string, string> = {
 	'var(--mobile--nav--height)': mobile__nav__height,
 }
 export function var__css__replace(css:string):string {
-	return css.replaceAll(/var\((.$)\)/, $=>var_R[$])
+	return css.replaceAll(/var\((.$)\)/g, $=>var_R[$])
 }

@@ -1,0 +1,42 @@
+# See: https://blog.cloud66.com/running-rails-development-with-a-fake-domain-and-ssl/
+# mkcert my.protocollove.life
+# /etc/hosts
+# 127.0.0.1 my.protocollove.life
+{
+  auto_https disable_redirects
+}
+my.protocollove.life {
+  tls my.protocollove.life.pem my.protocollove.life-key.pem
+  @not_static {
+    not {
+      file {
+        try_files {path}
+      }
+    }
+  }
+  reverse_proxy @not_static localhost:4020
+#  root * ../apps/web/static
+  file_server
+}
+http://my.protocollove.life {
+  @not_static {
+    not {
+      file {
+        try_files {path}
+      }
+    }
+  }
+  reverse_proxy @not_static localhost:4020
+#  root * ../apps/web/static
+  file_server
+}
+my.protocollove.life.local {
+  @not_static {
+    not {
+      file {
+        try_files {path}
+      }
+    }
+  }
+	reverse_proxy @not_static localhost:14020
+}

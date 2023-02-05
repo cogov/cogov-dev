@@ -1,8 +1,7 @@
 {
   "name": "@cogov/www2",
   "scripts": {
-    "dev": "solid-start dev",
-    "build": "solid-start build",
+    "dev": "solid-start dev -p $PROTOCOLLOVELIFE_MI_PORT --verbose",
     "start": "solid-start start"
   },
   "type": "module",
