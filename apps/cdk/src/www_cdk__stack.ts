@@ -3,7 +3,7 @@ import { be_, type Ctx } from '@ctx-core/object'
 import { CfnOutput, Duration, Stack } from 'aws-cdk-lib'
 import { EndpointType, LambdaIntegration, LambdaRestApi, MethodLoggingLevel } from 'aws-cdk-lib/aws-apigateway'
 import { Certificate, CertificateValidation } from 'aws-cdk-lib/aws-certificatemanager'
-import { Distribution } from 'aws-cdk-lib/aws-cloudfront'
+import { Distribution, ViewerProtocolPolicy } from 'aws-cdk-lib/aws-cloudfront'
 import { RestApiOrigin } from 'aws-cdk-lib/aws-cloudfront-origins'
 import { type ISecurityGroup } from 'aws-cdk-lib/aws-ec2'
 import { Code, Function, Runtime } from 'aws-cdk-lib/aws-lambda'
@@ -123,6 +123,7 @@ export const www_cdk__app__distribution_ = be_<
 	const distribution = new Distribution(www_cdk__construct_(ctx), www_cdk__id_('AppDistribution'), {
 		defaultBehavior: {
 			origin: new RestApiOrigin(www_cdk__apigw_(ctx)),
+			viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
 		},
 		domainNames: [domainName],
 		certificate: www_cdk__certificate_(ctx),
