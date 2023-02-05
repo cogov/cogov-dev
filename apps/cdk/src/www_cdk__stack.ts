@@ -107,18 +107,6 @@ export const www_cdk__apigw_ = be_<
 	})
 	return www_cdk__apigw
 })
-export const www_cdk__certificate_ = be_<
-	Certificate
->('www_cdk__certificate_', ctx=>{
-	const certificate = new Certificate(www_cdk__construct_(ctx), www_cdk__id_('Certificate'), {
-		domainName: protocollovelife__domainName,
-		validation: CertificateValidation.fromDns(),
-	})
-	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('CertificateArn'), {
-		value: certificate.certificateArn
-	})
-	return certificate
-})
 export const www_cdk__cogovme__certificate_ = be_<
 	Certificate
 >('www_cdk__cogovme__certificate_', ctx=>{
