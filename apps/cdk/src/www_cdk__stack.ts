@@ -14,7 +14,9 @@ import { cdk__app_ } from './cdk__app_.js'
 import { cdk__env } from './cdk__env.js'
 import { www_cdk__id_ } from './cdk__id_.js'
 import { NODE_ENV_, type stage_T } from './stage.js'
-const domainName = 'protocollove.life'
+const cogovme__domainName = 'cogov.me'
+const protocolloveme__domainName = 'protocollove.me'
+const protocollovelife__domainName = 'protocollove.life'
 const args = process.argv.slice(2)
 const { stage_a } = param_r_(
 	args,
@@ -24,6 +26,7 @@ const dir = new URL(await resolve('.', import.meta.url)).pathname
 export async function www_cdk__stack__build(ctx:Ctx) {
 	process.chdir(join(dir, '..'))
 	www_cdk__app__distribution_(ctx)
+	www_cdk__www__distribution_(ctx)
 	cdk__app_(ctx).synth()
 }
 export const www_cdk__stack_ = be_<
@@ -109,7 +112,7 @@ export const www_cdk__certificate_ = be_<
 	Certificate
 >('www_cdk__certificate_', ctx=>{
 	const certificate = new Certificate(www_cdk__construct_(ctx), www_cdk__id_('Certificate'), {
-		domainName,
+		domainName: protocollovelife__domainName,
 		validation: CertificateValidation.fromDns(),
 	})
 	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('CertificateArn'), {
@@ -125,13 +128,52 @@ export const www_cdk__app__distribution_ = be_<
 			origin: new RestApiOrigin(www_cdk__apigw_(ctx)),
 			viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
 		},
-		domainNames: [domainName],
+		domainNames: [protocollovelife__domainName],
 		certificate: www_cdk__certificate_(ctx),
 	})
 	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('AppDistributionDomainName'), {
 		value: distribution.distributionDomainName,
 	})
 	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('AppDistributionId'), {
+		value: distribution.distributionId,
+	})
+	return distribution
+})
+export const www_cdk__cogovme__certificate_ = be_<
+	Certificate
+>('www_cdk__cogovme__certificate_', ctx=>{
+	const certificate = new Certificate(www_cdk__construct_(ctx), www_cdk__id_('CogovmeCertificate'), {
+		domainName: cogovme__domainName,
+		subjectAlternativeNames: [
+			protocolloveme__domainName,
+			// protocollovelife__domainName,
+		],
+		validation: CertificateValidation.fromDns()
+	})
+	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('CogovmeCertificateArn'), {
+		value: certificate.certificateArn
+	})
+	return certificate
+})
+export const www_cdk__www__distribution_ = be_<
+	Distribution
+>('www_cdk__www__distribution_', ctx=>{
+	const distribution = new Distribution(www_cdk__construct_(ctx), www_cdk__id_('WwwDistribution'), {
+		defaultBehavior: {
+			origin: new RestApiOrigin(www_cdk__apigw_(ctx)),
+			viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+		},
+		domainNames: [
+			cogovme__domainName,
+			protocolloveme__domainName,
+			// protocollovelife__domainName,
+		],
+		certificate: www_cdk__cogovme__certificate_(ctx),
+	})
+	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('WwwDistributionDomainName'), {
+		value: distribution.distributionDomainName,
+	})
+	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('WwwDistributionId'), {
 		value: distribution.distributionId,
 	})
 	return distribution
