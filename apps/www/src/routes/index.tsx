@@ -49,27 +49,27 @@ export default function C_Home() {
 			<div class="homeAbout__header">
 				<h2 class="homeAbout__title">What is CoGov?</h2>
 				<p class="homeAbout__body">
-					<span class="homeAbout__subtitle">CoGov</span> is a proposal for a
-					<a href="/C_ecosystem">ecosystem of startups</a>, with each startup modeling its operations to be infused with
-					<a
+					<span class="homeAbout__subtitle">CoGov</span> is a proposal for an
+					{' '}<a href="/C_ecosystem">ecosystem of startups</a>, with each startup modeling its operations to be infused with
+					{' '}<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
 					>Loving Kindness</a> and
-					<a
+					{' '}<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
 					>Vulnerable Transparency</a>,
 					which is also omini-win and anti-rivalrous.
 					Keys to accomplishing this goal include the implementation of a common, shared cryptocurrency and
-					<a href="/C_protocol_love">protocol.love</a>.
+					{' '}<a href="/C_protocol_love">protocol.love</a>.
 					<br/>
 					<br/>
 					The success of this endeavor relies on the ability to
 					create similar efficiencies of scale that exist in the current global socioeconomic paradigm (Game A).
 					In order to accomplish this goal at a such a scale, interoperability is critical.
-					<a href="/C_protocol_love">Protocol.love</a> enables this interoperatbility
+					{' '}<a href="/C_protocol_love">Protocol.love</a> enables this interoperatbility
 					for all those who choose a commitment to
-					<a
+					{' '}<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
 					>Vulnerable Transparency</a>.
@@ -94,12 +94,12 @@ export default function C_Home() {
 				<h3 class="homeAbout__subtitle">From Individual Ownership to Collective Stewardship.</h3>
 				<h3 class="homeAbout__body">
 					CoGov is a semi-autonomous socioeconomic ecosystem, powered by
-					<a href="/C_protocol_love">protocol.love</a>,
+					{' '}<a href="/C_protocol_love">protocol.love</a>,
 					that enhances the ability of sovereign
 					individuals to come together to make sense, and make
 					decisions with the greatest holopticism (ability to see the whole).
 					By sharing operations, and curating resources with
-					<a
+					{' '}<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
 					>Vulnerable Transparency</a>,
@@ -109,7 +109,7 @@ export default function C_Home() {
 					that whatever kind of asset governance they invent, creators are recognized,
 					and scalability can be acheived through interoperability with other organizations
 					who are committed to
-					<a
+					{' '}<a
 						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 						target="_blank"
 					>Vulnerable Transparency</a> through <a href="/C_protocol_love">protocol.love</a>.
@@ -130,7 +130,7 @@ export default function C_Home() {
 							humans have the ability to interact directly with each other—to
 							feel and see and know each other and to empathize from our shared
 							experience of humanness—with no intermediaries. <i><u>
-							<a href="/holochain" class="addlink"
+							{' '}<a href="/holochain" class="addlink"
 								 target="blank">Holochain</a> is the world's first and only digital,
 							unenclosable carrier.</u></i>
 						</p>
