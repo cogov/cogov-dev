@@ -11,14 +11,14 @@
   "scripts": {
     "cdk--build": "tsx bin/cdk--build.ts",
     "cdk--deploy": "bin/cdk--deploy.sh",
-    "cogov--invalidate": "tsx bin/cogov--invalidate.ts",
+    "cogov--invalidate": "DOMAIN=cogov.me tsx bin/cogov--invalidate.ts",
     "cdk--synth": "cdk synth",
     "test": "jest",
     "cdk": "cdk"
   },
   "dependencies": {
     "aws-cdk-lib": "2.63.2",
-    "constructs": "^10.1.241",
+    "constructs": "^10.1.242",
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "aws-cdk": "2.63.2",
     "import-meta-resolve": "^2.2.1",
     "ts-node": "^10.9.1",
-    "tsx": "^3.12.2",
+    "tsx": "^3.12.3",
     "typescript": "4.9.5"
   }
 }

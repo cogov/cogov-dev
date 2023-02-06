@@ -1,7 +1,7 @@
 #!/usr/bin/env tsx
 import { CloudFrontClient, CreateInvalidationCommand, ListDistributionsCommand } from '@aws-sdk/client-cloudfront'
 import { DistributionSummary } from '@aws-sdk/client-cloudfront'
-const domain_name = 'cogov.me'
+const DOMAIN = process.env.DOMAIN!
 await main()
 async function main() {
 	const client = new CloudFrontClient({})
@@ -10,10 +10,10 @@ async function main() {
 	const distribution_summary =
 		list_distributions_res.DistributionList?.Items
 		? list_distributions_res.DistributionList.Items.find(($:DistributionSummary)=>
-			$?.Aliases?.Items ? !!~$.Aliases.Items.indexOf(domain_name) : false)
+			$?.Aliases?.Items ? !!~$.Aliases.Items.indexOf(DOMAIN) : false)
 		: null
 	if (!distribution_summary) {
-		console.warn(`No Distribution for ${domain_name}`)
+		console.warn(`No Distribution for ${DOMAIN}`)
 		process.exit(1)
 	}
 	const invalidation_cmd = new CreateInvalidationCommand({
