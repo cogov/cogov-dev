@@ -22,7 +22,7 @@ const NavOpen__item_aa:NavOpen__item_a_T[] = [
 	['/declaration', 'Declaration'],
 	['/connect', 'Connect'],
 ]
-export function Nav($p:{ ctx:Ctx, segment?:string }) {
+export function Nav($p:{ ctx?:Ctx, segment?:string }) {
 	const ctx_ = params__ctx__memo_($p)
 	const segment = $p.segment
 	const [nav__open_, nav__open__set] = createSignal(false)

@@ -1,15 +1,19 @@
 import { var__css__replace } from '@cogov/css'
-import { Style_ } from '@ctx-core/ui-solid'
+import { type Ctx } from '@ctx-core/object'
+import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
-export function Page_services() {
-	return [
-		<Style/>,
-		<main class="services-page page">
-			<Header/>
-			<Content/>
-			<Footer/>
-		</main>
-	]
+export function Page_services($p:{ ctx?:Ctx }) {
+	const ctx_ = params__ctx__memo_($p)
+	return (
+		<ctx__Context.Provider value={ctx_()}>
+			<Style/>
+			<main class="services-page page">
+				<Header/>
+				<Content/>
+				<Footer/>
+			</main>
+		</ctx__Context.Provider>
+	)
 	function Header() {
 		return [
 			<HeaderStyle/>,

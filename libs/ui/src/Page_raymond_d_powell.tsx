@@ -1,15 +1,19 @@
 import { var__css__replace } from '@cogov/css'
-import { Style_ } from '@ctx-core/ui-solid'
+import { type Ctx } from '@ctx-core/object'
+import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
-export function Page_raymond_d_powell() {
-  return [
-		<Style/>,
-		<main class="raymond-d-powell-page page">
-			<Quote/>
-			<About/>
-			<Footer/>
-		</main>
-	]
+export function Page_raymond_d_powell($p:{ ctx?:Ctx }) {
+	const ctx_ = params__ctx__memo_($p)
+  return (
+		<ctx__Context.Provider value={ctx_()}>
+			<Style/>
+			<main class="raymond-d-powell-page page">
+				<Quote/>
+				<About/>
+				<Footer/>
+			</main>
+		</ctx__Context.Provider>
+	)
 	function Quote() {
 	  return [
 			<QuoteStyle/>,

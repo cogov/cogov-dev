@@ -1,15 +1,19 @@
 import { var__css__replace } from '@cogov/css'
-import { Style_ } from '@ctx-core/ui-solid'
+import { type Ctx } from '@ctx-core/object'
+import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
-export function Page_holochain() {
-	return [
-		<Style/>,
-		<main class="holochain-page page">
-			<Header/>
-			<CoGov/>
-			<Footer/>
-		</main>
-	]
+export function Page_holochain($p:{ ctx?:Ctx }) {
+	const ctx_ = params__ctx__memo_($p)
+	return (
+		<ctx__Context.Provider value={ctx_()}>
+			<Style/>
+			<main class="holochain-page page">
+				<Header/>
+				<CoGov/>
+				<Footer/>
+			</main>
+		</ctx__Context.Provider>
+	)
 	function Header() {
 		return [
 			<HeaderStyle/>,

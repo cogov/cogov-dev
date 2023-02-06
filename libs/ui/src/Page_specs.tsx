@@ -1,15 +1,19 @@
 import { var__css__replace } from '@cogov/css'
-import { Style_ } from '@ctx-core/ui-solid'
+import { type Ctx } from '@ctx-core/object'
+import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
-export function Page_specs() {
-	return [
-		<Style/>,
-		<main class="specs-page page">
-			<Header/>
-			<Content/>
-			<Footer/>
-		</main>
-	]
+export function Page_specs($p:{ ctx?:Ctx }) {
+	const ctx_ = params__ctx__memo_($p)
+	return (
+		<ctx__Context.Provider value={ctx_()}>
+			<Style/>
+			<main class="specs-page page">
+				<Header/>
+				<Content/>
+				<Footer/>
+			</main>
+		</ctx__Context.Provider>
+	)
 	function Header() {
 		return [
 			<HeaderStyle/>,
@@ -18,10 +22,10 @@ export function Page_specs() {
 				<p class="techSpecsHeader__subtitle">
 					CoGov is optimized for
 					{' '}<a
-						href="/holochain"
-						class="removelink"
-						style="text-decoration: underline"
-					>Holochain</a>.
+					href="/holochain"
+					class="removelink"
+					style="text-decoration: underline"
+				>Holochain</a>.
 				</p>
 			</div>
 		]
@@ -38,8 +42,8 @@ export function Page_specs() {
 					<br/><br/>
 					A short article:
 					{' '}<a
-						href="https://medium.com/@rayzer42/cogov-defining-what-actually-happens-when-people-do-stuff-together-56a0d07c8a32"
-					>What Actually Happens When People “Do Stuff Together”</a>
+					href="https://medium.com/@rayzer42/cogov-defining-what-actually-happens-when-people-do-stuff-together-56a0d07c8a32"
+				>What Actually Happens When People “Do Stuff Together”</a>
 					<br/><br/>
 					One way to describe
 					{' '}<a href="/holochain" class="addlink" target="blank">Holochain</a> is the “protocol for protocols”.
@@ -53,16 +57,16 @@ export function Page_specs() {
 					Each application runs its own holochain on its own terms.
 					Each device that is running an application has a private source
 					{' '}<a
-						href="https://medium.com/@rayzer42/9039eba653a1"
-						class="addlink"
-						target="blank">chain</a> that holds the app's “DNA” —
+					href="https://medium.com/@rayzer42/9039eba653a1"
+					class="addlink"
+					target="blank">chain</a> that holds the app's “DNA” —
 					the code that runs the app and ensures the protocols are being adhered to.
 					Each app stores its data using methods of
 					{' '}<a
-						href="https://en.wikipedia.org/wiki/BitTorrent"
-						target="blank"
-						class="addlink"
-					>distributed storage standards</a> that have been in operation for decades.
+					href="https://en.wikipedia.org/wiki/BitTorrent"
+					target="blank"
+					class="addlink"
+				>distributed storage standards</a> that have been in operation for decades.
 					This creates redundancy and validation of application data across randomized nodes.
 				</p>
 				<img src="/assets/images/cogov__protocol--one.png" alt=""
@@ -79,9 +83,9 @@ export function Page_specs() {
 					<br/><br/>
 					The CoGov Collective Base Entries “hang off” the DNA entry of any holochain using
 					{' '}<a
-						href="https://developer.holochain.org/api/latest/hdk/api/fn.link_entries.html"
-						class="addlink"
-						target="blank">Holochain links</a>.
+					href="https://developer.holochain.org/api/latest/hdk/api/fn.link_entries.html"
+					class="addlink"
+					target="blank">Holochain links</a>.
 					Other CoGov entries then hang off of that Collective Base Entry, and each other.
 					This visual shows a sample of various types of entries and how they “hang off” each other.
 					It is by no means a complete diagram.
@@ -92,7 +96,7 @@ export function Page_specs() {
 					However, the above is not an illustration of how data is actually stored.
 					For more information on that, see this article:
 					{' '}<a href="https://medium.com/@rayzer42/9039eba653a1" class="addlink" target="blank"
-					> Monotonic Hash Chains? Distributed Ledger Technology? Holochain!</a>
+				> Monotonic Hash Chains? Distributed Ledger Technology? Holochain!</a>
 					<br/><br/>
 					The CoGov Protocol defines several types of entries:
 					<br/><br/>
@@ -118,9 +122,9 @@ export function Page_specs() {
 					<strong>
 						Actions:
 						{' '}<a
-							href="https://docs.google.com/spreadsheets/d/13gwZp_jv9m76Ga3-4j68P-evyVByZjawVAyH3TU4kyw/edit#gid=0"
-							class="addlink" target="blank"
-						>(details)</a>
+						href="https://docs.google.com/spreadsheets/d/13gwZp_jv9m76Ga3-4j68P-evyVByZjawVAyH3TU4kyw/edit#gid=0"
+						class="addlink" target="blank"
+					>(details)</a>
 					</strong>
 					<br/>AddMember
 					<br/>AddUserToPrivilegeGroup
