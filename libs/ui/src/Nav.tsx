@@ -1,6 +1,8 @@
 import { var__css__replace } from '@cogov/css'
-import { Style_ } from '@ctx-core/ui-solid'
-import { createSignal, For, JSX, Show } from 'solid-js'
+import { type Ctx } from '@ctx-core/object'
+import { ctx__Context, Style_ } from '@ctx-core/ui-solid'
+import { createSignal, For, type JSX, Show } from 'solid-js'
+import { params__ctx__memo_ } from './params__ctx__memo_.js'
 const nav__item_aa:nav__item_a_T[] = [
 	['/protocol.love', 'protocol-love', 'Protocol.Love'],
 	['/specs', 'specs', 'Tech Specs'],
@@ -21,66 +23,68 @@ const NavOpen__item_aa:NavOpen__item_a_T[] = [
 	['/declaration', 'Declaration'],
 	['/connect', 'Connect'],
 ]
-export function Nav($p:{ segment?:string }) {
+export function Nav($p:{ ctx:Ctx, segment?:string }) {
+	const ctx_ = params__ctx__memo_($p)
 	const segment = $p.segment
 	const [nav__open_, nav__open__set] = createSignal(false)
-	return [
-		<Style/>,
-		<div class="nav">
-			<a
-				href="/"
-				class="removelink"
-				onclick={$=>{
-					nav__open__set(false)
-				}}
-				aria-current={segment === undefined ? 'page' : undefined}
-			>
-				<div class="nav-logo-container">
-					<img class="nav-logo-image" src="/assets/images/cogov__logo--blue.png" alt=""/>
-					<p class="nav-logo-text">CoGov</p>
-				</div>
-			</a>
-			<div class="nav-items">
-				<For<nav__item_a_T[], JSX.Element> each={nav__item_aa}>{nav__item_a=>
-					<>
-						<div class="spacer"></div>
-						<div class="nav-item">
-							<a
-								href={nav__item_a[0]}
-								class="removelink"
-								onclick={$=>{
-									nav__open__set(false)
-								}}
-								aria-current={segment === nav__item_a[1] ? 'page' : undefined}
-								innerText={nav__item_a[2]}/>
-						</div>
-					</>
-				}</For>
-				<div class="spacer"/>
+	return (
+		<ctx__Context.Provider value={ctx_()}>
+			<Style/>
+			<div class="nav">
 				<a
-					href="https://cogov.typeform.com/to/kMtTYt"
-					target="blank"
-					class="removelink whitepaper"
+					href="/"
+					class="removelink"
+					onclick={$=>{
+						nav__open__set(false)
+					}}
+					aria-current={segment === undefined ? 'page' : undefined}
 				>
-					<div class="nav-button">Whitepaper</div>
+					<div class="nav-logo-container">
+						<img class="nav-logo-image" src="/assets/images/cogov__logo--blue.png" alt=""/>
+						<p class="nav-logo-text">CoGov</p>
+					</div>
 				</a>
-				<div class="nav-icon">
+				<div class="nav-items">
+					<For<nav__item_a_T[], JSX.Element> each={nav__item_aa}>{nav__item_a=>
+						<>
+							<div class="spacer"></div>
+							<div class="nav-item">
+								<a
+									href={nav__item_a[0]}
+									class="removelink"
+									onclick={$=>{
+										nav__open__set(false)
+									}}
+									aria-current={segment === nav__item_a[1] ? 'page' : undefined}
+									innerText={nav__item_a[2]}/>
+							</div>
+						</>
+					}</For>
+					<div class="spacer"/>
 					<a
-						href="."
-						class="removelink"
-						onclick={$=>{
-							nav__open__set(!nav__open_())
-						}}
+						href="https://cogov.typeform.com/to/kMtTYt"
+						target="blank"
+						class="removelink whitepaper"
 					>
-						<MenuHandle/>
+						<div class="nav-button">Whitepaper</div>
 					</a>
+					<div class="nav-icon">
+						<a
+							href="."
+							class="removelink"
+							onclick={$=>{
+								$.preventDefault()
+								nav__open__set(!nav__open_())
+							}}
+						><MenuHandle/></a>
+					</div>
 				</div>
 			</div>
-		</div>,
-		<Show when={nav__open_()}>
-			<NavOpen/>
-		</Show>
-	]
+			<Show when={nav__open_()}>
+				<NavOpen/>
+			</Show>
+		</ctx__Context.Provider>
+	)
 	function MenuHandle() {
 		return [
 			<MenuHandleStyle/>,
@@ -91,7 +95,7 @@ export function Nav($p:{ segment?:string }) {
 	}
 	function NavOpen() {
 		return [
-			<MenuHandleStyle/>,
+			<NavOpenStyle/>,
 			<div class="navOpen">
 				<div class="navOpen-body">
 					<For<NavOpen__item_a_T[], JSX.Element> each={NavOpen__item_aa}>{NavOpen__item_a=>

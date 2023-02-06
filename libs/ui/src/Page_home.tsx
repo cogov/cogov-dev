@@ -1,17 +1,22 @@
 import { var__css__replace } from '@cogov/css'
-import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
+import { type Ctx } from '@ctx-core/object'
+import { ctx__Context, Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
-export function Page_home() {
-	return [
-		<Style/>,
-		<main class="home-page page">
-			<Header/>
-			<About/>
-			<Details/>
-			<Collaborators/>
-			<Footer/>
-		</main>
-	]
+import { params__ctx__memo_ } from './params__ctx__memo_.js'
+export function Page_home($p:{ ctx?:Ctx }) {
+	const ctx_ = params__ctx__memo_($p)
+	return (
+		<ctx__Context.Provider value={ctx_()}>
+			<Style/>
+			<main class="home-page page">
+				<Header/>
+				<About/>
+				<Details/>
+				<Collaborators/>
+				<Footer/>
+			</main>
+		</ctx__Context.Provider>
+	)
 	function Header() {
 		return [
 			<HeaderStyle/>,
@@ -53,13 +58,13 @@ export function Page_home() {
 					<span class="homeAbout__subtitle">CoGov</span> is a proposal for an
 					{' '}<a href="/C_ecosystem">ecosystem of startups</a>, with each startup modeling its operations to be infused with
 					{' '}<a
-						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-						target="_blank"
-					>Loving Kindness</a> and
+					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+					target="_blank"
+				>Loving Kindness</a> and
 					{' '}<a
-						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-						target="_blank"
-					>Vulnerable Transparency</a>,
+					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+					target="_blank"
+				>Vulnerable Transparency</a>,
 					which is also omini-win and anti-rivalrous.
 					Keys to accomplishing this goal include the implementation of a common, shared cryptocurrency and
 					{' '}<a href="/C_protocol_love">protocol.love</a>.
@@ -71,9 +76,9 @@ export function Page_home() {
 					{' '}<a href="/C_protocol_love">Protocol.love</a> enables this interoperatbility
 					for all those who choose a commitment to
 					{' '}<a
-						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-						target="_blank"
-					>Vulnerable Transparency</a>.
+					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+					target="_blank"
+				>Vulnerable Transparency</a>.
 					As each of our partner projects (many of which are also startup ecosystems) reach maturity,
 					we will create a magnetic attraction field that can ultimately lead to the total transformation of the
 					global socioeconomic paradigm.
@@ -101,9 +106,9 @@ export function Page_home() {
 					decisions with the greatest holopticism (ability to see the whole).
 					By sharing operations, and curating resources with
 					{' '}<a
-						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-						target="_blank"
-					>Vulnerable Transparency</a>,
+					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+					target="_blank"
+				>Vulnerable Transparency</a>,
 					communities can work with even amateur developers to create
 					new ways of sharing resources, contracts, data, money and cryptocurrencies,
 					payments and transactions, IP, and other assets— all with complete assurance
@@ -111,9 +116,9 @@ export function Page_home() {
 					and scalability can be acheived through interoperability with other organizations
 					who are committed to
 					{' '}<a
-						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-						target="_blank"
-					>Vulnerable Transparency</a> through <a href="/C_protocol_love">protocol.love</a>.
+					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+					target="_blank"
+				>Vulnerable Transparency</a> through <a href="/C_protocol_love">protocol.love</a>.
 				</h3>
 			</div>
 			<div class="homeAbout__items">
@@ -132,7 +137,7 @@ export function Page_home() {
 							feel and see and know each other and to empathize from our shared
 							experience of humanness—with no intermediaries. <i><u>
 							{' '}<a href="/holochain" class="addlink"
-								 target="blank">Holochain</a> is the world's first and only digital,
+											target="blank">Holochain</a> is the world's first and only digital,
 							unenclosable carrier.</u></i>
 						</p>
 					</div>

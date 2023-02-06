@@ -9,6 +9,7 @@ const title = _title || 'CoGov: Collaborative Governance Technologies'
 const image = 'https://' + url.hostname + '/assets/images/cogov__logo--blue-large.png'
 const site_name = 'Collaborative Governance Technologies'
 const description = 'CoGov fosters the emergence of coherent collective intelligence by enabling the rapid iteration of governance and social coordination systems that YOU design!'
+const { ctx } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ const description = 'CoGov fosters the emergence of coherent collective intellig
 		<title>{title}</title>
 	</head>
 	<body>
-		<Nav/>
+		<Nav ctx={ctx} client:load/>
 		<slot/>
 	</body>
 </html>

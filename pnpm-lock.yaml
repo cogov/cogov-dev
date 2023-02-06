@@ -56,7 +56,7 @@ importers:
       '@ctx-core/object': ^24.1.4
       '@ctx-core/solid-nanostores': ^1.1.40
       '@ctx-core/solid-start': ^1.0.2
-      '@ctx-core/ui-solid': ^5.0.2
+      '@ctx-core/ui-solid': ^5.0.3
       '@rollup/plugin-commonjs': ^24.0.1
       '@rollup/plugin-json': ^6.0.0
       '@rollup/plugin-node-resolve': ^15.0.1
@@ -87,7 +87,7 @@ importers:
       '@ctx-core/object': 24.1.4
       '@ctx-core/solid-nanostores': 1.1.40
       '@ctx-core/solid-start': 1.0.2
-      '@ctx-core/ui-solid': 5.0.2
+      '@ctx-core/ui-solid': 5.0.3
       '@rollup/plugin-commonjs': 24.0.1_rollup@3.14.0
       '@rollup/plugin-json': 6.0.0_rollup@3.14.0
       '@rollup/plugin-node-resolve': 15.0.1_rollup@3.14.0
@@ -106,7 +106,7 @@ importers:
       '@cogov/css': workspace:*
       '@cogov/ui': workspace:^1.0.0
       '@ctx-core/object': ^24.1.4
-      '@ctx-core/ui-solid': ^5.0.2
+      '@ctx-core/ui-solid': ^5.0.3
       astro: ^2.0.6
       solid-js: ^1.6.10
     dependencies:
@@ -116,7 +116,7 @@ importers:
       '@cogov/css': link:../../libs/css
       '@cogov/ui': link:../../libs/ui
       '@ctx-core/object': 24.1.4
-      '@ctx-core/ui-solid': 5.0.2
+      '@ctx-core/ui-solid': 5.0.3
       solid-js: 1.6.10
 
   libs/css:
@@ -126,12 +126,12 @@ importers:
     specifiers:
       '@cogov/css': workspace:*
       '@ctx-core/object': ^24.1.4
-      '@ctx-core/ui-solid': ^5.0.2
+      '@ctx-core/ui-solid': ^5.0.3
       solid-js: ^1.6.10
     devDependencies:
       '@cogov/css': link:../css
       '@ctx-core/object': 24.1.4
-      '@ctx-core/ui-solid': 5.0.2
+      '@ctx-core/ui-solid': 5.0.3
       solid-js: 1.6.10
 
 packages:
@@ -2257,8 +2257,8 @@ packages:
     resolution: {integrity: sha512-qMNdc7p6N0WKNY0Vli6LqV5Gn6mH5atV+uakGfPQEvlZB3li1QJPn9u6EK9Pr1CmnXtsZlBAOperSiCkzCve/A==}
     dev: true
 
-  /@ctx-core/ui-solid/5.0.2:
-    resolution: {integrity: sha512-hZPx8SU97SEhCipTMfuhTIwEM23LTLAUUSIG/Nr0wb/epTjWVcHebYDAXuBMwSXYXyI8EVBe6yaxF5rGs5o6Eg==}
+  /@ctx-core/ui-solid/5.0.3:
+    resolution: {integrity: sha512-0QGBxwYcOFp757MzjVqSFrqYGZaR27b/3Nf8266sFTL8JQUt8BYTx5HD5gfm4iWAqUzFa0SZtonSmg5X3h2sgg==}
     dependencies:
       '@ctx-core/object': 24.1.4
       '@solidjs/meta': 0.28.2_solid-js@1.6.10

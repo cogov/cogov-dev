@@ -1,7 +1,10 @@
 ---
-import { Page_home, WrapCtx } from '@cogov/ui'
+import { Page_home } from '@cogov/ui'
+import { ctx_ } from '@ctx-core/object'
+import Layout from '../layouts/Layout.astro'
+const ctx = ctx_()
 ---
 
-<WrapCtx>
-	<Page_home/>
-</WrapCtx>
+<Layout ctx={ctx}>
+	<Page_home ctx={ctx}/>
+</Layout>
