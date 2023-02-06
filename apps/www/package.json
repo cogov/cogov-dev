@@ -21,7 +21,7 @@
     "@ctx-core/object": "^24.1.4",
     "@ctx-core/solid-nanostores": "^1.1.40",
     "@ctx-core/solid-start": "^1.0.2",
-    "@ctx-core/ui-solid": "^5.0.3",
+    "@ctx-core/ui-solid": "^5.1.0",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",

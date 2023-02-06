@@ -1,8 +1,7 @@
 import { var__css__replace } from '@cogov/css'
 import { type Ctx } from '@ctx-core/object'
-import { ctx__Context, Style_ } from '@ctx-core/ui-solid'
+import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
-import { params__ctx__memo_ } from './params__ctx__memo_.js'
 export function Page_home($p:{ ctx?:Ctx }) {
 	const ctx_ = params__ctx__memo_($p)
 	return (

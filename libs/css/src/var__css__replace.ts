@@ -9,6 +9,7 @@ import {
 	mobile__nav__height,
 	nav__height,
 	pack__max_width,
+	pack__min_width,
 	phone__font_size,
 	phone__max_width,
 	port__tab__max_width
@@ -21,6 +22,7 @@ const var_R:Record<string, string> = {
 	'var(--cogov--grey--color)': cogov__grey__color,
 	'var(--phone--max-width)': phone__max_width,
 	'var(--port--tab--max-width)': port__tab__max_width,
+	'var(--pack--min-width)': pack__min_width,
 	'var(--pack--max-width)': pack__max_width,
 	'var(--land--tab--max-width)': land__tab__max_width,
 	'var(--big--desktop--min-width)': big__desktop__min_width,

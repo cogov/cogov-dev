@@ -1,8 +1,7 @@
 import { var__css__replace } from '@cogov/css'
 import { type Ctx } from '@ctx-core/object'
-import { ctx__Context, Style_ } from '@ctx-core/ui-solid'
+import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
 import { createSignal, For, type JSX, Show } from 'solid-js'
-import { params__ctx__memo_ } from './params__ctx__memo_.js'
 const nav__item_aa:nav__item_a_T[] = [
 	['/protocol.love', 'protocol-love', 'Protocol.Love'],
 	['/specs', 'specs', 'Tech Specs'],
@@ -68,16 +67,16 @@ export function Nav($p:{ ctx:Ctx, segment?:string }) {
 					>
 						<div class="nav-button">Whitepaper</div>
 					</a>
-					<div class="nav-icon">
-						<a
-							href="."
-							class="removelink"
-							onclick={$=>{
-								$.preventDefault()
-								nav__open__set(!nav__open_())
-							}}
-						><MenuHandle/></a>
-					</div>
+				</div>
+				<div class="nav-icon">
+					<a
+						href="."
+						class="removelink"
+						onClick={$=>{
+							$.preventDefault()
+							nav__open__set(!nav__open_())
+						}}
+					><MenuHandle/></a>
 				</div>
 			</div>
 			<Show when={nav__open_()}>
@@ -159,6 +158,7 @@ const Style = Style_(()=>var__css__replace(`
 	}
 	@media (max-width: var(--port--tab--max-width)) {
 		.nav-items {
+			display: none;
 			padding-left: 1rem;
 			justify-content: flex-start;
 		}
@@ -192,6 +192,11 @@ const Style = Style_(()=>var__css__replace(`
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	@media (min-width: var(--pack--min-width)) {
+		.nav-icon {
+			display: none;
+		}
 	}
 	@media (max-width: var(--phone--max-width)) {
 		.nav-icon {
