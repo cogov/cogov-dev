@@ -1,8 +1,9 @@
 import { var__css__replace } from '@cogov/css'
-import { Style_ } from '@ctx-core/ui-solid'
+import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
 export function Page_home() {
-	return (
+	return [
+		<Style/>,
 		<main class="home-page page">
 			<Header/>
 			<About/>
@@ -10,7 +11,7 @@ export function Page_home() {
 			<Collaborators/>
 			<Footer/>
 		</main>
-	)
+	]
 	function Header() {
 		return [
 			<HeaderStyle/>,

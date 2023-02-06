@@ -1,12 +1,12 @@
 # See: https://blog.cloud66.com/running-rails-development-with-a-fake-domain-and-ssl/
-# mkcert my.protocollove.life
+# mkcert my.cogov.me
 # /etc/hosts
-# 127.0.0.1 my.protocollove.life
+# 127.0.0.1 my.cogov.me
 {
   auto_https disable_redirects
 }
-my.protocollove.life {
-  tls my.protocollove.life.pem my.protocollove.life-key.pem
+my.cogov.me {
+  tls my.cogov.me.pem my.cogov.me-key.pem
   @not_static {
     not {
       file {
@@ -18,7 +18,7 @@ my.protocollove.life {
 #  root * ../apps/web/static
   file_server
 }
-http://my.protocollove.life {
+http://my.cogov.me {
   @not_static {
     not {
       file {
@@ -30,7 +30,7 @@ http://my.protocollove.life {
 #  root * ../apps/web/static
   file_server
 }
-my.protocollove.life.local {
+my.cogov.me.local {
   @not_static {
     not {
       file {

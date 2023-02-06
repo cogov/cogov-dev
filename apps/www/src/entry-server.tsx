@@ -1,5 +1,6 @@
 import { assign, ctx_ } from '@ctx-core/object'
-import { ctx__Context, type FetchEvent_w_ctx_T } from '@ctx-core/ui-solid'
+import { type FetchEvent_w_ctx_T } from '@ctx-core/solid-start'
+import { ctx__Context } from '@ctx-core/ui-solid'
 import { type JSX } from 'solid-js'
 import { type FetchEvent, type PageEvent } from 'solid-start'
 import { createHandler, renderAsync, StartServer, } from 'solid-start/entry-server'

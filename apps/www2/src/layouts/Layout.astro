@@ -1,4 +1,5 @@
 ---
+import { Nav } from '@cogov/ui'
 export interface Props {
 	title:string
 }
@@ -28,6 +29,7 @@ const description = 'CoGov fosters the emergence of coherent collective intellig
 		<title>{title}</title>
 	</head>
 	<body>
+		<Nav/>
 		<slot/>
 	</body>
 </html>
