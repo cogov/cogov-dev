@@ -31,7 +31,6 @@ export function Nav($p:{ segment?:string }) {
 				href="/"
 				class="removelink"
 				onclick={$=>{
-					$.preventDefault()
 					nav__open__set(false)
 				}}
 				aria-current={segment === undefined ? 'page' : undefined}
@@ -50,7 +49,6 @@ export function Nav($p:{ segment?:string }) {
 								href={nav__item_a[0]}
 								class="removelink"
 								onclick={$=>{
-									$.preventDefault()
 									nav__open__set(false)
 								}}
 								aria-current={segment === nav__item_a[1] ? 'page' : undefined}
@@ -71,7 +69,6 @@ export function Nav($p:{ segment?:string }) {
 						href="."
 						class="removelink"
 						onclick={$=>{
-							$.preventDefault()
 							nav__open__set(!nav__open_())
 						}}
 					>
