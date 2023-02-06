@@ -28,7 +28,7 @@ export default function C_ecosystem() {
 				{/*<p class="ecosystemContent__title">A Protocol for a New Paradigm in Business and Government</p>*/}
 				<p class="ecosystemContent__body">
 					This is a living Google Doc:
-					<a
+					{' '}<a
 						target="_blank"
 						href="https://docs.google.com/document/d/1i2tbebBkJIqMjEW5hLiGssevBs29JHLj8URQxu6x1hc"
 					>https://docs.google.com/document/d/1i2tbebBkJIqMjEW5hLiGssevBs29JHLj8URQxu6x1hc</a>

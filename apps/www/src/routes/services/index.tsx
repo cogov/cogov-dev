@@ -46,17 +46,16 @@ export default function C_services() {
 					So many others have been in the habit of taking power in subtle ways,
 					then using that power for their own personal gain, often at the expense of others.
 					<br/><br/>
-					The <a href="/vision" target="blank" class="addlink">core principles</a>{' '}
-					that have been identlified in creating the{' '}
-					<a
+					The <a href="/vision" target="blank" class="addlink">core principles</a> that have been identlified in creating the
+					{' '}<a
 						href="/protocol.love"
 						target="blank"
 						class="addlink"
 					>CoGov Protocol</a> create a communications framework that avoid these pitfalls.
 					While digital tools are also in the works, during this critical time,
 					we are very interested in using the operational principles “on paper”, so to speak.
-					The CoGov staff would love nothing more than to work with your organization now to design a{' '}
-					<a
+					The CoGov staff would love nothing more than to work with your organization now to design a
+					{' '}<a
 						href="https://docs.google.com/document/d/1Rh02JzKhQ5sA6V500cQm74kb-jd4VcS8bskDDUsBpQA/edit" target="blank"
 						class="addlink"
 					>Collective Foundational Document</a> that creates fertile ground for your organization to thrive.

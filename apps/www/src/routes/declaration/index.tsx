@@ -22,12 +22,12 @@ export default function C_declaration() {
 				<h3 class="DeclarationHeader__subtitle">
 					Written by <a href="/team/raymond-d-powell" class="removelink underline">Raymond D. Powell</a>
 					- based on
-					<a
+					{' '}<a
 						target="_blank"
 						class="removelink underline"
 						href="https://constitution.org/us_doi.htm"
 					>The Declaration of Independence</a> by 
-					<a
+					{' '}<a
 						target="_blank"
 						class="removelink underline"
 						href="https://en.wikipedia.org/wiki/Thomas_Jefferson"

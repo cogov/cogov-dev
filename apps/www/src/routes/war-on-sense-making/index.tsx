@@ -26,7 +26,7 @@ export default function C_war_on_sense_making() {
 				</p>
 				<p class="warOnSenseMakingContent__body">
 					Originally published on
-					<a
+					{' '}<a
 						target="_blank"
 						href="https://medium.com/rally-point-perspectives/the-war-on-sensemaking-900086bca636"
 					>Medium.com</a>
