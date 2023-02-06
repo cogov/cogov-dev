@@ -1,6 +1,6 @@
 import { var__css__replace } from '@cogov/css'
+import { Footer } from '@cogov/ui'
 import { Style_ } from '@ctx-core/ui-solid'
-import { Footer } from '~/_ui'
 export default function C_vision() {
   return [
 		<Style/>,
@@ -16,7 +16,7 @@ export default function C_vision() {
 			<div class="VisionHeader page-header">
 				<h2 class="VisionHeader__title">Seeking the Highest Consciousness</h2>
 				<h3 class="VisionHeader__subtitle">
-					CoGov enables highly conscious organizational behavior 
+					CoGov enables highly conscious organizational behavior
 					through the rapid iterative experimentation and creation of new forms of social coordination.
 				</h3>
 			</div>
@@ -40,7 +40,7 @@ export default function C_vision() {
 					<p class="visionBody__levels--title">Levels of Consciousness:</p>
 					<img src="/assets/images/cogov__consciousness-levels.png" alt="" class="visionBody__levels--photo"/>
 				</div>
-			
+
 				<div class="visionBody__text">
 					<p class="visionBody__title">Achieving Higher Consciousness Through Technology</p>
 					<p class="visionBody__body">

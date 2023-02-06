@@ -1,0 +1,119 @@
+---
+export interface Props {
+	title:string
+}
+const { url } = Astro
+const { title: _title } = Astro.props
+const title = _title || 'CoGov: Collaborative Governance Technologies'
+const image = 'https://' + url.hostname + '/assets/images/cogov__logo--blue-large.png'
+const site_name = 'Collaborative Governance Technologies'
+const description = 'CoGov fosters the emergence of coherent collective intelligence by enabling the rapid iteration of governance and social coordination systems that YOU design!'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="theme-color" content="#333333"/>
+		<meta property="og:title" content={title}/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content={url.toString()}/>
+		<meta property="og:image" content={image}/>
+		<meta property="og:site_name" content={site_name}/>
+		<meta property="og:description" content={description}/>
+		<link rel="icon" type="image/png" href="/assets/images/cogov__logo--blue.png"/>
+		<link rel="shortcut icon" type="image/png" href="/assets/images/cogov__logo--blue.png"/>
+		<meta name="generator" content={Astro.generator}/>
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot/>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+
+		--cogov--primary--color: #195C89;
+		--cogov--primary-light--color: #195C89;
+		--cogov--primary-dark--color: #683B7A;
+		--cogov--secondary--color: #805691;
+		--cogov--grey--color: #333;
+		--phone--max-width: 600px;
+		--port--tab--max-width: 900px;
+		--pack--max-width: 960px;
+		--land--tab--max-width: 1200px;
+		--big--desktop--min-width: 1800px;
+		--phone--font-size: 2rem;
+		--nav--height: 108px;
+		--mobile--nav--height: 72px;
+	}
+	*, *::before, *::after {
+		margin: 0;
+		padding: 0;
+		box-sizing: inherit;
+	}
+	html {
+		font-size: 62.5%;
+	}
+	@media (min-width: var(--big--desktop--min-width)) {
+		html {
+			font-size: 70%;
+		}
+	}
+	@media (max-width: var(--land--tab--max-width)) {
+		html {
+			font-size: 56.25%;
+		}
+	}
+	body {
+		font-family: 'Raleway', sans-serif;
+		box-sizing: border-box;
+		font-weight: 400;
+		line-height: 1.6;
+		overflow-x: hidden;
+		outline: none;
+		letter-spacing: .5px;
+	}
+	body main {
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	body main.page {
+		margin-top: var(--nav--height);
+	}
+	@media (max-width: var(--phone--max-width)) {
+		body main.page {
+			margin-top: var(--mobile--nav--height);
+		}
+	}
+	body main .page-header {
+		margin-bottom: 6rem;
+	}
+	body main .page-body {
+		padding: 0 17%;
+	}
+	@media (max-width: var(--phone--max-width)) {
+		body main .page-body {
+			padding: 0 4rem;
+		}
+	}
+	.addlink {
+		text-decoration: none;
+		outline: none;
+		border-bottom: 1px solid var(--cogov--primary--color);
+		font-weight: 600;
+		color: var(--cogov--primary--color);
+	}
+	.removelink {
+		text-decoration: none;
+		outline: none;
+		color: inherit;
+	}
+	.underline {
+		border-bottom: 2px solid white;
+	}
+</style>

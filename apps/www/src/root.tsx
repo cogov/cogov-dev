@@ -1,5 +1,6 @@
 // @refresh reload
 import { var__css__replace } from '@cogov/css'
+import { Nav } from '@cogov/ui'
 import { ctx__Context__use, Style_ } from '@ctx-core/ui-solid'
 import {
 	Body,
@@ -17,7 +18,7 @@ import {
 import { createEffect, Suspense } from 'solid-js'
 import { isServer } from 'solid-js/web'
 import './root.css'
-import { Nav, url_, url__ } from '~/_ui'
+import { url_, url__ } from '~/_ui'
 export default function Root() {
 	const ctx = ctx__Context__use()
 	const location = useLocation()

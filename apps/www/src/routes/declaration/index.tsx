@@ -1,7 +1,7 @@
 import { var__css__replace } from '@cogov/css'
+import { Footer } from '@cogov/ui'
 import { Style_ } from '@ctx-core/ui-solid'
 import { Head, Link } from 'solid-start'
-import { Footer } from '~/_ui'
 export default function C_declaration() {
 	return [
 		<Style/>,

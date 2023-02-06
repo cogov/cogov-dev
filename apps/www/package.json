@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@cogov/css": "workspace:*",
+    "@cogov/ui": "workspace:^1.0.0",
     "@ctx-core/http": "^9.1.0",
     "@ctx-core/nanostores": "^2.2.20",
     "@ctx-core/object": "^24.1.2",

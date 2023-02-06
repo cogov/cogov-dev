@@ -1,7 +1,7 @@
 import { var__css__replace } from '@cogov/css'
+import { Footer } from '@cogov/ui'
 import { Style_ } from '@ctx-core/ui-solid'
 import { Head, Title } from 'solid-start'
-import { Footer } from '~/_ui'
 export default function C_protocol_love() {
 	return [
 		<Style/>,

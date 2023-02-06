@@ -15,7 +15,6 @@ export default defineConfig({
 	plugins: [
 		solid_start_({
 			adapter: process.env.NODE_ENV === 'production' ? aws_() : node_(),
-			islands: true,
 		})],
 })
 function aws_({ edge }:{ edge?:boolean } = {}) {

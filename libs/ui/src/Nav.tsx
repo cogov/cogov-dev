@@ -27,8 +27,14 @@ export function Nav($p:{ segment?:string }) {
 	return [
 		<Style/>,
 		<div class="nav">
-			<a href="/" class="removelink" onclick={()=>nav__open__set(false)}
-				 aria-current={segment === undefined ? 'page' : undefined}
+			<a
+				href="/"
+				class="removelink"
+				onclick={$=>{
+					$.preventDefault()
+					nav__open__set(false)
+				}}
+				aria-current={segment === undefined ? 'page' : undefined}
 			>
 				<div class="nav-logo-container">
 					<img class="nav-logo-image" src="/assets/images/cogov__logo--blue.png" alt=""/>
@@ -43,7 +49,10 @@ export function Nav($p:{ segment?:string }) {
 							<a
 								href={nav__item_a[0]}
 								class="removelink"
-								onclick={()=>nav__open__set(false)}
+								onclick={$=>{
+									$.preventDefault()
+									nav__open__set(false)
+								}}
 								aria-current={segment === nav__item_a[1] ? 'page' : undefined}
 								innerText={nav__item_a[2]}/>
 						</div>
@@ -76,15 +85,15 @@ export function Nav($p:{ segment?:string }) {
 		</Show>
 	]
 	function MenuHandle() {
-	  return [
+		return [
 			<MenuHandleStyle/>,
 			<div class="MenuHandle">
-				<img class="nav-mobile" src="assets/images/cogov__menu.png" alt="" />
+				<img class="nav-mobile" src="assets/images/cogov__menu.png" alt=""/>
 			</div>,
 		]
 	}
 	function NavOpen() {
-	  return [
+		return [
 			<MenuHandleStyle/>,
 			<div class="navOpen">
 				<div class="navOpen-body">
@@ -92,7 +101,10 @@ export function Nav($p:{ segment?:string }) {
 						<a
 							href={NavOpen__item_a[0]}
 							class="navOpen-body-item removelink"
-							onclick={()=>nav__open__set(false)}
+							onclick={$=>{
+								$.preventDefault()
+								nav__open__set(false)
+							}}
 							innerText={NavOpen__item_a[1]}
 						/>
 					}</For>
