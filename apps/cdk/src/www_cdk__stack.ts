@@ -3,8 +3,13 @@ import { be_, type Ctx } from '@ctx-core/object'
 import { CfnOutput, Duration, Stack } from 'aws-cdk-lib'
 import { EndpointType, LambdaIntegration, LambdaRestApi, MethodLoggingLevel } from 'aws-cdk-lib/aws-apigateway'
 import { Certificate, CertificateValidation } from 'aws-cdk-lib/aws-certificatemanager'
-import { Distribution, ViewerProtocolPolicy } from 'aws-cdk-lib/aws-cloudfront'
-import { RestApiOrigin } from 'aws-cdk-lib/aws-cloudfront-origins'
+import {
+	CloudFrontWebDistribution,
+	OriginProtocolPolicy,
+	SecurityPolicyProtocol,
+	SSLMethod,
+	ViewerCertificate
+} from 'aws-cdk-lib/aws-cloudfront'
 import { type ISecurityGroup } from 'aws-cdk-lib/aws-ec2'
 import { Code, Function, Runtime } from 'aws-cdk-lib/aws-lambda'
 import { Construct } from 'constructs'
@@ -80,10 +85,15 @@ export const www_cdk__apigw_ = be_<
 			loggingLevel: MethodLoggingLevel.INFO,
 			dataTraceEnabled: true,
 		},
+		// The first value is ignored & the ~1 is an escaped /
 		binaryMediaTypes: [
 			'*/*', '*~1*',
 		],
-		// The first value is ignored & the ~1 is an escaped /
+		domainName: {
+			domainName: cogovme__domainName,
+			certificate: www_cdk__cogovme__certificate_(ctx),
+			endpointType: EndpointType.REGIONAL,
+		},
 		endpointTypes: [EndpointType.REGIONAL],
 		cloudWatchRole: true,
 	})
@@ -124,19 +134,34 @@ export const www_cdk__cogovme__certificate_ = be_<
 	return certificate
 })
 export const www_cdk__www__distribution_ = be_<
-	Distribution
+	CloudFrontWebDistribution
 >('www_cdk__www__distribution_', ctx=>{
-	const distribution = new Distribution(www_cdk__construct_(ctx), www_cdk__id_('WwwDistribution'), {
-		defaultBehavior: {
-			origin: new RestApiOrigin(www_cdk__apigw_(ctx)),
-			viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-		},
-		domainNames: [
-			cogovme__domainName,
-			protocolloveme__domainName,
-			protocollovelife__domainName,
-		],
-		certificate: www_cdk__cogovme__certificate_(ctx),
+	const distribution = new CloudFrontWebDistribution(www_cdk__construct_(ctx), www_cdk__id_('WwwDistribution'), {
+		defaultRootObject: '',
+		originConfigs: [{
+			customOriginSource: {
+				domainName: www_cdk__apigw_(ctx).domainName!.domainNameAliasDomainName,
+				originProtocolPolicy: OriginProtocolPolicy.HTTPS_ONLY,
+			},
+			behaviors: [{
+				isDefaultBehavior: true,
+				defaultTtl: Duration.millis(0),
+				maxTtl: Duration.millis(0),
+				forwardedValues: {
+					queryString: true,
+					headers: ['Host', 'X-Forwarded-Host'],
+				},
+			}],
+		}],
+		viewerCertificate: ViewerCertificate.fromAcmCertificate(www_cdk__cogovme__certificate_(ctx), {
+			aliases: [
+				cogovme__domainName,
+				protocolloveme__domainName,
+				protocollovelife__domainName,
+			],
+			sslMethod: SSLMethod.SNI,
+			securityPolicy: SecurityPolicyProtocol.TLS_V1_2_2021,
+		}),
 	})
 	new CfnOutput(www_cdk__construct_(ctx), www_cdk__id_('WwwDistributionDomainName'), {
 		value: distribution.distributionDomainName,
