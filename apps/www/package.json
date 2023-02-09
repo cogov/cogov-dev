@@ -1,41 +1,30 @@
 {
   "name": "@cogov/www",
-  "scripts": {
-    "build": "./bin/www--build/index.sh",
-    "dev": "solid-start dev -p $PROTOCOLLOVELIFE_MI_PORT --verbose",
-    "start": "solid-start start"
-  },
   "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "./bin/www--build/index.sh",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "dependencies": {
-    "@solidjs/meta": "^0.28.2",
-    "@solidjs/router": "^0.7.0",
-    "solid-js": "^1.6.10",
-    "solid-start": "^0.2.20",
-    "undici": "^5.18.0"
+    "astro": "^2.0.9"
   },
   "devDependencies": {
+    "@astrojs/solid-js": "^2.0.2",
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
     "@ctx-core/child_process": "^7.2.2",
     "@ctx-core/http": "^9.2.1",
-    "@ctx-core/nanostores": "^2.2.22",
     "@ctx-core/object": "^24.1.4",
-    "@ctx-core/solid-nanostores": "^1.1.40",
-    "@ctx-core/solid-start": "^1.0.7",
     "@ctx-core/ui-solid": "^5.1.0",
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-replace": "^5.0.2",
+    "@types/aws-lambda": "^8.10.110",
     "@types/node": "18.13.0",
     "aws-lambda": "^1.0.7",
-    "rollup": "^3.14.0",
-    "rollup-plugin-esbuild": "^5.0.0",
-    "solid-start-node": "^0.2.20",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.1"
-  },
-  "engines": {
-    "node": ">=16"
+    "esbuild": "^0.17.5",
+    "solid-js": "^1.6.10"
   }
 }

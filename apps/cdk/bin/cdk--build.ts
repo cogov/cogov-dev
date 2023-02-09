@@ -7,6 +7,6 @@ main().then(()=>process.exit(0)).catch(()=>process.exit(1))
 export async function main() {
 	await spawn_pipe_process('rm', ['-rf', './dist'])
 	await spawn_pipe_process('mkdir', ['-p', './dist'])
-	await spawn_pipe_process('cp', ['-R', '../www2/dist/*', 'dist'])
+	await spawn_pipe_process('cp', ['-R', '../www/dist/*', 'dist'])
 	await www_cdk__stack__build(ctx)
 }

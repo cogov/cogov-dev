@@ -1,4 +1,5 @@
 {
+  "extends": "astro/tsconfigs/strict",
 	"compilerOptions": {
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
@@ -7,6 +8,7 @@
 		"moduleResolution": "node",
 		"jsxImportSource": "solid-js",
 		"jsx": "preserve",
+		"lib": ["node", "dom"],
 		"types": [
 			"node",
 			"vite/client"
