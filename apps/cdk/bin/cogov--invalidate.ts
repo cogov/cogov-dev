@@ -2,7 +2,7 @@
 import { CloudFrontClient, CreateInvalidationCommand, ListDistributionsCommand } from '@aws-sdk/client-cloudfront'
 import { DistributionSummary } from '@aws-sdk/client-cloudfront'
 const DOMAIN = process.env.DOMAIN!
-await main()
+main().then(()=>process.exit(0)).catch(()=>process.exit(1))
 async function main() {
 	const client = new CloudFrontClient({})
 	const list_distributions_cmd = new ListDistributionsCommand({})

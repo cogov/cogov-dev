@@ -3,11 +3,6 @@ import type { APIGatewayProxyEvent, APIGatewayProxyEventV2, APIGatewayProxyResul
 import type { Stats } from 'fs'
 import { readFile, stat } from 'fs/promises'
 import { dirname, extname, join, resolve } from 'path'
-import 'solid-start/node/globals.js'
-// @ts-ignore
-import { default as manifest } from '../../dist/client/route-manifest.json'
-// @ts-ignore
-import { default as _server } from './entry-server.js'
 const isBase64Encoded__regex =
 	/^(image\/[^(svg)]|audio\/|video\/|application\/(pdf|zip|vnd.|msword|x-shockwave-flash|java-archive))/
 export async function handler(
@@ -17,20 +12,12 @@ export async function handler(
 		(event as APIGatewayProxyEvent).path
 		|| (event as APIGatewayProxyEventV2).rawPath,
 		`https://${event.requestContext.domainName}`)
-	const client_path = resolve(join(dirname(new URL(import.meta.url).pathname), '..', 'client'))
+	const handler__path = dirname(new URL(import.meta.url).pathname)
+	const public__path = resolve(join(handler__path, 'public'))
 	const pathname = url.pathname
-	const fs_path = join(client_path, extname(pathname) ? pathname : `${pathname}.html`)
-	let stats:Stats|undefined = undefined
-	try {
-		stats = await stat(fs_path)
-	} catch (err:any) {
-		if (err.code !== 'ENOENT') {
-			console.trace(err)
-			throw err
-		}
-	}
-	if (stats && stats.isFile()) {
-		const ContentType = ext_r_mime[extname(pathname)]
+	const fs_path = await fs_path_(pathname)
+	if (fs_path) {
+		const ContentType = ext_r_mime[extname(fs_path)]
 		const isBase64Encoded = isBase64Encoded_(event, ContentType)
 		const body = await readFile(fs_path)
 			.then($=>$.toString(isBase64Encoded ? 'base64' : undefined))
@@ -48,7 +35,23 @@ export async function handler(
 	return {
 		statusCode: 404,
 		headers: { 'content-type': 'text/html' },
-		body: ''
+		body: await readFile(join(public__path, '404.html')).then($=>$.toString())
+	}
+	async function fs_path_(pathname:string):Promise<string|null> {
+		let fs_path = join(
+			public__path,
+			extname(pathname) ? pathname : join(pathname, 'index.html'))
+		let stats:Stats|undefined = undefined
+		try {
+			stats = await stat(fs_path)
+		} catch (err:any) {
+			if (err.code !== 'ENOENT') {
+				console.trace(err)
+				throw err
+			}
+			return null
+		}
+		return stats.isDirectory() ? fs_path_(join(pathname, 'index.html')) : fs_path
 	}
 }
 function isBase64Encoded_(event:APIGatewayProxyEvent|APIGatewayProxyEventV2, ContentType:string) {

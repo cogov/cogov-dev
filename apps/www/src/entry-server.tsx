@@ -8,7 +8,6 @@ import { url__ } from '~/_ui'
 export default createHandler(()=>handleRequest)
 async function handleRequest(_event:FetchEvent) {
 	const event = _event as FetchEvent_w_ctx_T
-	console.debug('handleRequest|debug|1', { headers: Object.fromEntries(event.request.headers.entries()) })
 	const url = event.request.url
 	console.info(url)
 	const ctx = ctx_()

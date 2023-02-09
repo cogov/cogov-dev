@@ -7,5 +7,14 @@ export async function main() {
 	await spawn_pipe_process('astro', ['build'], {
 		env: clone(process.env, { NODE_ENV: 'production' }),
 	})
+	await spawn_pipe_process('mkdir', ['./dist/public'])
+	await spawn_pipe_process('sh', [
+		'-c',
+		`'ls | grep -v public | xargs mv -t public'`
+	], {
+		cwd: './dist'
+	})
+	await spawn_pipe_process('esbuild',
+		['./src/entry.ts', '--bundle', '--format=esm', '--platform=node', '--outfile=./dist/index.mjs'])
 	process.exit(0)
 }

@@ -4,15 +4,15 @@
   "type": "module",
   "bin": {
     "cdk--build": "tsx bin/cdk--build.ts",
-    "cdk--deploy": "bin/cdk--deploy.sh",
+    "cdk--deploy": "tsx bin/cdk--deploy.ts",
     "cogov--invalidate": "tsx bin/cogov--invalidate.ts",
     "cdk--synth": "cdk synth"
   },
   "scripts": {
-    "cdk--build": "tsx bin/cdk--build.ts",
-    "cdk--deploy": "bin/cdk--deploy.sh",
+    "build": "tsx bin/cdk--build.ts",
+    "deploy": "tsx bin/cdk--deploy.ts",
     "cogov--invalidate": "DOMAIN=cogov.me tsx bin/cogov--invalidate.ts",
-    "cdk--synth": "cdk synth",
+    "synth": "cdk synth",
     "test": "jest",
     "cdk": "cdk"
   },
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@aws-sdk/client-cloudfront": "^3.267.0",
+    "@ctx-core/child_process": "^7.2.2",
     "@ctx-core/cli-args": "^11.0.66",
     "@ctx-core/object": "^24.1.4",
     "@types/jest": "^29.4.0",

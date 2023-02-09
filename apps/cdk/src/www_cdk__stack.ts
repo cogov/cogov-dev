@@ -62,8 +62,8 @@ export const www_cdk__lambda_function_ = be_<
 	const lambda_function =
 		new Function(www_cdk__construct_(ctx), www_cdk__id_('LambdaFunction'), {
 			runtime: Runtime.NODEJS_18_X,
-			code: Code.fromAsset(join(dir, '../../www/dist')),
-			handler: 'server/index.handler',
+			code: Code.fromAsset(join(dir, '../dist')),
+			handler: 'index.handler',
 			timeout: Duration.seconds(90),
 			memorySize: 256,
 			securityGroups,
