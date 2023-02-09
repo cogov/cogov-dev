@@ -55,7 +55,7 @@ export function Page_home($p:{ ctx?:Ctx }) {
 				<h2 class="homeAbout__title">What is CoGov?</h2>
 				<p class="homeAbout__body">
 					<span class="homeAbout__subtitle">CoGov</span> is a proposal for an
-					{' '}<a href="/C_ecosystem">ecosystem of startups</a>, with each startup modeling its operations to be infused with
+					{' '}<a href="/ecosystem">ecosystem of startups</a>, with each startup modeling its operations to be infused with
 					{' '}<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
@@ -66,13 +66,13 @@ export function Page_home($p:{ ctx?:Ctx }) {
 				>Vulnerable Transparency</a>,
 					which is also omini-win and anti-rivalrous.
 					Keys to accomplishing this goal include the implementation of a common, shared cryptocurrency and
-					{' '}<a href="/C_protocol_love">protocol.love</a>.
+					{' '}<a href="/protocol.love">protocol.love</a>.
 					<br/>
 					<br/>
 					The success of this endeavor relies on the ability to
 					create similar efficiencies of scale that exist in the current global socioeconomic paradigm (Game A).
 					In order to accomplish this goal at a such a scale, interoperability is critical.
-					{' '}<a href="/C_protocol_love">Protocol.love</a> enables this interoperatbility
+					{' '}<a href="/protocol.love">Protocol.love</a> enables this interoperatbility
 					for all those who choose a commitment to
 					{' '}<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
@@ -99,7 +99,7 @@ export function Page_home($p:{ ctx?:Ctx }) {
 				<h3 class="homeAbout__subtitle">From Individual Ownership to Collective Stewardship.</h3>
 				<h3 class="homeAbout__body">
 					CoGov is a semi-autonomous socioeconomic ecosystem, powered by
-					{' '}<a href="/C_protocol_love">protocol.love</a>,
+					{' '}<a href="/protocol.love">protocol.love</a>,
 					that enhances the ability of sovereign
 					individuals to come together to make sense, and make
 					decisions with the greatest holopticism (ability to see the whole).
@@ -117,7 +117,7 @@ export function Page_home($p:{ ctx?:Ctx }) {
 					{' '}<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
-				>Vulnerable Transparency</a> through <a href="/C_protocol_love">protocol.love</a>.
+				>Vulnerable Transparency</a> through <a href="/protocol.love">protocol.love</a>.
 				</h3>
 			</div>
 			<div class="homeAbout__items">
@@ -245,19 +245,19 @@ export function Page_home($p:{ ctx?:Ctx }) {
 				<div class="homeDetails__type">
 					<div class="homeDetails__header homeDetails__header--developer">
 						<p class="homeDetails__header--title">DEVELOPER</p>
-						<a href="/C_connect" class="removelink"><button class="homeDetails__cta">Get Trained</button></a>
+						<a href="/connect" class="removelink"><button class="homeDetails__cta">Get Trained</button></a>
 					</div>
 				</div>
 				<div class="homeDetails__type">
 					<div class="homeDetails__header homeDetails__header--philosopher">
 						<p class="homeDetails__header--title">PHILOSOPHER</p>
-						<a href="/C_connect" class="removelink"><button class="homeDetails__cta">Collaborate</button></a>
+						<a href="/connect" class="removelink"><button class="homeDetails__cta">Collaborate</button></a>
 					</div>
 				</div>
 				<div class="homeDetails__type">
 					<div class="homeDetails__header homeDetails__header--creator">
 						<p class="homeDetails__header--title">CREATOR</p>
-						<a href="/C_connect" class="removelink"><button class="homeDetails__cta">Hire Us</button></a>
+						<a href="/connect" class="removelink"><button class="homeDetails__cta">Hire Us</button></a>
 					</div>
 				</div>
 			</div>
