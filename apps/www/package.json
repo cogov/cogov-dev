@@ -16,6 +16,7 @@
   "devDependencies": {
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
+    "@ctx-core/child_process": "^7.2.2",
     "@ctx-core/http": "^9.2.1",
     "@ctx-core/nanostores": "^2.2.22",
     "@ctx-core/object": "^24.1.4",

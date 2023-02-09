@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "./bin/www--build/index.sh",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -17,6 +17,7 @@
     "@astrojs/solid-js": "^2.0.2",
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
+    "@ctx-core/child_process": "^7.2.2",
     "@ctx-core/http": "^9.2.1",
     "@ctx-core/object": "^24.1.4",
     "@ctx-core/ui-solid": "^5.1.0",

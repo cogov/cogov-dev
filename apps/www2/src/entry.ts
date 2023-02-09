@@ -19,7 +19,7 @@ export async function handler(
 		`https://${event.requestContext.domainName}`)
 	const client_path = resolve(join(dirname(new URL(import.meta.url).pathname), '..', 'client'))
 	const pathname = url.pathname
-	const fs_path = join(client_path, pathname)
+	const fs_path = join(client_path, extname(pathname) ? pathname : `${pathname}.html`)
 	let stats:Stats|undefined = undefined
 	try {
 		stats = await stat(fs_path)

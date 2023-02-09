@@ -7,13 +7,13 @@ importers:
       '@cogov/dev': ^1.0.0
       '@ctx-core/jetbrains': ^7.1.69
       '@ctx-core/lerna': ^5.1.34
-      '@ctx-core/monorepo': ^18.4.53
+      '@ctx-core/monorepo': ^19.0.3
       tsx: ^3.12.3
     devDependencies:
       '@cogov/dev': 'link:'
       '@ctx-core/jetbrains': 7.1.69
       '@ctx-core/lerna': 5.1.34
-      '@ctx-core/monorepo': 18.4.53
+      '@ctx-core/monorepo': 19.0.3
       tsx: 3.12.3
 
   apps/cdk:
@@ -51,6 +51,7 @@ importers:
     specifiers:
       '@cogov/css': workspace:*
       '@cogov/ui': workspace:^1.0.0
+      '@ctx-core/child_process': ^7.2.2
       '@ctx-core/http': ^9.2.1
       '@ctx-core/nanostores': ^2.2.22
       '@ctx-core/object': ^24.1.4
@@ -82,6 +83,7 @@ importers:
     devDependencies:
       '@cogov/css': link:../../libs/css
       '@cogov/ui': link:../../libs/ui
+      '@ctx-core/child_process': 7.2.2
       '@ctx-core/http': 9.2.1
       '@ctx-core/nanostores': 2.2.22
       '@ctx-core/object': 24.1.4
@@ -105,6 +107,7 @@ importers:
       '@astrojs/solid-js': ^2.0.2
       '@cogov/css': workspace:*
       '@cogov/ui': workspace:^1.0.0
+      '@ctx-core/child_process': ^7.2.2
       '@ctx-core/http': ^9.2.1
       '@ctx-core/object': ^24.1.4
       '@ctx-core/ui-solid': ^5.1.0
@@ -119,6 +122,7 @@ importers:
       '@astrojs/solid-js': 2.0.2_djtxfjplgbmk3ulcsober43dru
       '@cogov/css': link:../../libs/css
       '@cogov/ui': link:../../libs/ui
+      '@ctx-core/child_process': 7.2.2
       '@ctx-core/http': 9.2.1
       '@ctx-core/object': 24.1.4
       '@ctx-core/ui-solid': 5.1.0
@@ -2118,6 +2122,18 @@ packages:
       '@ctx-core/set': 12.1.9
     dev: true
 
+  /@ctx-core/child_process/7.2.1:
+    resolution: {integrity: sha512-t/U3iF1LosplTPUOjdYDBdHGoIoBwVMwS6StON9hGyAuW7KF/Rf7iCYJ/mURE66xn7RS7A584SFXcLIyDorcyA==}
+    dependencies:
+      memory-streams: 0.1.3
+    dev: true
+
+  /@ctx-core/child_process/7.2.2:
+    resolution: {integrity: sha512-Em/rVlxgjThVyx23Q0iC2x1rUiaECgCf2SMN3oJFtQwpldHDOuRi6/hIgcP02ceVUw991lAGppV+4PkZmPTltw==}
+    dependencies:
+      memory-streams: 0.1.3
+    dev: true
+
   /@ctx-core/cli-args/11.0.66:
     resolution: {integrity: sha512-w8JMHgBv07qNUXi+SajaQPCchyJUNN1KpDgHUYHzFUUH+Z2pFoWrFha89usGbPZZHXSlqUB83mA1lTrlOiQuRA==}
     dependencies:
@@ -2177,11 +2193,12 @@ packages:
       '@lerna/collect-uncommitted': 4.0.0
     dev: true
 
-  /@ctx-core/monorepo/18.4.53:
-    resolution: {integrity: sha512-yr8QPMsyf+oaC7/Yys0+9WyyRaotnfd2AqlVCXm2Z8c7XUE9SWzxt8SIqOqGPpX5bFsd+HgI/WTLJk+DK33gTw==}
+  /@ctx-core/monorepo/19.0.3:
+    resolution: {integrity: sha512-w+ZS1TbhQcAWWSPEMv55TjvADrQBbV+Oc7QUZasDIzOmjcSkeOxcE/8HcHsyrcOGM2D14q8ASf46v9FgHETdxA==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.8.17
+      '@ctx-core/child_process': 7.2.1
       '@ctx-core/cli-args': 11.0.66
       '@ctx-core/ctx-core-package-tools': 8.0.138
       '@ctx-core/function': 21.6.1
@@ -4960,6 +4977,10 @@ packages:
     dependencies:
       is-docker: 2.2.1
 
+  /isarray/0.0.1:
+    resolution: {integrity: sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ==}
+    dev: true
+
   /isarray/1.0.0:
     resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
     dev: true
@@ -5301,6 +5322,12 @@ packages:
     dependencies:
       '@types/mdast': 3.0.10
     dev: false
+
+  /memory-streams/0.1.3:
+    resolution: {integrity: sha512-qVQ/CjkMyMInPaaRMrwWNDvf6boRZXaT/DbQeMYcCWuXPEBf1v8qChOc9OlEVQp2uOvRXa1Qu30fLmKhY6NipA==}
+    dependencies:
+      readable-stream: 1.0.34
+    dev: true
 
   /merge-anything/5.1.4:
     resolution: {integrity: sha512-7PWKwGOs5WWcpw+/OvbiFiAvEP6bv/QHiicigpqMGKIqPPAtGhBLR8LFJW+Zu6m9TXiR/a8+AiPlGG0ko1ruoQ==}
@@ -5930,6 +5957,15 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
+  /readable-stream/1.0.34:
+    resolution: {integrity: sha512-ok1qVCJuRkNmvebYikljxJA/UEsKwLl2nI1OmaqAu4/UE+h0wKCHok4XkL/gvi39OacXvw59RJUOFUkDib2rHg==}
+    dependencies:
+      core-util-is: 1.0.3
+      inherits: 2.0.4
+      isarray: 0.0.1
+      string_decoder: 0.10.31
+    dev: true
+
   /readable-stream/2.3.7:
     resolution: {integrity: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==}
     dependencies:
@@ -6464,6 +6500,10 @@ packages:
       emoji-regex: 9.2.2
       strip-ansi: 7.0.1
     dev: false
+
+  /string_decoder/0.10.31:
+    resolution: {integrity: sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==}
+    dev: true
 
   /string_decoder/1.1.1:
     resolution: {integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==}
