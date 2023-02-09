@@ -7,13 +7,13 @@ importers:
       '@cogov/dev': ^1.0.0
       '@ctx-core/jetbrains': ^7.1.69
       '@ctx-core/lerna': ^5.1.34
-      '@ctx-core/monorepo': ^19.0.4
+      '@ctx-core/monorepo': ^19.0.5
       tsx: ^3.12.3
     devDependencies:
       '@cogov/dev': 'link:'
       '@ctx-core/jetbrains': 7.1.69
       '@ctx-core/lerna': 5.1.34
-      '@ctx-core/monorepo': 19.0.4
+      '@ctx-core/monorepo': 19.0.5
       tsx: 3.12.3
 
   apps/cdk:
@@ -1242,8 +1242,8 @@ packages:
       '@lerna/collect-uncommitted': 4.0.0
     dev: true
 
-  /@ctx-core/monorepo/19.0.4:
-    resolution: {integrity: sha512-3hqfkkFXkse/oxqqZfUarEBzSuF+ATBrzysaBXbsWWITMlVTPFk5OISvR7InnPnPgYM3Wp6PmwhhWMtnGZv0DQ==}
+  /@ctx-core/monorepo/19.0.5:
+    resolution: {integrity: sha512-F95WgSoh0Maw36l0aQ2iVrxMBWr7/47bWbT39jkFwQXQmiy3BiTdK4/08tyJpWVv6GIAYSqROz4B4rqT/DBPNQ==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.8.17
