@@ -101,10 +101,6 @@ export function Nav($p:{ ctx?:Ctx, segment?:string }) {
 						<a
 							href={NavOpen__item_a[0]}
 							class="navOpen-body-item removelink"
-							onclick={$=>{
-								$.preventDefault()
-								nav__open__set(false)
-							}}
 							innerText={NavOpen__item_a[1]}
 						/>
 					}</For>

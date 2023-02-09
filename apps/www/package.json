@@ -16,11 +16,11 @@
   "devDependencies": {
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
-    "@ctx-core/http": "^9.1.2",
+    "@ctx-core/http": "^9.2.1",
     "@ctx-core/nanostores": "^2.2.22",
     "@ctx-core/object": "^24.1.4",
     "@ctx-core/solid-nanostores": "^1.1.40",
-    "@ctx-core/solid-start": "^1.0.5",
+    "@ctx-core/solid-start": "^1.0.7",
     "@ctx-core/ui-solid": "^5.1.0",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-json": "^6.0.0",

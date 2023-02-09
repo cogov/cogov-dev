@@ -17,8 +17,12 @@
     "@astrojs/solid-js": "^2.0.2",
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
+    "@ctx-core/http": "^9.2.1",
     "@ctx-core/object": "^24.1.4",
     "@ctx-core/ui-solid": "^5.1.0",
+    "@types/aws-lambda": "^8.10.110",
+    "@types/node": "18.13.0",
+    "aws-lambda": "^1.0.7",
     "solid-js": "^1.6.10"
   }
 }
