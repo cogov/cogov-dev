@@ -57,7 +57,7 @@ importers:
       '@ctx-core/child_process': ^7.2.2
       '@ctx-core/http': ^9.2.1
       '@ctx-core/object': ^24.1.4
-      '@ctx-core/ui-solid': ^6.0.1
+      '@ctx-core/ui-solid': ^6.0.2
       '@types/aws-lambda': ^8.10.110
       '@types/node': 18.13.0
       astro: ^2.0.10
@@ -73,7 +73,7 @@ importers:
       '@ctx-core/child_process': 7.2.2
       '@ctx-core/http': 9.2.1
       '@ctx-core/object': 24.1.4
-      '@ctx-core/ui-solid': 6.0.1
+      '@ctx-core/ui-solid': 6.0.2
       '@types/aws-lambda': 8.10.110
       '@types/node': 18.13.0
       aws-lambda: 1.0.7
@@ -87,12 +87,12 @@ importers:
     specifiers:
       '@cogov/css': workspace:*
       '@ctx-core/object': ^24.1.4
-      '@ctx-core/ui-solid': ^6.0.1
+      '@ctx-core/ui-solid': ^6.0.2
       solid-js: ^1.6.10
     devDependencies:
       '@cogov/css': link:../css
       '@ctx-core/object': 24.1.4
-      '@ctx-core/ui-solid': 6.0.1
+      '@ctx-core/ui-solid': 6.0.2
       solid-js: 1.6.10
 
 packages:
@@ -1320,8 +1320,8 @@ packages:
     resolution: {integrity: sha512-qMNdc7p6N0WKNY0Vli6LqV5Gn6mH5atV+uakGfPQEvlZB3li1QJPn9u6EK9Pr1CmnXtsZlBAOperSiCkzCve/A==}
     dev: true
 
-  /@ctx-core/ui-solid/6.0.1:
-    resolution: {integrity: sha512-kbE0YEXMa/kti87kKHQDrD5s4fIhUDVjjdZHCI4Cj2idFmUV7DmgKFzGvqHhdLHjOkR5MsHTbyeLtR55SJxcew==}
+  /@ctx-core/ui-solid/6.0.2:
+    resolution: {integrity: sha512-Lo2kJdN72EBRa6HzVL1O15XIxfUwGpqxqFqNZGqmBypPw2+MYWckRoIAnCAPX1XUG4mMCaMeG8v6yeyso5HYUw==}
     dependencies:
       '@ctx-core/object': 24.1.4
       '@ctx-core/solid-js': 1.2.2
