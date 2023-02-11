@@ -1,6 +1,10 @@
 #!/usr/bin/env tsx
-import { CloudFrontClient, CreateInvalidationCommand, ListDistributionsCommand } from '@aws-sdk/client-cloudfront'
-import { DistributionSummary } from '@aws-sdk/client-cloudfront'
+import {
+	CloudFrontClient,
+	CreateInvalidationCommand,
+	DistributionSummary,
+	ListDistributionsCommand
+} from '@aws-sdk/client-cloudfront'
 const DOMAIN = process.env.DOMAIN!
 main().then(()=>process.exit(0)).catch(()=>process.exit(1))
 async function main() {
