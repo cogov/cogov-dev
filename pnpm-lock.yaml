@@ -55,7 +55,7 @@ importers:
       '@cogov/css': workspace:*
       '@cogov/ui': workspace:^1.0.0
       '@ctx-core/child_process': ^7.2.2
-      '@ctx-core/http': ^9.3.0
+      '@ctx-core/http': ^9.3.1
       '@ctx-core/object': ^24.1.4
       '@ctx-core/ui-solid': ^6.0.4
       '@types/aws-lambda': ^8.10.110
@@ -71,7 +71,7 @@ importers:
       '@cogov/css': link:../../libs/css
       '@cogov/ui': link:../../libs/ui
       '@ctx-core/child_process': 7.2.2
-      '@ctx-core/http': 9.3.0
+      '@ctx-core/http': 9.3.1
       '@ctx-core/object': 24.1.4
       '@ctx-core/ui-solid': 6.0.4
       '@types/aws-lambda': 8.10.110
@@ -1216,8 +1216,8 @@ packages:
     resolution: {integrity: sha512-gJaDcHUi83pb4pvmg7f3x/7CdlvS7VmWuU1qkm/sPJH7qgBMjz+gmCo/WbqVWp9pwj5yYDGIe7FyY7/Rkrm7OQ==}
     dev: true
 
-  /@ctx-core/http/9.3.0:
-    resolution: {integrity: sha512-yWowAPjIokVCtqeB6CHBqMmDF4ttcg9qEbb0qjc0eaYyFH3J+lZB3ZYWaOERxPlAl65hUlu9LkPtkPQEIIarOA==}
+  /@ctx-core/http/9.3.1:
+    resolution: {integrity: sha512-CZ9xTK2pKZ/9buUuSPprrcH6i0HbvMadBmDTOSGh2u4ElG2MJqacOw9IBgO4UPYj0UvUSP2qL6OwAs4auMeDoA==}
     dependencies:
       '@ctx-core/object': 24.1.4
     dev: true
