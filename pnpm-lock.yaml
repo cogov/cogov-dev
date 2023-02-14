@@ -20,7 +20,7 @@ importers:
     specifiers:
       '@aws-sdk/client-cloudfront': ^3.267.0
       '@ctx-core/child_process': ^7.2.3
-      '@ctx-core/cli-args': ^11.0.69
+      '@ctx-core/cli-args': ^11.1.0
       '@ctx-core/object': ^24.1.4
       '@types/jest': ^29.4.0
       '@types/node': 18.13.0
@@ -39,7 +39,7 @@ importers:
     devDependencies:
       '@aws-sdk/client-cloudfront': 3.267.0
       '@ctx-core/child_process': 7.2.3
-      '@ctx-core/cli-args': 11.0.69
+      '@ctx-core/cli-args': 11.1.0
       '@ctx-core/object': 24.1.4
       '@types/jest': 29.4.0
       '@types/node': 18.13.0
@@ -1186,6 +1186,14 @@ packages:
 
   /@ctx-core/cli-args/11.0.69:
     resolution: {integrity: sha512-h8onSdzwVeXWtcmUpZuMHUBM62Cr+MvZMCliXxwtIfk4QTpAY3kEIR9OjuD+TnGzMOHTqokiRVKcr4H62rRgEQ==}
+    dependencies:
+      '@ctx-core/array': 26.10.1
+      '@ctx-core/function': 21.6.1
+      '@ctx-core/object': 24.1.4
+    dev: true
+
+  /@ctx-core/cli-args/11.1.0:
+    resolution: {integrity: sha512-iqO3PMcWNs8SVsNRHzlVul4aQGzNssqzhnQoj1zstd88nvAge0beedmP/HvOs3doMyCf1pB956CBXst81/mq1Q==}
     dependencies:
       '@ctx-core/array': 26.10.1
       '@ctx-core/function': 21.6.1
