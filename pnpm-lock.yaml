@@ -7,13 +7,13 @@ importers:
       '@cogov/dev': ^1.0.0
       '@ctx-core/jetbrains': ^7.2.0
       '@ctx-core/lerna': ^5.1.34
-      '@ctx-core/monorepo': ^19.0.13
+      '@ctx-core/monorepo': ^19.0.14
       tsx: ^3.12.3
     devDependencies:
       '@cogov/dev': 'link:'
       '@ctx-core/jetbrains': 7.2.0
       '@ctx-core/lerna': 5.1.34
-      '@ctx-core/monorepo': 19.0.13
+      '@ctx-core/monorepo': 19.0.14
       tsx: 3.12.3
 
   apps/cdk:
@@ -26,15 +26,15 @@ importers:
       '@types/node': 18.13.0
       aws-cdk: 2.65.0
       aws-cdk-lib: 2.65.0
-      constructs: ^10.1.252
+      constructs: ^10.1.253
       import-meta-resolve: ^2.2.1
       source-map-support: ^0.5.21
       ts-node: ^10.9.1
       tsx: ^3.12.3
       typescript: 4.9.5
     dependencies:
-      aws-cdk-lib: 2.65.0_constructs@10.1.252
-      constructs: 10.1.252
+      aws-cdk-lib: 2.65.0_constructs@10.1.253
+      constructs: 10.1.253
       source-map-support: 0.5.21
     devDependencies:
       '@aws-sdk/client-cloudfront': 3.272.0
@@ -1243,8 +1243,8 @@ packages:
       '@lerna/collect-uncommitted': 4.0.0
     dev: true
 
-  /@ctx-core/monorepo/19.0.13:
-    resolution: {integrity: sha512-a0oSG5wKzax/aCUL8b1S7cfQGyVgkMrMr2Y4ZPQudCXhL3Aiqbg0FQezhWICNR1FhxL4t+EpJ5mCYi2HO+wHbQ==}
+  /@ctx-core/monorepo/19.0.14:
+    resolution: {integrity: sha512-pdduon/i7qSvticr/oLh59+mIXsO19naTnmS67K+XKZdHC6We/hjmw4WU06oXNIYdc2zKje5Z56MwzAxoxUXQg==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.10.1
@@ -1253,7 +1253,7 @@ packages:
       '@ctx-core/ctx-core-package-tools': 8.0.141
       '@ctx-core/function': 21.6.1
       '@ctx-core/object': 24.1.4
-      '@ctx-core/package': 9.1.69
+      '@ctx-core/package': 9.2.0
       '@ctx-core/queue': 7.3.4
       '@types/node': 18.13.0
       detect-indent: 7.0.1
@@ -1283,8 +1283,8 @@ packages:
       '@ctx-core/function': 21.6.1
     dev: true
 
-  /@ctx-core/package/9.1.69:
-    resolution: {integrity: sha512-yTWsjQC/kxxSSQvJQxmoZhhjRKkGU+oAR4YZgr/aMUChwQGCndjNocKseIT5LzaVjCCDeJQFmgzj+X0gsR205w==}
+  /@ctx-core/package/9.2.0:
+    resolution: {integrity: sha512-c0UZDmYgfeNdE58iVdwS88iFyDyAtwb3WoNu4udQ5n3HsNJ5IXpy9Bz96CEEycBlQUnkDwO6emKld6eh7Y+JhQ==}
     hasBin: true
     dependencies:
       '@ctx-core/cli-args': 11.1.0
@@ -2216,7 +2216,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-cdk-lib/2.65.0_constructs@10.1.252:
+  /aws-cdk-lib/2.65.0_constructs@10.1.253:
     resolution: {integrity: sha512-yTeBe9+Li8ZHZICJc0y1uarbSruc3KIXP1KC7tjVrkg+ye7EE8eJTZm7+PpJd6O0ciPinn/k/dE9gHwUImygGA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -2227,7 +2227,7 @@ packages:
       '@aws-cdk/asset-node-proxy-agent-v5': 2.0.58
       '@balena/dockerignore': 1.0.2
       case: 1.6.3
-      constructs: 10.1.252
+      constructs: 10.1.253
       fs-extra: 9.1.0
       ignore: 5.2.4
       jsonschema: 1.4.1
@@ -2506,8 +2506,8 @@ packages:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
     dev: true
 
-  /constructs/10.1.252:
-    resolution: {integrity: sha512-8j3bcoSTlIjbCu1tflWHvipVDWmllUNu3dEWb5GXvsXCiYuH0NtXCCN5q6GmFInDcspZp8WOYu66uqQ8Bk7jzQ==}
+  /constructs/10.1.253:
+    resolution: {integrity: sha512-AW0mEbOVQ4yCapwax/4vvyIgdeX6JGED8ClZvqOvlpjID7o/fCpRnOsiDn3AmL+/747naFixmuusFKNa6ngc0g==}
     engines: {node: '>= 14.17.0'}
     dev: false
 
