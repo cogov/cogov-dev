@@ -7,8 +7,8 @@
 	"types": "./src/index.ts",
 	"devDependencies": {
 		"@cogov/css": "workspace:*",
-		"@ctx-core/object": "^24.1.4",
-		"@ctx-core/ui-solid": "^6.0.5",
+		"@ctx-core/object": "^24.1.5",
+		"@ctx-core/ui-solid": "^6.0.6",
 		"solid-js": "^1.6.11"
 	}
 }
