@@ -23,9 +23,9 @@
   },
   "devDependencies": {
     "@aws-sdk/client-cloudfront": "^3.272.0",
-    "@ctx-core/child_process": "^7.2.6",
-    "@ctx-core/cli-args": "^11.1.5",
-    "@ctx-core/object": "^24.1.7",
+    "@ctx-core/child_process": "^7.2.7",
+    "@ctx-core/cli-args": "^11.1.6",
+    "@ctx-core/object": "^24.1.8",
     "@types/jest": "^29.4.0",
     "@types/node": "18.14.0",
     "aws-cdk": "2.65.0",
