@@ -17,14 +17,14 @@
     "@astrojs/solid-js": "^2.0.2",
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
-    "@ctx-core/child_process": "^7.2.5",
-    "@ctx-core/http": "^9.4.2",
-    "@ctx-core/object": "^24.1.6",
-    "@ctx-core/ui-solid": "^6.0.7",
+    "@ctx-core/child_process": "^7.2.6",
+    "@ctx-core/http": "^9.4.4",
+    "@ctx-core/object": "^24.1.7",
+    "@ctx-core/ui-solid": "^6.0.8",
     "@types/aws-lambda": "^8.10.110",
     "@types/node": "18.14.0",
     "aws-lambda": "^1.0.7",
-    "esbuild": "^0.17.8",
+    "esbuild": "^0.17.9",
     "solid-js": "^1.6.11"
   }
 }
