@@ -18,11 +18,11 @@
   },
   "dependencies": {
     "aws-cdk-lib": "2.66.0",
-    "constructs": "^10.1.256",
+    "constructs": "^10.1.257",
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "@aws-sdk/client-cloudfront": "^3.272.0",
+    "@aws-sdk/client-cloudfront": "^3.276.0",
     "@ctx-core/child_process": "^7.2.7",
     "@ctx-core/cli-args": "^11.1.6",
     "@ctx-core/object": "^24.1.8",
