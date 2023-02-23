@@ -11,18 +11,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.14"
+    "astro": "^2.0.15"
   },
   "devDependencies": {
     "@astrojs/solid-js": "^2.0.2",
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
-    "@ctx-core/child_process": "^7.2.7",
-    "@ctx-core/http": "^9.4.5",
-    "@ctx-core/object": "^24.1.8",
-    "@ctx-core/ui-solid": "^6.0.9",
+    "@ctx-core/child_process": "^7.2.9",
+    "@ctx-core/http": "^9.4.7",
+    "@ctx-core/object": "^25.0.1",
+    "@ctx-core/ui-solid": "^6.0.11",
     "@types/aws-lambda": "^8.10.110",
-    "@types/node": "18.14.0",
+    "@types/node": "18.14.1",
     "aws-lambda": "^1.0.7",
     "esbuild": "^0.17.10",
     "solid-js": "^1.6.11"
