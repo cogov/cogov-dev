@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"bin": {
 		"tmux-dev": "./bin/tmux-dev.sh",
-		"tmux-rename-window": "./bin/tmuxtmux-rename-window.sh"
+		"tmux-rename-window": "./bin/tmux-rename-window.sh"
 	},
 	"devDependencies": {
 		"@cogov/dev": "^1.0.0",
