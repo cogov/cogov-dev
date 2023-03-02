@@ -22,7 +22,7 @@
     "@ctx-core/object": "^26.0.0",
     "@ctx-core/ui-solid": "^6.0.19",
     "@types/aws-lambda": "^8.10.111",
-    "@types/node": "18.14.2",
+    "@types/node": "18.14.3",
     "aws-lambda": "^1.0.7",
     "esbuild": "^0.17.10",
     "solid-js": "^1.6.11"

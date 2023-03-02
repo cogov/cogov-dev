@@ -27,7 +27,7 @@
     "@ctx-core/cli-args": "^11.1.13",
     "@ctx-core/object": "^26.0.0",
     "@types/jest": "^29.4.0",
-    "@types/node": "18.14.2",
+    "@types/node": "18.14.3",
     "aws-cdk": "2.66.1",
     "import-meta-resolve": "^2.2.1",
     "ts-node": "^10.9.1",
