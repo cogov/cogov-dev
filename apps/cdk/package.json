@@ -17,7 +17,7 @@
     "cdk": "cdk"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.66.1",
+    "aws-cdk-lib": "2.67.0",
     "constructs": "^10.1.265",
     "source-map-support": "^0.5.21"
   },
@@ -27,8 +27,8 @@
     "@ctx-core/cli-args": "^11.1.13",
     "@ctx-core/object": "^26.0.0",
     "@types/jest": "^29.4.0",
-    "@types/node": "18.14.3",
-    "aws-cdk": "2.66.1",
+    "@types/node": "18.14.4",
+    "aws-cdk": "2.67.0",
     "import-meta-resolve": "^2.2.1",
     "ts-node": "^10.9.1",
     "tsx": "^3.12.3",
