@@ -5,23 +5,23 @@ importers:
   .:
     specifiers:
       '@cogov/dev': ^1.0.0
-      '@ctx-core/jetbrains': ^7.2.18
+      '@ctx-core/jetbrains': ^7.2.19
       '@ctx-core/lerna': ^5.1.34
-      '@ctx-core/monorepo': ^20.0.12
+      '@ctx-core/monorepo': ^20.0.15
       tsx: ^3.12.3
     devDependencies:
       '@cogov/dev': 'link:'
-      '@ctx-core/jetbrains': 7.2.18
+      '@ctx-core/jetbrains': 7.2.19
       '@ctx-core/lerna': 5.1.34
-      '@ctx-core/monorepo': 20.0.12
+      '@ctx-core/monorepo': 20.0.15
       tsx: 3.12.3
 
   apps/cdk:
     specifiers:
       '@aws-sdk/client-cloudfront': ^3.282.0
-      '@ctx-core/child_process': ^7.2.25
-      '@ctx-core/cli-args': ^11.1.17
-      '@ctx-core/object': ^27.1.2
+      '@ctx-core/child_process': ^7.2.27
+      '@ctx-core/cli-args': ^11.1.18
+      '@ctx-core/object': ^27.1.3
       '@types/jest': ^29.4.0
       '@types/node': 18.14.6
       aws-cdk: 2.67.0
@@ -38,9 +38,9 @@ importers:
       source-map-support: 0.5.21
     devDependencies:
       '@aws-sdk/client-cloudfront': 3.282.0
-      '@ctx-core/child_process': 7.2.25
-      '@ctx-core/cli-args': 11.1.17
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/child_process': 7.2.27
+      '@ctx-core/cli-args': 11.1.18
+      '@ctx-core/object': 27.1.3
       '@types/jest': 29.4.0
       '@types/node': 18.14.6
       aws-cdk: 2.67.0
@@ -54,10 +54,10 @@ importers:
       '@astrojs/solid-js': ^2.0.2
       '@cogov/css': workspace:*
       '@cogov/ui': workspace:^1.0.0
-      '@ctx-core/child_process': ^7.2.25
-      '@ctx-core/http': ^9.4.15
-      '@ctx-core/object': ^27.1.2
-      '@ctx-core/ui-solid': ^6.0.26
+      '@ctx-core/child_process': ^7.2.27
+      '@ctx-core/http': ^9.4.16
+      '@ctx-core/object': ^27.1.3
+      '@ctx-core/ui-solid': ^6.0.27
       '@types/aws-lambda': ^8.10.111
       '@types/node': 18.14.6
       astro: ^2.0.17
@@ -70,10 +70,10 @@ importers:
       '@astrojs/solid-js': 2.0.2_j4edemtvcvev27jw5cpammsdum
       '@cogov/css': link:../../libs/css
       '@cogov/ui': link:../../libs/ui
-      '@ctx-core/child_process': 7.2.25
-      '@ctx-core/http': 9.4.15
-      '@ctx-core/object': 27.1.2
-      '@ctx-core/ui-solid': 6.0.26
+      '@ctx-core/child_process': 7.2.27
+      '@ctx-core/http': 9.4.16
+      '@ctx-core/object': 27.1.3
+      '@ctx-core/ui-solid': 6.0.27
       '@types/aws-lambda': 8.10.111
       '@types/node': 18.14.6
       aws-lambda: 1.0.7
@@ -86,13 +86,13 @@ importers:
   libs/ui:
     specifiers:
       '@cogov/css': workspace:*
-      '@ctx-core/object': ^27.1.2
-      '@ctx-core/ui-solid': ^6.0.26
+      '@ctx-core/object': ^27.1.3
+      '@ctx-core/ui-solid': ^6.0.27
       solid-js: ^1.6.11
     devDependencies:
       '@cogov/css': link:../css
-      '@ctx-core/object': 27.1.2
-      '@ctx-core/ui-solid': 6.0.26
+      '@ctx-core/object': 27.1.3
+      '@ctx-core/ui-solid': 6.0.27
       solid-js: 1.6.11
 
 packages:
@@ -1168,29 +1168,29 @@ packages:
       '@ctx-core/set': 9.3.1
     dev: true
 
-  /@ctx-core/array/26.11.16:
-    resolution: {integrity: sha512-yZpLuuFCUs1pnh2RcaVCwqW1N8TZmdigB5u+Xa5ebwg1pSURCTHGdLN1ty76Raqeh+sR45LmIjneAFKcrdXDWQ==}
+  /@ctx-core/array/26.11.17:
+    resolution: {integrity: sha512-67pUytG1pErnqm5m+3/MG4qUaHY80Ub4joVQjo3V5/X5zLPLNP6SosYdeWDaV383biyTqmS+iE1lnnXsQlyBrw==}
     dependencies:
       '@ctx-core/combinators': 8.0.41
       '@ctx-core/function': 21.11.0
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/object': 27.1.3
       '@ctx-core/set': 12.1.17
     dev: true
 
-  /@ctx-core/child_process/7.2.25:
-    resolution: {integrity: sha512-OdTG1Hclu/64jqolVdNXpzU6bKgnqq4yPMdUnFwHYAIo9hbN/loQWvvhKREJTbwMEQhYJn1Rd3EQ2JcjBWIPpQ==}
+  /@ctx-core/child_process/7.2.27:
+    resolution: {integrity: sha512-fprLo1fvIj7In87O380Br0NCxWh7dvpA1m/kkehDYT7IG2N6ruYIf1hOsGKhlVd43e3TIHmzE14X43HiDm6fkg==}
     dependencies:
-      '@ctx-core/env': 17.2.27
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/env': 17.2.28
+      '@ctx-core/object': 27.1.3
       memory-streams: 0.1.3
     dev: true
 
-  /@ctx-core/cli-args/11.1.17:
-    resolution: {integrity: sha512-Odc0k+LjEpQVIyL7xVicG0Y57llro3jlG0x9UiAR/ophxrRlGJgPeUUeJiAN9t8DK/+EaCv5OJlw0GMObvpOYQ==}
+  /@ctx-core/cli-args/11.1.18:
+    resolution: {integrity: sha512-BZ0dll8hEenbY4QCjkAFEbGC7fjOGDG9svGsJhMZQk/zuW/1jyI+38N902fU58Ji0jEQuXLhLUnPfoX0EIlR3Q==}
     dependencies:
-      '@ctx-core/array': 26.11.16
+      '@ctx-core/array': 26.11.17
       '@ctx-core/function': 21.11.0
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/object': 27.1.3
     dev: true
 
   /@ctx-core/combinators/6.3.3:
@@ -1201,29 +1201,29 @@ packages:
     resolution: {integrity: sha512-Y03Zuzi7ApESaLSY+ZTvH+N/MkrSxrLYeQbVgHPQ2vvgfJuLKIM2V32I40fzprOjxLIAjCRR/yQSJ/HBaPmSsA==}
     dev: true
 
-  /@ctx-core/ctx-core-package-tools/8.0.158:
-    resolution: {integrity: sha512-dPkOCG0sp96rss2130i3+fj/DWOHO/2h9bt5Ra/3ZZBSeIH2zlU+KSN21Nusi9JtzGAsqCWJza6u8h5lSum7Mw==}
+  /@ctx-core/ctx-core-package-tools/8.0.159:
+    resolution: {integrity: sha512-C4K4WWXzGxud53iMtCydLPYDgwPjW2IaIJfApiDHOCqK/apd8ToaYKUv/LG9plMCaEgOHP+/AE9ZKVdjUsVRrw==}
     hasBin: true
     dependencies:
-      '@ctx-core/array': 26.11.16
+      '@ctx-core/array': 26.11.17
       dir-glob: 3.0.1
       path-type: 5.0.0
     dev: true
 
-  /@ctx-core/env/17.2.27:
-    resolution: {integrity: sha512-u0i6p3SxThJoVZA3uhDGazGtK2O13dxW0wrQgdZqvD0gcCbG7mbolcUihWuGS58Nyqipx6DEQ2L3RtkJCHlwAQ==}
+  /@ctx-core/env/17.2.28:
+    resolution: {integrity: sha512-jaQMKHPtUNrE9cqLO8ovGSqRtwPgyMSeyqhlsAYf1v5yG0beEsLilysp4s8XWHHM/NhmXZ1WOl/UH5pH6Rdv/g==}
     dependencies:
-      '@ctx-core/error': 11.6.16
+      '@ctx-core/error': 11.6.17
       '@ctx-core/function': 21.11.0
-      '@ctx-core/nanostores': 3.1.4
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/nanostores': 3.1.5
+      '@ctx-core/object': 27.1.3
       svelte: 3.55.1
     dev: true
 
-  /@ctx-core/error/11.6.16:
-    resolution: {integrity: sha512-eD9FCnn8zq7OMa6Z2XBZrDSvboepgi9PZlbgfZtPzZL/HJC+Qk2hxccqjlv0eSvlVW7W2Y3hmpokOpfg+0q2Ew==}
+  /@ctx-core/error/11.6.17:
+    resolution: {integrity: sha512-Z7YEeDJ/nBPstJif+x2RLwb5HwdRaOmdpFxKSlY0g5Pgq68kRGFazlqtGw+KT7uU1Is/YeCURYutK2b/LTM8+w==}
     dependencies:
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/object': 27.1.3
     dev: true
 
   /@ctx-core/function/17.11.1:
@@ -1234,18 +1234,18 @@ packages:
     resolution: {integrity: sha512-pbKwvXtKIVt8A7Gt0mpZbcElQ7UwMLilDV98y2TIB0SfEbknccxPlm7hMFJ4Pz6iP/6aEjpAb7rSGkIv4P1Bng==}
     dev: true
 
-  /@ctx-core/http/9.4.15:
-    resolution: {integrity: sha512-3wEgHjvJWTaFx1a91s77gK9RtE5wtX5TKDMP7KmW0l8CeGtJkh3o3A+sHcQUbqtO3cOdo/L0CObQB/xTlqQ1Tw==}
+  /@ctx-core/http/9.4.16:
+    resolution: {integrity: sha512-raZLDjjJJwaaRFZ3A35+Y0Ry7l1SE/ajUqin9OKVJK60xaYmvqZjJ73/REJELF+rOnCvqOc8J1cUrjfOytHhhQ==}
     dependencies:
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/object': 27.1.3
     dev: true
 
-  /@ctx-core/jetbrains/7.2.18:
-    resolution: {integrity: sha512-mHhgVGGAfhAXwm3VumG3UIH3PgqDydDpVtb6VEdnUCtMhvBj9YL8G+oguwasaLpN7TZabq3DGRrKcIqvL87l2Q==}
+  /@ctx-core/jetbrains/7.2.19:
+    resolution: {integrity: sha512-zdxQ3XbvMbteCQluH8Yl22f6a6tBc9i9qdrZhMlfcdPp8LJ/SP/pEj1aPFJEuSFf85r2I1cckOCBnG0+tmn/sA==}
     hasBin: true
     dependencies:
-      '@ctx-core/array': 26.11.16
-      '@ctx-core/cli-args': 11.1.17
+      '@ctx-core/array': 26.11.17
+      '@ctx-core/cli-args': 11.1.18
       '@ctx-core/queue': 7.4.0
       dir-glob: 3.0.1
       globby: 13.1.3
@@ -1260,17 +1260,17 @@ packages:
       '@lerna/collect-uncommitted': 4.0.0
     dev: true
 
-  /@ctx-core/monorepo/20.0.12:
-    resolution: {integrity: sha512-WI9eASNzEUqi2TcT6kyP32kOzkiIlWqG8EJZS10/i9a3uh3uj+NmaQJM/Kkokbo3GqAmxcc4eT0TMOK+niiiUQ==}
+  /@ctx-core/monorepo/20.0.15:
+    resolution: {integrity: sha512-bTUUdaHYSAowocvA30sk57BlJsgqd0LndEw1oTXD8Wr8zcyCOVGixGAPeyLPtAUepXgT2fbmMonCz4UkeHOfeA==}
     hasBin: true
     dependencies:
-      '@ctx-core/array': 26.11.16
-      '@ctx-core/child_process': 7.2.25
-      '@ctx-core/cli-args': 11.1.17
-      '@ctx-core/ctx-core-package-tools': 8.0.158
+      '@ctx-core/array': 26.11.17
+      '@ctx-core/child_process': 7.2.27
+      '@ctx-core/cli-args': 11.1.18
+      '@ctx-core/ctx-core-package-tools': 8.0.159
       '@ctx-core/function': 21.11.0
-      '@ctx-core/object': 27.1.2
-      '@ctx-core/package': 9.2.18
+      '@ctx-core/object': 27.1.3
+      '@ctx-core/package': 9.2.19
       '@ctx-core/queue': 7.4.0
       '@types/node': 18.14.6
       detect-indent: 7.0.1
@@ -1282,12 +1282,12 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@ctx-core/nanostores/3.1.4:
-    resolution: {integrity: sha512-D/1tPaFXOMozAgANeZNa9G9oWi29nWY+a2+lN+jNpGzosg3e0E6yju8q4JWSa2SimQOAoJAKGiM13n+5SX07kA==}
+  /@ctx-core/nanostores/3.1.5:
+    resolution: {integrity: sha512-zb9sBG9vuu/dN/OBgOP8o7VH024a/o4BmlBc1bPEfjA1w3s7B2BBPBSiAbAOnAp0BPxNryI6a1+UEctwiNmyjg==}
     dependencies:
       '@ctx-core/function': 21.11.0
       '@ctx-core/number': 8.6.1
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/object': 27.1.3
       nanostores: 0.7.4
     dev: true
 
@@ -1303,17 +1303,17 @@ packages:
       '@ctx-core/function': 17.11.1
     dev: true
 
-  /@ctx-core/object/27.1.2:
-    resolution: {integrity: sha512-O3cvJORkvzLrsvp5JVPclr6bBGarX5uKQN4+dq9zvLg36h7ubIOSE6wIE1IJAGJqyzDu1tyL8cC2KXOBAnY2SA==}
+  /@ctx-core/object/27.1.3:
+    resolution: {integrity: sha512-nT5PflUFgDB5oAvvJBRxU/cHnnk4Hy43HPVLEqcZzTNKHG3tzdCk3wDcfDGQYWL90fxx/MXvVIMZ/7pjEBd9Gg==}
     dependencies:
       '@ctx-core/function': 21.11.0
     dev: true
 
-  /@ctx-core/package/9.2.18:
-    resolution: {integrity: sha512-xMeEmz9gdODpRXVJ3csLigocTrBLofLJkxbvkK++UEaiiH/xR1sBFkvhJKzjp42KCy62sEaFN/pj2Co0S2TAKQ==}
+  /@ctx-core/package/9.2.19:
+    resolution: {integrity: sha512-mD41iSrV70Xd/R3QLLRrhLnv8+d0HdCiAFqOU4+jkclCCOcxKjHk29aGcoZn4NsEQQEplfnyELop2XoTfkTVuQ==}
     hasBin: true
     dependencies:
-      '@ctx-core/cli-args': 11.1.17
+      '@ctx-core/cli-args': 11.1.18
       import-meta-resolve: 2.2.1
       semver: 7.3.8
     dev: true
@@ -1334,12 +1334,12 @@ packages:
       '@ctx-core/function': 17.11.1
     dev: true
 
-  /@ctx-core/solid-js/1.2.17:
-    resolution: {integrity: sha512-0aK0NLFDPapXE/+8LC37RmYFRUOfRWIQ2zCZCkiGqvcAA9JsfVvhxlUF+jrO0rMJF4zRNMqxQttfFeHWOwTeOA==}
+  /@ctx-core/solid-js/1.2.18:
+    resolution: {integrity: sha512-GCi1SxwVO1NpBFz44XqTNHaZMLEXmVa0cS9EsuPem9ebUxZiA4j1WuAwkbzKEPt/Q4yZIaE9gtuIzacHfK+2uQ==}
     dependencies:
       '@ctx-core/function': 21.11.0
       '@ctx-core/number': 8.6.1
-      '@ctx-core/object': 27.1.2
+      '@ctx-core/object': 27.1.3
       solid-js: 1.6.11
     dev: true
 
@@ -1347,12 +1347,12 @@ packages:
     resolution: {integrity: sha512-qMNdc7p6N0WKNY0Vli6LqV5Gn6mH5atV+uakGfPQEvlZB3li1QJPn9u6EK9Pr1CmnXtsZlBAOperSiCkzCve/A==}
     dev: true
 
-  /@ctx-core/ui-solid/6.0.26:
-    resolution: {integrity: sha512-dqP/fBkX1uIj1HIuBIRZVpoV7oLyNhE9OYUW/j86JjCobT7UOa26xpln1MODoeAANISUwMwh2Ap7nxyGUG847Q==}
+  /@ctx-core/ui-solid/6.0.27:
+    resolution: {integrity: sha512-+/7H2TSipU4VnMO9uwf/QZ4F03qnWtqr4B9A4L3P5SneDzArZHWrnp8F4vl4OKUmBk5WIxzUioo5c2qouv3JaA==}
     dependencies:
-      '@ctx-core/env': 17.2.27
-      '@ctx-core/object': 27.1.2
-      '@ctx-core/solid-js': 1.2.17
+      '@ctx-core/env': 17.2.28
+      '@ctx-core/object': 27.1.3
+      '@ctx-core/solid-js': 1.2.18
       '@solidjs/meta': 0.28.2_solid-js@1.6.11
       solid-js: 1.6.11
     dev: true
