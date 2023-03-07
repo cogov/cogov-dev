@@ -11,10 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.18"
+    "astro": "^2.1.0"
   },
   "devDependencies": {
-    "@astrojs/solid-js": "^2.0.2",
+    "@astrojs/solid-js": "^2.1.0",
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
     "@ctx-core/child_process": "^7.2.33",
