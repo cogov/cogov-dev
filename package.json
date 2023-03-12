@@ -9,9 +9,8 @@
 	"devDependencies": {
 		"@cogov/dev": "^1.0.0",
 		"@ctx-core/jetbrains": "^7.2.24",
-		"@ctx-core/lerna": "^5.1.34",
 		"@ctx-core/monorepo": "^20.0.30",
-		"tsx": "^3.12.3"
+		"tsx": "^3.12.4"
 	},
 	"workspaces": {
 		"packages": [
