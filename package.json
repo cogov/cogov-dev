@@ -10,7 +10,7 @@
 		"@cogov/dev": "^1.0.0",
 		"@ctx-core/jetbrains": "^7.2.24",
 		"@ctx-core/monorepo": "^20.0.30",
-		"tsx": "^3.12.4"
+		"tsx": "^3.12.5"
 	},
 	"workspaces": {
 		"packages": [
