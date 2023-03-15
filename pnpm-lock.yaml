@@ -20,7 +20,7 @@ importers:
       '@ctx-core/child_process': ^7.2.35
       '@ctx-core/cli-args': ^11.1.23
       '@ctx-core/object': ^27.1.6
-      '@types/jest': ^29.4.3
+      '@types/jest': ^29.4.4
       '@types/node': 18.15.3
       aws-cdk: 2.69.0
       aws-cdk-lib: 2.69.0
@@ -39,7 +39,7 @@ importers:
       '@ctx-core/child_process': 7.2.35
       '@ctx-core/cli-args': 11.1.23
       '@ctx-core/object': 27.1.6
-      '@types/jest': 29.4.3
+      '@types/jest': 29.4.4
       '@types/node': 18.15.3
       aws-cdk: 2.69.0
       import-meta-resolve: 2.2.2
@@ -1961,8 +1961,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.4.3:
-    resolution: {integrity: sha512-rQ+fXtBHSDfgoTwGLLNuZ27fHpp14mCZSxGUZ3MlNExwJno5hz0uXEWtXfQlE8vaZmYAa6atbR9rpHk+NnlRaw==}
+  /@types/jest/29.4.4:
+    resolution: {integrity: sha512-qezb65VIH7X1wobSnd6Lvdve7PXSyQRa3dljTkhTtDhi603RvHQCshSlJcuyMLHJpeHgY3NKwvDJWxMOOHxGDQ==}
     dependencies:
       expect: 29.4.1
       pretty-format: 29.4.1
