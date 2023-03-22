@@ -24,15 +24,15 @@ importers:
       '@types/node': 18.15.5
       aws-cdk: 2.69.0
       aws-cdk-lib: 2.69.0
-      constructs: ^10.1.285
+      constructs: ^10.1.287
       import-meta-resolve: ^2.2.2
       source-map-support: ^0.5.21
       ts-node: ^10.9.1
       tsx: ^3.12.6
       typescript: 5.0.2
     dependencies:
-      aws-cdk-lib: 2.69.0_constructs@10.1.285
-      constructs: 10.1.285
+      aws-cdk-lib: 2.69.0_constructs@10.1.287
+      constructs: 10.1.287
       source-map-support: 0.5.21
     devDependencies:
       '@aws-sdk/client-cloudfront': 3.296.0
@@ -58,12 +58,12 @@ importers:
       '@ctx-core/ui-solid': ^6.0.42
       '@types/aws-lambda': ^8.10.114
       '@types/node': 18.15.5
-      astro: ^2.1.4
+      astro: ^2.1.5
       aws-lambda: ^1.0.7
       esbuild: ^0.17.12
       solid-js: ^1.6.15
     dependencies:
-      astro: 2.1.4_@types+node@18.15.5
+      astro: 2.1.5_@types+node@18.15.5
     devDependencies:
       '@astrojs/solid-js': 2.1.0_cpx6ak62lfcur7lpxsvsy255ji
       '@cogov/css': link:../../libs/css
@@ -128,13 +128,13 @@ packages:
       vscode-uri: 3.0.7
     dev: false
 
-  /@astrojs/markdown-remark/2.1.1_astro@2.1.4:
-    resolution: {integrity: sha512-qVb5QCDeX2huUTzmt0cb7IXZ1iUS5k5kzatl2XE6BGZFPPZwhN2rUAf6oKDBOO+TcvFqIgns0AfA5gq2km/J9g==}
+  /@astrojs/markdown-remark/2.1.2_astro@2.1.5:
+    resolution: {integrity: sha512-rYkmFEv2w7oEk6ZPgxHkhWzwcxSUGc1vJU0cbCu5sHF8iFNnc1cmMsjXWa5DrU5sCEf8VVYE1iFlbbnFzvHQJw==}
     peerDependencies:
-      astro: ^2.1.4
+      astro: ^2.1.5
     dependencies:
       '@astrojs/prism': 2.1.0
-      astro: 2.1.4_@types+node@18.15.5
+      astro: 2.1.5_@types+node@18.15.5
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -2102,8 +2102,8 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: false
 
-  /astro/2.1.4_@types+node@18.15.5:
-    resolution: {integrity: sha512-NPTrU+9jo0N7rKZuQxcpsWgMEaoVhza0MdBI2RWGOgnMAxZQ+aJxV3DMbWb4Rmz7jTkP7b/P4+XoWNQ+e52aNQ==}
+  /astro/2.1.5_@types+node@18.15.5:
+    resolution: {integrity: sha512-NFHFkf3DkyV/9FQ9uMxXx9KP9a6nBOMDd9OC9SWgCwTJc2+Cm4oL94BnKmZ2SNR124pSoKimnaBkZncTYmIVwA==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     peerDependencies:
@@ -2114,7 +2114,7 @@ packages:
     dependencies:
       '@astrojs/compiler': 1.2.0
       '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 2.1.1_astro@2.1.4
+      '@astrojs/markdown-remark': 2.1.2_astro@2.1.5
       '@astrojs/telemetry': 2.1.0
       '@astrojs/webapi': 2.1.0
       '@babel/core': 7.20.12
@@ -2185,7 +2185,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-cdk-lib/2.69.0_constructs@10.1.285:
+  /aws-cdk-lib/2.69.0_constructs@10.1.287:
     resolution: {integrity: sha512-VIwgMMpc8iHCZTmt1PuMdj20f0lTY8SI6Pltx7jvhYxyzvg04Dd0YAryBUuutj/khE3typJwiFzLlL7yoNo5AA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -2196,7 +2196,7 @@ packages:
       '@aws-cdk/asset-node-proxy-agent-v5': 2.0.78
       '@balena/dockerignore': 1.0.2
       case: 1.6.3
-      constructs: 10.1.285
+      constructs: 10.1.287
       fs-extra: 9.1.0
       ignore: 5.2.4
       jsonschema: 1.4.1
@@ -2486,9 +2486,9 @@ packages:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: false
 
-  /constructs/10.1.285:
-    resolution: {integrity: sha512-yBSo0lXqcqnZApHCc8ffgamJjvWuCNACr7H3eZSDFKuZUqxB9bbgyjAx9DzImgQZIDbL/WVHAlYPt2708KSftw==}
-    engines: {node: '>= 14.18.0'}
+  /constructs/10.1.287:
+    resolution: {integrity: sha512-KJS0uEEHZ7wwGdycERoGmkm1ca7Le2axZIroijCXuLOkiCwnJ4CLKELjREFkGK+Y1BvpMlUkiIE0V8K0AKE+BQ==}
+    engines: {node: '>= 14.17.0'}
     dev: false
 
   /convert-source-map/1.9.0:
@@ -2513,7 +2513,7 @@ packages:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
-      which: 2.0.2
+      which: 3.0.0
     dev: false
 
   /csstype/3.1.1:
@@ -4947,7 +4947,7 @@ packages:
   /vitefu/0.2.4:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
-      vite: ^3.0.0 || ^4.0.0
+      vite: latest
     peerDependenciesMeta:
       vite:
         optional: true
@@ -4956,7 +4956,7 @@ packages:
   /vitefu/0.2.4_vite@4.1.2:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
-      vite: ^3.0.0 || ^4.0.0
+      vite: latest
     peerDependenciesMeta:
       vite:
         optional: true
@@ -5067,9 +5067,9 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /which/2.0.2:
-    resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
-    engines: {node: '>= 8'}
+  /which/3.0.0:
+    resolution: {integrity: sha512-nla//68K9NU6yRiwDY/Q8aU6siKlSs64aEC7+IV56QoAuyQT2ovsJcgGYGyqMOmI/CGN1BOR6mM5EN0FBO+zyQ==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     hasBin: true
     dependencies:
       isexe: 2.0.0
