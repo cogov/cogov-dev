@@ -22,7 +22,7 @@
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "@aws-sdk/client-cloudfront": "^3.298.0",
+    "@aws-sdk/client-cloudfront": "^3.299.0",
     "@ctx-core/child_process": "^7.2.44",
     "@ctx-core/cli-args": "^11.1.27",
     "@ctx-core/object": "^27.3.1",
