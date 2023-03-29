@@ -6,42 +6,42 @@ importers:
     specifiers:
       '@cogov/dev': ^1.0.0
       '@ctx-core/jetbrains': ^7.2.28
-      '@ctx-core/monorepo': ^20.0.45
+      '@ctx-core/monorepo': ^20.0.46
       tsx: ^3.12.6
     devDependencies:
       '@cogov/dev': 'link:'
       '@ctx-core/jetbrains': 7.2.28
-      '@ctx-core/monorepo': 20.0.45
+      '@ctx-core/monorepo': 20.0.46
       tsx: 3.12.6
 
   apps/cdk:
     specifiers:
       '@aws-sdk/client-cloudfront': ^3.301.0
-      '@ctx-core/child_process': ^7.2.45
+      '@ctx-core/child_process': ^7.2.46
       '@ctx-core/cli-args': ^11.1.27
       '@ctx-core/object': ^27.3.1
       '@types/jest': ^29.5.0
       '@types/node': 18.15.11
-      aws-cdk: 2.70.0
-      aws-cdk-lib: 2.70.0
-      constructs: ^10.1.294
+      aws-cdk: 2.71.0
+      aws-cdk-lib: 2.71.0
+      constructs: ^10.1.295
       import-meta-resolve: ^2.2.2
       source-map-support: ^0.5.21
       ts-node: ^10.9.1
       tsx: ^3.12.6
       typescript: 5.0.2
     dependencies:
-      aws-cdk-lib: 2.70.0_constructs@10.1.294
-      constructs: 10.1.294
+      aws-cdk-lib: 2.71.0_constructs@10.1.295
+      constructs: 10.1.295
       source-map-support: 0.5.21
     devDependencies:
       '@aws-sdk/client-cloudfront': 3.301.0
-      '@ctx-core/child_process': 7.2.45
+      '@ctx-core/child_process': 7.2.46
       '@ctx-core/cli-args': 11.1.27
       '@ctx-core/object': 27.3.1
       '@types/jest': 29.5.0
       '@types/node': 18.15.11
-      aws-cdk: 2.70.0
+      aws-cdk: 2.71.0
       import-meta-resolve: 2.2.2
       ts-node: 10.9.1_qj46uwwzcluhgvra3n2zhrviru
       tsx: 3.12.6
@@ -52,10 +52,10 @@ importers:
       '@astrojs/solid-js': ^2.1.0
       '@cogov/css': workspace:*
       '@cogov/ui': workspace:^1.0.0
-      '@ctx-core/child_process': ^7.2.45
+      '@ctx-core/child_process': ^7.2.46
       '@ctx-core/http': ^9.4.23
       '@ctx-core/object': ^27.3.1
-      '@ctx-core/ui-solid': ^6.0.47
+      '@ctx-core/ui-solid': ^6.0.48
       '@types/aws-lambda': ^8.10.114
       '@types/node': 18.15.11
       astro: ^2.1.8
@@ -68,10 +68,10 @@ importers:
       '@astrojs/solid-js': 2.1.0_zkxyjamifglnswnp3my32f5vei
       '@cogov/css': link:../../libs/css
       '@cogov/ui': link:../../libs/ui
-      '@ctx-core/child_process': 7.2.45
+      '@ctx-core/child_process': 7.2.46
       '@ctx-core/http': 9.4.23
       '@ctx-core/object': 27.3.1
-      '@ctx-core/ui-solid': 6.0.47
+      '@ctx-core/ui-solid': 6.0.48
       '@types/aws-lambda': 8.10.114
       '@types/node': 18.15.11
       aws-lambda: 1.0.7
@@ -85,12 +85,12 @@ importers:
     specifiers:
       '@cogov/css': workspace:*
       '@ctx-core/object': ^27.3.1
-      '@ctx-core/ui-solid': ^6.0.47
+      '@ctx-core/ui-solid': ^6.0.48
       solid-js: ^1.6.16
     devDependencies:
       '@cogov/css': link:../css
       '@ctx-core/object': 27.3.1
-      '@ctx-core/ui-solid': 6.0.47
+      '@ctx-core/ui-solid': 6.0.48
       solid-js: 1.6.16
 
 packages:
@@ -1140,10 +1140,6 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
-  /@balena/dockerignore/1.0.2:
-    resolution: {integrity: sha512-wMue2Sy4GAVTk6Ic4tJVcnfdau+gx2EnG7S+uAEe+TWJFqE4YoWN4/H8MSLj4eYJKxGg26lZwboEniNiNwZQ6Q==}
-    dev: false
-
   /@cspotcode/source-map-support/0.8.1:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
@@ -1160,10 +1156,10 @@ packages:
       '@ctx-core/set': 12.1.20
     dev: true
 
-  /@ctx-core/child_process/7.2.45:
-    resolution: {integrity: sha512-d+ZdKGLgb4ljMoYU3IhrEuaK8Ohna54BN5J+S+FwhNd6WB+u0LWWhemlKT4jyi+oHeTqmGoodLAKu9qh4oq5lw==}
+  /@ctx-core/child_process/7.2.46:
+    resolution: {integrity: sha512-WaKqHkUVK8KCiFXwR5skbuwEn0kBDFHQ+IPpDb9iY2+n1IOPqwV32nZsq0RF5Rj/QWB0V6tq4YwCAIDSzuaw3A==}
     dependencies:
-      '@ctx-core/env': 17.2.43
+      '@ctx-core/env': 17.2.45
       '@ctx-core/object': 27.3.1
       memory-streams: 0.1.3
     dev: true
@@ -1189,17 +1185,17 @@ packages:
       path-type: 5.0.0
     dev: true
 
-  /@ctx-core/env/17.2.43:
-    resolution: {integrity: sha512-9EHbhDS55fi4T9dHO4Ue3kbUwdzDZOYkKqJfl1byw8H6r255NDpgp4ctrFyxTJCWpOwFYrPkv6f9JrULr1F2uQ==}
+  /@ctx-core/env/17.2.45:
+    resolution: {integrity: sha512-Q83P2hfra5Wfh6DvcsD8K47JGd+PDBNGaxNNAMMl0kGjr+s+DgzjwFFTc1vIDyvDONY+T0ZduQWlSpLo9MsO9Q==}
     dependencies:
-      '@ctx-core/error': 11.7.0
+      '@ctx-core/error': 12.1.2
       '@ctx-core/function': 21.12.2
       '@ctx-core/nanostores': 3.1.13
       '@ctx-core/object': 27.3.1
     dev: true
 
-  /@ctx-core/error/11.7.0:
-    resolution: {integrity: sha512-GIljTE2JOnFyqAWhN1bCQUekY8SpbGkXC2oJwJyPsZmHhIR386KfAEZVGOZZNc6a01pXuj8E3elXsYKpWCNbxQ==}
+  /@ctx-core/error/12.1.2:
+    resolution: {integrity: sha512-qZCrnkLIc+gbkbeKxA8sUJG44YJi/uM/+B9ILfXwOs+xSLBmErXJeQTxXVxQ7Zxvp+fzdjTs1YVrAAiYLHY9WQ==}
     dependencies:
       '@ctx-core/object': 27.3.1
     dev: true
@@ -1226,19 +1222,19 @@ packages:
       path-type: 5.0.0
     dev: true
 
-  /@ctx-core/monorepo/20.0.45:
-    resolution: {integrity: sha512-trAycpPeEx3Fsn7kYoKt2ny2gEfRy162gW3precOp+BINRE3eZ42xfczp3d3fJErn6FlnV1NZ7pWp1Ox13h33Q==}
+  /@ctx-core/monorepo/20.0.46:
+    resolution: {integrity: sha512-6pmf7HFc5Fo04MN+Nqxds47ixbkQJt65ECivz+9opibkNjLJgIxDG5tLUUxXdpAi5cFLK0bb1d+1oS31gtyx5w==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.12.4
-      '@ctx-core/child_process': 7.2.45
+      '@ctx-core/child_process': 7.2.46
       '@ctx-core/cli-args': 11.1.27
       '@ctx-core/ctx-core-package-tools': 8.0.169
       '@ctx-core/function': 21.12.2
       '@ctx-core/object': 27.3.1
       '@ctx-core/package': 9.2.31
       '@ctx-core/queue': 7.4.0
-      '@types/node': 18.15.10
+      '@types/node': 18.15.11
       detect-indent: 7.0.1
       dir-glob: 3.0.1
       js-yaml: 4.1.0
@@ -1301,10 +1297,10 @@ packages:
     resolution: {integrity: sha512-qMNdc7p6N0WKNY0Vli6LqV5Gn6mH5atV+uakGfPQEvlZB3li1QJPn9u6EK9Pr1CmnXtsZlBAOperSiCkzCve/A==}
     dev: true
 
-  /@ctx-core/ui-solid/6.0.47:
-    resolution: {integrity: sha512-bmx1cgkePoI1CP0qzGAx1SDHBEjj00EC1qRDl2KQ8LixX2jMDtCMMme78OHLRlvcG45tOe9DS/+PnIlaUEYjRA==}
+  /@ctx-core/ui-solid/6.0.48:
+    resolution: {integrity: sha512-NXwztOjeS4VyGpp5/U7oalbUkH/KtkR4pc+net2VTJy2iKxDTgVqk6/XE8U6p2IhFblpgBOOApZ8MLiW2/gMbA==}
     dependencies:
-      '@ctx-core/env': 17.2.43
+      '@ctx-core/env': 17.2.45
       '@ctx-core/object': 27.3.1
       '@ctx-core/solid-js': 1.2.30
       '@solidjs/meta': 0.28.2_solid-js@1.6.16
@@ -1981,10 +1977,6 @@ packages:
       '@types/unist': 2.0.6
     dev: false
 
-  /@types/node/18.15.10:
-    resolution: {integrity: sha512-9avDaQJczATcXgfmMAW3MIWArOO7A+m90vuCFLr8AotWf8igO/mRoYukrk2cqZVtv38tHs33retzHEilM7FpeQ==}
-    dev: true
-
   /@types/node/18.15.11:
     resolution: {integrity: sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q==}
 
@@ -2172,18 +2164,13 @@ packages:
       - terser
     dev: false
 
-  /at-least-node/1.0.0:
-    resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
-    engines: {node: '>= 4.0.0'}
-    dev: false
-
   /available-typed-arrays/1.0.5:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-cdk-lib/2.70.0_constructs@10.1.294:
-    resolution: {integrity: sha512-q/Go/3VERycIMJp3LfVtjRCLnIJHXJ0gfev5qM5yPyuvoDgZaKuaGA54T0IebgXDyZzS6We3j/DhuP/nPR8sPw==}
+  /aws-cdk-lib/2.71.0_constructs@10.1.295:
+    resolution: {integrity: sha512-YHAeClmsv7EbXpwPIKIBWO1aOp6VdvQFPp+7P1pQMgOz9kKiMO+B/m9g74iKscICEYmbHlZJ8T2KduHxObqIQw==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -2191,16 +2178,7 @@ packages:
       '@aws-cdk/asset-awscli-v1': 2.2.98
       '@aws-cdk/asset-kubectl-v20': 2.1.1
       '@aws-cdk/asset-node-proxy-agent-v5': 2.0.78
-      '@balena/dockerignore': 1.0.2
-      case: 1.6.3
-      constructs: 10.1.294
-      fs-extra: 9.1.0
-      ignore: 5.2.4
-      jsonschema: 1.4.1
-      minimatch: 3.1.2
-      punycode: 2.3.0
-      semver: 7.3.8
-      yaml: 1.10.2
+      constructs: 10.1.295
     dev: false
     bundledDependencies:
       - '@balena/dockerignore'
@@ -2211,10 +2189,11 @@ packages:
       - minimatch
       - punycode
       - semver
+      - table
       - yaml
 
-  /aws-cdk/2.70.0:
-    resolution: {integrity: sha512-B12e+h8FNNS2BGgBKzKrU541shC/9CWeC1Z/CwX2NKxPgbeP2eGtgR1hCfT/VaotcfJ8+dSd4I32nNNc+wz+QA==}
+  /aws-cdk/2.71.0:
+    resolution: {integrity: sha512-vanN/suvCVBp1Qux7m72dTLkY+L+DIwRBZeb7PUcoic3CUeYeTNAl47sdlm/KMH+mAK4LOumecWVX2m56caHtA==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
@@ -2273,10 +2252,6 @@ packages:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
     dev: false
 
-  /balanced-match/1.0.2:
-    resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
-    dev: false
-
   /base64-js/1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
@@ -2308,13 +2283,6 @@ packages:
       type-fest: 2.19.0
       widest-line: 4.0.1
       wrap-ansi: 8.1.0
-    dev: false
-
-  /brace-expansion/1.1.11:
-    resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
-    dependencies:
-      balanced-match: 1.0.2
-      concat-map: 0.0.1
     dev: false
 
   /braces/3.0.2:
@@ -2371,11 +2339,6 @@ packages:
 
   /caniuse-lite/1.0.30001450:
     resolution: {integrity: sha512-qMBmvmQmFXaSxexkjjfMvD5rnDL0+m+dUMZKoDYsGG8iZN29RuYh9eRoMvKsT6uMAWlyUUGDEQGJJYjzCIO9ew==}
-
-  /case/1.6.3:
-    resolution: {integrity: sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==}
-    engines: {node: '>= 0.8.0'}
-    dev: false
 
   /ccount/2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -2479,12 +2442,8 @@ packages:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
     dev: false
 
-  /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
-    dev: false
-
-  /constructs/10.1.294:
-    resolution: {integrity: sha512-4BIy00CSlZ/BUntbS5OBXMq35CvhNikGXuji5cGhrL7xzHTbfo13GnHGJa8uTU9tkBEDh2UX/dTprRUlh2mx0g==}
+  /constructs/10.1.295:
+    resolution: {integrity: sha512-7om54paRzgF5EWIK3rKZQg3ChSsvvjsK/56X1E6pNQlwM5RV2ME+qaAiCWwb0BB1NBm8+/1nLOX4nV4g8E+g+A==}
     engines: {node: '>= 14.17.0'}
     dev: false
 
@@ -3023,16 +2982,6 @@ packages:
       is-callable: 1.2.7
     dev: true
 
-  /fs-extra/9.1.0:
-    resolution: {integrity: sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      at-least-node: 1.0.0
-      graceful-fs: 4.2.10
-      jsonfile: 6.1.0
-      universalify: 2.0.0
-    dev: false
-
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -3256,6 +3205,7 @@ packages:
   /ignore/5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
+    dev: true
 
   /import-meta-resolve/2.2.2:
     resolution: {integrity: sha512-f8KcQ1D80V7RnqVm+/lirO9zkOxjGxhaTC1IPrBGd3MEfNgmNG67tSUO9gTi2F3Blr2Az6g1vocaxzkVnWl9MA==}
@@ -3475,18 +3425,6 @@ packages:
 
   /jsonc-parser/3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
-    dev: false
-
-  /jsonfile/6.1.0:
-    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
-    dependencies:
-      universalify: 2.0.0
-    optionalDependencies:
-      graceful-fs: 4.2.10
-    dev: false
-
-  /jsonschema/1.4.1:
-    resolution: {integrity: sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==}
     dev: false
 
   /kind-of/6.0.3:
@@ -3981,12 +3919,6 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /minimatch/3.1.2:
-    resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
-    dependencies:
-      brace-expansion: 1.1.11
-    dev: false
-
   /mri/1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -4053,7 +3985,7 @@ packages:
     resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      chalk: 5.2.0
+      chalk: 4.1.2
       cli-cursor: 4.0.0
       cli-spinners: 2.7.0
       is-interactive: 2.0.0
@@ -4224,11 +4156,6 @@ packages:
   /punycode/1.3.2:
     resolution: {integrity: sha512-RofWgt/7fL5wP1Y7fxE7/EmTLzQVnB0ycyibJ0OOHIlJqTNzglYFxVwETOcIoJqJmpDXJ9xImDv+Fq34F/d4Dw==}
     dev: true
-
-  /punycode/2.3.0:
-    resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
-    engines: {node: '>=6'}
-    dev: false
 
   /querystring/0.2.0:
     resolution: {integrity: sha512-X/xY82scca2tau62i9mDyU9K+I+djTMUsvwf7xnUX5GLvVzgJybOJf4Y6o9Zx3oJK/LSXg5tTZBjwzqVPaPO2g==}
@@ -4820,11 +4747,6 @@ packages:
       unist-util-visit-parents: 5.1.3
     dev: false
 
-  /universalify/2.0.0:
-    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
-    engines: {node: '>= 10.0.0'}
-    dev: false
-
   /update-browserslist-db/1.0.10_browserslist@4.21.5:
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
     hasBin: true
@@ -5105,11 +5027,6 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-
-  /yaml/1.10.2:
-    resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
-    engines: {node: '>= 6'}
-    dev: false
 
   /yargs-parser/21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
