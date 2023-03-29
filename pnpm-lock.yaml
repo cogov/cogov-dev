@@ -6,24 +6,24 @@ importers:
     specifiers:
       '@cogov/dev': ^1.0.0
       '@ctx-core/jetbrains': ^7.2.28
-      '@ctx-core/monorepo': ^20.0.46
+      '@ctx-core/monorepo': ^20.0.47
       tsx: ^3.12.6
     devDependencies:
       '@cogov/dev': 'link:'
       '@ctx-core/jetbrains': 7.2.28
-      '@ctx-core/monorepo': 20.0.46
+      '@ctx-core/monorepo': 20.0.47
       tsx: 3.12.6
 
   apps/cdk:
     specifiers:
       '@aws-sdk/client-cloudfront': ^3.301.0
-      '@ctx-core/child_process': ^7.2.46
+      '@ctx-core/child_process': ^7.2.47
       '@ctx-core/cli-args': ^11.1.27
       '@ctx-core/object': ^27.3.1
       '@types/jest': ^29.5.0
       '@types/node': 18.15.11
-      aws-cdk: 2.71.0
-      aws-cdk-lib: 2.71.0
+      aws-cdk: 2.72.0
+      aws-cdk-lib: 2.72.0
       constructs: ^10.1.295
       import-meta-resolve: ^2.2.2
       source-map-support: ^0.5.21
@@ -31,17 +31,17 @@ importers:
       tsx: ^3.12.6
       typescript: 5.0.2
     dependencies:
-      aws-cdk-lib: 2.71.0_constructs@10.1.295
+      aws-cdk-lib: 2.72.0_constructs@10.1.295
       constructs: 10.1.295
       source-map-support: 0.5.21
     devDependencies:
       '@aws-sdk/client-cloudfront': 3.301.0
-      '@ctx-core/child_process': 7.2.46
+      '@ctx-core/child_process': 7.2.47
       '@ctx-core/cli-args': 11.1.27
       '@ctx-core/object': 27.3.1
       '@types/jest': 29.5.0
       '@types/node': 18.15.11
-      aws-cdk: 2.71.0
+      aws-cdk: 2.72.0
       import-meta-resolve: 2.2.2
       ts-node: 10.9.1_qj46uwwzcluhgvra3n2zhrviru
       tsx: 3.12.6
@@ -52,10 +52,10 @@ importers:
       '@astrojs/solid-js': ^2.1.0
       '@cogov/css': workspace:*
       '@cogov/ui': workspace:^1.0.0
-      '@ctx-core/child_process': ^7.2.46
+      '@ctx-core/child_process': ^7.2.47
       '@ctx-core/http': ^9.4.23
       '@ctx-core/object': ^27.3.1
-      '@ctx-core/ui-solid': ^6.0.48
+      '@ctx-core/ui-solid': ^6.0.49
       '@types/aws-lambda': ^8.10.114
       '@types/node': 18.15.11
       astro: ^2.1.8
@@ -68,10 +68,10 @@ importers:
       '@astrojs/solid-js': 2.1.0_zkxyjamifglnswnp3my32f5vei
       '@cogov/css': link:../../libs/css
       '@cogov/ui': link:../../libs/ui
-      '@ctx-core/child_process': 7.2.46
+      '@ctx-core/child_process': 7.2.47
       '@ctx-core/http': 9.4.23
       '@ctx-core/object': 27.3.1
-      '@ctx-core/ui-solid': 6.0.48
+      '@ctx-core/ui-solid': 6.0.49
       '@types/aws-lambda': 8.10.114
       '@types/node': 18.15.11
       aws-lambda: 1.0.7
@@ -85,12 +85,12 @@ importers:
     specifiers:
       '@cogov/css': workspace:*
       '@ctx-core/object': ^27.3.1
-      '@ctx-core/ui-solid': ^6.0.48
+      '@ctx-core/ui-solid': ^6.0.49
       solid-js: ^1.6.16
     devDependencies:
       '@cogov/css': link:../css
       '@ctx-core/object': 27.3.1
-      '@ctx-core/ui-solid': 6.0.48
+      '@ctx-core/ui-solid': 6.0.49
       solid-js: 1.6.16
 
 packages:
@@ -1156,10 +1156,10 @@ packages:
       '@ctx-core/set': 12.1.20
     dev: true
 
-  /@ctx-core/child_process/7.2.46:
-    resolution: {integrity: sha512-WaKqHkUVK8KCiFXwR5skbuwEn0kBDFHQ+IPpDb9iY2+n1IOPqwV32nZsq0RF5Rj/QWB0V6tq4YwCAIDSzuaw3A==}
+  /@ctx-core/child_process/7.2.47:
+    resolution: {integrity: sha512-s9QenXC+4c9kUP+wl90via+MgEi8/vPu/LSPVDBmPe4M5hNvtHhrJjDQPOU3BF0mJeK66CMplfXdKgTzWTgzMA==}
     dependencies:
-      '@ctx-core/env': 17.2.45
+      '@ctx-core/env': 17.2.46
       '@ctx-core/object': 27.3.1
       memory-streams: 0.1.3
     dev: true
@@ -1185,17 +1185,17 @@ packages:
       path-type: 5.0.0
     dev: true
 
-  /@ctx-core/env/17.2.45:
-    resolution: {integrity: sha512-Q83P2hfra5Wfh6DvcsD8K47JGd+PDBNGaxNNAMMl0kGjr+s+DgzjwFFTc1vIDyvDONY+T0ZduQWlSpLo9MsO9Q==}
+  /@ctx-core/env/17.2.46:
+    resolution: {integrity: sha512-b2Zh5NQsP9nJDdsmr+pVENyJf+ha1GtDGtlW3tV+DKPyzDFLA+SiFf+2vS4bSl3bsxK9MnsNCBdqKO9JPzoR5Q==}
     dependencies:
-      '@ctx-core/error': 12.1.2
+      '@ctx-core/error': 12.2.0
       '@ctx-core/function': 21.12.2
       '@ctx-core/nanostores': 3.1.13
       '@ctx-core/object': 27.3.1
     dev: true
 
-  /@ctx-core/error/12.1.2:
-    resolution: {integrity: sha512-qZCrnkLIc+gbkbeKxA8sUJG44YJi/uM/+B9ILfXwOs+xSLBmErXJeQTxXVxQ7Zxvp+fzdjTs1YVrAAiYLHY9WQ==}
+  /@ctx-core/error/12.2.0:
+    resolution: {integrity: sha512-C4Dn6lzZyqV7H57jgL/4pDDYk0YMp/NCy0uH/6nxhvtinbgeP4iiq2cVuW/RYIyw6EsBoxwN+Y18yRX3e7i/qA==}
     dependencies:
       '@ctx-core/object': 27.3.1
     dev: true
@@ -1222,12 +1222,12 @@ packages:
       path-type: 5.0.0
     dev: true
 
-  /@ctx-core/monorepo/20.0.46:
-    resolution: {integrity: sha512-6pmf7HFc5Fo04MN+Nqxds47ixbkQJt65ECivz+9opibkNjLJgIxDG5tLUUxXdpAi5cFLK0bb1d+1oS31gtyx5w==}
+  /@ctx-core/monorepo/20.0.47:
+    resolution: {integrity: sha512-1zTx+Lbl9JtmZCgiyi3I/tVEq4k2z34OGD25o3/M6uDxdIutR6gWr+maTfXeMNV4NZiHwiDER29G7sxN7kMkXg==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.12.4
-      '@ctx-core/child_process': 7.2.46
+      '@ctx-core/child_process': 7.2.47
       '@ctx-core/cli-args': 11.1.27
       '@ctx-core/ctx-core-package-tools': 8.0.169
       '@ctx-core/function': 21.12.2
@@ -1297,10 +1297,10 @@ packages:
     resolution: {integrity: sha512-qMNdc7p6N0WKNY0Vli6LqV5Gn6mH5atV+uakGfPQEvlZB3li1QJPn9u6EK9Pr1CmnXtsZlBAOperSiCkzCve/A==}
     dev: true
 
-  /@ctx-core/ui-solid/6.0.48:
-    resolution: {integrity: sha512-NXwztOjeS4VyGpp5/U7oalbUkH/KtkR4pc+net2VTJy2iKxDTgVqk6/XE8U6p2IhFblpgBOOApZ8MLiW2/gMbA==}
+  /@ctx-core/ui-solid/6.0.49:
+    resolution: {integrity: sha512-kSSVzmIUb16bMRmNJB0y44JTLXyPI6hhRLdZwo3NJg4zw0wGw0jilCFpDJO3aPuIrH9430bmRQO8yCQfV4ZrsA==}
     dependencies:
-      '@ctx-core/env': 17.2.45
+      '@ctx-core/env': 17.2.46
       '@ctx-core/object': 27.3.1
       '@ctx-core/solid-js': 1.2.30
       '@solidjs/meta': 0.28.2_solid-js@1.6.16
@@ -2169,8 +2169,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-cdk-lib/2.71.0_constructs@10.1.295:
-    resolution: {integrity: sha512-YHAeClmsv7EbXpwPIKIBWO1aOp6VdvQFPp+7P1pQMgOz9kKiMO+B/m9g74iKscICEYmbHlZJ8T2KduHxObqIQw==}
+  /aws-cdk-lib/2.72.0_constructs@10.1.295:
+    resolution: {integrity: sha512-btGCt+37VOtTjdv2jQv8S4n1DE4Cope9tdtzX1AK6YoWHEBkqLLNvSsG4sFbcPekf2jeLmZcreaUYESpwXcc8g==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -2192,8 +2192,8 @@ packages:
       - table
       - yaml
 
-  /aws-cdk/2.71.0:
-    resolution: {integrity: sha512-vanN/suvCVBp1Qux7m72dTLkY+L+DIwRBZeb7PUcoic3CUeYeTNAl47sdlm/KMH+mAK4LOumecWVX2m56caHtA==}
+  /aws-cdk/2.72.0:
+    resolution: {integrity: sha512-Dpqw3qBob//8QuNquzxlfAKrTXA5oDj25GptigDq2X6bh5Ho1WBiN1C71zngwiR3OPEC5CXcYKiqxBXtXd9JiQ==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
