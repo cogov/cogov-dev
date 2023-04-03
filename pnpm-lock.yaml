@@ -55,7 +55,7 @@ importers:
       '@ctx-core/child_process': ^7.2.52
       '@ctx-core/http': ^9.4.25
       '@ctx-core/object': ^27.3.4
-      '@ctx-core/ui-solid': ^7.1.6
+      '@ctx-core/ui-solid': ^7.1.7
       '@types/aws-lambda': ^8.10.114
       '@types/node': 18.15.11
       astro: ^2.1.9
@@ -71,7 +71,7 @@ importers:
       '@ctx-core/child_process': 7.2.52
       '@ctx-core/http': 9.4.25
       '@ctx-core/object': 27.3.4
-      '@ctx-core/ui-solid': 7.1.6
+      '@ctx-core/ui-solid': 7.1.7
       '@types/aws-lambda': 8.10.114
       '@types/node': 18.15.11
       aws-lambda: 1.0.7
@@ -85,12 +85,12 @@ importers:
     specifiers:
       '@cogov/css': workspace:*
       '@ctx-core/object': ^27.3.4
-      '@ctx-core/ui-solid': ^7.1.6
+      '@ctx-core/ui-solid': ^7.1.7
       solid-js: ^1.7.1
     devDependencies:
       '@cogov/css': link:../css
       '@ctx-core/object': 27.3.4
-      '@ctx-core/ui-solid': 7.1.6
+      '@ctx-core/ui-solid': 7.1.7
       solid-js: 1.7.1
 
 packages:
@@ -1301,13 +1301,13 @@ packages:
     resolution: {integrity: sha512-qMNdc7p6N0WKNY0Vli6LqV5Gn6mH5atV+uakGfPQEvlZB3li1QJPn9u6EK9Pr1CmnXtsZlBAOperSiCkzCve/A==}
     dev: true
 
-  /@ctx-core/ui-solid/7.1.6:
-    resolution: {integrity: sha512-w/+kLwHPAFJUgTc2FUXebMhl1h6hSPM9ErO6mNXUUDsc9NQsWW1liCQhxr+kJYiknij+h2S/wieH79rQ36St1g==}
+  /@ctx-core/ui-solid/7.1.7:
+    resolution: {integrity: sha512-8kv+3znQ7gwX2UavtczR9MFBADs+lKkJF2HP4A2o5qFm8M0sv1j6kg32ijiXe/s06Va5Mko7EUvAHPTu3ssWGQ==}
     dependencies:
       '@ctx-core/env': 17.2.51
       '@ctx-core/object': 27.3.4
       '@ctx-core/solid-js': 1.2.35
-      '@solidjs/meta': 0.28.3_solid-js@1.7.1
+      '@solidjs/meta': 0.28.4_solid-js@1.7.1
       solid-js: 1.7.1
     dev: true
 
@@ -1865,8 +1865,8 @@ packages:
     resolution: {integrity: sha512-gFukHN4t8K4+wVC+ECqeqwzBDeFeTzBXroBTqE6vcWrQGbEUpHO7LYdG0f4xnvYq4VOEwITSlHlp0JBAIFMS/g==}
     dev: true
 
-  /@solidjs/meta/0.28.3_solid-js@1.7.1:
-    resolution: {integrity: sha512-rZnvDhPILrBeRIr31pnfGdBMHeamsUj44GLK1j6nnDBMCX4VWO5hwTwpaLsgRgPkRD6U9zTtt33bKNVb92rSSg==}
+  /@solidjs/meta/0.28.4_solid-js@1.7.1:
+    resolution: {integrity: sha512-1USElsQuGVcJnmZ6CxPfUVmKvCsVdBQoGrUyMxLtFw36Ytt90dPs/qLyXLvPR/ZPD16/qauWqg6APEkbrDOLcA==}
     peerDependencies:
       solid-js: '>=1.4.0'
     dependencies:
