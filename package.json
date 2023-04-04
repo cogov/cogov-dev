@@ -8,8 +8,8 @@
 	},
 	"devDependencies": {
 		"@cogov/dev": "^1.0.0",
-		"@ctx-core/jetbrains": "^7.2.31",
-		"@ctx-core/monorepo": "^20.0.57",
+		"@ctx-core/jetbrains": "^7.2.32",
+		"@ctx-core/monorepo": "^20.0.60",
 		"tsx": "^3.12.6"
 	},
 	"workspaces": {
