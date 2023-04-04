@@ -5,13 +5,13 @@ importers:
   .:
     specifiers:
       '@cogov/dev': ^1.0.0
-      '@ctx-core/jetbrains': ^7.2.32
-      '@ctx-core/monorepo': ^20.0.60
+      '@ctx-core/jetbrains': ^7.2.33
+      '@ctx-core/monorepo': ^20.0.61
       tsx: ^3.12.6
     devDependencies:
       '@cogov/dev': 'link:'
-      '@ctx-core/jetbrains': 7.2.32
-      '@ctx-core/monorepo': 20.0.60
+      '@ctx-core/jetbrains': 7.2.33
+      '@ctx-core/monorepo': 20.0.61
       tsx: 3.12.6
 
   apps/cdk:
@@ -1214,20 +1214,20 @@ packages:
       '@ctx-core/object': 27.4.2
     dev: true
 
-  /@ctx-core/jetbrains/7.2.32:
-    resolution: {integrity: sha512-7s19UGHvzeGGslcBuet2vDpWCICHdBmEHuy44pdjEjUl3wUdhvbMpBCZvsM4bt4YuY4xKQRdDS3yhV18zJI9dQ==}
+  /@ctx-core/jetbrains/7.2.33:
+    resolution: {integrity: sha512-HNMIfsp/rYrLBA0KZseriBB5jgy4c5QwUPDQr7ADOrbgyndRLH14taPXlTbTKyNhxCUNLtpgP8U6Z8mJ/3P15Q==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.12.10
       '@ctx-core/cli-args': 11.1.33
-      '@ctx-core/queue': 7.5.0
+      '@ctx-core/queue': 7.5.1
       dir-glob: 3.0.1
       globby: 13.1.3
       path-type: 5.0.0
     dev: true
 
-  /@ctx-core/monorepo/20.0.60:
-    resolution: {integrity: sha512-41Ymm/zokn2WvfGyz6YA+W2x0cYIEz6+pmmNVeYkKoS3EYcVw4gkSVFui7qB31clfphFvI3A9fmhfcXmup+SvA==}
+  /@ctx-core/monorepo/20.0.61:
+    resolution: {integrity: sha512-39sjxnaiVrWoWPM5Y0CB9Gw0sothQzMWKDxsh6rx1B6DTWA73m7M3qlGCzU2Un9aSpR/xjBtaus3hhPqOqekvA==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.12.10
@@ -1237,7 +1237,7 @@ packages:
       '@ctx-core/function': 21.15.0
       '@ctx-core/object': 27.4.2
       '@ctx-core/package': 9.2.35
-      '@ctx-core/queue': 7.5.0
+      '@ctx-core/queue': 7.5.1
       '@types/node': 18.15.11
       detect-indent: 7.0.1
       dir-glob: 3.0.1
@@ -1278,8 +1278,8 @@ packages:
       semver: 7.3.8
     dev: true
 
-  /@ctx-core/queue/7.5.0:
-    resolution: {integrity: sha512-FZWXiBp6L/nmvjGMlHTYxS3v1pGS7EhOZM+K/qzR1pTyuTc9qb2QDyEpY6zvQY/fcYLFu/Q4DSoBE5YqPgT3Ew==}
+  /@ctx-core/queue/7.5.1:
+    resolution: {integrity: sha512-OnKiTJjZzpweazJjlU2jprEzPoNUGxHHBpdmw9/WfE3vSx8chR01ceIgCWqkQvQycbCS2AgwZbJrb6eG0fS6Wg==}
     dev: true
 
   /@ctx-core/set/12.1.24:
