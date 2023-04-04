@@ -55,28 +55,28 @@ importers:
       '@ctx-core/child_process': ^7.3.2
       '@ctx-core/http': ^9.4.28
       '@ctx-core/object': ^27.4.2
-      '@ctx-core/ui-solid': ^7.1.12
+      '@ctx-core/ui-solid': ^7.1.13
       '@types/aws-lambda': ^8.10.114
       '@types/node': 18.15.11
       astro: ^2.1.9
       aws-lambda: ^1.0.7
       esbuild: ^0.17.15
-      solid-js: ^1.7.1
+      solid-js: ^1.7.2
     dependencies:
       astro: 2.1.9_@types+node@18.15.11
     devDependencies:
-      '@astrojs/solid-js': 2.1.0_jbduisyomg63qo6jl5easmsxt4
+      '@astrojs/solid-js': 2.1.0_cdksdpyw5wxm7mfcekl5iy3anq
       '@cogov/css': link:../../libs/css
       '@cogov/ui': link:../../libs/ui
       '@ctx-core/child_process': 7.3.2
       '@ctx-core/http': 9.4.28
       '@ctx-core/object': 27.4.2
-      '@ctx-core/ui-solid': 7.1.12
+      '@ctx-core/ui-solid': 7.1.13
       '@types/aws-lambda': 8.10.114
       '@types/node': 18.15.11
       aws-lambda: 1.0.7
       esbuild: 0.17.15
-      solid-js: 1.7.1
+      solid-js: 1.7.2
 
   libs/css:
     specifiers: {}
@@ -85,13 +85,13 @@ importers:
     specifiers:
       '@cogov/css': workspace:*
       '@ctx-core/object': ^27.4.2
-      '@ctx-core/ui-solid': ^7.1.12
-      solid-js: ^1.7.1
+      '@ctx-core/ui-solid': ^7.1.13
+      solid-js: ^1.7.2
     devDependencies:
       '@cogov/css': link:../css
       '@ctx-core/object': 27.4.2
-      '@ctx-core/ui-solid': 7.1.12
-      solid-js: 1.7.1
+      '@ctx-core/ui-solid': 7.1.13
+      solid-js: 1.7.2
 
 packages:
 
@@ -158,14 +158,14 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/solid-js/2.1.0_jbduisyomg63qo6jl5easmsxt4:
+  /@astrojs/solid-js/2.1.0_cdksdpyw5wxm7mfcekl5iy3anq:
     resolution: {integrity: sha512-p07DP9NRWJPjtF+CzPZ9lzOMkoyw6wSs3S6g3OZUxR+DVQy3VIXXDqCcnZZVJI34VakkHuViZaoNNkBW/9I54w==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
       solid-js: ^1.4.3
     dependencies:
       babel-preset-solid: 1.6.10_@babel+core@7.20.12
-      solid-js: 1.7.1
+      solid-js: 1.7.2
       vitefu: 0.2.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -1288,27 +1288,27 @@ packages:
       '@ctx-core/function': 21.15.0
     dev: true
 
-  /@ctx-core/solid-js/1.2.39:
-    resolution: {integrity: sha512-uzrmRGunqUzrRbeU/xDzyTah69iQsWMxe7fGzp9w7MJ+/D99QrIh25ibLok5iAI9EorUGsONoFZ2XuoNPVR7Pw==}
+  /@ctx-core/solid-js/1.2.40:
+    resolution: {integrity: sha512-bYn8CcTjEhgd97P1tXM4SLaG7wP+ftXGdBZC/NBlvEOU+1puu+OLYB5ujV7tihOTqT4L2Y/a16iLq+QRs8p5zQ==}
     dependencies:
       '@ctx-core/function': 21.15.0
       '@ctx-core/number': 8.6.3
       '@ctx-core/object': 27.4.2
-      solid-js: 1.7.1
+      solid-js: 1.7.2
     dev: true
 
   /@ctx-core/types/1.2.0:
     resolution: {integrity: sha512-PEyjZv15z+H29YsXMOvetKsKbI5LMO85CezLJgv9+e/EXW2A52BlXbiGS0HGA97BSCerfyCOsq3Lf2BuNC3OFw==}
     dev: true
 
-  /@ctx-core/ui-solid/7.1.12:
-    resolution: {integrity: sha512-9CuI0FlKjCQdo99P2uUVTu2ujGHSCFYm4q7qnNCF6+sU1OCNWPxsOrOY0Ckof/lvk7w60uGRQUt45Wm1vIKqZw==}
+  /@ctx-core/ui-solid/7.1.13:
+    resolution: {integrity: sha512-FtqlvxCn9qzRYxQbrTogFXyXB3HiiCu25mqMJMZcEkouOu8HCf9dY8kP4QnuzpRUnNX+9/f0nhXuCmsH1ZA1sg==}
     dependencies:
       '@ctx-core/env': 17.2.56
       '@ctx-core/object': 27.4.2
-      '@ctx-core/solid-js': 1.2.39
-      '@solidjs/meta': 0.28.4_solid-js@1.7.1
-      solid-js: 1.7.1
+      '@ctx-core/solid-js': 1.2.40
+      '@solidjs/meta': 0.28.4_solid-js@1.7.2
+      solid-js: 1.7.2
     dev: true
 
   /@emmetio/abbreviation/2.2.3:
@@ -1865,12 +1865,12 @@ packages:
     resolution: {integrity: sha512-gFukHN4t8K4+wVC+ECqeqwzBDeFeTzBXroBTqE6vcWrQGbEUpHO7LYdG0f4xnvYq4VOEwITSlHlp0JBAIFMS/g==}
     dev: true
 
-  /@solidjs/meta/0.28.4_solid-js@1.7.1:
+  /@solidjs/meta/0.28.4_solid-js@1.7.2:
     resolution: {integrity: sha512-1USElsQuGVcJnmZ6CxPfUVmKvCsVdBQoGrUyMxLtFw36Ytt90dPs/qLyXLvPR/ZPD16/qauWqg6APEkbrDOLcA==}
     peerDependencies:
       solid-js: '>=1.4.0'
     dependencies:
-      solid-js: 1.7.1
+      solid-js: 1.7.2
     dev: true
 
   /@tsconfig/node10/1.0.9:
@@ -4077,7 +4077,7 @@ packages:
     resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      chalk: 4.1.2
+      chalk: 5.2.0
       cli-cursor: 4.0.0
       cli-spinners: 2.7.0
       is-interactive: 2.0.0
@@ -4534,8 +4534,8 @@ packages:
       is-fullwidth-code-point: 3.0.0
     dev: false
 
-  /solid-js/1.7.1:
-    resolution: {integrity: sha512-G7wPaRsxY+Mr6GTVSHIqrpHoJNM5YHX6V/X03mPo9RmsuVZU6ZA2O+jVJty6mOyGME24WR30E55L0IQsxxO/vg==}
+  /solid-js/1.7.2:
+    resolution: {integrity: sha512-01f8GIc+HTTlfDXtK+TFku3AllHyJ3hNsIpxM2qpObRP4VbEGVIP6VbULnThPlpse+J1y/I/1N9QeQ9MNkE8Ow==}
     dependencies:
       csstype: 3.1.1
       seroval: 0.5.1
