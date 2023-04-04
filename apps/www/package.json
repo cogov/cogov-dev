@@ -17,7 +17,7 @@
     "@astrojs/solid-js": "^2.1.0",
     "@cogov/css": "workspace:*",
     "@cogov/ui": "workspace:^1.0.0",
-    "@ctx-core/child_process": "^7.2.56",
+    "@ctx-core/child_process": "^7.3.0",
     "@ctx-core/http": "^9.4.27",
     "@ctx-core/object": "^27.4.1",
     "@ctx-core/ui-solid": "^7.1.10",
