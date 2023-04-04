@@ -8,7 +8,7 @@
 	"devDependencies": {
 		"@cogov/css": "workspace:*",
 		"@ctx-core/object": "^27.4.1",
-		"@ctx-core/ui-solid": "^7.1.9",
+		"@ctx-core/ui-solid": "^7.1.10",
 		"solid-js": "^1.7.1"
 	}
 }
