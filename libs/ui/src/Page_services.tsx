@@ -77,7 +77,7 @@ export function Page_services($p:{ ctx?:Ctx }) {
 				<p class="servicesContent__body">
 					Do you need a custom application that has an element of decision making or sensing user coherence? The CoGov dev team can work with you to build it!
 					<br/><br/>
-					Click <a href="/connect" class="addlink">here</a>
+					Click <a href="/connect" class="addlink">here</a>{' '}
 					to receive a free 1 hour consultation to see how CoGov can support your application development needs.
 				</p>
 			</div>
