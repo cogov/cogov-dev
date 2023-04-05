@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "type": "module",
   "bin": {
-    "cdk--build": "tsx bin/cdk--build.ts",
-    "cdk--deploy": "tsx bin/cdk--deploy.ts",
-    "cogov--invalidate": "tsx bin/cogov--invalidate.ts",
-    "cdk--synth": "cdk synth"
+    "cdk__build": "bin/cdk__build/index.sh",
+    "cdk__build_app": "bin/cdk__build_app/index.sh",
+    "cdk__build_deployment": "bin/cdk__build_deployment/index.sh",
+    "cdk__deploy": "bin/cdk__deploy/index.sh",
+    "cogov__invalidate": "bin/cogov__invalidate/index.sh",
+    "synth": "cdk synth"
   },
   "scripts": {
-    "build": "tsx bin/cdk--build.ts",
-    "deploy": "tsx bin/cdk--deploy.ts",
-    "cogov--invalidate": "tsx bin/cogov--invalidate.ts",
+    "build": "bin/cdk__build/index.sh",
+    "build_app": "bin/cdk__build_app/index.sh",
+    "build_deployment": "bin/cdk__build_deployment/index.sh",
+    "deploy": "bin/cdk__deploy/index.sh",
+    "cogov__invalidate": "bin/cogov__invalidate/index.sh",
     "synth": "cdk synth",
     "test": "jest",
     "cdk": "cdk"
@@ -25,6 +29,7 @@
     "@aws-sdk/client-cloudfront": "^3.306.0",
     "@ctx-core/child_process": "^7.3.4",
     "@ctx-core/cli-args": "^11.2.1",
+    "@ctx-core/env": "^17.2.58",
     "@ctx-core/object": "^27.4.3",
     "@types/jest": "^29.5.0",
     "@types/node": "18.15.11",

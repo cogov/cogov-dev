@@ -6,15 +6,31 @@ import {
 	ListDistributionsCommand
 } from '@aws-sdk/client-cloudfront'
 const DOMAIN = process.env.DOMAIN!
-main().then(()=>process.exit(0)).catch(()=>process.exit(1))
-async function main() {
-	const client = new CloudFrontClient({})
-	const list_distributions_cmd = new ListDistributionsCommand({})
-	const list_distributions_res = await client.send(list_distributions_cmd)
+if (process.argv[1] === new URL(import.meta.url).pathname) {
+	cogov__invalidate()
+		.then(()=>{
+			console.info('cogov__invalidate: SUCCESS!')
+			process.exit(0)
+		})
+		.catch(err=>{
+			console.error(err)
+			process.exit(1)
+		})
+}
+export async function cogov__invalidate() {
+	const client =
+		new CloudFrontClient({})
+	const list_distributions_cmd =
+		new ListDistributionsCommand({})
+	const list_distributions_res =
+		await client.send(list_distributions_cmd)
 	const distribution_summary =
 		list_distributions_res.DistributionList?.Items
-		? list_distributions_res.DistributionList.Items.find(($:DistributionSummary)=>
-			$?.Aliases?.Items ? !!~$.Aliases.Items.indexOf(DOMAIN) : false)
+		? list_distributions_res.DistributionList.Items
+			.find((distribution_summary:DistributionSummary)=>
+				distribution_summary?.Aliases?.Items
+				? !!~distribution_summary.Aliases.Items.indexOf(DOMAIN)
+				: false)
 		: null
 	if (!distribution_summary) {
 		console.warn(`No Distribution for ${DOMAIN}`)

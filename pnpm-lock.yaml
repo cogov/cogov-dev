@@ -19,6 +19,7 @@ importers:
       '@aws-sdk/client-cloudfront': ^3.306.0
       '@ctx-core/child_process': ^7.3.4
       '@ctx-core/cli-args': ^11.2.1
+      '@ctx-core/env': ^17.2.58
       '@ctx-core/object': ^27.4.3
       '@types/jest': ^29.5.0
       '@types/node': 18.15.11
@@ -38,6 +39,7 @@ importers:
       '@aws-sdk/client-cloudfront': 3.306.0
       '@ctx-core/child_process': 7.3.4
       '@ctx-core/cli-args': 11.2.1
+      '@ctx-core/env': 17.2.58
       '@ctx-core/object': 27.4.3
       '@types/jest': 29.5.0
       '@types/node': 18.15.11
@@ -4077,7 +4079,7 @@ packages:
     resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      chalk: 4.1.2
+      chalk: 5.2.0
       cli-cursor: 4.0.0
       cli-spinners: 2.7.0
       is-interactive: 2.0.0

@@ -1,5 +1,5 @@
 {
-  "app": "tsx bin/cdk--build.ts",
+  "app": "bin/cdk__build/index.sh",
   "watch": {
     "include": [
       "**"
