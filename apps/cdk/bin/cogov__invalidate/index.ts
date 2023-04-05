@@ -36,17 +36,19 @@ export async function cogov__invalidate() {
 		console.warn(`No Distribution for ${DOMAIN}`)
 		process.exit(1)
 	}
-	const invalidation_cmd = new CreateInvalidationCommand({
-		DistributionId: distribution_summary.Id,
-		InvalidationBatch: {
-			Paths: {
-				Quantity: 1,
-				Items: ['/*']
-			},
-			CallerReference: new Date().getTime().toString(),
-		}
-	})
-	const invalidation_res = await client.send(invalidation_cmd)
+	const invalidation_cmd =
+		new CreateInvalidationCommand({
+			DistributionId: distribution_summary.Id,
+			InvalidationBatch: {
+				Paths: {
+					Quantity: 1,
+					Items: ['/*']
+				},
+				CallerReference: new Date().getTime().toString(),
+			}
+		})
+	const invalidation_res =
+		await client.send(invalidation_cmd)
 	console.info(invalidation_res)
 	process.exit(0)
 }
