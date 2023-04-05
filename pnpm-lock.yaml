@@ -6,12 +6,12 @@ importers:
     specifiers:
       '@cogov/dev': ^1.0.0
       '@ctx-core/jetbrains': ^7.2.36
-      '@ctx-core/monorepo': ^20.0.66
+      '@ctx-core/monorepo': ^20.0.67
       tsx: ^3.12.6
     devDependencies:
       '@cogov/dev': 'link:'
       '@ctx-core/jetbrains': 7.2.36
-      '@ctx-core/monorepo': 20.0.66
+      '@ctx-core/monorepo': 20.0.67
       tsx: 3.12.6
 
   apps/cdk:
@@ -1228,8 +1228,8 @@ packages:
       path-type: 5.0.0
     dev: true
 
-  /@ctx-core/monorepo/20.0.66:
-    resolution: {integrity: sha512-NW7IQRiB1mbRVmEZSWLQdpKjqNmw8W8ID6fipBBzl+qcC6mbN0G+BNhmPTSFcTV2RiiN0ZFezVfIohO+1AMcIQ==}
+  /@ctx-core/monorepo/20.0.67:
+    resolution: {integrity: sha512-WrEa54+jKlPcjFb2/UTUzcCiHCSLlODo32AML07OufMd0Wkz9YSk5pTJb8yc9V0a/VgioDYSJv79kpX2elWD4Q==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.12.11
@@ -1238,7 +1238,7 @@ packages:
       '@ctx-core/ctx-core-package-tools': 8.0.174
       '@ctx-core/function': 21.16.0
       '@ctx-core/object': 27.4.3
-      '@ctx-core/package': 9.2.38
+      '@ctx-core/package': 9.2.39
       '@ctx-core/queue': 7.5.1
       '@types/node': 18.15.11
       detect-indent: 7.0.1
@@ -1271,8 +1271,8 @@ packages:
       '@ctx-core/function': 21.16.0
     dev: true
 
-  /@ctx-core/package/9.2.38:
-    resolution: {integrity: sha512-zb/BO5oZGUNfzIhkvHZs8/wxIqrabp7xQUNpQ6oOAIXD3eITx2BiI9g1dljXjp7R44n4kSxrZ7dtyBe6OC1ssw==}
+  /@ctx-core/package/9.2.39:
+    resolution: {integrity: sha512-NSzFREC0/zqxEOYkaL6owjaVqTOHX+TW/mx6Wapa6qSFSwMltGPxwAP6XMVCNxAfxtEkVaahll2msV2Hq/Arkw==}
     hasBin: true
     dependencies:
       '@ctx-core/cli-args': 11.3.0
@@ -4756,7 +4756,7 @@ packages:
   /vitefu/0.2.4:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
-      vite: latest
+      vite: ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
       vite:
         optional: true
@@ -4765,7 +4765,7 @@ packages:
   /vitefu/0.2.4_vite@4.2.1:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
-      vite: latest
+      vite: ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
       vite:
         optional: true
