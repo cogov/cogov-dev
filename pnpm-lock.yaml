@@ -25,15 +25,15 @@ importers:
       '@types/node': 18.15.11
       aws-cdk: 2.73.0
       aws-cdk-lib: 2.73.0
-      constructs: ^10.1.305
+      constructs: ^10.1.306
       import-meta-resolve: ^2.2.2
       source-map-support: ^0.5.21
       ts-node: ^10.9.1
       tsx: ^3.12.6
       typescript: 5.0.4
     dependencies:
-      aws-cdk-lib: 2.73.0_constructs@10.1.305
-      constructs: 10.1.305
+      aws-cdk-lib: 2.73.0_constructs@10.1.306
+      constructs: 10.1.306
       source-map-support: 0.5.21
     devDependencies:
       '@aws-sdk/client-cloudfront': 3.309.0
@@ -1974,7 +1974,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-cdk-lib/2.73.0_constructs@10.1.305:
+  /aws-cdk-lib/2.73.0_constructs@10.1.306:
     resolution: {integrity: sha512-r9CUe3R7EThr9U0Eb7kQCK4Ee34TDeMH+bonvGD9rNRRTYDauvAgNCsx4DZYYksPrXLRzWjzVbuXAHaDDzWt+A==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -1985,7 +1985,7 @@ packages:
       '@aws-cdk/asset-node-proxy-agent-v5': 2.0.78
       '@balena/dockerignore': 1.0.2
       case: 1.6.3
-      constructs: 10.1.305
+      constructs: 10.1.306
       fs-extra: 9.1.0
       ignore: 5.2.4
       jsonschema: 1.4.1
@@ -2277,8 +2277,8 @@ packages:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
     dev: false
 
-  /constructs/10.1.305:
-    resolution: {integrity: sha512-Dlv6/pAevgTRAiHB7z77dZD3523+FNKX2Qg65FIcNrAakllcgA69dql+j9X4Y3+JXUhQlfliys72kVAk+Ah3KA==}
+  /constructs/10.1.306:
+    resolution: {integrity: sha512-7UruYLZLOk7qN9fQRX339iluZnqLVEPg8jSiKmKtehY4Sk0V91AOCe8/YccpYYTsMud3EKha8TT1zJa5SJPQug==}
     engines: {node: '>= 14.17.0'}
     dev: false
 
@@ -2304,7 +2304,7 @@ packages:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
-      which: 3.0.0
+      which: 2.0.2
     dev: false
 
   /csstype/3.1.1:
@@ -3828,7 +3828,7 @@ packages:
     resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      chalk: 4.1.2
+      chalk: 5.2.0
       cli-cursor: 4.0.0
       cli-spinners: 2.7.0
       is-interactive: 2.0.0
@@ -4756,7 +4756,7 @@ packages:
   /vitefu/0.2.4:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
-      vite: latest
+      vite: ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
       vite:
         optional: true
@@ -4765,7 +4765,7 @@ packages:
   /vitefu/0.2.4_vite@4.2.1:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
-      vite: latest
+      vite: ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
       vite:
         optional: true
@@ -4876,9 +4876,9 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /which/3.0.0:
-    resolution: {integrity: sha512-nla//68K9NU6yRiwDY/Q8aU6siKlSs64aEC7+IV56QoAuyQT2ovsJcgGYGyqMOmI/CGN1BOR6mM5EN0FBO+zyQ==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /which/2.0.2:
+    resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
+    engines: {node: '>= 8'}
     hasBin: true
     dependencies:
       isexe: 2.0.0
