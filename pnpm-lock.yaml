@@ -6,12 +6,12 @@ importers:
     specifiers:
       '@cogov/dev': ^1.0.0
       '@ctx-core/jetbrains': ^7.2.37
-      '@ctx-core/monorepo': ^20.0.72
+      '@ctx-core/monorepo': ^20.0.73
       tsx: ^3.12.6
     devDependencies:
       '@cogov/dev': 'link:'
       '@ctx-core/jetbrains': 7.2.37
-      '@ctx-core/monorepo': 20.0.72
+      '@ctx-core/monorepo': 20.0.73
       tsx: 3.12.6
 
   apps/cdk:
@@ -1228,8 +1228,8 @@ packages:
       path-type: 5.0.0
     dev: true
 
-  /@ctx-core/monorepo/20.0.72:
-    resolution: {integrity: sha512-EJcibyLb3Gbat+GgnxNyk6bdvXxfSgRdViop9PbBUMXlHoaRA2bb+QkY0k6KQDghLNYdDaNPrbMLx7L7CGjcBQ==}
+  /@ctx-core/monorepo/20.0.73:
+    resolution: {integrity: sha512-q+uA21HwpljMA/6A2jO5Vs/GZ4me0SlvdY0rPmbDFHUA5vjt0PXB0TMsJ0Ojual1mKqI5QdkjWXzX64pTEKvEA==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.12.12
@@ -1238,7 +1238,7 @@ packages:
       '@ctx-core/ctx-core-package-tools': 8.0.175
       '@ctx-core/function': 21.17.0
       '@ctx-core/object': 27.4.4
-      '@ctx-core/package': 9.2.40
+      '@ctx-core/package': 9.2.41
       '@ctx-core/queue': 7.5.1
       '@types/node': 18.15.11
       detect-indent: 7.0.1
@@ -1246,7 +1246,7 @@ packages:
       js-yaml: 4.1.0
       ora: 6.3.0
       path-type: 5.0.0
-      semver: 7.3.8
+      semver: 7.4.0
       tiny-glob: 0.2.9
     dev: true
 
@@ -1271,13 +1271,13 @@ packages:
       '@ctx-core/function': 21.17.0
     dev: true
 
-  /@ctx-core/package/9.2.40:
-    resolution: {integrity: sha512-1EoaM+s84YxBqkoCtFc9iwIkl+ccqnjJaKlwC+Rwf4bsV7YNlPLcsOpW3ruabDwtADRcTz0RBcjpMgy43jXaQA==}
+  /@ctx-core/package/9.2.41:
+    resolution: {integrity: sha512-o9a9r9yA2KJACbCVnymoP4pbD64kOgaSRTG5mQ8S8adMJpzY6lN4yNcWr/G/Mw7QQzG/+/jG5pISa3KmrOcXlw==}
     hasBin: true
     dependencies:
       '@ctx-core/cli-args': 11.3.1
       import-meta-resolve: 2.2.2
-      semver: 7.3.8
+      semver: 7.4.0
     dev: true
 
   /@ctx-core/queue/7.5.1:
@@ -3828,7 +3828,7 @@ packages:
     resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      chalk: 5.2.0
+      chalk: 4.1.2
       cli-cursor: 4.0.0
       cli-spinners: 2.7.0
       is-interactive: 2.0.0
@@ -4230,6 +4230,15 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
+
+  /semver/7.4.0:
+    resolution: {integrity: sha512-RgOxM8Mw+7Zus0+zcLEUn8+JfoLpj/huFTItQy2hsM4khuC1HYRDp0cU482Ewn/Fcy6bCjufD8vAj7voC66KQw==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
 
   /seroval/0.5.1:
     resolution: {integrity: sha512-ZfhQVB59hmIauJG5Ydynupy8KHyr5imGNtdDhbZG68Ufh1Ynkv9KOYOAABf71oVbQxJ8VkWnMHAjEHE7fWkH5g==}
