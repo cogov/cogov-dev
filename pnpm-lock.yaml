@@ -5,12 +5,12 @@ importers:
   .:
     specifiers:
       '@cogov/dev': ^1.0.0
-      '@ctx-core/jetbrains': ^7.2.37
+      '@ctx-core/jetbrains': ^7.2.38
       '@ctx-core/monorepo': ^20.0.73
       tsx: ^3.12.6
     devDependencies:
       '@cogov/dev': 'link:'
-      '@ctx-core/jetbrains': 7.2.37
+      '@ctx-core/jetbrains': 7.2.38
       '@ctx-core/monorepo': 20.0.73
       tsx: 3.12.6
 
@@ -1216,15 +1216,15 @@ packages:
       '@ctx-core/object': 27.4.4
     dev: true
 
-  /@ctx-core/jetbrains/7.2.37:
-    resolution: {integrity: sha512-mRsA4tJ7Ha8N3GqCrA4tWxDuXof2Bl/xmZN4Y+b3izou7Q2jKXLK35HWIztDOEKPfrjA3e1N5wGLR8y/Oyj+2A==}
+  /@ctx-core/jetbrains/7.2.38:
+    resolution: {integrity: sha512-SoZB9lvBtWkHkIuQab4Ghb4uOa2o6b/biwGKqrMgcgiPD+1k6FiTbAZSg8mA9U1LgVDOjNhunfGqoMa6lQAVng==}
     hasBin: true
     dependencies:
       '@ctx-core/array': 26.12.12
       '@ctx-core/cli-args': 11.3.1
       '@ctx-core/queue': 7.5.1
       dir-glob: 3.0.1
-      globby: 13.1.3
+      globby: 13.1.4
       path-type: 5.0.0
     dev: true
 
@@ -2856,8 +2856,8 @@ packages:
   /globalyzer/0.1.0:
     resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
 
-  /globby/13.1.3:
-    resolution: {integrity: sha512-8krCNHXvlCgHDpegPzleMq07yMYTO2sXKASmZmquEYWEmCx6J5UTRbp5RwMJkTJGtcQ44YpiUYUiN0b9mzy8Bw==}
+  /globby/13.1.4:
+    resolution: {integrity: sha512-iui/IiiW+QrJ1X1hKH5qwlMQyv34wJAYwH1vrf8b9kBA4sNiif3gKsMHa+BrdnOpEudWjpotfa7LrTzB1ERS/g==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       dir-glob: 3.0.1
