@@ -16,7 +16,7 @@ importers:
 
   apps/cdk:
     specifiers:
-      '@aws-sdk/client-cloudfront': ^3.310.0
+      '@aws-sdk/client-cloudfront': ^3.312.0
       '@ctx-core/child_process': ^7.3.8
       '@ctx-core/cli-args': ^11.3.1
       '@ctx-core/env': ^17.2.62
@@ -36,7 +36,7 @@ importers:
       constructs: 10.1.308
       source-map-support: 0.5.21
     devDependencies:
-      '@aws-sdk/client-cloudfront': 3.310.0
+      '@aws-sdk/client-cloudfront': 3.312.0
       '@ctx-core/child_process': 7.3.8
       '@ctx-core/cli-args': 11.3.1
       '@ctx-core/env': 17.2.62
@@ -257,13 +257,13 @@ packages:
       tslib: 2.5.0
     dev: true
 
-  /@aws-sdk/client-cloudfront/3.310.0:
-    resolution: {integrity: sha512-J/NYgQxbteubinAGBXmLcfzkwscyysm9gS7IzJ2muOIAYB2dAymG/ePUltNiFIAJeCB+830mux2P9l8jYTBzEg==}
+  /@aws-sdk/client-cloudfront/3.312.0:
+    resolution: {integrity: sha512-VqZ45BrAn0z02RaGj789XiADOValgipeToLXg6eSiHLJVyIam2Jw+kDJebsUAqc3Z3A61hqTESDC+4MepKyUsA==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
-      '@aws-sdk/client-sts': 3.310.0
+      '@aws-sdk/client-sts': 3.312.0
       '@aws-sdk/config-resolver': 3.310.0
       '@aws-sdk/credential-provider-node': 3.310.0
       '@aws-sdk/fetch-http-handler': 3.310.0
@@ -383,8 +383,8 @@ packages:
       - aws-crt
     dev: true
 
-  /@aws-sdk/client-sts/3.310.0:
-    resolution: {integrity: sha512-V1LyJwmWuo0OaPIWrE/BDNr14FJdnBTVCmCnEnq1DKVQI/ihVr8HuDsSM4K8jaywWNJaQFNvAKOVuCY2BdmIyA==}
+  /@aws-sdk/client-sts/3.312.0:
+    resolution: {integrity: sha512-t0U7vRvWaMjrzBUo6tPrHe6HE97Blqx+b4GOjFbcbLtzxLlcRfhnWJik0Lp8hJtVqzNoN5mL4OeYgK7CRpL/Sw==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-crypto/sha256-browser': 3.0.0
@@ -2304,7 +2304,7 @@ packages:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
-      which: 3.0.0
+      which: 2.0.2
     dev: false
 
   /csstype/3.1.1:
@@ -3828,7 +3828,7 @@ packages:
     resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      chalk: 4.1.2
+      chalk: 5.2.0
       cli-cursor: 4.0.0
       cli-spinners: 2.7.0
       is-interactive: 2.0.0
@@ -4764,7 +4764,7 @@ packages:
   /vitefu/0.2.4:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
-      vite: latest
+      vite: ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
       vite:
         optional: true
@@ -4773,7 +4773,7 @@ packages:
   /vitefu/0.2.4_vite@4.2.1:
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
-      vite: latest
+      vite: ^3.0.0 || ^4.0.0
     peerDependenciesMeta:
       vite:
         optional: true
@@ -4884,9 +4884,9 @@ packages:
       is-typed-array: 1.1.10
     dev: true
 
-  /which/3.0.0:
-    resolution: {integrity: sha512-nla//68K9NU6yRiwDY/Q8aU6siKlSs64aEC7+IV56QoAuyQT2ovsJcgGYGyqMOmI/CGN1BOR6mM5EN0FBO+zyQ==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /which/2.0.2:
+    resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
+    engines: {node: '>= 8'}
     hasBin: true
     dependencies:
       isexe: 2.0.0
