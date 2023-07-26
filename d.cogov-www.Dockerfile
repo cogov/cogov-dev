@@ -1,0 +1,9 @@
+FROM node:current-alpine
+ARG USER
+ARG UID=1000
+ARG GID
+WORKDIR /app
+COPY apps/www/dist ./
+EXPOSE 4009
+
+CMD ["node", "--enable-source-maps", "./server/entry.mjs"]

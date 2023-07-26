@@ -2,9 +2,21 @@
 	"name": "@cogov/dev",
 	"private": true,
 	"version": "1.0.0",
+	"type": "module",
 	"bin": {
+		"cogov--docker-compose--build": "./bin/cogov--docker-compose--build.sh",
+		"cogov--docker-compose--restart": "./bin/cogov--docker-compose--restart.sh",
+		"cogov--docker-compose--stop": "./bin/cogov--docker-compose--stop.sh",
+		"cogov--docker-compose--up": "./bin/cogov--docker-compose--up.sh",
+		"cogov-www--build": "./bin/cogov-www--build.sh",
+		"cogov-www--docker-compose--rebuild": "./bin/cogov--docker-compose--rebuild.sh",
+		"cogov-www--docker-compose--restart": "./bin/cogov--docker-compose--restart.sh",
+		"docker-compose--init": "./bin/docker-compose--init.sh",
 		"tmux-dev": "./bin/tmux-dev.sh",
-		"tmux-rename-window": "./bin/tmux-rename-window.sh"
+		"tmux-rename-window": "./bin/tmux-rename-window.sh",
+		"traefik--docker-compose--restart": "./bin/traefik--docker-compose--restart.sh",
+		"traefik--docker-compose--stop": "./bin/traefik--docker-compose--stop.sh",
+		"traefik--docker-compose--up": "./bin/traefik--docker-compose--up.sh"
 	},
 	"devDependencies": {
 		"@cogov/dev": "^1.0.0",

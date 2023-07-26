@@ -1,0 +1,40 @@
+{
+	"private": true,
+	"name": "@cogov/deploy",
+	"version": "0.0.1",
+	"description": "@cogov deploy",
+	"type": "module",
+	"main": "./src/index.ts",
+	"module": "./src/index.ts",
+	"types": "./src/index.ts",
+	"scripts": {
+		"build": ":",
+		"clean": ":",
+		"test": "pnpm test-unit && check-dts",
+		"test-unit": "tsm node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
+		"test-unit-coverage": "c8 pnpm test-unit"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cogov/dev.git"
+	},
+	"keywords": [
+		"ctx-core",
+		"auth"
+	],
+	"author": "Brian Takita",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/cogov/dev/issues"
+	},
+	"homepage": "https://cogov.me",
+	"devDependencies": {
+		"@ctx-core/env": "^17.2.125",
+		"@ctx-core/nanostores": "^5.2.9",
+		"@ctx-core/object": "^28.0.3",
+		"@types/node": "^20.4.5",
+		"import-meta-resolve": "^3.0.0",
+		"rollup": "^3.26.3"
+	},
+	"sideEffects": false
+}
