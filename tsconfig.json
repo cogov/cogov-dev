@@ -1,31 +1,43 @@
 {
-  "compilerOptions": {
-    "jsx": "react",
-    "target": "ESNext",
-    "module": "commonjs",
-    "lib": [
-      "es2020"
-    ],
-    "declaration": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": false,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "experimentalDecorators": true,
-    "strictPropertyInitialization": false,
-    "typeRoots": [
-      "./node_modules/@types"
-    ]
-  },
-  "exclude": [
-    "node_modules",
-    "cdk.out"
-  ]
+	"compileOnSave": true,
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"composite": true,
+		"declaration": true,
+		"esModuleInterop": true,
+		"jsxImportSource": "solid-js",
+		"jsx": "preserve",
+		"lib": [
+			"ESNext",
+			"dom"
+		],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"noEmitOnError": true,
+		"noErrorTruncation": true,
+		"noImplicitAny": false,
+		"noImplicitThis": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"target": "ESNext",
+		"types": [
+			"node"
+		],
+		"typeRoots": [
+			"node_modules/@types"
+		]
+	},
+	"exclude": [],
+	"ts-node": {
+		"extensions": [
+			".ts",
+			".tsx",
+			".js",
+			".jsx"
+		],
+		"experimentalResolver": true
+	}
 }
