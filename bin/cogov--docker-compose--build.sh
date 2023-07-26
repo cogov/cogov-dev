@@ -5,4 +5,4 @@ RC=$?
 if [ $RC -ne 0 ] ; then
 	exit $RC
 fi
-docker compose -p mi -f d.mi.docker-compose.yml --project-directory . build
+docker compose -p mi -f d.cogov.docker-compose.yml --project-directory . build
