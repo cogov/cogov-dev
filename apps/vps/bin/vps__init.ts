@@ -120,7 +120,7 @@ async function main() {
 		await ssh(admin_ssh)`
 			cd work
 			if [ ! -d ${app_name} ]; then
-				git clone git@github.com:portfoliome/${app_name}.git
+				git clone git@github.com:cogov/${app_name}.git
 			fi
 			cd ${app_name}
 			git fetch
