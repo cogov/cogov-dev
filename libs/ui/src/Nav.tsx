@@ -1,6 +1,7 @@
 import { var__css__replace } from '@cogov/css'
 import { type Ctx } from '@ctx-core/object'
-import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
+import { ctx__Context, params__ctx__memo_ } from '@ctx-core/solid-js'
+import { Style_ } from '@ctx-core/ui-solid'
 import { createSignal, For, type JSX, Show } from 'solid-js'
 const nav__item_aa:nav__item_a_T[] = [
 	['/protocol.love', 'protocol-love', 'Protocol.Love'],

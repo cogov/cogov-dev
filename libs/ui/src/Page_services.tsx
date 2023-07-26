@@ -1,6 +1,7 @@
 import { var__css__replace } from '@cogov/css'
 import { type Ctx } from '@ctx-core/object'
-import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
+import { ctx__Context, params__ctx__memo_ } from '@ctx-core/solid-js'
+import { Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
 export function Page_services($p:{ ctx?:Ctx }) {
 	const ctx_ = params__ctx__memo_($p)
@@ -52,17 +53,17 @@ export function Page_services($p:{ ctx?:Ctx }) {
 					<br/><br/>
 					The <a href="/vision" target="blank" class="addlink">core principles</a> that have been identlified in creating the
 					{' '}<a
-						href="/protocol.love"
-						target="blank"
-						class="addlink"
-					>CoGov Protocol</a> create a communications framework that avoid these pitfalls.
+					href="/protocol.love"
+					target="blank"
+					class="addlink"
+				>CoGov Protocol</a> create a communications framework that avoid these pitfalls.
 					While digital tools are also in the works, during this critical time,
 					we are very interested in using the operational principles “on paper”, so to speak.
 					The CoGov staff would love nothing more than to work with your organization now to design a
 					{' '}<a
-						href="https://docs.google.com/document/d/1Rh02JzKhQ5sA6V500cQm74kb-jd4VcS8bskDDUsBpQA/edit" target="blank"
-						class="addlink"
-					>Collective Foundational Document</a> that creates fertile ground for your organization to thrive.
+					href="https://docs.google.com/document/d/1Rh02JzKhQ5sA6V500cQm74kb-jd4VcS8bskDDUsBpQA/edit" target="blank"
+					class="addlink"
+				>Collective Foundational Document</a> that creates fertile ground for your organization to thrive.
 					We at CoGov believe that “slow is the new fast”,
 					and while there may be a tendency to want to jump into “doing-ness”,
 					we believe in establishing practices of “being-ness” first.

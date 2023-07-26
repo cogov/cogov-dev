@@ -1,6 +1,7 @@
 import { var__css__replace } from '@cogov/css'
 import { type Ctx } from '@ctx-core/object'
-import { ctx__Context, params__ctx__memo_, Style_ } from '@ctx-core/ui-solid'
+import { ctx__Context, params__ctx__memo_ } from '@ctx-core/solid-js'
+import { Style_ } from '@ctx-core/ui-solid'
 import { Footer } from './Footer.jsx'
 export function Page_ecosystem($p:{ ctx?:Ctx }) {
 	const ctx_ = params__ctx__memo_($p)
@@ -33,9 +34,9 @@ export function Page_ecosystem($p:{ ctx?:Ctx }) {
 				<p class="ecosystemContent__body">
 					This is a living Google Doc:
 					{' '}<a
-						target="_blank"
-						href="https://docs.google.com/document/d/1i2tbebBkJIqMjEW5hLiGssevBs29JHLj8URQxu6x1hc"
-					>https://docs.google.com/document/d/1i2tbebBkJIqMjEW5hLiGssevBs29JHLj8URQxu6x1hc</a>
+					target="_blank"
+					href="https://docs.google.com/document/d/1i2tbebBkJIqMjEW5hLiGssevBs29JHLj8URQxu6x1hc"
+				>https://docs.google.com/document/d/1i2tbebBkJIqMjEW5hLiGssevBs29JHLj8URQxu6x1hc</a>
 				</p>
 				<br/>
 				<iframe
