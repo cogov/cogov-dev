@@ -79,7 +79,7 @@ export function Nav($p:{ ctx?:Ctx, segment?:string }) {
 		return [
 			<MenuHandleStyle/>,
 			<div class="MenuHandle">
-				<img class="nav-mobile" src="assets/images/cogov__menu.png" alt=""/>
+				<img class="nav-mobile" src="/assets/images/cogov__menu.png" alt=""/>
 			</div>,
 		]
 	}
