@@ -1,4 +1,4 @@
 #!/bin/sh
 
-mi--docker-compose--stop
-mi--docker-compose--up
+cogov--docker-compose--stop
+cogov--docker-compose--up
