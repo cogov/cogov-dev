@@ -22,7 +22,7 @@
 		"@ctx-core/object": "^28.0.3",
 		"@ctx-core/string": "^12.3.5",
 		"@ctx-core/tempfile": "^1.0.62",
-		"@ctx-core/ui-solid": "^14.0.22",
+		"@ctx-core/ui-solid": "^15.0.1",
 		"@fastify/middie": "^8.3.0",
 		"@fastify/static": "^6.10.2",
 		"@types/node": "20.4.5",

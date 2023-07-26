@@ -142,8 +142,8 @@ importers:
         specifier: ^1.0.62
         version: 1.0.62
       '@ctx-core/ui-solid':
-        specifier: ^14.0.22
-        version: 14.0.22(@ctx-core/object@28.0.3)(@ctx-core/solid-js@1.3.21)(solid-js@1.7.8)
+        specifier: ^15.0.1
+        version: 15.0.1(@ctx-core/object@28.0.3)(@ctx-core/solid-js@1.4.1)(solid-js@1.7.8)
       '@fastify/middie':
         specifier: ^8.3.0
         version: 8.3.0
@@ -198,11 +198,11 @@ importers:
         specifier: ^28.0.3
         version: 28.0.3
       '@ctx-core/solid-js':
-        specifier: ^1.3.21
-        version: 1.3.21
+        specifier: ^1.4.1
+        version: 1.4.1
       '@ctx-core/ui-solid':
-        specifier: ^14.0.22
-        version: 14.0.22(@ctx-core/object@28.0.3)(@ctx-core/solid-js@1.3.21)(solid-js@1.7.8)
+        specifier: ^15.0.1
+        version: 15.0.1(@ctx-core/object@28.0.3)(@ctx-core/solid-js@1.4.1)(solid-js@1.7.8)
       solid-js:
         specifier: ^1.7.8
         version: 1.7.8
@@ -1248,8 +1248,8 @@ packages:
       '@ctx-core/function': 21.18.0
     dev: true
 
-  /@ctx-core/solid-js@1.3.21:
-    resolution: {integrity: sha512-hBc+V4D0r/ivLDWM5a/7MWSmpSMCAZMvXNALf/KFQfwhxJVUNs0IS7/JJgzQxx2fauVMWw7I7NM/MZA4gXiWBg==}
+  /@ctx-core/solid-js@1.4.1:
+    resolution: {integrity: sha512-WEVoIy4T1ILSILzQ6IHU1pB3T1Mmg5TCGmv048gXpJa2tS9s4krSXTWkNn3FT00hgd0eZuzMPIukmFAhLMWL9g==}
     dependencies:
       '@ctx-core/function': 21.18.0
       '@ctx-core/number': 8.6.22
@@ -1277,16 +1277,16 @@ packages:
     resolution: {integrity: sha512-Q3TxZt/D/IKIh5UTnKOMt0/QDvJ/v4KId8ildXTZuzJXP6NyuBakZP7Vh76an0t34CbCv4mHlC3+NMPMt5a5Wg==}
     dev: true
 
-  /@ctx-core/ui-solid@14.0.22(@ctx-core/object@28.0.3)(@ctx-core/solid-js@1.3.21)(solid-js@1.7.8):
-    resolution: {integrity: sha512-ZOe2onZ2B8SCpCuzb5xtLIzxRSEVf41E4/FZ9pvbNzaBFQzIH3jWFOrvVHIb/GMVQWcqTeJ6yDNUWTncatOnEg==}
+  /@ctx-core/ui-solid@15.0.1(@ctx-core/object@28.0.3)(@ctx-core/solid-js@1.4.1)(solid-js@1.7.8):
+    resolution: {integrity: sha512-1WnavdJerJIfGWd4XUARRyHn3uy75RHkhpn68/TT3p24KmXJtUSpJTCGRGeEMB46fpI2CdNSMp3ZMrdpCztXCw==}
     peerDependencies:
       '@ctx-core/object': ^28.0.3
-      '@ctx-core/solid-js': ^1.3.21
+      '@ctx-core/solid-js': ^1.4.1
       solid-js: ^1.7.8
     dependencies:
       '@ctx-core/env': 17.2.125
       '@ctx-core/object': 28.0.3
-      '@ctx-core/solid-js': 1.3.21
+      '@ctx-core/solid-js': 1.4.1
       '@solidjs/meta': 0.28.6(solid-js@1.7.8)
       solid-js: 1.7.8
     dev: true
