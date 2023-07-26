@@ -14,6 +14,7 @@ async function main() {
 	const nvm_version = 'v20'
 	const admin_ssh = `${user}@${ip}`
 	const app_name = 'cogov-dev'
+	const github_repo = `cogov/${app_name}`
 	const _main = be_(()=>run(async ()=>{
 		await ssh_key__scp(ctx)
 		await pacman__rm_lck(ctx)
@@ -120,7 +121,7 @@ async function main() {
 		await ssh(admin_ssh)`
 			cd work
 			if [ ! -d ${app_name} ]; then
-				git clone git@github.com:cogov/${app_name}.git
+				git clone git@github.com:${github_repo}.git
 			fi
 			cd ${app_name}
 			git fetch
