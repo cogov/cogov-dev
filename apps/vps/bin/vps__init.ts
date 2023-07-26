@@ -113,6 +113,7 @@ async function main() {
 		await bashrc__scp(ctx)
 		await work__mkdir(ctx)
 		await git__install(ctx)
+		await git_lfs__install(ctx)
 		await nvm__install(ctx)
 		await ssh_key__scp(ctx)
 		await github__add_public_key(ctx)
@@ -128,6 +129,9 @@ async function main() {
 			git rebase
 			git submodule init
 			git submodule update
+			git lfs install
+			git lfs fetch
+			git lfs checkout
 		`
 		await dotenv__scp()
 		// language=sh
@@ -176,6 +180,10 @@ async function main() {
 	const git__install = be_(()=>run(async ()=>{
 		// language=sh
 		await ssh(admin_ssh)`sudo pacman -Syu --noconfirm git`
+	}))
+	const git_lfs__install = be_(()=>run(async ()=>{
+		// language=sh
+		await ssh(admin_ssh)`sudo pacman -Syu --noconfirm git-lfs`
 	}))
 	const nvm__install = be_(()=>run(async ()=>{
 		// language=sh
