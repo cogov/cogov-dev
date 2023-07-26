@@ -12,7 +12,7 @@ services:
       - "traefik.enable=true"
       - "traefik.docker.network=web"
       - "traefik.http.services.cogov-www.loadbalancer.server.port=4020"
-      - "traefik.http.routers.cogov-www.rule=Host(`${HOST:-cogov.tech}`)"
+      - "traefik.http.routers.cogov-www.rule=Host(`${HOST:-cogov.me}`)"
       - "traefik.http.routers.cogov-www.tls.certresolver=acme"
       - "traefik.http.middlewares.test-retry.retry.attempts=4"
       - "traefik.http.middlewares.test-retry.retry.initialinterval=100ms"
