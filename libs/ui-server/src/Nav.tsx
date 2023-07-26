@@ -1,4 +1,5 @@
 import { var__css__replace } from '@cogov/css'
+import { Nav__onbind } from '@cogov/ui-cs'
 import { type Ctx } from '@ctx-core/object'
 import { ctx__Context, params__ctx__memo_ } from '@ctx-core/solid-js'
 import { Style_ } from '@ctx-core/ui-solid'
@@ -26,63 +27,52 @@ const NavOpen__item_aa:NavOpen__item_a_T[] = [
 export function Nav($p:{ ctx?:Ctx, segment?:string }) {
 	const ctx_ = params__ctx__memo_($p)
 	const segment = $p.segment
-	const [nav__open_, nav__open__set] = createSignal(false)
 	return (
 		<ctx__Context.Provider value={ctx_()}>
 			<Style/>
-			<div class="nav">
-				<a
-					href="/"
-					class="removelink"
-					onclick={$=>{
-						nav__open__set(false)
-					}}
-					aria-current={segment === undefined ? 'page' : undefined}
-				>
-					<div class="nav-logo-container">
-						<img class="nav-logo-image" src="/assets/images/cogov__logo--blue.png" alt=""/>
-						<p class="nav-logo-text">CoGov</p>
-					</div>
-				</a>
-				<div class="nav-items">
-					<For<nav__item_a_T[], JSX.Element> each={nav__item_aa}>{nav__item_a=>
-						<>
-							<div class="spacer"></div>
-							<div class="nav-item">
-								<a
-									href={nav__item_a[0]}
-									class="removelink"
-									onclick={$=>{
-										nav__open__set(false)
-									}}
-									aria-current={segment === nav__item_a[1] ? 'page' : undefined}
-									innerText={nav__item_a[2]}/>
-							</div>
-						</>
-					}</For>
-					<div class="spacer"/>
+			<div class="Nav" data-onbind={Nav__onbind}>
+				<div class="nav">
 					<a
-						href="https://cogov.typeform.com/to/kMtTYt"
-						target="blank"
-						class="removelink whitepaper"
+						href="/"
+						class="nav__close"
+						aria-current={segment === undefined ? 'page' : undefined}
 					>
-						<div class="nav-button">Whitepaper</div>
+						<div class="nav-logo-container">
+							<img class="nav-logo-image" src="/assets/images/cogov__logo--blue.png" alt=""/>
+							<p class="nav-logo-text">CoGov</p>
+						</div>
 					</a>
+					<div class="nav-items">
+						<For<nav__item_a_T[], JSX.Element> each={nav__item_aa}>{nav__item_a=>
+							<>
+								<div class="spacer"></div>
+								<div class="nav-item">
+									<a
+										href={nav__item_a[0]}
+										class="nav__close"
+										aria-current={segment === nav__item_a[1] ? 'page' : undefined}
+										innerText={nav__item_a[2]}/>
+								</div>
+							</>
+						}</For>
+						<div class="spacer"/>
+						<a
+							href="https://cogov.typeform.com/to/kMtTYt"
+							target="blank"
+							class="whitepaper"
+						>
+							<div class="nav-button">Whitepaper</div>
+						</a>
+					</div>
+					<div class="nav-icon">
+						<a
+							href="."
+							class="nav__toggle"
+						><MenuHandle/></a>
+					</div>
 				</div>
-				<div class="nav-icon">
-					<a
-						href="."
-						class="removelink"
-						onClick={$=>{
-							$.preventDefault()
-							nav__open__set(!nav__open_())
-						}}
-					><MenuHandle/></a>
-				</div>
-			</div>
-			<Show when={nav__open_()}>
 				<NavOpen/>
-			</Show>
+			</div>
 		</ctx__Context.Provider>
 	)
 	function MenuHandle() {
@@ -96,12 +86,12 @@ export function Nav($p:{ ctx?:Ctx, segment?:string }) {
 	function NavOpen() {
 		return [
 			<NavOpenStyle/>,
-			<div class="navOpen">
-				<div class="navOpen-body">
+			<div class="NavOpen">
+				<div class="NavOpen-body">
 					<For<NavOpen__item_a_T[], JSX.Element> each={NavOpen__item_aa}>{NavOpen__item_a=>
 						<a
 							href={NavOpen__item_a[0]}
-							class="navOpen-body-item removelink"
+							class="NavOpen-body-item removelink"
 							innerText={NavOpen__item_a[1]}
 						/>
 					}</For>
@@ -112,6 +102,9 @@ export function Nav($p:{ ctx?:Ctx, segment?:string }) {
 }
 //language=CSS
 const Style = Style_(()=>var__css__replace(`
+	.Nav {
+		height: 0;
+	}
 	.nav {
 		position: fixed;
 		top: 0;
@@ -238,7 +231,8 @@ const MenuHandleStyle = Style_(()=>var__css__replace(`
 `))
 //language=CSS
 const NavOpenStyle = Style_(()=>var__css__replace(`
-	.navOpen {
+	.NavOpen {
+		display: none;
 		background-color: white;
 		height: calc(100vh - var(--nav--height));
 		width: 100vw;
@@ -248,18 +242,21 @@ const NavOpenStyle = Style_(()=>var__css__replace(`
 		left: 0;
 	}
 	@media (max-width: var(--phone--max-width)) {
-		.navOpen {
+		.NavOpen {
 			top: var(--mobile--nav--height);
 			height: calc(100vh - var(--mobile--nav--height));
 		}
 	}
-	.navOpen-body {
+	.NavOpen.visible {
+		display: block;
+	}
+	.NavOpen-body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 2rem 0;
 	}
-	.navOpen-body-item {
+	.NavOpen-body-item {
 		margin-bottom: 1.6rem;
 		color: #333 !important;
 		font-size: 1.7rem;
@@ -269,7 +266,7 @@ const NavOpenStyle = Style_(()=>var__css__replace(`
 		cursor: pointer;
 		transition: all .2s;
 	}
-	.navOpen-body-item:hover {
+	.NavOpen-body-item:hover {
 		font-weight: 600;
 	}
 `))

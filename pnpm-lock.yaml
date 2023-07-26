@@ -120,12 +120,18 @@ importers:
       '@cogov/css':
         specifier: workspace:*
         version: link:../../libs/css
-      '@cogov/ui':
+      '@cogov/ui-cs':
+        specifier: workspace:^
+        version: link:../../libs/ui-cs
+      '@cogov/ui-server':
         specifier: workspace:^1.0.0
-        version: link:../../libs/ui
+        version: link:../../libs/ui-server
       '@ctx-core/child_process':
         specifier: ^7.3.69
         version: 7.3.69
+      '@ctx-core/dom':
+        specifier: ^14.1.56
+        version: 14.1.56
       '@ctx-core/env':
         specifier: ^17.2.125
         version: 17.2.125
@@ -189,11 +195,26 @@ importers:
         specifier: ^3.26.3
         version: 3.26.3
 
-  libs/ui:
+  libs/ui-cs:
+    devDependencies:
+      '@ctx-core/dom':
+        specifier: ^14.1.56
+        version: 14.1.56
+      solid-js:
+        specifier: ^1.7.8
+        version: 1.7.8
+
+  libs/ui-server:
     devDependencies:
       '@cogov/css':
         specifier: workspace:*
         version: link:../css
+      '@cogov/ui-cs':
+        specifier: workspace:^
+        version: link:../ui-cs
+      '@ctx-core/dom':
+        specifier: ^14.1.56
+        version: 14.1.56
       '@ctx-core/object':
         specifier: ^28.0.3
         version: 28.0.3

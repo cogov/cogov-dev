@@ -1,5 +1,5 @@
 ---
-import { Nav } from '@cogov/ui'
+import { Nav } from '@cogov/ui-server'
 export interface Props {
 	title:string
 }
@@ -30,10 +30,21 @@ const { ctx } = Astro.props
 		<title>{title}</title>
 	</head>
 	<body>
-		<Nav ctx={ctx} client:load/>
+		<Nav ctx={ctx}/>
 		<slot/>
 	</body>
 </html>
+
+<script>
+	import { Nav__onbind } from '@cogov/ui-cs'
+	import { dom__bind, dom__onbind__register, dom__onbind__validate } from '@ctx-core/dom'
+	import { ctx_ } from '@ctx-core/object'
+	const ctx = ctx_()
+	dom__onbind__register(ctx, Nav__onbind)
+	dom__bind(ctx)
+	dom__onbind__validate(ctx)
+</script>
+
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;
