@@ -8,8 +8,6 @@ services:
       - "80"
       - "443"
       - "4020"
-    ports:
-      - "4020:4020"
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=web"
