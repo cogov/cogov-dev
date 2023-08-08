@@ -29,12 +29,12 @@
 	},
 	"homepage": "https://cogov.me",
 	"devDependencies": {
-		"@ctx-core/env": "^17.2.125",
-		"@ctx-core/nanostores": "^5.2.9",
-		"@ctx-core/object": "^28.0.3",
-		"@types/node": "^20.4.5",
+		"@ctx-core/env": "^17.2.128",
+		"@ctx-core/nanostores": "^6.0.1",
+		"@ctx-core/object": "^28.0.4",
+		"@types/node": "^20.4.8",
 		"import-meta-resolve": "^3.0.0",
-		"rollup": "^3.26.3"
+		"rollup": "^3.27.2"
 	},
 	"sideEffects": false
 }

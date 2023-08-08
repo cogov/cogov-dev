@@ -5,12 +5,12 @@
 	"devDependencies": {
 		"@cogov/deploy": "workspace:^",
 		"@ctx-core/fs": "^1.2.0",
-		"@ctx-core/function": "^21.18.0",
-		"@ctx-core/object": "^28.0.3",
-		"@ctx-core/tempfile": "^1.0.62",
-		"@types/node": "20.4.5",
+		"@ctx-core/function": "^21.19.0",
+		"@ctx-core/object": "^28.0.4",
+		"@ctx-core/tempfile": "^1.0.66",
+		"@types/node": "20.4.8",
 		"import-meta-resolve": "^3.0.0",
-		"pnpm": "8.6.10",
+		"pnpm": "8.6.12",
 		"tsx": "^3.12.7",
 		"typescript": "5.1.6",
 		"zx": "^7.2.3"
