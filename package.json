@@ -24,9 +24,9 @@
 	},
 	"devDependencies": {
 		"@cogov/dev": "^1.0.0",
-		"@ctx-core/jetbrains": "^7.2.79",
-		"@ctx-core/monorepo": "^20.4.82",
-		"tsx": "^3.12.7"
+		"@ctx-core/jetbrains": "^7.2.85",
+		"@ctx-core/monorepo": "^20.4.120",
+		"tsx": "^3.13.0"
 	},
 	"workspaces": {
 		"packages": [
