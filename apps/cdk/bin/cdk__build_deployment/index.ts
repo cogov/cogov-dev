@@ -27,7 +27,7 @@ async function cdk__build_deployment() {
 	await spawn_pipe_process('mkdir', ['-p', './dist'], {
 		cwd
 	})
-	await spawn_pipe_process('cp', ['-R', '../www/dist/*', 'dist'], {
+	await spawn_pipe_process('cp', ['-R', '../cogov.me/dist/*', 'dist'], {
 		cwd
 	})
 	await www_cdk__stack__build(ctx)

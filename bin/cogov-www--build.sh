@@ -7,4 +7,4 @@ if [ $RC -ne 0 ] ; then
 fi
 npm i -g pnpm
 pnpm i -r --force; pnpm prune; pnpm i -r --force
-pnpm --filter @cogov/www build
+pnpm --filter @cogov/cogov.me build

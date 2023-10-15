@@ -19,7 +19,7 @@ async function cdk__build_app() {
 			join(
 				dirname(
 					new URL(import.meta.url).pathname),
-				'../../../www'))
+				'../../../cogov.me'))
 	await spawn_pipe_process('pnpm', ['run', 'build'], {
 		cwd
 	})
