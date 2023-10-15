@@ -17,7 +17,6 @@ git submodule init
 git submodule update
 # install nvm https://github.com/nvm-sh/nvm
 nvm i
-nvm use
 npm i yarn
 yarn
 ```

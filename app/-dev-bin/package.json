@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "bin": {
+    "caddy--run": "./bin/caddy--run.sh",
     "cogov--docker-compose--build": "bin/cogov--docker-compose--build.sh",
     "cogov--docker-compose--restart": "bin/cogov--docker-compose--restart.sh",
     "cogov--docker-compose--stop": "bin/cogov--docker-compose--stop.sh",
@@ -15,7 +16,6 @@
     "dev--cogov-www--docker-compose--rebuild": "bin/dev--cogov-www--docker-compose--rebuild.sh",
     "dev--cogov-www--docker-compose--restart": "bin/dev--cogov-www--docker-compose--restart.sh",
     "docker-compose--init": "bin/docker-compose--init.sh",
-    "tmux-dev": "bin/tmux-dev.sh",
     "tmux-rename-window": "bin/tmux-rename-window.sh",
     "traefik--docker-compose--restart": "bin/traefik--docker-compose--restart.sh",
     "traefik--docker-compose--stop": "bin/traefik--docker-compose--stop.sh",
