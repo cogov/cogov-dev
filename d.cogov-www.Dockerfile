@@ -3,7 +3,7 @@ ARG USER
 ARG UID=1000
 ARG GID
 WORKDIR /app
-COPY apps/cogov.me/dist ./
+COPY app/cogov.me/dist ./
 EXPOSE 4009
 
 CMD ["node", "--enable-source-maps", "./server/entry.mjs"]

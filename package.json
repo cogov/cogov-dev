@@ -28,7 +28,7 @@
 		"tsx": "^3.13.0"
 	},
 	"workspaces": [
-		"apps/*",
-		"libs/*"
+		"app/*",
+		"lib/*"
 	]
 }
