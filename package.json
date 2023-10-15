@@ -23,15 +23,12 @@
 		"traefik--docker-compose--up": "./bin/traefik--docker-compose--up.sh"
 	},
 	"devDependencies": {
-		"@cogov/dev": "^1.0.0",
 		"@ctx-core/jetbrains": "^7.2.85",
 		"@ctx-core/monorepo": "^20.4.120",
 		"tsx": "^3.13.0"
 	},
-	"workspaces": {
-		"packages": [
-			"packages/*",
-			"packages/@ctx-core/*"
-		]
-	}
+	"workspaces": [
+		"apps/*",
+		"libs/*"
+	]
 }
