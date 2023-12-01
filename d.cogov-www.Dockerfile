@@ -6,4 +6,4 @@ WORKDIR /app
 COPY app/cogov.me/dist ./
 EXPOSE 4009
 
-CMD ["node", "--enable-source-maps", "./server/entry.mjs"]
+CMD ["bun", "-b", "./server/entry.mjs"]
