@@ -10,9 +10,9 @@
 	"scripts": {
 		"build": ":",
 		"clean": ":",
-		"test": "pnpm test-unit && check-dts",
+		"test": "bun test-unit && check-dts",
 		"test-unit": "tsm node_modules/uvu/bin.js . '\\.test\\.(ts|js)$'",
-		"test-unit-coverage": "c8 pnpm test-unit"
+		"test-unit-coverage": "c8 bun test-unit"
 	},
 	"repository": {
 		"type": "git",

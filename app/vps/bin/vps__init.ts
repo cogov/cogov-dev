@@ -139,9 +139,7 @@ async function main() {
 			cd work/${app_name}
 			direnv allow .
 			eval "$(direnv export bash)"
-			npm i -g pnpm
-			pnpm i -g tsx
-			pnpm i -r; pnpm prune; pnpm i -r
+			curl -fsSL https://bun.sh/install | bash
 		`
 		async function dotenv__scp() {
 			const env = deploy__environment__new(ctx)

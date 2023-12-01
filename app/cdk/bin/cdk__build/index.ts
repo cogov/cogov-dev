@@ -20,10 +20,10 @@ async function cdk__build() {
 				dirname(
 					new URL(import.meta.url).pathname),
 				'../..'))
-	await spawn_pipe_process('pnpm', ['run', 'build_app'], {
+	await spawn_pipe_process('bun', ['-b', 'run', 'build_app'], {
 		cwd
 	})
-	await spawn_pipe_process('pnpm', ['run', 'build_deployment'], {
+	await spawn_pipe_process('bun', ['-b', 'run', 'build_deployment'], {
 		cwd
 	})
 }

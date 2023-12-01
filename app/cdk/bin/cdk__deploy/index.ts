@@ -33,7 +33,7 @@ export async function cdk__deploy() {
 	await spawn_pipe_process('cdk', ['deploy'], {
 		cwd
 	})
-	await spawn_pipe_process('pnpm', ['run', 'cogov__invalidate'], {
+	await spawn_pipe_process('bun', ['-b', 'run', 'cogov__invalidate'], {
 		cwd,
 		env: clone(
 			import_meta_env_(),
