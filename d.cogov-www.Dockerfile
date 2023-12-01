@@ -1,4 +1,4 @@
-FROM node:current-alpine
+FROM oven/bun
 ARG USER
 ARG UID=1000
 ARG GID
