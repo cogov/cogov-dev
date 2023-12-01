@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "bin": {
+    "_env__validate": "./bin/_env__validate.sh",
     "caddy--run": "./bin/caddy--run.sh",
     "cogov--docker-compose--build": "bin/cogov--docker-compose--build.sh",
     "cogov--docker-compose--restart": "bin/cogov--docker-compose--restart.sh",

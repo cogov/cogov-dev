@@ -1,6 +1,6 @@
 #!/bin/sh
 
-"$(dirname "$0")"/_env__validate.sh
+_env__validate
 RC=$?
 if [ $RC -ne 0 ] ; then
 	exit $RC
