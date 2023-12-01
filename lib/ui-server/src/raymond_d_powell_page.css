@@ -1,0 +1,105 @@
+.raymond-d-powell-page {
+	margin-top: 7rem;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.raymond_d_powell_page__quote {
+	padding: 12%;
+	height: 85vh;
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__background--founder.png');
+	background-position: center;
+	background-size: cover;
+}
+@media (max-width: var(--port--tab--max-width)) {
+	.raymond_d_powell_page__quote {
+		padding: 12% 4rem;
+	}
+}
+@media (max-width: var(--phone--max-width)) {
+	.raymond_d_powell_page__quote {
+		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__background--founder--mobile.png');
+	}
+}
+.raymond_d_powell_page__quote__title {
+	font-size: 5rem;
+	color: white;
+	font-weight: 600;
+}
+@media (max-width: var(--phone--max-width)) {
+	.raymond_d_powell_page__quote__title {
+		font-size: 3.4rem;
+	}
+}
+.raymond_d_powell_page__quote__quote {
+	font-size: 2rem;
+	color: white;
+	font-weight: 500;
+}
+@media (max-width: var(--phone--max-width)) {
+	.raymond_d_powell_page__quote__quote {
+		font-size: 2rem;
+	}
+}
+.raymond_d_powell_page__about {
+	padding: 8rem 12%;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+@media (max-width: var(--port--tab--max-width)) {
+	.raymond_d_powell_page__about {
+		padding: 4rem;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.raymond_d_powell_page__about__left {
+	width: 50%;
+	position: relative;
+	margin-right: 4rem;
+}
+@media (max-width: var(--port--tab--max-width)) {
+	.raymond_d_powell_page__about__left {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+}
+.raymond_d_powell_page__about__left__image {
+	width: auto;
+	max-height: 700px;
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+@media (max-width: var(--port--tab--max-width)) {
+	.raymond_d_powell_page__about__left__image {
+		position: relative;
+	}
+}
+.raymond_d_powell_page__about__right {
+	width: 50%;
+	margin-left: 4rem;
+}
+@media (max-width: var(--port--tab--max-width)) {
+	.raymond_d_powell_page__about__right {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+.raymond_d_powell_page__about__container {
+	margin-bottom: 2rem;
+}
+.raymond_d_powell_page__about__title {
+	font-size: 3.3rem;
+	font-weight: 600;
+	color: var(--cogov--primary--color);
+	margin-bottom: .5rem;
+}
+.raymond_d_powell_page__about__body {
+	font-size: 1.7rem;
+	color: #333;
+	text-align: justify;
+}

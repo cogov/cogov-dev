@@ -1,4 +1,4 @@
-import { type Ctx } from '@ctx-core/object'
+import { type Ctx } from 'ctx-core/object'
 import { deploy__env } from './deploy__env.js'
 import { NODE_ENV_ } from './stage.js'
 export function deploy__environment__new(ctx:Ctx) {

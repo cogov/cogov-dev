@@ -1,10 +1,11 @@
 ---
-import { Page_vision } from '@cogov/ui-server'
-import { ctx_ } from '@ctx-core/object'
+import { vision_page_ } from '@cogov/ui-server'
+import Rel from 'relementjs/astro'
 import Layout from '../../layouts/Layout.astro'
-const ctx = ctx_()
+import { cogov__server__ctx_ } from '../../lib/index.js'
+const ctx = cogov__server__ctx_()
 ---
 
 <Layout ctx={ctx}>
-	<Page_vision ctx={ctx}/>
+	<Rel dom={vision_page_()}/>
 </Layout>

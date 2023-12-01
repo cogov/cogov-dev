@@ -1,11 +1,11 @@
-import { atom_, be_atom_triple_ } from '@ctx-core/nanostores'
-import { be_ } from '@ctx-core/object'
+import { be_ } from 'ctx-core/object'
+import { be_sig_triple_ } from 'rmemo'
 export const [
 	stage$_,
 	stage_,
 	stage__set,
-] = be_atom_triple_(()=>
-	atom_<stage_T>('prod'))
+] = be_sig_triple_(()=>
+	'prod' as stage_T)
 const stage_R_NODE_ENV:Record<stage_T, string> = {
 	prod: 'production',
 }

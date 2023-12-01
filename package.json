@@ -5,9 +5,9 @@
 	"type": "module",
 	"devDependencies": {
 		"@cogov/-dev-bin": "workspace:*",
-		"@ctx-core/jetbrains": "^7.2.85",
-		"@ctx-core/monorepo": "^20.4.120",
-		"tsx": "^3.13.0"
+		"@ctx-core/jetbrains": "^7.3.33",
+		"@ctx-core/monorepo": "^20.5.67",
+		"tsx": "^4.6.1"
 	},
 	"workspaces": [
 		"app/*",

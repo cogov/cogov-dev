@@ -1,64 +1,59 @@
-import { var__css__replace } from '@cogov/css'
-import { type Ctx } from '@ctx-core/object'
-import { ctx__Context, params__ctx__memo_ } from '@ctx-core/solid-js'
-import { Style_ } from '@ctx-core/ui-solid'
-import { Footer } from './Footer.jsx'
-export function Page_protocollove($p:{ ctx?:Ctx }) {
-	const ctx_ = params__ctx__memo_($p)
+import { type Node_T, raw_, type relement_env_T } from 'relementjs'
+import { main_ } from 'relementjs/html'
+import { footer_c_ } from './footer_c_.js'
+import './protocollove_page.css'
+export function protocollove_page_<env_T extends relement_env_T>() {
 	return (
-		<ctx__Context.Provider value={ctx_()}>
-			<Style/>
-			<main class="protocol-page page">
-				<Header/>
-				<Content/>
-				<Footer/>
-			</main>
-		</ctx__Context.Provider>
-	)
-	function Header() {
-		return [
-			<HeaderStyle/>,
-			<div class="protocolLoveHeader page-header">
-				<p class="protocolLoveHeader__title">Protocol.Love</p>
-				<p class="protocolLoveHeader__subtitle">
+		main_({ class: 'protocol-page page' },
+			header_(),
+			content_(),
+			footer_c_())
+	) as Node_T<env_T, HTMLElementTagNameMap['main']>
+	function header_() {
+		// language=html
+		return raw_(`
+			<div class="protocollove_page__header page__header">
+				<p class="protocollove_page__header__title">Protocol.Love</p>
+				<p class="protocollove_page__header__subtitle">
 					Protocol.Love fosters the emergence of a socioeconomic system infused with
-					{' '}<a
+					<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank" class="removelink" style="text-decoration: underline"
 				>Loving Kindness</a> for organizations who choose a commitment to
-					{' '}<a
+					<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank" class="removelink" style="text-decoration: underline"
 				>Vulnerable Transparency</a>.
 				</p>
 			</div>
-		]
+		`)
 	}
-	function Content() {
-		return [
-			<ContentStyle/>,
-			<div class="protocolLoveContent page-body">
-				<p class="protocolLoveContent__title">A Protocol for a New Paradigm in Business and Government</p>
-				<p class="protocolLoveContent__body">
+	function content_() {
+		// language=html
+		return raw_(`
+			<div class="protocollove_page__content page__content">
+				<p class="protocollove_page__content__title">A Protocol for a New Paradigm in Business and Government</p>
+				<p class="protocollove_page__content__body">
 					A lot of what we rely on existing government and banking infrastructure to do
 					for us is to act as a registry of information.
 					The costs of relying on large, centralized structures for this relatively simple task is
 					becoming more apparent each day.
-					In order to allow for the emergence of something new that does not revert back into the dysfunctional standards,
+					In order to allow for the emergence of something new that does not revert back into the dysfunctional
+					standards,
 					CoGov proposes a protocol for the transparent sharing of operations.
 					<br/><br/>
 					Protocol.Love is a proposal to imbue
-					{' '}<a
+					<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
 				>Loving Kindness</a> into socioeconomic systems.
 					It does so by providing standards through which organizations can embody their commitment to
-					{' '}<a
+					<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
 				>Vulnerable Transparency</a>.
 					Ultimately, by having large amounts of data shared on distributed ledgers with a standard protocol for
-					{' '}<a
+					<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
 				>Vulnerable Transparency</a>,
@@ -66,17 +61,17 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					which is inherently anti-rivalrous, and omni-win.
 					<br/><br/>
 					Read the background here:
-					{' '}<a
+					<a
 					target="_blank"
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 				>A Digital Protocol for Scaling Loving Kindness</a>
 					<br/><br/>
 				</p>
-				<p class="protocolLoveContent__subtitle">Definitions</p>
-				<p class="protocolLoveContent__caption">
+				<p class="protocollove_page__content__subtitle">Definitions</p>
+				<p class="protocollove_page__content__caption">
 					Current-See / Currency
 				</p>
-				<p class="protocolLoveContent__body">
+				<p class="protocollove_page__content__body">
 					“All living systems are dynamic. There is always movement and flow.”
 					Human socioeconomic systems are living systems, and are no different in that way.
 					If we can create a socioeconomic environment where the goal is to maximize our ability
@@ -87,10 +82,10 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					both in nature, and in human systems.
 					<br/><br/>
 				</p>
-				<p class="protocolLoveContent__caption">
+				<p class="protocollove_page__content__caption">
 					Collective
 				</p>
-				<p class="protocolLoveContent__body">
+				<p class="protocollove_page__content__body">
 					CoGov ontology defines a Collective as a working group of people that share an investment of knowledge,
 					time, talent, energy, money, or some combination thereof, towards a common goal.
 					In the context of digital implementations of governance,
@@ -99,23 +94,24 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					and the associated limitations of central control (enclosability).
 					<br/><br/>
 				</p>
-				<p class="protocolLoveContent__subtitle">The Reality of Transparency</p>
-				<p class="protocolLoveContent__body">
+				<p class="protocollove_page__content__subtitle">The Reality of Transparency</p>
+				<p class="protocollove_page__content__body">
 					We should understand that
-					{' '}<a
+					<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
 				>Vulnerable Transparency</a> is always a choice – a choice that takes extra effort.
-					CoGov does not suggest that there should be any punitive approach or attempt to enforce{' '}
-					{' '}<a
+					CoGov does not suggest that there should be any punitive approach or attempt to enforce
+					<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
 				>Vulnerable Transparency</a>.
 					The fact is, as more and more data flows into ledgers,
-					we will have the opportunity to test the hypothesis that resistance to transparency is inherently rivalrous behavior.
+					we will have the opportunity to test the hypothesis that resistance to transparency is inherently rivalrous
+					behavior.
 					But this is certainly not a given.
 					There are plenty of reasons that a person or group might not make the extra effort to adhere to
-					{' '}<a
+					<a
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
 				>Vulnerable Transparency</a>.
@@ -125,33 +121,39 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					The same principle applies here.
 				</p>
 				<br/><br/>
-				<p class="protocolLoveContent__subtitle">
+				<p class="protocollove_page__content__subtitle">
 					In order for a Collective to operate with
-					{' '}<a
+					<a
 					class="removelink underline"
 					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
 					target="_blank"
 				>Vulnerable Transparency</a>, what does it need to share?
 				</p>
 				<br/><br/>
-				<div class="protocolLoveContent__body">
+				<div class="protocollove_page__content__body">
 					<ul style="margin-left:30px;">
 						<li>What is the mission of the Collective? Who set that mission, and when?</li>
-						<li>What assets does the Collective currently steward, what assets do they intend to generate through their operations?</li>
+						<li>What assets does the Collective currently steward, what assets do they intend to generate through their
+							operations?
+						</li>
 						<li>Who makes decisions about assets that the Collective stewards?</li>
 						<li>How are those decisions being made about those assets?</li>
 						<li>What/When/Why did certain decisions get made?</li>
 						<li>How did the stewards reach their level of influence?</li>
 						<li>How do others have a voice in the conversations? How do they become a steward?</li>
-						<li>What types of liquid assets (current-sees) does the Collective trade? When, what amounts, and with who?</li>
-						<li>What do other folks do if they feel like the stewards of an asset are making bad decisions that affect them, their community, or the planet?</li>
+						<li>What types of liquid assets (current-sees) does the Collective trade? When, what amounts, and with
+							who?
+						</li>
+						<li>What do other folks do if they feel like the stewards of an asset are making bad decisions that affect
+							them, their community, or the planet?
+						</li>
 					</ul>
 				</div>
 				<br/><br/>
-				<p class="protocolLoveContent__subtitle">
+				<p class="protocollove_page__content__subtitle">
 					When to Focus on a Collective Foundational Document
 				</p>
-				<p class="protocolLoveContent__body">
+				<p class="protocollove_page__content__body">
 					The formation of a Collective usually moves through three phases:
 					<b>Conversation, Interaction, and Transaction</b>.
 					<br/><br/>
@@ -167,53 +169,53 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					Upon completion of the CFD, the group is ready to begin fully transparent operations.
 				</p>
 				<br/><br/>
-				<p class="protocolLoveContent__subtitle">How does it work?</p>
-				<p class="protocolLoveContent__body">
-					<span class="protocolLoveContent__caption">Collective Foundational Document</span>
+				<p class="protocollove_page__content__subtitle">How does it work?</p>
+				<p class="protocollove_page__content__body">
+					<span class="protocollove_page__content__caption">Collective Foundational Document</span>
 					<br/>
 					Protocol.love brings
-					{' '}<a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank"
-				>Vulnerable Transparency</a> to the establishment of Collectives
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank"
+					>Vulnerable Transparency</a> to the establishment of Collectives
 					by proposing what the important things are that anyone ought to be able to discover about the Collective.
 					This document is a combination of something like articles of incorporation,
 					combined with something like a lean business plan.
 					<br/><br/>
 					Read more:
-					{' '}<a target="_blank"
-									href="https://docs.google.com/document/d/1Rh02JzKhQ5sA6V500cQm74kb-jd4VcS8bskDDUsBpQA"
-				>Collective Foundational Document Template</a>
+					<a target="_blank"
+						href="https://docs.google.com/document/d/1Rh02JzKhQ5sA6V500cQm74kb-jd4VcS8bskDDUsBpQA"
+					>Collective Foundational Document Template</a>
 					<br/><br/>
-					<span class="protocolLoveContent__caption">Currency Categories</span>
+					<span class="protocollove_page__content__caption">Currency Categories</span>
 					<br/>
 					In order to create a most holoptic socioeconomic game, protocol.love brings transparency
 					to the flows of energy and interaction that happen in the game.
 					In order to make sense of it all, protocol.love identifies 4 categories of currency.
 					<br/><br/>
-					<span class="protocolLoveContent__caption">Influence Currency</span>
+					<span class="protocollove_page__content__caption">Influence Currency</span>
 					<br/>
 					An Influence Currency enhances
-					{' '}<a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank"
-				>Vulnerable Transparency</a> to decision making processes by providing the ability
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank"
+					>Vulnerable Transparency</a> to decision making processes by providing the ability
 					to have a standard metric for sharing who actually has the influence.
 					When people have influence but do not have a corresponding passion and/or expertise,
 					power dynamics exist that create unnecessary tensions.
 					<br/><br/>
 					Read more:
-					{' '}<a target="_blank"
-									href="https://medium.com/metacurrency-project/broken-assumptions-of-governance-63cc946ccc6c"
-				>Broken Assumptions of Governance.</a>
+					<a target="_blank"
+						href="https://medium.com/metacurrency-project/broken-assumptions-of-governance-63cc946ccc6c"
+					>Broken Assumptions of Governance.</a>
 					<br/><br/>
-					<span class="protocolLoveContent__caption">Equity Currency</span>
+					<span class="protocollove_page__content__caption">Equity Currency</span>
 					<br/>
 					An Equity Currency enhances
-					{' '}<a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank"
-				>Vulnerable Transparency</a> by sharing flows around who holds
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank"
+					>Vulnerable Transparency</a> by sharing flows around who holds
 					the value of an asset or set of assets (Game A “ownership).
 					Often times, it is the same people who made value contributions to an asset, but not necessarily.
 					Much like how we think of equity in the form of a share of stock,
@@ -223,19 +225,19 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					of the Equity Currency that has been issued against it.
 					Any Collective can create any number of Equity Currencies, each backed by a different asset or set of assets.
 					<br/><br/>
-					<span class="protocolLoveContent__caption">Impact Currency</span>
+					<span class="protocollove_page__content__caption">Impact Currency</span>
 					<br/>
 					Protocol.love defines impact as: that which affects the lives of real people. Impact Currency brings
-					{' '}<a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank"
-				>Vulnerable Transparency</a> to the ways a Collective is affecting the ecosystems in which it interacts.
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank"
+					>Vulnerable Transparency</a> to the ways a Collective is affecting the ecosystems in which it interacts.
 					As impact flows are identified by those outside the Collective,
 					they provide feedback to the Collective about the impacts they are having.
 					With these transparent currency flows being recorded, working relationships can be formed
 					between Collectives to attempt to ensure a net positive impact.
 					<br/><br/>
-					<span class="protocolLoveContent__caption">Fiat Currency</span>
+					<span class="protocollove_page__content__caption">Fiat Currency</span>
 					<br/>
 					Fiat means “by decree”. When creating Currencies for a Collective,
 					we recommend a simple thought pattern to identify which category of currency within which it should fall.
@@ -245,13 +247,13 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					If the currency relates to recognizing effects that the Collective is having on things external
 					to the Collective, it should be an Impact Currency instead.
 					<br/><br/>
-					<span class="protocolLoveContent__caption">Decision Making</span>
+					<span class="protocollove_page__content__caption">Decision Making</span>
 					<br/>
 					Protocol.love enhances
-					{' '}<a
-					href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
-					target="_blank"
-				>Vulnerable Transparency</a> in decision making by naming the 3 fundamental steps
+					<a
+						href="https://medium.com/@rayzer42/cogov-presents-a-digital-protocol-for-scaling-loving-kindness-1da6605f88d9"
+						target="_blank"
+					>Vulnerable Transparency</a> in decision making by naming the 3 fundamental steps
 					that happen in any group decision making process,
 					and providing the means to share these processes in a way that deeply informs interested parties.
 					<br/><br/>
@@ -260,7 +262,7 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					for recording Proposal Instantiation, Proposal Iteration, and Proposal Resolution,
 					as well as a means for recording how those processes are handled within the Collective.
 					<br/><br/>
-					<span class="protocolLoveContent__caption">Further Reading</span>
+					<span class="protocollove_page__content__caption">Further Reading</span>
 					<br/>
 					Many folks have been reading and collaborating around these ideas
 					since 2016 through a Google Doc which was aptly namedThe Digital Co-Governance Web:
@@ -271,80 +273,6 @@ export function Page_protocollove($p:{ ctx?:Ctx }) {
 					>https://docs.google.com/document/d/1rAtv9VT68X2BvsZRq_4Hf2nT3aqJopCEFsSlzbn2uEw</a>.
 				</p>
 			</div>
-		]
+		`)
 	}
 }
-//language=CSS
-const Style = Style_(()=>var__css__replace(`
-	.protocol-page {
-		margin-top: 7rem;
-		height: 100%;
-		width: 100%;
-		position: relative;
-	}
-`))
-//language=CSS
-const HeaderStyle = Style_(()=>var__css__replace(`
-	.protocolLoveHeader {
-		padding: 12%;
-		height: 85vh;
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__heart-circuit-board.jpg');
-		background-position: center;
-		background-size: cover;
-	}
-	@media (max-width: var(--port--tab--max-width)) {
-		.protocolLoveHeader {
-			padding: 12% 4rem;
-		}
-	}
-	.protocolLoveHeader__title {
-		font-size: 5rem;
-		font-weight: 600;
-		color: white;
-		margin-bottom: 1rem;
-	}
-	@media (max-width: var(--phone--max-width)) {
-		.protocolLoveHeader__title {
-			font-size: 3.4rem;
-		}
-	}
-	.protocolLoveHeader__subtitle {
-		font-size: 2rem;
-		color: white;
-		font-weight: 500;
-	}
-`))
-//language=CSS
-const ContentStyle = Style_(()=>var__css__replace(`
-	.protocolLoveContent {
-		background-color: white;
-		padding: 4rem 17%;
-	}
-	@media (max-width: var(--port--tab--max-width)) {
-		.protocolLoveContent {
-			padding: 4rem;
-		}
-	}
-	.protocolLoveContent__title {
-		font-size: 3.3rem;
-		color: var(--cogov--primary--color);
-		font-weight: 600;
-		margin-bottom: 1rem;
-	}
-	.protocolLoveContent__subtitle {
-		font-size: 2.8rem;
-		color: #333;
-		font-weight: 600;
-	}
-	.protocolLoveContent__caption {
-		font-size: 2.4rem;
-		color: #555;
-		font-weight: 500;
-	}
-	.protocolLoveContent__body {
-		font-size: 1.7rem;
-		color: #333;
-		font-weight: 500;
-		text-align: justify;
-	}
-`))

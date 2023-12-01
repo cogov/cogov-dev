@@ -1,48 +1,42 @@
-import { var__css__replace } from '@cogov/css'
-import { type Ctx } from '@ctx-core/object'
-import { ctx__Context, params__ctx__memo_ } from '@ctx-core/solid-js'
-import { Style_ } from '@ctx-core/ui-solid'
-import { Footer } from './Footer.jsx'
-export function Page_declaration($p:{ ctx?:Ctx }) {
-	const ctx_ = params__ctx__memo_($p)
+import { type Node_T, raw_, type relement_env_T } from 'relementjs'
+import { main_ } from 'relementjs/html'
+import './declaration_page.css'
+import { footer_c_ } from './footer_c_.js'
+export function declaration_page_<env_T extends relement_env_T>() {
 	return (
-		<ctx__Context.Provider value={ctx_()}>
-			<Style/>
-			<main class="declaration-page page">
-				<Header/>
-				<Content/>
-				<Footer/>
-			</main>
-		</ctx__Context.Provider>
-	)
-	function Header() {
-		return [
-			<HeaderStyle/>,
-			<div class="DeclarationHeader page-header">
-				<h2 class="DeclarationHeader__title">The Declaration of Collaborative Governance</h2>
-				<h3 class="DeclarationHeader__subtitle">
+		main_({ class: 'declaration-page page' },
+			header_(),
+			content_(),
+			footer_c_())
+	) as Node_T<env_T, HTMLElementTagNameMap['main']>
+	function header_() {
+		// language=html
+		return raw_(`
+			<div class="declaration_page__header page__header">
+				<h2 class="declaration_page__header__title">The Declaration of Collaborative Governance</h2>
+				<h3 class="declaration_page__header__subtitle">
 					Written by <a href="/team/raymond-d-powell" class="removelink underline">Raymond D. Powell</a>
 					- based on
-					{' '}<a
-					target="_blank"
-					class="removelink underline"
-					href="https://constitution.org/us_doi.htm"
-				>The Declaration of Independence</a> by
-					{' '}<a
-					target="_blank"
-					class="removelink underline"
-					href="https://en.wikipedia.org/wiki/Thomas_Jefferson"
-				>Thomas Jefferson</a>
+					<a
+						target="_blank"
+						class="removelink underline"
+						href="https://constitution.org/us_doi.htm"
+					>The Declaration of Independence</a> by
+					<a
+						target="_blank"
+						class="removelink underline"
+						href="https://en.wikipedia.org/wiki/Thomas_Jefferson"
+					>Thomas Jefferson</a>
 				</h3>
 			</div>
-		]
+		`)
 	}
-	function Content() {
-		return [
-			<ContentStyle/>,
-			<div class="DeclarationContent page-body">
-				<p class="DeclarationContent__title">The Declaration of Collaborative Governance</p>
-				<div class="DeclarationContent__body">
+	function content_() {
+		// language=html
+		return raw_(`
+			<div class="declaration_page__content page__content">
+				<p class="declaration_page__content__title">The Declaration of Collaborative Governance</p>
+				<div class="declaration_page__content__body">
 					<p>
 						When, in the course of human events, it becomes necessary for one people
 						to dissolve the implied social contracts that have connected them with one another,
@@ -109,86 +103,6 @@ export function Page_declaration($p:{ ctx?:Ctx }) {
 					</p>
 				</div>
 			</div>
-		]
+		`)
 	}
 }
-//language=CSS
-const Style = Style_(()=>var__css__replace(`
-	.declaration-page {
-		margin-top: 7rem;
-		height: 100%;
-		width: 100%;
-		position: relative;
-	}
-`))
-//language=CSS
-const HeaderStyle = Style_(()=>var__css__replace(`
-	.DeclarationHeader {
-		padding: 12%;
-		height: 85vh;
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__declaration.png');
-		background-position: center;
-		background-size: cover;
-	}
-	@media (max-width: var(--port--tab--max-width)) {
-		.DeclarationHeader {
-			padding: 12% 4rem;
-		}
-	}
-	@media (max-width: var(--phone--max-width)) {
-		.DeclarationHeader {
-			background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__declaration--mobile.png');
-		}
-	}
-	.DeclarationHeader__title {
-		font-size: 5rem;
-		font-weight: 600;
-		color: white;
-		margin-bottom: 1rem;
-	}
-	@media (max-width: var(--phone--max-width)) {
-		.DeclarationHeader__title {
-			font-size: 3.4rem;
-		}
-	}
-	.DeclarationHeader__subtitle {
-		font-size: 2rem;
-		color: white;
-		font-weight: 500;
-	}
-	@media (max-width: var(--phone--max-width)) {
-		.DeclarationHeader__subtitle {
-			font-size: 2rem;
-		}
-	}
-`))
-//language=CSS
-const ContentStyle = Style_(()=>var__css__replace(`
-	.DeclarationContent {
-		background-color: white;
-		padding: 4rem 17%;
-	}
-	@media (max-width: var(--port--tab--max-width)) {
-		.DeclarationContent {
-			padding: 4rem;
-		}
-	}
-	.DeclarationContent__title {
-		font-size: 3.3rem;
-		color: var(--cogov--primary--color);
-		font-weight: 1000;
-		margin-bottom: 1rem;
-		font-family: 'Parisienne', cursive;
-	}
-	.DeclarationContent__body {
-		font-size: 2.4rem;
-		color: #333;
-		font-weight: 500;
-		font-family: 'Parisienne', cursive;
-		text-align: left;
-	}
-	.DeclarationContent__body li {
-		margin-left: 8rem;
-		margin-right: 6rem;
-	}
-`))

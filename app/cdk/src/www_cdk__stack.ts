@@ -1,5 +1,5 @@
 import { param_r_ } from '@ctx-core/cli-args'
-import { be_, type Ctx } from '@ctx-core/object'
+import { be_, type Ctx } from 'ctx-core/object'
 import { CfnOutput, Duration, Stack } from 'aws-cdk-lib'
 import { EndpointType, LambdaIntegration, LambdaRestApi, MethodLoggingLevel } from 'aws-cdk-lib/aws-apigateway'
 import { Certificate, CertificateValidation } from 'aws-cdk-lib/aws-certificatemanager'

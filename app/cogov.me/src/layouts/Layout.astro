@@ -1,5 +1,7 @@
 ---
-import { Nav } from '@cogov/ui-server'
+import { nav_c_ } from '@cogov/ui-server'
+
+import Rel from 'relementjs/astro'
 export interface Props {
 	title:string
 }
@@ -30,17 +32,20 @@ const { ctx } = Astro.props
 		<title>{title}</title>
 	</head>
 	<body>
-		<Nav ctx={ctx}/>
+		<Rel dom={nav_c_()}/>
 		<slot/>
 	</body>
 </html>
 
 <script>
-	import { Nav__onbind } from '@cogov/ui-cs'
+	import { nav_c__onbind } from '@cogov/ui-cs'
 	import { dom__bind, dom__onbind__register, dom__onbind__validate } from '@ctx-core/dom'
-	import { ctx_ } from '@ctx-core/object'
+	import { ctx_ } from 'ctx-core/object'
+	import { relement__use } from 'relementjs'
+	import { browser__fragment__relement } from 'relementjs/browser'
+	relement__use(browser__fragment__relement)
 	const ctx = ctx_()
-	dom__onbind__register(ctx, Nav__onbind)
+	dom__onbind__register(ctx, nav_c__onbind)
 	dom__bind(ctx)
 	dom__onbind__validate(ctx)
 </script>
@@ -49,13 +54,12 @@ const { ctx } = Astro.props
 	:root {
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-
 		--cogov--primary--color: #195C89;
 		--cogov--primary-light--color: #195C89;
 		--cogov--primary-dark--color: #683B7A;
 		--cogov--secondary--color: #805691;
 		--cogov--grey--color: #333;
-		--phone--max-width: 600px;
+		--phone--max-width: var(--phone--max-width);
 		--port--tab--max-width: 900px;
 		--pack--min-width: 901px;
 		--pack--max-width: 960px;
@@ -105,14 +109,14 @@ const { ctx } = Astro.props
 			margin-top: var(--mobile--nav--height);
 		}
 	}
-	body main .page-header {
+	body main .page__header {
 		margin-bottom: 6rem;
 	}
-	body main .page-body {
+	body main .page__content {
 		padding: 0 17%;
 	}
 	@media (max-width: var(--phone--max-width)) {
-		body main .page-body {
+		body main .page__content {
 			padding: 0 4rem;
 		}
 	}

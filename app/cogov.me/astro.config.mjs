@@ -1,10 +1,10 @@
 import node from '@astrojs/node'
-import solid from '@astrojs/solid-js'
+import { css__replace__plugin_ } from '@cogov/css'
 import { defineConfig } from 'astro/config'
 import { builtinModules } from 'module'
 // https://astro.build/config
 export default defineConfig({
-	integrations: [solid()],
+	integrations: [],
 	adapter: node({ mode: 'standalone' }),
 	output: 'server',
 	server: {
@@ -17,5 +17,6 @@ export default defineConfig({
 				external: builtinModules
 			}
 		},
+		plugins: [css__replace__plugin_()]
 	},
 })

@@ -1,4 +1,4 @@
-import { be_ } from '@ctx-core/object'
+import { be_ } from 'ctx-core/object'
 export const stage_ = be_<
 	stage_T
 >('stage_', ()=>
