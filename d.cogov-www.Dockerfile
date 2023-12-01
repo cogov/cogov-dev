@@ -5,4 +5,4 @@ ARG GID
 WORKDIR /app
 EXPOSE 4020
 
-CMD ["bun", "-b", "./server/entry.mjs"]
+CMD ["bun", "-b", "./app/cogov.me/dist/server/entry.mjs"]

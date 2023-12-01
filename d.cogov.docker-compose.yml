@@ -19,7 +19,7 @@ services:
     networks:
       - web
     volumes:
-      - ./app/cogov.me/dist:/app
+      - .:/app
 networks:
   web:
     external: true
