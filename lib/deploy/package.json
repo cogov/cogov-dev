@@ -29,8 +29,8 @@
 	},
 	"homepage": "https://cogov.me",
 	"devDependencies": {
-		"@ctx-core/env": "^17.4.36",
-		"@types/node": "^20.10.1",
+		"@ctx-core/env": "^17.4.37",
+		"@types/node": "^20.10.2",
 		"ctx-core": "^4.8.1",
 		"import-meta-resolve": "^4.0.0",
 		"rmemo": "^0.11.1",

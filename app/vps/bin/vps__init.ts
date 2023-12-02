@@ -9,10 +9,10 @@ import { $, ssh } from 'zx'
 async function main() {
 	const ctx = ctx_()
 	const run_id = new Date().getTime()
-	const ip = 'ssh.cogov.me'
-	const user = 'admin'
+	const ssh_host = 'ssh.cogov.me'
+	const ssh_user = 'admin'
 	const nvm_version = 'v20'
-	const admin_ssh = `${user}@${ip}`
+	const ssh_url = `${ssh_user}@${ssh_host}`
 	const app_name = 'cogov-dev'
 	const github_repo = `cogov/${app_name}`
 	const _main = be_(()=>run(async ()=>{
@@ -43,9 +43,9 @@ async function main() {
 			await $`ssh-keygen -t ed25519 -C "brian.takita@gmail.com" -N '' -f ${local_path}`
 		}
 		// language=sh
-		await ssh(admin_ssh)`
+		await ssh(ssh_url)`
 			mkdir -p ~/.ssh/.bak
-			echo IdentityFile /home/${user}/.ssh/${id_ed25519} > ~/.ssh/config.new
+			echo IdentityFile /home/${ssh_user}/.ssh/${id_ed25519} > ~/.ssh/config.new
 			function finish() {
 				rm -f ~/.ssh/config.new
 			}
@@ -58,17 +58,17 @@ async function main() {
 			fi
 		`
 		// language=sh
-		await $`scp ${local_path} ${local_path}.pub ${admin_ssh}:~/.ssh`
+		await $`scp ${local_path} ${local_path}.pub ${ssh_url}:~/.ssh`
 	}))
 	const pacman__rm_lck = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`rm -f /var/lib/pacman/db.lck`
+		await ssh(ssh_url)`rm -f /var/lib/pacman/db.lck`
 	}))
 	const yay__install = be_(()=>run(async ()=>{
 		await base_devel__install(ctx)
 		await work__mkdir(ctx)
 		// language=sh
-		await ssh(admin_ssh)`
+		await ssh(ssh_url)`
 			cd ~/work
 			if [ ! -d yay ]; then
 				git clone https://aur.archlinux.org/yay.git
@@ -80,34 +80,34 @@ async function main() {
 	const yay__update = be_(()=>run(async ()=>{
 		await yay__install(ctx)
 		// language=sh
-		await ssh(admin_ssh)`yay --noconfirm`
+		await ssh(ssh_url)`yay --noconfirm`
 	}))
 	const lsof__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`sudo pacman -S lsof --noconfirm`
+		await ssh(ssh_url)`sudo pacman -S lsof --noconfirm`
 	}))
 	const tig__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`yay -S tig --noconfirm`
+		await ssh(ssh_url)`yay -S tig --noconfirm`
 	}))
 	const vim__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`yay -S vim --noconfirm`
+		await ssh(ssh_url)`yay -S vim --noconfirm`
 	}))
 	const inetutils__install = be_(()=>run(async ()=>{
 		// telnet
 		// language=sh
-		await ssh(admin_ssh)`yay -S inetutils --noconfirm`
+		await ssh(ssh_url)`yay -S inetutils --noconfirm`
 	}))
 	const which__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`sudo pacman -S which --noconfirm`
+		await ssh(ssh_url)`sudo pacman -S which --noconfirm`
 	}))
 	const sshd_config__scp = be_(()=>run(async ()=>{
 		// language=sh
-		await $`scp ./fs/etc/ssh/sshd_config ${admin_ssh}:~/sshd_config`
+		await $`scp ./fs/etc/ssh/sshd_config ${ssh_url}:~/sshd_config`
 		// language=sh
-		await ssh(admin_ssh)`sudo mv ~/sshd_config /etc/ssh/sshd_config`
+		await ssh(ssh_url)`sudo mv ~/sshd_config /etc/ssh/sshd_config`
 	}))
 	const app__install = be_(()=>run(async ()=>{
 		await bashrc__scp(ctx)
@@ -116,10 +116,10 @@ async function main() {
 		await git_lfs__install(ctx)
 		await nvm__install(ctx)
 		await ssh_key__scp(ctx)
-		await github__add_public_key(ctx)
+		await github__public_key__add(ctx)
 		await direnv__install(ctx)
 		// language=sh
-		await ssh(admin_ssh)`
+		await ssh(ssh_url)`
 			cd work
 			if [ ! -d ${app_name} ]; then
 				git clone git@github.com:${github_repo}.git
@@ -135,7 +135,7 @@ async function main() {
 		`
 		await dotenv__scp()
 		// language=sh
-		await ssh(admin_ssh)`
+		await ssh(ssh_url)`
 			cd work/${app_name}
 			direnv allow .
 			eval "$(direnv export bash)"
@@ -156,7 +156,7 @@ async function main() {
 					}
 				}).pipeTo(Writable.toWeb(createWriteStream(dotenv_path)))
 				// language=sh
-				await $`scp ${dotenv_path} ${admin_ssh}:~/work/${app_name}/.env`
+				await $`scp ${dotenv_path} ${ssh_url}:~/work/${app_name}/.env`
 			} finally {
 				// language=sh
 				await $`rm -f ${dotenv_path}`
@@ -165,27 +165,27 @@ async function main() {
 	}))
 	const base_devel__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`sudo pacman -S --needed git base-devel --noconfirm`
+		await ssh(ssh_url)`sudo pacman -S --needed git base-devel --noconfirm`
 	}))
 	const bashrc__scp = be_(()=>run(async ()=>{
 		// language=sh
-		await $`scp ./fs/home/admin/.bashrc ${admin_ssh}:~`
+		await $`scp ./fs/home/admin/.bashrc ${ssh_url}:~`
 	}))
 	const work__mkdir = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`mkdir -p ~/work`
+		await ssh(ssh_url)`mkdir -p ~/work`
 	}))
 	const git__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`sudo pacman -Syu --noconfirm git`
+		await ssh(ssh_url)`sudo pacman -Syu --noconfirm git`
 	}))
 	const git_lfs__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`sudo pacman -Syu --noconfirm git-lfs`
+		await ssh(ssh_url)`sudo pacman -Syu --noconfirm git-lfs`
 	}))
 	const nvm__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`
+		await ssh(ssh_url)`
 			$NVM_DIR && exit 0
 			echo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh
 			curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
@@ -194,20 +194,20 @@ async function main() {
 			nvm install
 		`
 	}))
-	const github__add_public_key = be_(()=>run(async ()=>{
+	const github__public_key__add = be_(()=>run(async ()=>{
 		await ssh_key__scp(ctx)
 		// see https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
-		const github_public_key = 'AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl'
+		const github__public_key = 'AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl'
 		// language=sh
-		await ssh(admin_ssh)`
-			if ! ls ~/.ssh/known_hosts || grep -L ${github_public_key} ~/.ssh/known_hosts; then
-				echo github.com ssh-ed25519 ${github_public_key} >> ~/.ssh/known_hosts
+		await ssh(ssh_url)`
+			if ! ls ~/.ssh/known_hosts || grep -L ${github__public_key} ~/.ssh/known_hosts; then
+				echo github.com ssh-ed25519 ${github__public_key} >> ~/.ssh/known_hosts
 			fi
 		`
 	}))
 	const direnv__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`
+		await ssh(ssh_url)`
 			sudo pacman -S direnv --noconfirm
 		`
 	}))
@@ -215,7 +215,7 @@ async function main() {
 		// If Docker fails to start, a reboot may be needed
 		// See https://stackoverflow.com/questions/72117335/docker-installation-issue-failed-to-mount-overlay-no-such-device-storage-driv
 		// language=sh
-		await ssh(admin_ssh)`
+		await ssh(ssh_url)`
 			sudo pacman -S docker docker-compose docker-buildx --noconfirm
 			sudo groupadd -f docker
 			sudo mkdir -p /etc/docker
@@ -228,7 +228,7 @@ async function main() {
 	}))
 	const wget__install = be_(()=>run(async ()=>{
 		// language=sh
-		await ssh(admin_ssh)`sudo pacman -S wget --noconfirm`
+		await ssh(ssh_url)`sudo pacman -S wget --noconfirm`
 	}))
 	await _main(ctx)
 }
