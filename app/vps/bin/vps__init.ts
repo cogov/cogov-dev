@@ -39,10 +39,9 @@ import { $, ssh } from 'zx'
 async function main() {
 	const ctx = ctx_()
 	ssh_host__set(ctx, 'ssh.cogov.me')
+	app_name__set(ctx, 'cogov-dev')
 	ssh_user__set(ctx, 'admin')
-	app_name__set(ctx, 'cogov-dev')
 	ssh_keygen__comment__set(ctx, 'brian.takita@gmail.com')
-	app_name__set(ctx, 'cogov-dev')
 	github__repo__set(ctx, `cogov/${app_name_(ctx)}`)
 	bun__version__set(ctx, 'bun-v1.0.14')
 	acme__email__set(ctx, 'brian.takita@gmail.com')
