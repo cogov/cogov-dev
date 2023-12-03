@@ -2,11 +2,13 @@
 DIR_DEFAULT=~/work/cogov/cogov-dev
 DIR="${DIR:-$DIR_DEFAULT}"
 APP_DIR=$DIR/app/cogov.me
+WINDOW_NAME=cogov-dev
+SESSION_NAME=$WINDOW_NAME
 
-tmux rename-session cogov-dev
+tmux rename-session $SESSION_NAME
 
 cd $DIR
-tmux rename-window cogov-dev
+tmux rename-window $WINDOW_NAME
 tmux split-window -h $SHELL
 tmux select-pane -t 0
 cd $APP_DIR
