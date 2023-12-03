@@ -1,236 +1,103 @@
 import { deploy__environment__new } from '@cogov/deploy'
-import { file_exists_ } from '@ctx-core/fs'
+import {
+	app_name_,
+	app_name__set,
+	bashrc__upload,
+	direnv__install,
+	docker__install,
+	dotenv__set,
+	dotenv__upload,
+	git__install,
+	git_lfs__install,
+	github__public_key__insert,
+	inetutils__install,
+	lsof__install,
+	pacman__rm_lck,
+	ssh_host__set,
+	ssh_key__generate,
+	ssh_keygen__comment__set,
+	ssh_url_,
+	ssh_user__set,
+	sshd_config__upload,
+	tig__install,
+	vim__install,
+	wget__install,
+	which__install,
+	work__mkdir,
+	yay__install,
+	yay__update
+} from '@ctx-core/arch-vps'
 import { run } from 'ctx-core/function'
 import { be_, ctx_ } from 'ctx-core/object'
-import { tempfile_ } from '@ctx-core/tempfile'
-import { createWriteStream } from 'fs'
-import { Writable } from 'stream'
-import { $, ssh } from 'zx'
+import { ssh } from 'zx'
 async function main() {
 	const ctx = ctx_()
-	const run_id = new Date().getTime()
-	const ssh_host = 'ssh.cogov.me'
-	const ssh_user = 'admin'
-	const nvm_version = 'v20'
-	const ssh_url = `${ssh_user}@${ssh_host}`
-	const app_name = 'cogov-dev'
-	const github_repo = `cogov/${app_name}`
-	const _main = be_(()=>run(async ()=>{
-		await ssh_key__scp(ctx)
-		await pacman__rm_lck(ctx)
-		await yay__install(ctx)
-		await yay__update(ctx)
-		await lsof__install(ctx)
-		await tig__install(ctx)
-		await vim__install(ctx)
-		await wget__install(ctx)
-		await inetutils__install(ctx)
-		await which__install(ctx)
-		await sshd_config__scp(ctx)
-		await docker__install(ctx)
-		await app__install(ctx)
-	}))
-	const ssh_key__scp = be_(()=>run(async ()=>{
-		// language=sh
-		const id_ed25519 = 'id_ed25519'
-		const local_path = `./tmp/.ssh/${id_ed25519}`
-		await $`mkdir -p ./tmp/.ssh`
-		if (
-			!await file_exists_(local_path)
-			|| !await file_exists_(`${local_path}.pub`)
-		) {
-			// language=sh
-			await $`ssh-keygen -t ed25519 -C "brian.takita@gmail.com" -N '' -f ${local_path}`
-		}
-		// language=sh
-		await ssh(ssh_url)`
-			mkdir -p ~/.ssh/.bak
-			echo IdentityFile /home/${ssh_user}/.ssh/${id_ed25519} > ~/.ssh/config.new
-			function finish() {
-				rm -f ~/.ssh/config.new
-			}
-			trap finish EXIT
-			if diff ~/.ssh/config ~/.ssh/config.new; then
-				rm ~/.ssh/config.new
-			else
-				cp -n ~/.ssh/config ~/.ssh/.bak/config.${run_id}
-				mv ~/.ssh/config.new ~/.ssh/config
-			fi
-		`
-		// language=sh
-		await $`scp ${local_path} ${local_path}.pub ${ssh_url}:~/.ssh`
-	}))
-	const pacman__rm_lck = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`rm -f /var/lib/pacman/db.lck`
-	}))
-	const yay__install = be_(()=>run(async ()=>{
-		await base_devel__install(ctx)
-		await work__mkdir(ctx)
-		// language=sh
-		await ssh(ssh_url)`
-			cd ~/work
-			if [ ! -d yay ]; then
-				git clone https://aur.archlinux.org/yay.git
-			fi
-			cd yay
-			makepkg -si --noconfirm
-		`
-	}))
-	const yay__update = be_(()=>run(async ()=>{
-		await yay__install(ctx)
-		// language=sh
-		await ssh(ssh_url)`yay --noconfirm`
-	}))
-	const lsof__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`sudo pacman -S lsof --noconfirm`
-	}))
-	const tig__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`yay -S tig --noconfirm`
-	}))
-	const vim__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`yay -S vim --noconfirm`
-	}))
-	const inetutils__install = be_(()=>run(async ()=>{
-		// telnet
-		// language=sh
-		await ssh(ssh_url)`yay -S inetutils --noconfirm`
-	}))
-	const which__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`sudo pacman -S which --noconfirm`
-	}))
-	const sshd_config__scp = be_(()=>run(async ()=>{
-		// language=sh
-		await $`scp ./fs/etc/ssh/sshd_config ${ssh_url}:~/sshd_config`
-		// language=sh
-		await ssh(ssh_url)`sudo mv ~/sshd_config /etc/ssh/sshd_config`
-	}))
-	const app__install = be_(()=>run(async ()=>{
-		await bashrc__scp(ctx)
-		await work__mkdir(ctx)
-		await git__install(ctx)
-		await git_lfs__install(ctx)
-		await nvm__install(ctx)
-		await ssh_key__scp(ctx)
-		await github__public_key__add(ctx)
-		await direnv__install(ctx)
-		// language=sh
-		await ssh(ssh_url)`
-			cd work
-			if [ ! -d ${app_name} ]; then
-				git clone git@github.com:${github_repo}.git
-			fi
-			cd ${app_name}
-			git fetch
-			git rebase
-			git submodule init
-			git submodule update
-			git lfs install
-			git lfs fetch
-			git lfs checkout
-		`
-		await dotenv__scp()
-		// language=sh
-		await ssh(ssh_url)`
-			cd work/${app_name}
-			direnv allow .
-			eval "$(direnv export bash)"
-			curl -fsSL https://bun.sh/install | bash
-		`
-		async function dotenv__scp() {
-			const env = deploy__environment__new(ctx)
-			env.NODE_ENV = 'development'
-			const dotenv_path = await tempfile_()
-			try {
-				await new ReadableStream({
-					start(controller) {
-						let key: keyof typeof env
-						for (key in env) {
-							controller.enqueue(`${key}=${env[key]}\n`)
-						}
-						controller.close()
-					}
-				}).pipeTo(Writable.toWeb(createWriteStream(dotenv_path)))
-				// language=sh
-				await $`scp ${dotenv_path} ${ssh_url}:~/work/${app_name}/.env`
-			} finally {
-				// language=sh
-				await $`rm -f ${dotenv_path}`
-			}
-		}
-	}))
-	const base_devel__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`sudo pacman -S --needed git base-devel --noconfirm`
-	}))
-	const bashrc__scp = be_(()=>run(async ()=>{
-		// language=sh
-		await $`scp ./fs/home/admin/.bashrc ${ssh_url}:~`
-	}))
-	const work__mkdir = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`mkdir -p ~/work`
-	}))
-	const git__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`sudo pacman -Syu --noconfirm git`
-	}))
-	const git_lfs__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`sudo pacman -Syu --noconfirm git-lfs`
-	}))
-	const nvm__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`
-			$NVM_DIR && exit 0
-			echo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh
-			curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-			. $NVM_DIR/nvm.sh
-#			echo ${nvm_version} > ~/.nvmrc
-			nvm install
-		`
-	}))
-	const github__public_key__add = be_(()=>run(async ()=>{
-		await ssh_key__scp(ctx)
-		// see https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
-		const github__public_key = 'AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl'
-		// language=sh
-		await ssh(ssh_url)`
-			if ! ls ~/.ssh/known_hosts || grep -L ${github__public_key} ~/.ssh/known_hosts; then
-				echo github.com ssh-ed25519 ${github__public_key} >> ~/.ssh/known_hosts
-			fi
-		`
-	}))
-	const direnv__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`
-			sudo pacman -S direnv --noconfirm
-		`
-	}))
-	const docker__install = be_(()=>run(async ()=>{
-		// If Docker fails to start, a reboot may be needed
-		// See https://stackoverflow.com/questions/72117335/docker-installation-issue-failed-to-mount-overlay-no-such-device-storage-driv
-		// language=sh
-		await ssh(ssh_url)`
-			sudo pacman -S docker docker-compose docker-buildx --noconfirm
-			sudo groupadd -f docker
-			sudo mkdir -p /etc/docker
-			sudo groupadd docker
-			sudo usermod -aG docker $USER
-			newgrp docker
-			sudo systemctl enable docker
-			sudo systemctl start docker.service
-		`
-	}))
-	const wget__install = be_(()=>run(async ()=>{
-		// language=sh
-		await ssh(ssh_url)`sudo pacman -S wget --noconfirm`
-	}))
+	ssh_host__set(ctx, 'ssh.cogov.me')
+	ssh_user__set(ctx, 'admin')
+	app_name__set(ctx, 'cogov-dev')
+	ssh_keygen__comment__set(ctx, 'brian.takita@gmail.com')
+	const github_repo = `cogov/${app_name_(ctx)}`
+	dotenv__set(ctx, {
+		...deploy__environment__new(ctx),
+		NODE_ENV: 'development'
+	})
+	const _main = _main_()
 	await _main(ctx)
+	function _main_() {
+		const app__install = app__install_()
+		return be_(()=>run(async ()=>{
+			console.log('_main')
+			await ssh_key__generate(ctx)
+			await pacman__rm_lck(ctx)
+			await yay__install(ctx)
+			await yay__update(ctx)
+			await lsof__install(ctx)
+			await tig__install(ctx)
+			await vim__install(ctx)
+			await wget__install(ctx)
+			await inetutils__install(ctx)
+			await which__install(ctx)
+			await sshd_config__upload(ctx)
+			await docker__install(ctx)
+			await app__install(ctx)
+		}))
+	}
+	function app__install_() {
+		return be_(()=>run(async ()=>{
+			console.log('app__install')
+			await bashrc__upload(ctx)
+			await work__mkdir(ctx)
+			await git__install(ctx)
+			await git_lfs__install(ctx)
+			await ssh_key__generate(ctx)
+			await github__public_key__insert(ctx)
+			await direnv__install(ctx)
+			app_name__set(ctx, 'cogov-dev')
+			// language=sh
+			await ssh(ssh_url_(ctx))`
+				cd work
+				if [ ! -d ${app_name_(ctx)} ]; then
+					git clone git@github.com:${github_repo}.git
+				fi
+				cd ${app_name_(ctx)}
+				git fetch
+				git rebase
+				git submodule init
+				git submodule update
+				git lfs install
+				git lfs fetch
+				git lfs checkout
+			`
+			await dotenv__upload(ctx)
+			// language=sh
+			await ssh(ssh_url_(ctx))`
+				cd work/${app_name_(ctx)}
+				direnv allow .
+				eval "$(direnv export bash)"
+				curl -fsSl https://bun.sh/install | bash -s "bun-v1.0.14"
+			`
+		}))
+	}
 }
 main()
 	.then(()=>process.exit(0))
