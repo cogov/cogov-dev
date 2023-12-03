@@ -19,5 +19,3 @@ tmux select-pane -t 1
 tmux split-window -v $SHELL
 tmux send-keys 'tig' C-m
 tmux select-pane -t 1
-
-tmux select-window -t 1
