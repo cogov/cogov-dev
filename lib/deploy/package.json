@@ -29,11 +29,11 @@
 	},
 	"homepage": "https://cogov.me",
 	"devDependencies": {
-		"@ctx-core/env": "^17.4.41",
+		"@ctx-core/env": "^17.4.42",
 		"@types/node": "^20.10.3",
-		"ctx-core": "^4.10.0",
+		"ctx-core": "^4.10.1",
 		"import-meta-resolve": "^4.0.0",
-		"rmemo": "^0.13.0",
+		"rmemo": "^0.13.1",
 		"rollup": "^4.6.1"
 	},
 	"sideEffects": false

@@ -5,7 +5,7 @@
 		"target": "ESNext",
 		"module": "ESNext",
 		"lib": ["ESNext", "dom"],
-		"moduleResolution": "node",
+		"moduleResolution": "nodenext",
 		"types": [
 			"node",
 			"vite/client"

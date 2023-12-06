@@ -16,18 +16,18 @@
 		"@cogov/css": "workspace:*",
 		"@cogov/ui-cs": "workspace:^",
 		"@cogov/ui-server": "workspace:^1.0.0",
-		"@ctx-core/child_process": "^7.4.41",
-		"@ctx-core/dom": "^15.1.37",
-		"@ctx-core/env": "^17.4.41",
-		"@ctx-core/http": "^9.5.36",
-		"@ctx-core/tempfile": "^1.2.7",
+		"@ctx-core/child_process": "^7.4.42",
+		"@ctx-core/dom": "^15.1.38",
+		"@ctx-core/env": "^17.4.42",
+		"@ctx-core/http": "^9.5.37",
+		"@ctx-core/tempfile": "^1.2.9",
 		"@fastify/middie": "^8.3.0",
 		"@fastify/static": "^6.12.0",
 		"@types/node": "20.10.3",
 		"astro": "^3.6.4",
-		"ctx-core": "^4.10.0",
+		"ctx-core": "^4.10.1",
 		"esbuild": "^0.19.8",
 		"fastify": "^4.24.3",
-		"relementjs": "^0.21.1"
+		"relementjs": "^0.21.2"
 	}
 }

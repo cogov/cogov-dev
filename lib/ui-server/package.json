@@ -8,8 +8,8 @@
 	"devDependencies": {
 		"@cogov/css": "workspace:*",
 		"@cogov/ui-cs": "workspace:^",
-		"@ctx-core/dom": "^15.1.37",
-		"ctx-core": "^4.10.0",
-		"relementjs": "^0.21.1"
+		"@ctx-core/dom": "^15.1.38",
+		"ctx-core": "^4.10.1",
+		"relementjs": "^0.21.2"
 	}
 }
