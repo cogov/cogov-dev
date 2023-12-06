@@ -11,23 +11,23 @@
 		"astro": "astro"
 	},
 	"devDependencies": {
-		"@astrojs/node": "^6.1.0",
+		"@astrojs/node": "^7.0.0",
 		"@astrojs/webapi": "^3.0.0",
 		"@cogov/css": "workspace:*",
 		"@cogov/ui-cs": "workspace:^",
 		"@cogov/ui-server": "workspace:^1.0.0",
-		"@ctx-core/child_process": "^7.4.39",
-		"@ctx-core/dom": "^15.1.35",
-		"@ctx-core/env": "^17.4.39",
-		"@ctx-core/http": "^9.5.34",
-		"@ctx-core/tempfile": "^1.2.3",
+		"@ctx-core/child_process": "^7.4.41",
+		"@ctx-core/dom": "^15.1.37",
+		"@ctx-core/env": "^17.4.41",
+		"@ctx-core/http": "^9.5.36",
+		"@ctx-core/tempfile": "^1.2.7",
 		"@fastify/middie": "^8.3.0",
 		"@fastify/static": "^6.12.0",
 		"@types/node": "20.10.3",
-		"astro": "^3.6.4",
-		"ctx-core": "^4.9.0",
+		"astro": "^4.0.2",
+		"ctx-core": "^4.10.0",
 		"esbuild": "^0.19.8",
 		"fastify": "^4.24.3",
-		"relementjs": "^0.17.3"
+		"relementjs": "^0.21.1"
 	}
 }
