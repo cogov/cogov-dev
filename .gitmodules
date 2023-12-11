@@ -1,3 +1,6 @@
 [submodule "packages/home/static/assets"]
 	path = packages/home/static/assets
 	url = git@github.com:cogov/cogov-home-assets.git
+[submodule "lib/relysjs"]
+	path = lib/relysjs
+	url = git@github.com:relysjs/relysjs.git

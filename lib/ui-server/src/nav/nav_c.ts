@@ -28,7 +28,6 @@ export function nav_c_<env_T extends relement_env_T>({ segment }:{ segment?:stri
 			div_({ class: 'nav' },
 				a_({
 						href: '/',
-						class: 'nav__close',
 						'aria-current': segment === undefined ? 'page' : undefined
 					},
 					div_({ class: 'nav__logo__container' },
@@ -40,7 +39,6 @@ export function nav_c_<env_T extends relement_env_T>({ segment }:{ segment?:stri
 						div_({ class: 'nav__item' },
 							a_({
 								href: nav__item_a[0],
-								class: 'nav__close',
 								'aria-current': segment === nav__item_a[1] ? 'page' : undefined
 							}, nav__item_a[2]))
 					]),

@@ -2,8 +2,8 @@
 import { type Ctx } from 'ctx-core/be'
 import { fragment_, raw_, type tag__dom_T } from 'relementjs'
 import { doc_html_ } from 'relementjs/server'
+import { browser__script_, request_, server__css_ } from 'relysjs'
 import { c_assets_, type c_assets_T } from '../c_assets.js'
-import { browser__script_, request_, server__css_ } from '~/relysjs/index.js'
 import { nav_c_ } from '../nav/index.js'
 import './layout.css'
 export function layout_c_({
