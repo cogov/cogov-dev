@@ -1,15 +1,18 @@
 {
-	"name": "@cogov/ui-server",
-	"version": "1.0.0",
-	"type": "module",
-	"main": "./src/index.ts",
-	"module": "./src/index.ts",
-	"types": "./src/index.ts",
-	"devDependencies": {
-		"@cogov/css": "workspace:*",
-		"@cogov/ui-cs": "workspace:^",
-		"@ctx-core/dom": "^15.1.38",
-		"ctx-core": "^4.10.1",
-		"relementjs": "^0.21.2"
-	}
+  "name": "@cogov/ui-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "devDependencies": {
+    "@cogov/css": "workspace:*",
+    "@cogov/ui-cs": "workspace:^",
+    "@ctx-core/dom": "^15.1.51",
+    "ctx-core": "^4.14.1",
+    "relementjs": "^0.26.0"
+  },
+  "dependencies": {
+    "elysia": "^0.7.30"
+  }
 }

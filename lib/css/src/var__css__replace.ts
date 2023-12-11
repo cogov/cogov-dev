@@ -13,7 +13,7 @@ import {
 	phone__font_size,
 	phone__max_width,
 	port__tab__max_width
-} from './_const'
+} from './_const.js'
 const var_R:Record<string, string> = {
 	'var(--cogov--primary--color)': cogov__primary__color,
 	'var(--cogov--primary-light--color)': cogov__primary_light__color,

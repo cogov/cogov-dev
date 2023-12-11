@@ -1,14 +1,17 @@
+import { type OnLoadArgs, type PluginBuild } from 'esbuild'
 import { var__css__replace } from './var__css__replace.js'
 export function css__replace__plugin_() {
 	return {
 		name: 'css__replace__plugin',
-		transform(src:string, id:string) {
-			if (/\.css$/.test(id)) {
-				return {
-					code: var__css__replace(src),
-					map: null,
+		setup(build:PluginBuild) {
+			build.onLoad(
+				{ filter: /\.css$/ },
+				async ({ path }:OnLoadArgs)=>{
+					const contents = await Bun.file(path).text()
+						.then(css=>var__css__replace(css))
+					return { contents, loader: 'css' }
 				}
-			}
-		}
+			)
+			},
 	}
 }
