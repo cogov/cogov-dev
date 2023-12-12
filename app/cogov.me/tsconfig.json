@@ -1,17 +1,13 @@
 {
-	"extends": "astro/tsconfigs/strict",
+	"compileOnSave": true,
 	"compilerOptions": {
-		"esModuleInterop": true,
-		"target": "ESNext",
 		"module": "ESNext",
-		"lib": ["ESNext", "dom"],
 		"moduleResolution": "nodenext",
-		"types": [
-			"node",
-			"vite/client"
-		],
-		"typeRoots": [
-			"node_modules/@types"
-		]
-	}
+		"target": "ESNext",
+		"strict": true
+	},
+	"exclude": [
+		"node_modules"
+	],
+	"references": []
 }

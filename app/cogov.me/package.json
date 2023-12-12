@@ -4,21 +4,20 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "./bin/dev.sh",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "bun --watch ./src/index.ts",
+    "start": "NODE_ENV=production bun ./src/index.ts",
+    "build": ":"
   },
   "dependencies": {
     "@ctx-core/http": "^9.5.46",
     "@ctx-core/nodejs": "^0.2.0",
     "@elysiajs/static": "^0.7.1",
-    "elysia": "^0.7.30"
+    "ctx-core": "^4.14.1",
+    "elysia": "^0.7.30",
+    "relementjs": "^0.27.1",
+    "relysjs": "^0.1.3"
   },
   "devDependencies": {
-    "@astrojs/node": "^7.0.0",
-    "@astrojs/webapi": "^3.0.0",
     "@cogov/css": "workspace:*",
     "@cogov/ui-cs": "workspace:^",
     "@cogov/ui-server": "workspace:^1.0.0",
@@ -26,16 +25,8 @@
     "@ctx-core/dom": "^15.1.51",
     "@ctx-core/env": "^17.4.51",
     "@ctx-core/tempfile": "^1.2.27",
-    "@fastify/middie": "^8.3.0",
-    "@fastify/static": "^6.12.0",
     "@types/node": "20.10.4",
-    "astro": "^4.0.3",
-    "ctx-core": "^4.14.1",
     "esbuild": "^0.19.9",
-    "fastify": "^4.24.3",
-    "relementjs": "^0.26.0",
-    "relysjs": "workspace:*",
-    "vite": "^5.0.7",
-    "vite-tsconfig-paths": "^4.2.2"
+    "fastify": "^4.24.3"
   }
 }
