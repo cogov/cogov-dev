@@ -174,38 +174,31 @@ importers:
         version: 4.9.0
 
   lib/ui--browser:
-    devDependencies:
-      '@ctx-core/dom':
-        specifier: ^15.1.55
-        version: 15.1.55
-      relementjs:
-        specifier: ^0.29.1
-        version: 0.29.1
-
-  lib/ui--server:
     dependencies:
-      elysia:
-        specifier: ^0.7.30
-        version: 0.7.30
-      relysjs:
-        specifier: ^0.10.3
-        version: 0.10.3
-    devDependencies:
-      '@cogov/css':
-        specifier: workspace:*
-        version: link:../css
-      '@cogov/ui--browser':
-        specifier: workspace:^
-        version: link:../ui--browser
-      '@ctx-core/dom':
-        specifier: ^15.1.55
-        version: 15.1.55
       ctx-core:
         specifier: ^4.18.0
         version: 4.18.0
       relementjs:
         specifier: ^0.29.1
         version: 0.29.1
+
+  lib/ui--server:
+    dependencies:
+      '@cogov/ui--browser':
+        specifier: workspace:^
+        version: link:../ui--browser
+      ctx-core:
+        specifier: ^4.18.0
+        version: 4.18.0
+      elysia:
+        specifier: ^0.7.30
+        version: 0.7.30
+      relementjs:
+        specifier: ^0.29.1
+        version: 0.29.1
+      relysjs:
+        specifier: ^0.10.3
+        version: 0.10.3
 
 packages:
 
@@ -2987,6 +2980,7 @@ packages:
     resolution: {integrity: sha512-BlEP7oQfQcYNAgsm22v6Y3t157iIkzI4Xvtl7vsWuxnFJmSCGQjrIag2QX/OyF8QWFVvtSnH7pVMKNKP1+IDrg==}
     dependencies:
       ctx-core: 4.18.0
+    dev: false
 
   /relysjs@0.10.3:
     resolution: {integrity: sha512-M5uuhsUFQ3gcdTvxEC7+rJ0QlQacqgHSZHr5Yf3dzLBDnuvijnO3CczspmqTUOgGbt8GrdlsdUOS8Alua5ENVw==}
