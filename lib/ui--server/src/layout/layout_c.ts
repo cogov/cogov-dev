@@ -1,4 +1,3 @@
-/// <reference types="bun-types" />
 import { type Ctx } from 'ctx-core/be'
 import { fragment_, raw_, type tag__dom_T } from 'relementjs'
 import { doc_html_ } from 'relementjs/server'

@@ -4,12 +4,13 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
+		"dev": "cd ./app/cogov.me && bun dev",
 		"start": "cd ./app/cogov.me && bun start"
 	},
 	"devDependencies": {
 		"@cogov/-dev-bin": "workspace:*",
-		"@ctx-core/jetbrains": "^7.3.48",
-		"@ctx-core/monorepo": "^20.5.106"
+		"@ctx-core/jetbrains": "^7.3.51",
+		"@ctx-core/monorepo": "^20.5.112"
 	},
 	"workspaces": [
 		"app/*",
