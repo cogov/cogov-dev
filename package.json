@@ -3,10 +3,13 @@
 	"private": true,
 	"version": "1.0.0",
 	"type": "module",
+	"scripts": {
+		"start": "cd ./app/cogov.me && bun start"
+	},
 	"devDependencies": {
 		"@cogov/-dev-bin": "workspace:*",
-		"@ctx-core/jetbrains": "^7.3.47",
-		"@ctx-core/monorepo": "^20.5.104"
+		"@ctx-core/jetbrains": "^7.3.48",
+		"@ctx-core/monorepo": "^20.5.106"
 	},
 	"workspaces": [
 		"app/*",
