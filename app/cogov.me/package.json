@@ -4,9 +4,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production bun ./src/build.ts",
+    "build": "bun ./src/build.ts",
+    "clear": "rm -rf ./dist",
     "dev": "bun --watch ./src/index.ts",
-    "start": "NODE_ENV=production bun ./dist/server/index.js"
+    "start": "bun ./start.ts"
   },
   "dependencies": {
     "@ctx-core/http": "^9.5.50",
@@ -15,7 +16,7 @@
     "ctx-core": "^4.18.0",
     "elysia": "^0.7.30",
     "relementjs": "^0.29.1",
-    "relysjs": "^0.9.4"
+    "relysjs": "^0.10.3"
   },
   "devDependencies": {
     "@cogov/css": "workspace:*",

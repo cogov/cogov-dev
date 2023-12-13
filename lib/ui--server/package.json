@@ -7,7 +7,7 @@
   "types": "./src/index.ts",
   "dependencies": {
     "elysia": "^0.7.30",
-    "relysjs": "^0.9.4"
+    "relysjs": "^0.10.3"
   },
   "devDependencies": {
     "@cogov/css": "workspace:*",

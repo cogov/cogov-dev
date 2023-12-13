@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "cd ./app/cogov.me && bun run build",
+		"clear": "cd ./app/cogov.me && bun clear",
 		"dev": "cd ./app/cogov.me && bun dev",
 		"start": "cd ./app/cogov.me && bun start"
 	},
