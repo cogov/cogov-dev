@@ -5,5 +5,5 @@ RC=$?
 if [ $RC -ne 0 ] ; then
 	exit $RC
 fi
-bun i
+pnpm i -r; pnpm prune; pnpm i -r
 (cd app/cogov.me && bun -b run build)
