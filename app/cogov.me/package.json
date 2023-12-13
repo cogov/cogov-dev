@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@cogov/css": "workspace:*",
-    "@cogov/ui-cs": "workspace:^",
-    "@cogov/ui-server": "workspace:^1.0.0",
+    "@cogov/ui--browser": "workspace:^",
+    "@cogov/ui--server": "workspace:^1.0.0",
     "@ctx-core/child_process": "^7.4.52",
     "@ctx-core/dom": "^15.1.52",
     "@ctx-core/env": "^17.4.52",

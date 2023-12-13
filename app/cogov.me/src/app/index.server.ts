@@ -1,4 +1,4 @@
-import type { page_params_T } from '@cogov/ui-server'
+import type { page_params_T } from '@cogov/ui--server'
 import {
 	connect_page_,
 	declaration_page_,
@@ -10,7 +10,7 @@ import {
 	services_page_,
 	specs_page_,
 	vision_page_
-} from '@cogov/ui-server'
+} from '@cogov/ui--server'
 import { Elysia } from 'elysia'
 import type { DecoratorBase } from 'elysia/types'
 import type { server__Node_T } from 'relementjs/server'

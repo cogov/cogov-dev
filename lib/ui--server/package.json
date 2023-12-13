@@ -1,5 +1,5 @@
 {
-  "name": "@cogov/ui-server",
+  "name": "@cogov/ui--server",
   "version": "1.0.0",
   "type": "module",
   "main": "./src/index.ts",
@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@cogov/css": "workspace:*",
-    "@cogov/ui-cs": "workspace:^",
+    "@cogov/ui--browser": "workspace:^",
     "@ctx-core/dom": "^15.1.52",
     "ctx-core": "^4.15.0",
     "relementjs": "^0.28.0"

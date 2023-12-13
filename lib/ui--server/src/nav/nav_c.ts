@@ -1,4 +1,4 @@
-import { nav_c__hy__bind } from '@cogov/ui-cs'
+import { nav_c__hy__bind } from '@cogov/ui--browser'
 import { type Node_T, type relement_env_T } from 'relementjs'
 import { a_, div_, img_, p_ } from 'relementjs/html'
 import './nav.css'

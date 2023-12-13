@@ -1,5 +1,5 @@
 {
-	"name": "@cogov/ui-cs",
+	"name": "@cogov/ui--browser",
 	"private": true,
 	"type": "module",
 	"main": "src/index.ts",

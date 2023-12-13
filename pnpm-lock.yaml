@@ -104,12 +104,12 @@ importers:
       '@cogov/css':
         specifier: workspace:*
         version: link:../../lib/css
-      '@cogov/ui-cs':
+      '@cogov/ui--browser':
         specifier: workspace:^
-        version: link:../../lib/ui-cs
-      '@cogov/ui-server':
+        version: link:../../lib/ui--browser
+      '@cogov/ui--server':
         specifier: workspace:^1.0.0
-        version: link:../../lib/ui-server
+        version: link:../../lib/ui--server
       '@ctx-core/child_process':
         specifier: ^7.4.52
         version: 7.4.52
@@ -173,7 +173,7 @@ importers:
         specifier: ^4.8.0
         version: 4.8.0
 
-  lib/ui-cs:
+  lib/ui--browser:
     devDependencies:
       '@ctx-core/dom':
         specifier: ^15.1.52
@@ -182,7 +182,7 @@ importers:
         specifier: ^0.28.0
         version: 0.28.0
 
-  lib/ui-server:
+  lib/ui--server:
     dependencies:
       elysia:
         specifier: ^0.7.30
@@ -194,9 +194,9 @@ importers:
       '@cogov/css':
         specifier: workspace:*
         version: link:../css
-      '@cogov/ui-cs':
+      '@cogov/ui--browser':
         specifier: workspace:^
-        version: link:../ui-cs
+        version: link:../ui--browser
       '@ctx-core/dom':
         specifier: ^15.1.52
         version: 15.1.52
