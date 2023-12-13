@@ -4,6 +4,7 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
+		"build": "cd ./app/cogov.me && bun run build",
 		"dev": "cd ./app/cogov.me && bun dev",
 		"start": "cd ./app/cogov.me && bun start"
 	},

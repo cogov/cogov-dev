@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "build": "NODE_ENV=production bun ./src/build.ts",
     "dev": "bun --watch ./src/index.ts",
-    "start": "NODE_ENV=production bun ./src/index.ts",
-    "build": ":"
+    "start": "NODE_ENV=production bun ./dist/server/index.js"
   },
   "dependencies": {
     "@ctx-core/http": "^9.5.50",
