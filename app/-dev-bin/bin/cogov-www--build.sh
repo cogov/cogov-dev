@@ -5,5 +5,5 @@ RC=$?
 if [ $RC -ne 0 ] ; then
 	exit $RC
 fi
-pnpm i -r; pnpm prune; pnpm i -r
+bun i
 (cd app/cogov.me && NODE_ENV=production bun -b run build)
