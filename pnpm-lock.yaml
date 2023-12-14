@@ -119,8 +119,8 @@ importers:
         specifier: ^0.29.3
         version: 0.29.3
       relysjs:
-        specifier: ^0.19.0
-        version: 0.19.0
+        specifier: ^0.20.1
+        version: 0.20.1
     devDependencies:
       '@types/node':
         specifier: 20.10.4
@@ -149,9 +149,12 @@ importers:
 
   lib/css:
     dependencies:
+      esbuild:
+        specifier: ^0.19.9
+        version: 0.19.9
       relysjs:
-        specifier: ^0.19.0
-        version: 0.19.0
+        specifier: ^0.20.1
+        version: 0.20.1
 
   lib/deploy:
     devDependencies:
@@ -201,8 +204,8 @@ importers:
         specifier: ^0.29.3
         version: 0.29.3
       relysjs:
-        specifier: ^0.19.0
-        version: 0.19.0
+        specifier: ^0.20.1
+        version: 0.20.1
 
 packages:
 
@@ -2717,8 +2720,8 @@ packages:
       ctx-core: 4.19.0
     dev: false
 
-  /relysjs@0.19.0:
-    resolution: {integrity: sha512-fSjBgW+lVl08ipBzCEqZxKZqbJL2kGy/UAWI5swDjg3s0H0lQT0BQblo4JXnVP6hdt2oSvLDJw7t6fX8dk7cwQ==}
+  /relysjs@0.20.1:
+    resolution: {integrity: sha512-KqIhecdDrFQtBPvJmaL1da0IXZb4jZBfKD2rrt133ShrAIQ37sPcktVZhkbjpRBLstdvriP1zBUDu+Dg0eTDNA==}
     dependencies:
       '@ctx-core/fs': 1.4.36
       compressible: 2.0.18
