@@ -8,7 +8,7 @@ export async function build(config?:relysjs__build_config_T) {
 	await browser__build(config)
 	await server__build({
 		...config ?? {},
-		external:['/assets/*', 'relementjs'],
+		external:['/assets/*', 'relementjs', 'elysia-compression'],
 		plugins: [css__replace__plugin],
 	})
 }

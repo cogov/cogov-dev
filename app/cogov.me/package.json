@@ -10,24 +10,23 @@
     "start": "bun ./start.ts"
   },
   "dependencies": {
+    "@cogov/css": "workspace:*",
+    "@cogov/ui--browser": "workspace:*",
+    "@cogov/ui--server": "workspace:*",
+    "@ctx-core/child_process": "^7.4.55",
+    "@ctx-core/dom": "^15.1.55",
+    "@ctx-core/env": "^17.4.55",
     "@ctx-core/http": "^9.5.50",
     "@ctx-core/nodejs": "^0.3.0",
+    "@ctx-core/tempfile": "^1.2.34",
     "@elysiajs/static": "^0.7.1",
     "ctx-core": "^4.18.0",
     "elysia": "^0.7.30",
     "relementjs": "^0.29.1",
-    "relysjs": "^0.10.3"
+    "relysjs": "^0.12.0"
   },
   "devDependencies": {
-    "@cogov/css": "workspace:*",
-    "@cogov/ui--browser": "workspace:^",
-    "@cogov/ui--server": "workspace:^1.0.0",
-    "@ctx-core/child_process": "^7.4.55",
-    "@ctx-core/dom": "^15.1.55",
-    "@ctx-core/env": "^17.4.55",
-    "@ctx-core/tempfile": "^1.2.34",
     "@types/node": "20.10.4",
-    "esbuild": "^0.19.9",
-    "fastify": "^4.25.0"
+    "esbuild": "^0.19.9"
   }
 }

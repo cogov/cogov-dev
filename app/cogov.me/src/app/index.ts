@@ -1,11 +1,14 @@
 import { import_meta_env_ } from '@ctx-core/env'
+import { Elysia } from 'elysia'
 import { dirname, join, resolve } from 'path'
 import { relement__use } from 'relementjs'
 import { server__relement } from 'relementjs/server'
-import { app__start as _app__start, app_ctx, cwd__set, port__set } from 'relysjs'
+import { app__start as _app__start, app_ctx, compression_middleware_, cwd__set, port__set } from 'relysjs'
 export default async function app__start() {
 	config__init()
-	return _app__start()
+	return _app__start(
+		new Elysia()
+			.use(compression_middleware_()))
 }
 export function config__init() {
 	const port = parseInt(import_meta_env_().COGOVME_PORT) || 4020

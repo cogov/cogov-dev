@@ -34,7 +34,13 @@ export default middleware_(middleware_ctx=>{
 			const ctx = route__ctx_(middleware_ctx)
 			elysia_context__set(ctx, context)
 			return new Response(
-				'' + page_({ ctx }),
+				new ReadableStream({
+					start(controller) {
+						controller.enqueue('' + page_({ ctx }))
+						controller.close()
+					}
+				}),
+				// '' + page_({ ctx }),
 				{
 					headers: {
 						'Content-Type': 'text/html;charset=UTF-8',
