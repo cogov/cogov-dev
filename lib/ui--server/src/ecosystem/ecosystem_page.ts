@@ -3,7 +3,7 @@ import { main_ } from 'relementjs/html'
 import type { page_params_T } from '../_types.js'
 import { footer_c_ } from '../footer/index.js'
 import { layout_c_ } from '../layout/index.js'
-import './ecosystem_page.css'
+import './ecosystem_page.css.js'
 export function ecosystem_page_($p:page_params_T) {
 	return (
 		layout_c_($p,

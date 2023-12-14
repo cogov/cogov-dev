@@ -1,7 +1,19 @@
+import { cogov__var__css__replace } from '@cogov/css'
+import { asset_path_a_ } from 'relysjs'
+const [
+	cogov__stars_png,
+	cogov__stars__mobile_png,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__stars.png'),
+	import('../public/assets/images/cogov__stars--mobile.png'),
+)
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 .vision_page__header {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__stars.png');
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__stars_png}');
 	background-position: center;
 	background-size: cover;
 }
@@ -14,7 +26,7 @@
 	.vision_page__header {
 		padding-left: 1rem;
 		padding-right: 1rem;
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__stars--mobile.png');
+		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__stars__mobile_png}');
 	}
 }
 .vision_page__header__title {
@@ -92,4 +104,6 @@
 	.vision_page__content__levels__photo {
 		width: 80%;
 	}
+}
+	`.trim())
 }

@@ -1,3 +1,15 @@
+import { cogov__var__css__replace } from '@cogov/css'
+import { asset_path_a_ } from 'relysjs'
+const [
+	cogov__northerlights_png,
+	cogov__northerlights__mobile_png,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__northerlights.png'),
+	import('../public/assets/images/cogov__northerlights--mobile.png'),
+)
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 .holochain-page {
 	margin-top: 7rem;
 	height: 100%;
@@ -7,7 +19,7 @@
 .holochain_page__header {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__northerlights.png');
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url(${cogov__northerlights_png});
 	background-position: center;
 	background-size: cover;
 }
@@ -18,7 +30,7 @@
 }
 @media (max-width: var(--phone--max-width)) {
 	.holochain_page__header {
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__northerlights--mobile.png');
+		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__northerlights__mobile_png}');
 	}
 }
 .holochain_page__header__title {
@@ -119,4 +131,6 @@
 	.holochain_page__cogov__video {
 		height: 50vw;
 	}
+}
+	`.trim())
 }

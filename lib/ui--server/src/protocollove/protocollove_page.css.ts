@@ -1,3 +1,13 @@
+import { cogov__var__css__replace } from '@cogov/css'
+import { asset_path_a_ } from 'relysjs'
+const [
+	cogov__heart_circuit_board_jpg,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__heart-circuit-board.jpg'),
+)
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 .protocol-page {
 	margin-top: 7rem;
 	height: 100%;
@@ -7,7 +17,7 @@
 .protocollove_page__header {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__heart-circuit-board.jpg');
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__heart_circuit_board_jpg}');
 	background-position: center;
 	background-size: cover;
 }
@@ -62,4 +72,6 @@
 	color: #333;
 	font-weight: 500;
 	text-align: justify;
+}
+	`.trim())
 }

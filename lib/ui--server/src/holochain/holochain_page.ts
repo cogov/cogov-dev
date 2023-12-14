@@ -1,9 +1,17 @@
 import { type Node_T, raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
+import { asset_path_a_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { footer_c_ } from '../footer/index.js'
 import { layout_c_ } from '../layout/index.js'
-import './holochain_page.css'
+import './holochain_page.css.js'
+const [
+	holochain_logo_png,
+	holo_logo_png,
+] = await asset_path_a_(
+	import('../public/assets/images/holochain-logo.png'),
+	import('../public/assets/images/holo-logo.png'),
+)
 export function holochain_page_($p:page_params_T) {
 	return (
 		layout_c_($p,
@@ -30,7 +38,7 @@ export function holochain_page_($p:page_params_T) {
 				<div class="holochain_page__cogov__body">
 					<div class="holochain_page__cogov__left">
 						<div class="holochain_page__cogov__logo__container">
-							<img class="holochain_page__cogov__logo" src="/assets/images/holochain-logo.png"/>
+							<img class="holochain_page__cogov__logo" src="${holochain_logo_png}"/>
 							<p class="holochain_page__cogov__title">Holochain</p>
 						</div>
 						<p class="holochain_page__cogov__body">
@@ -42,7 +50,7 @@ export function holochain_page_($p:page_params_T) {
 					</div>
 					<div class="holochain_page__cogov__right">
 						<div class="holochain_page__cogov__logo__container">
-							<img class="holochain_page__cogov__logo" src="/assets/images/holo-logo.png"/>
+							<img class="holochain_page__cogov__logo" src="${holo_logo_png}"/>
 							<p class="holochain_page__cogov__title">
 								Holo
 							</p>

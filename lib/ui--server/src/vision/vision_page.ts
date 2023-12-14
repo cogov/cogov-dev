@@ -1,9 +1,15 @@
 import { type Node_T, raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
+import { asset_path_a_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { footer_c_ } from '../footer/index.js'
 import { layout_c_ } from '../layout/index.js'
-import './vision_page.css'
+import './vision_page.css.js'
+const [
+	cogov__consciousness_levels_png,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__consciousness-levels.png'),
+)
 export function vision_page_($p:page_params_T) {
 	return (
 		layout_c_($p,
@@ -40,7 +46,7 @@ export function vision_page_($p:page_params_T) {
 				</div>
 				<div class="vision_page__content__levels">
 					<p class="vision_page__content__levels__title">Levels of Consciousness:</p>
-					<img src="/assets/images/cogov__consciousness-levels.png" alt="" class="vision_page__content__levels__photo"/>
+					<img src="${cogov__consciousness_levels_png}" alt="" class="vision_page__content__levels__photo"/>
 				</div>
 				<div class="vision_page__content__text">
 					<p class="vision_page__content__title">Achieving Higher Consciousness Through Technology</p>

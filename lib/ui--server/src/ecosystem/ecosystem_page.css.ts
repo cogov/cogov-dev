@@ -1,3 +1,13 @@
+import { cogov__var__css__replace } from '@cogov/css'
+import { asset_path_a_ } from 'relysjs'
+const [
+	cogov__happy_community_jpg,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__happy-community.jpg'),
+)
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 .ecosystem-page {
 	margin-top: 7rem;
 	height: 100%;
@@ -7,7 +17,7 @@
 .ecosystem_page__header {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('/assets/images/cogov__happy-community.jpg');
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url(${cogov__happy_community_jpg});
 	background-position: center;
 	background-size: cover;
 }
@@ -49,4 +59,6 @@
 }
 .ecosystemContent iframe {
 	border: none;
+}
+	`.trim())
 }

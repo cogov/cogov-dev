@@ -1,5 +1,5 @@
 import { type OnLoadArgs, type PluginBuild } from 'esbuild'
-import { var__css__replace } from './var__css__replace.js'
+import { cogov__var__css__replace } from './var__css__replace.js'
 export function css__replace__plugin_() {
 	return {
 		name: 'css__replace__plugin',
@@ -8,7 +8,7 @@ export function css__replace__plugin_() {
 				{ filter: /\.css$/ },
 				async ({ path }:OnLoadArgs)=>{
 					const contents = await Bun.file(path).text()
-						.then(css=>var__css__replace(css))
+						.then(css=>cogov__var__css__replace(css))
 					return { contents, loader: 'css' }
 				}
 			)

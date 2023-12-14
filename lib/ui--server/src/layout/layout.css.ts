@@ -1,3 +1,7 @@
+import { cogov__var__css__replace } from '@cogov/css'
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 :root {
 	--accent: 124, 58, 237;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
@@ -83,4 +87,6 @@ body main .page__content {
 }
 .underline {
 	border-bottom: 2px solid white;
+}
+	`.trim())
 }

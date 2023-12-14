@@ -1,9 +1,11 @@
 import { type Node_T, raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
+import { asset_path_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { footer_c_ } from '../footer/index.js'
 import { layout_c_ } from '../layout/index.js'
-import './raymond_d_powell_page.css'
+import './raymond_d_powell_page.css.js'
+const cogov__founder_png = await asset_path_(import('../public/assets/images/cogov__founder.png'))
 export function raymond_d_powell_page_($p:page_params_T) {
 	return (
 		layout_c_($p,
@@ -32,7 +34,7 @@ export function raymond_d_powell_page_($p:page_params_T) {
 				<div class="raymond_d_powell_page__about__left">
 					<img
 						class="raymond_d_powell_page__about__left__image"
-						src="/assets/images/cogov__founder.png"
+						src="${cogov__founder_png}"
 						alt="Cogov Founder: Raymond Powell"
 					/>
 				</div>

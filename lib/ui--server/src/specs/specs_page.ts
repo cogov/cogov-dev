@@ -1,9 +1,19 @@
 import { type Node_T, raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
+import { asset_path_a_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { footer_c_ } from '../footer/index.js'
 import { layout_c_ } from '../layout/index.js'
-import './specs_page.css'
+import './specs_page.css.js'
+const [
+	cogov__protocol__one_png,
+	cogov__protocol__two_png,
+	cogov__protocol__three_png,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__protocol--one.png'),
+	import('../public/assets/images/cogov__protocol--two.png'),
+	import('../public/assets/images/cogov__protocol--three.png'),
+)
 export function specs_page_($p:page_params_T) {
 	return (
 		layout_c_($p,
@@ -67,7 +77,7 @@ export function specs_page_($p:page_params_T) {
 					>distributed storage standards</a> that have been in operation for decades.
 					This creates redundancy and validation of application data across randomized nodes.
 				</p>
-				<img src="/assets/images/cogov__protocol--one.png" alt=""
+				<img src="${cogov__protocol__one_png}" alt=""
 					class="specs_page__content__image specs_page__content__image__one"/>
 				<br/><br/>
 				<p class="specs_page__content__body">
@@ -88,7 +98,7 @@ export function specs_page_($p:page_params_T) {
 					This visual shows a sample of various types of entries and how they “hang off” each other.
 					It is by no means a complete diagram.
 				</p>
-				<img src="/assets/images/cogov__protocol--two.png" alt=""
+				<img src="${cogov__protocol__two_png}" alt=""
 					class="specs_page__content__image specs_page__content__image__two"/>
 				<p class="specs_page__content__body">
 					However, the above is not an illustration of how data is actually stored.
@@ -148,7 +158,7 @@ export function specs_page_($p:page_params_T) {
 					<br/>A very early 2016 mock-up of what a CoGov Ledger Browser might look like can be found at
 					<a href="http://demo.cogov.tech/" class="addlink" target="blank">http://demo.cogov.tech/</a>
 					<br/><br/>
-					<img src="/assets/images/cogov__protocol--three.png" alt=""
+					<img src="${cogov__protocol__three_png}" alt=""
 						class="specs_page__content__image specs_page__content__image__three"/>
 				</p>
 			</div>

@@ -1,3 +1,7 @@
+import { cogov__var__css__replace } from '@cogov/css'
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 .footer_c {
 	background-color: white;
 	padding: 3rem 5rem;
@@ -40,4 +44,6 @@
 }
 .footer__social__text:hover {
 	text-decoration: underline;
+}
+	`.trim())
 }

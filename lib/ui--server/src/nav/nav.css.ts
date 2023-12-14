@@ -1,3 +1,7 @@
+import { cogov__var__css__replace } from '@cogov/css'
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 .nav_c {
 	height: 0;
 }
@@ -157,4 +161,6 @@
 }
 .MenuHandle img {
 	height: 2rem;
+}
+	`.trim())
 }

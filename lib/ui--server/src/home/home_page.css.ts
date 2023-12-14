@@ -1,3 +1,27 @@
+import { cogov__var__css__replace } from '@cogov/css'
+import { asset_path_a_ } from 'relysjs'
+const [
+	cogov__unenclosability_png,
+	cogov__scalability_png,
+	cogov__transparency_png,
+	cogov__iteration_png,
+	cogov__interoperability_png,
+	cogov__developer_png,
+	cogov__philosopher_png,
+	cogov__creator_png,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__unenclosability.png'),
+	import('../public/assets/images/cogov__scalability.png'),
+	import('../public/assets/images/cogov__transparency.png'),
+	import('../public/assets/images/cogov__iteration.png'),
+	import('../public/assets/images/cogov__interoperability.png'),
+	import('../public/assets/images/cogov__developer.png'),
+	import('../public/assets/images/cogov__philosopher.png'),
+	import('../public/assets/images/cogov__creator.png'),
+)
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 .home-page {
 	height: 100%;
 	width: 100%;
@@ -206,19 +230,19 @@
 	}
 }
 .home_page__about__item__photo__one {
-	background-image: url('/assets/images/cogov__unenclosability.png');
+	background-image: url('${cogov__unenclosability_png}');
 }
 .home_page__about__item__photo__two {
-	background-image: url('/assets/images/cogov__scalability.png');
+	background-image: url('${cogov__scalability_png}');
 }
 .home_page__about__item__photo__three {
-	background-image: url('/assets/images/cogov__transparency.png');
+	background-image: url('${cogov__transparency_png}');
 }
 .home_page__about__item__photo__four {
-	background-image: url('/assets/images/cogov__iteration.png');
+	background-image: url('${cogov__iteration_png}');
 }
 .home_page__about__item__photo__five {
-	background-image: url('/assets/images/cogov__interoperability.png');
+	background-image: url('${cogov__interoperability_png}');
 }
 .home_page__about__item__text {
 	width: 40vw;
@@ -309,13 +333,13 @@
 	background-size: cover;
 }
 .home_page__details__header__developer {
-	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('/assets/images/cogov__developer.png');
+	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__developer_png}');
 }
 .home_page__details__header__philosopher {
-	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('/assets/images/cogov__philosopher.png');
+	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__philosopher_png}');
 }
 .home_page__details__header__creator {
-	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('/assets/images/cogov__creator.png');
+	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__creator_png}');
 }
 .home_page__details__header__title {
 	color: white;
@@ -382,4 +406,6 @@
 	font-size: 1.4rem;
 	font-weight: 500;
 	text-align: center;
+}
+	`.trim())
 }

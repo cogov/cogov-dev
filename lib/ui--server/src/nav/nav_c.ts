@@ -1,7 +1,14 @@
-import { nav_c__hy__bind } from '@cogov/ui--browser'
 import { type Node_T, type relement_env_T } from 'relementjs'
 import { a_, div_, img_, p_ } from 'relementjs/html'
-import './nav.css'
+import { asset_path_a_ } from 'relysjs'
+import './nav.css.js'
+const [
+	cogov__logo__blue_png,
+	cogov__menu_png,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__logo--blue.png'),
+	import('../public/assets/images/cogov__menu.png'),
+)
 const nav__item_aa:nav__item_a_T[] = [
 	['/protocol.love', 'protocol-love', 'Protocol.Love'],
 	['/specs', 'specs', 'Tech Specs'],
@@ -31,7 +38,7 @@ export function nav_c_<env_T extends relement_env_T>({ segment }:{ segment?:stri
 						'aria-current': segment === undefined ? 'page' : undefined
 					},
 					div_({ class: 'nav__logo__container' },
-						img_({ class: 'nav__logo__image', src: '/assets/images/cogov__logo--blue.png', alt: '' }),
+						img_({ class: 'nav__logo__image', src: cogov__logo__blue_png, alt: '' }),
 						p_({ class: 'nav__logo__text' },
 							'CoGov'))),
 				div_({ class: 'nav__items' },
@@ -57,7 +64,7 @@ export function nav_c_<env_T extends relement_env_T>({ segment }:{ segment?:stri
 	function MenuHandle() {
 		return (
 			div_({ class: 'MenuHandle' },
-				img_({ class: 'mobile__nav', src: '/assets/images/cogov__menu.png' }))
+				img_({ class: 'mobile__nav', src: cogov__menu_png }))
 		)
 	}
 	function nav__open_c_() {

@@ -1,3 +1,13 @@
+import { cogov__var__css__replace } from '@cogov/css'
+import { asset_path_a_ } from 'relysjs'
+const [
+	cogov__protocol_png,
+] = await asset_path_a_(
+	import('../public/assets/images/cogov__protocol.png'),
+)
+export default ()=>{
+	// language=css
+	return cogov__var__css__replace(`
 .specs_page {
 	margin-top: 7rem;
 	height: 100%;
@@ -9,7 +19,7 @@
 	height: 85vh;
 	background-image:
 		linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)),
-		url('/assets/images/cogov__protocol.png');
+		url('${cogov__protocol_png}');
 	background-position: center;
 	background-size: cover;
 }
@@ -76,4 +86,6 @@
 }
 .specs_page__content__image__three {
 	width: 100%;
+}
+	`.trim())
 }
