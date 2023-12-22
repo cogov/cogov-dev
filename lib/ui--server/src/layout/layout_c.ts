@@ -1,8 +1,6 @@
-import { type Ctx } from 'ctx-core/be'
 import { fragment_, raw_, type tag__dom_T } from 'relementjs'
 import { doc_html_ } from 'relementjs/server'
-import { asset_path_a_, browser__script_, request_, server__css_ } from 'relysjs'
-import { c_assets_, type c_assets_T } from '../c_assets.js'
+import { asset_path_a_, assets_, assets__new, type assets_T, request_, type route_ctx_T } from 'relysjs'
 import { nav_c_ } from '../nav/index.js'
 import './layout.css.js'
 const [
@@ -17,9 +15,9 @@ export function layout_c_({
 	title,
 	assets,
 }:{
-	ctx:Ctx
+	ctx:route_ctx_T
 	title?:string,
-	assets?:c_assets_T
+	assets?:assets_T
 }, ...children:tag__dom_T<'server'>) {
 	const { url } = request_(ctx)
 	const uri = new URL(url)
@@ -29,9 +27,7 @@ export function layout_c_({
 	const description =
 		'CoGov fosters the emergence of coherent collective intelligence by enabling the rapid iteration ' +
 		'of governance and social coordination systems that YOU design!'
-	const css = server__css_(ctx)
-	const script = browser__script_(ctx)
-	assets = c_assets_({ css_a: css ? [css] : [], script_a: script ? [script] : [] }, assets)
+	assets = assets__new(assets_(ctx), assets)
 	// language=html
 	return doc_html_(raw_(`
 <head>

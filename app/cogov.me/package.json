@@ -13,20 +13,20 @@
     "@cogov/css": "workspace:*",
     "@cogov/ui--browser": "workspace:*",
     "@cogov/ui--server": "workspace:*",
-    "@ctx-core/child_process": "^7.4.56",
-    "@ctx-core/dom": "^15.1.56",
-    "@ctx-core/env": "^17.4.56",
-    "@ctx-core/http": "^9.5.51",
-    "@ctx-core/nodejs": "^0.3.0",
-    "@ctx-core/tempfile": "^1.2.35",
+    "@ctx-core/child_process": "^7.4.70",
+    "@ctx-core/dom": "^15.1.68",
+    "@ctx-core/env": "^17.5.3",
+    "@ctx-core/http": "^9.5.63",
+    "@ctx-core/nodejs": "^0.3.1",
+    "@ctx-core/tempfile": "^1.2.47",
     "@elysiajs/static": "^0.7.1",
-    "ctx-core": "^4.19.0",
+    "ctx-core": "^5.4.1",
     "elysia": "^0.7.30",
-    "relementjs": "^0.29.3",
-    "relysjs": "^0.20.1"
+    "relementjs": "^0.31.11",
+    "relysjs": "^0.24.3"
   },
   "devDependencies": {
-    "@types/node": "20.10.4",
-    "esbuild": "^0.19.9"
+    "@types/node": "20.10.5",
+    "esbuild": "^0.19.10"
   }
 }

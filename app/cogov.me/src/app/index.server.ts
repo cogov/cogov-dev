@@ -14,7 +14,7 @@ import {
 import { Elysia } from 'elysia'
 import type { DecoratorBase } from 'elysia/types'
 import type { server__Node_T } from 'relementjs/server'
-import { elysia_context__set, type elysia_context_T, middleware_, route__ctx_ } from 'relysjs'
+import { elysia_context__set, type elysia_context_T, middleware_, route_ctx_ } from 'relysjs'
 export default middleware_(middleware_ctx=>{
 	return new Elysia<'', DecoratorBase&elysia_context_T>({
 		name: 'root_routes'
@@ -31,7 +31,7 @@ export default middleware_(middleware_ctx=>{
 		.get('/vision', route_(vision_page_))
 	function route_(page_:($p:page_params_T)=>server__Node_T) {
 		return (context:elysia_context_T)=>{
-			const ctx = route__ctx_(middleware_ctx)
+			const ctx = route_ctx_(middleware_ctx)
 			elysia_context__set(ctx, context)
 			return new Response(
 				new ReadableStream({

@@ -1,5 +1,4 @@
 export * from './_types.js'
-export * from './c_assets.js'
 export * from './connect/index.js'
 export * from './declaration/index.js'
 export * from './ecosystem/index.js'
