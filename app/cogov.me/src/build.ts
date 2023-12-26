@@ -1,6 +1,7 @@
 import { css__replace__plugin_ } from '@cogov/css'
 import { is_entry_file_ } from '@ctx-core/nodejs'
-import { browser__build, cssjs_esbuild_plugin_, type relysjs__build_config_T, server__build } from 'relysjs'
+import { esmcss_esbuild_plugin_ } from 'esmcss'
+import { browser__build, type relysjs__build_config_T, server__build } from 'relysjs'
 import { config__init } from './app/index.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
@@ -17,7 +18,7 @@ export async function build(config?:relysjs__build_config_T) {
 			'.mp4': 'file',
 			'.svg': 'file',
 		},
-		plugins: [css__replace__plugin_(), cssjs_esbuild_plugin_()],
+		plugins: [css__replace__plugin_(), esmcss_esbuild_plugin_()],
 	})
 }
 if (is_entry_file_(import.meta.url, process.argv[1])) {
