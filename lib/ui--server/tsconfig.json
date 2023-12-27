@@ -7,7 +7,7 @@
 		"moduleResolution": "node",
 		"types": [
 			"node",
-			"vite/client"
+			"rebuildjs/types"
 		],
 		"baseUrl": "./",
 		"paths": {
