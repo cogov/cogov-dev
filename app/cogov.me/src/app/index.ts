@@ -1,4 +1,4 @@
-import { import_meta_env_ } from '@ctx-core/env'
+import { import_meta_env_ } from 'ctx-core/env'
 import { Elysia } from 'elysia'
 import { dirname, join, resolve } from 'path'
 import { relement__use } from 'relementjs'

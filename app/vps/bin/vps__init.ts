@@ -30,10 +30,10 @@ import {
 	yay__install,
 	yay__update
 } from '@ctx-core/arch-vps'
-import { file_exists__waitfor } from '@ctx-core/fs'
-import { tempfile_path_ } from '@ctx-core/tempfile'
+import { file_exists__waitfor } from 'ctx-core/fs'
 import { run } from 'ctx-core/function'
 import { be_, ctx_ } from 'ctx-core/object'
+import { tempfile_path_ } from 'ctx-core/tempfile'
 import { unlink, writeFile } from 'fs/promises'
 import { $, ssh } from 'zx'
 async function main() {

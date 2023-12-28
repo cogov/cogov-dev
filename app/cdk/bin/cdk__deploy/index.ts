@@ -1,6 +1,6 @@
 #!/usr/bin/env tsx
 import { spawn_pipe_process } from '@ctx-core/child_process'
-import { import_meta_env_ } from '@ctx-core/env'
+import { import_meta_env_ } from 'ctx-core/env'
 import { clone } from 'ctx-core/object'
 import { dirname, join, resolve } from 'path'
 import 'source-map-support/register'

@@ -1,5 +1,3 @@
-import { param_r_ } from '@ctx-core/cli-args'
-import { be_, type Ctx } from 'ctx-core/object'
 import { CfnOutput, Duration, Stack } from 'aws-cdk-lib'
 import { EndpointType, LambdaIntegration, LambdaRestApi, MethodLoggingLevel } from 'aws-cdk-lib/aws-apigateway'
 import { Certificate, CertificateValidation } from 'aws-cdk-lib/aws-certificatemanager'
@@ -13,6 +11,8 @@ import {
 import { type ISecurityGroup } from 'aws-cdk-lib/aws-ec2'
 import { Code, Function, Runtime } from 'aws-cdk-lib/aws-lambda'
 import { Construct } from 'constructs'
+import { param_r_ } from 'ctx-core/cli-args'
+import { be_, type Ctx_wide_T } from 'ctx-core/object'
 import { resolve } from 'import-meta-resolve'
 import { join } from 'path'
 import { cdk__app_ } from './cdk__app_.js'
@@ -28,14 +28,14 @@ const { stage_a } = param_r_(
 	{ stage_a: '-s, --stage', },
 	{ stage_a: [''], })
 const dir = new URL(await resolve('.', import.meta.url)).pathname
-export async function www_cdk__stack__build(ctx:Ctx) {
+export async function www_cdk__stack__build(ctx:Ctx_wide_T<''>) {
 	process.chdir(join(dir, '..'))
 	www_cdk__www__distribution_(ctx)
 	cdk__app_(ctx).synth()
 }
 export const www_cdk__stack_ = be_<
 	Stack
->('www_cdk__stack_', ctx=>{
+>(ctx=>{
 	const stage = (stage_a[0] || 'prod') as stage_T
 	return new Stack(cdk__app_(ctx), www_cdk__id_('Stack'), {
 		env: {
@@ -46,14 +46,15 @@ export const www_cdk__stack_ = be_<
 			stage: stage as stage_T,
 		}
 	})
-})
+}, { id: 'www_cdk__stack_' })
 export const www_cdk__construct_ = be_<
 	Construct
->('www_cdk__construct_', ctx=>
-	new Construct(www_cdk__stack_(ctx), www_cdk__id_('Construct')))
+>(ctx=>
+		new Construct(www_cdk__stack_(ctx), www_cdk__id_('Construct')),
+	{ id: 'www_cdk__construct_' })
 export const www_cdk__lambda_function_ = be_<
 	Function
->('www_cdk__lambda_function_', ctx=>{
+>(ctx=>{
 	const NODE_ENV = NODE_ENV_(ctx)
 	const environment = {
 		NODE_ENV,
@@ -73,10 +74,10 @@ export const www_cdk__lambda_function_ = be_<
 		value: lambda_function.functionArn,
 	})
 	return lambda_function
-})
+}, { id: 'www_cdk__lambda_function_' })
 export const www_cdk__apigw_ = be_<
 	LambdaRestApi
->('www_cdk__apigw_', ctx=>{
+>(ctx=>{
 	const www_cdk__apigw = new LambdaRestApi(www_cdk__construct_(ctx), www_cdk__id_('Apigw'), {
 		restApiName: www_cdk__id_('Apigw'),
 		handler: www_cdk__lambda_function_(ctx),
@@ -116,10 +117,10 @@ export const www_cdk__apigw_ = be_<
 		value: www_cdk__apigw.url
 	})
 	return www_cdk__apigw
-})
+}, { id: 'www_cdk__apigw_' })
 export const www_cdk__cogovme__certificate_ = be_<
 	Certificate
->('www_cdk__cogovme__certificate_', ctx=>{
+>(ctx=>{
 	const certificate = new Certificate(www_cdk__construct_(ctx), www_cdk__id_('CogovmeCertificate'), {
 		domainName: cogovme__domainName,
 		subjectAlternativeNames: [
@@ -132,10 +133,10 @@ export const www_cdk__cogovme__certificate_ = be_<
 		value: certificate.certificateArn
 	})
 	return certificate
-})
+}, { id: 'www_cdk__cogovme__certificate_' })
 export const www_cdk__www__distribution_ = be_<
 	CloudFrontWebDistribution
->('www_cdk__www__distribution_', ctx=>{
+>(ctx=>{
 	const distribution = new CloudFrontWebDistribution(www_cdk__construct_(ctx), www_cdk__id_('WwwDistribution'), {
 		defaultRootObject: '',
 		originConfigs: [{
@@ -151,8 +152,10 @@ export const www_cdk__www__distribution_ = be_<
 					queryString: true,
 					headers: ['Host', 'X-Forwarded-Host'],
 				},
-			}],
-		}],
+			}
+			],
+		}
+		],
 		viewerCertificate: ViewerCertificate.fromAcmCertificate(www_cdk__cogovme__certificate_(ctx), {
 			aliases: [
 				cogovme__domainName,
@@ -170,4 +173,4 @@ export const www_cdk__www__distribution_ = be_<
 		value: distribution.distributionId,
 	})
 	return distribution
-})
+}, { id: 'www_cdk__www__distribution_' })
