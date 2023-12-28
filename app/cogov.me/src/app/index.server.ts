@@ -1,4 +1,3 @@
-import type { page_params_T } from '@cogov/ui--server'
 import {
 	connect_page_,
 	declaration_page_,
@@ -13,40 +12,19 @@ import {
 } from '@cogov/ui--server'
 import { Elysia } from 'elysia'
 import type { DecoratorBase } from 'elysia/types'
-import type { server__Node_T } from 'relementjs/server'
-import { elysia_context__set, type elysia_context_T, middleware_, route_ctx_ } from 'relysjs'
+import { type elysia_context_T, html_route_, middleware_ } from 'relysjs'
 export default middleware_(middleware_ctx=>{
 	return new Elysia<'', DecoratorBase&elysia_context_T>({
 		name: 'root_routes'
 	})
-		.get('/', route_(home_page_))
-		.get('/connect', route_(connect_page_))
-		.get('/declaration', route_(declaration_page_))
-		.get('/ecosystem', route_(ecosystem_page_))
-		.get('/holochain', route_(holochain_page_))
-		.get('/protocol.love', route_(protocollove_page_))
-		.get('/services', route_(services_page_))
-		.get('/specs', route_(specs_page_))
-		.get('/team/raymond-d-powell', route_(raymond_d_powell_page_))
-		.get('/vision', route_(vision_page_))
-	function route_(page_:($p:page_params_T)=>server__Node_T) {
-		return (context:elysia_context_T)=>{
-			const ctx = route_ctx_(middleware_ctx)
-			elysia_context__set(ctx, context)
-			return new Response(
-				new ReadableStream({
-					start(controller) {
-						controller.enqueue('' + page_({ ctx }))
-						controller.close()
-					}
-				}),
-				// '' + page_({ ctx }),
-				{
-					headers: {
-						'Content-Type': 'text/html;charset=UTF-8',
-					}
-				}
-			)
-		}
-	}
+		.get('/', html_route_(middleware_ctx, home_page_))
+		.get('/connect', html_route_(middleware_ctx, connect_page_))
+		.get('/declaration', html_route_(middleware_ctx, declaration_page_))
+		.get('/ecosystem', html_route_(middleware_ctx, ecosystem_page_))
+		.get('/holochain', html_route_(middleware_ctx, holochain_page_))
+		.get('/protocol.love', html_route_(middleware_ctx, protocollove_page_))
+		.get('/services', html_route_(middleware_ctx, services_page_))
+		.get('/specs', html_route_(middleware_ctx, specs_page_))
+		.get('/team/raymond-d-powell', html_route_(middleware_ctx, raymond_d_powell_page_))
+		.get('/vision', html_route_(middleware_ctx, vision_page_))
 })
