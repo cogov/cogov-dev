@@ -9,13 +9,11 @@ import {
 	compression_middleware_,
 	cwd__set,
 	is_prod_,
-	metafile__wait,
 	port__set,
 	static_middleware_
 } from 'relysjs'
 export default async function app__start() {
 	config__init()
-	await metafile__wait(2000)
 	return _app__start(
 		new Elysia()
 			.use(await static_middleware_(
@@ -30,10 +28,6 @@ export default async function app__start() {
 			.use(compression_middleware_())
 			.onError(({ code, error, set })=>{
 				console.error(error)
-				return {
-					status: 500,
-					message: 'Internal Error'
-				}
 			})
 	)
 }
