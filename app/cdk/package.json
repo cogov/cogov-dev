@@ -29,7 +29,7 @@
     "@aws-sdk/client-cloudfront": "^3.485.0",
     "@ctx-core/child_process": "^7.4.83",
     "@types/jest": "^29.5.11",
-    "@types/node": "20.10.7",
+    "@types/node": "20.10.8",
     "aws-cdk": "2.118.0",
     "ctx-core": "^5.16.1",
     "import-meta-resolve": "^4.0.0",

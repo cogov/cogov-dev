@@ -17,11 +17,11 @@
     "ctx-core": "^5.16.1",
     "elysia": "^0.8.8",
     "esmcss": "^0.1.4",
-    "relementjs": "^0.44.1",
-    "relysjs": "^0.41.2"
+    "relementjs": "^0.45.0",
+    "relysjs": "^0.41.5"
   },
   "devDependencies": {
-    "@types/node": "20.10.7",
+    "@types/node": "20.10.8",
     "esbuild": "^0.19.11"
   }
 }
