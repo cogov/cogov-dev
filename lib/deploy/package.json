@@ -30,9 +30,9 @@
 	"homepage": "https://cogov.me",
 	"devDependencies": {
 		"@types/node": "^20.10.8",
-		"ctx-core": "^5.16.1",
+		"ctx-core": "^5.16.2",
 		"import-meta-resolve": "^4.0.0",
-		"rmemo": "^0.29.1",
+		"rmemo": "^0.29.2",
 		"rollup": "^4.9.4"
 	},
 	"sideEffects": false
