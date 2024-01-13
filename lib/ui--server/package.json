@@ -10,7 +10,7 @@
     "@cogov/ui--browser": "workspace:*",
     "ctx-core": "^5.18.0",
     "elysia": "^0.8.9",
-    "relementjs": "^0.47.0",
-    "relysjs": "^0.43.0"
+    "relementjs": "^0.48.0",
+    "relysjs": "^0.43.1"
   }
 }
