@@ -11,8 +11,8 @@
 	},
 	"devDependencies": {
 		"@cogov/-dev-bin": "workspace:*",
-		"@ctx-core/jetbrains": "^7.3.82",
-		"@ctx-core/monorepo": "^21.1.17"
+		"@ctx-core/jetbrains": "^7.3.83",
+		"@ctx-core/monorepo": "^21.1.18"
 	},
 	"workspaces": [
 		"app/*",
