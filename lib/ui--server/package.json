@@ -8,9 +8,9 @@
   "dependencies": {
     "@cogov/css": "workspace:*",
     "@cogov/ui--browser": "workspace:*",
-    "ctx-core": "^5.19.0",
+    "ctx-core": "^5.19.2",
     "elysia": "^0.8.9",
-    "relementjs": "^0.48.10",
-    "relysjs": "^0.45.0"
+    "relementjs": "^0.48.12",
+    "relysjs": "^0.45.3"
   }
 }
