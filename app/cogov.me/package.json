@@ -18,10 +18,10 @@
     "elysia": "^0.8.9",
     "esmcss": "^0.1.5",
     "relementjs": "^0.48.10",
-    "relysjs": "^0.44.10"
+    "relysjs": "^0.44.11"
   },
   "devDependencies": {
-    "@types/node": "20.11.3",
+    "@types/node": "20.11.4",
     "esbuild": "^0.19.11"
   }
 }
