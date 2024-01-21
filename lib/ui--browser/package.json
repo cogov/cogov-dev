@@ -7,6 +7,6 @@
 	"types": "src/index.ts",
 	"dependencies": {
 		"ctx-core": "^5.25.3",
-		"relementjs": "^0.52.3"
+		"relementjs": "^0.52.4"
 	}
 }
