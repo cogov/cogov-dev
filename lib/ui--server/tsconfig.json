@@ -7,7 +7,7 @@
 		"moduleResolution": "node",
 		"types": [
 			"node",
-			"rebuildjs/file_types"
+			"rebuildjs/types"
 		],
 		"baseUrl": "./",
 		"paths": {
