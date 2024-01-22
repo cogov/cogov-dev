@@ -1,7 +1,7 @@
 import { css__replace__plugin_ } from '@cogov/css'
 import { is_entry_file_ } from 'ctx-core/fs'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
-import { browser__build, type relysjs__build_config_T, server__build } from 'relysjs'
+import { browser__build, type relysjs__build_config_T, server__build } from 'relysjs/server'
 import { config__init } from './app/index.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
