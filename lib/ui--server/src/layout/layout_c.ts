@@ -1,6 +1,7 @@
 import { fragment_, raw_, type tag__dom_T } from 'relementjs'
 import { doc_html_ } from 'relementjs/server'
-import { asset_path_a_, assets_, assets__new, type assets_T, request_, type route_ctx_T } from 'relysjs'
+import { asset_path_a_ } from 'relysjs'
+import { assets_, assets__new, type assets_T, request_, type route_ctx_T } from 'relysjs/server'
 import { nav_c_ } from '../nav/index.js'
 import './layout.css.js'
 const [

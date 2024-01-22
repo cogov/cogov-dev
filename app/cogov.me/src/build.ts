@@ -1,11 +1,11 @@
 import { css__replace__plugin_ } from '@cogov/css'
 import { is_entry_file_ } from 'ctx-core/fs'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
-import { browser__build, type relysjs__build_config_T, server__build } from 'relysjs/server'
+import { relysjs_browser__build, type relysjs__build_config_T, relysjs_server__build } from 'relysjs/server'
 import { config__init } from './app/index.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
-	await server__build({
+	await relysjs_server__build({
 		...config ?? {},
 		target: 'es2022',
 		external:['/assets/*', 'relementjs', 'elysia-compression'],
@@ -20,7 +20,7 @@ export async function build(config?:relysjs__build_config_T) {
 		},
 		plugins: [css__replace__plugin_(), esmcss_esbuild_plugin_()],
 	})
-	await browser__build(config)
+	await relysjs_browser__build(config)
 }
 is_entry_file_(import.meta.url, process.argv[1])
 	.then(is_entry_file=>{

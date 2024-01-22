@@ -12,7 +12,7 @@ import {
 } from '@cogov/ui--server'
 import { Elysia } from 'elysia'
 import type { DecoratorBase } from 'elysia/types'
-import { type elysia_context_T, html_route_, middleware_ } from 'relysjs'
+import { type elysia_context_T, html_route_, middleware_ } from 'relysjs/server'
 export default middleware_(middleware_ctx=>{
 	return new Elysia<'', DecoratorBase&elysia_context_T>({
 		name: 'root_routes'
