@@ -5,8 +5,8 @@
   "module": "./src/index.ts",
   "types": "./src/index.ts",
   "dependencies": {
-    "esbuild": "^0.19.11",
-    "esmcss": "^0.1.5",
-    "relysjs": "^0.55.1"
+    "esbuild": "^0.19.12",
+    "esmcss": "^0.1.6",
+    "relysjs": "^0.56.3"
   }
 }
