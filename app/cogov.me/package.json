@@ -14,14 +14,14 @@
     "@cogov/ui--browser": "workspace:*",
     "@cogov/ui--server": "workspace:*",
     "@elysiajs/static": "^0.8.1",
-    "ctx-core": "^5.29.0",
-    "elysia": "^0.8.10",
+    "ctx-core": "^5.31.1",
+    "elysia": "^0.8.14",
     "esmcss": "^0.1.6",
-    "relementjs": "^0.54.3",
-    "relysjs": "^0.56.3"
+    "relementjs": "^0.57.2",
+    "relysjs": "^0.58.1"
   },
   "devDependencies": {
-    "@types/node": "20.11.6",
+    "@types/node": "20.11.8",
     "esbuild": "^0.19.12"
   }
 }
