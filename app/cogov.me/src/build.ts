@@ -1,7 +1,12 @@
 import { css__replace__plugin_ } from '@cogov/css'
 import { is_entry_file_ } from 'ctx-core/fs'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
-import { relysjs_browser__build, type relysjs__build_config_T, relysjs_server__build } from 'relysjs/server'
+import {
+	type relysjs__build_config_T,
+	relysjs__ready,
+	relysjs_browser__build,
+	relysjs_server__build
+} from 'relysjs/server'
 import { config__init } from './app/index.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
@@ -21,11 +26,13 @@ export async function build(config?:relysjs__build_config_T) {
 		plugins: [css__replace__plugin_(), esmcss_esbuild_plugin_()],
 	})
 	await relysjs_browser__build(config)
+	await relysjs__ready()
 }
 if (is_entry_file_(import.meta.url, process.argv[1])) {
 	build({
 		rebuildjs: { watch: false },
 		relysjs: { app__start: false }
-	}).then(()=>process.exit(0))
+	})
+		.then(()=>process.exit(0))
 		.catch(()=>process.exit(1))
 }
