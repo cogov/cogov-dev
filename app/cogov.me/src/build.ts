@@ -8,7 +8,7 @@ export async function build(config?:relysjs__build_config_T) {
 	await relysjs_server__build({
 		...config ?? {},
 		target: 'es2022',
-		external:['/assets/*', 'relementjs', 'elysia-compression'],
+		external: ['/assets/*', 'relementjs', 'elysia-compression'],
 		// logLevel: 'verbose',
 		loader: {
 			'.gif': 'file',
@@ -22,10 +22,9 @@ export async function build(config?:relysjs__build_config_T) {
 	})
 	await relysjs_browser__build(config)
 }
-is_entry_file_(import.meta.url, process.argv[1])
-	.then(is_entry_file=>{
-		if (is_entry_file) {
-			return build({
-				rebuildjs: { watch: false },
-				relysjs: { app__start: false }})
-		}})
+if (is_entry_file_(import.meta.url, process.argv[1])) {
+	await build({
+		rebuildjs: { watch: false },
+		relysjs: { app__start: false }
+	})
+}
