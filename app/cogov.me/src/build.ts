@@ -23,8 +23,9 @@ export async function build(config?:relysjs__build_config_T) {
 	await relysjs_browser__build(config)
 }
 if (is_entry_file_(import.meta.url, process.argv[1])) {
-	await build({
+	build({
 		rebuildjs: { watch: false },
 		relysjs: { app__start: false }
-	})
+	}).then(()=>process.exit(0))
+		.catch(()=>process.exit(1))
 }
