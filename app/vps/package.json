@@ -7,8 +7,8 @@
 	},
 	"devDependencies": {
 		"@cogov/deploy": "workspace:^",
-		"@ctx-core/arch-vps": "^0.11.129",
-		"ctx-core": "^5.33.0",
+		"@ctx-core/arch-vps": "^0.11.130",
+		"ctx-core": "^5.34.0",
 		"typescript": "5.3.3"
 	}
 }
