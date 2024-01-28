@@ -1,11 +1,12 @@
 import { be_ } from 'ctx-core/object'
-import { be_sig_triple_ } from 'rmemo'
+import { id_be_sig_triple_ } from 'rmemo'
 export const [
 	stage$_,
 	stage_,
 	stage__set,
-] = be_sig_triple_(()=>
-	'prod' as stage_T)
+] = id_be_sig_triple_(
+	'stage',
+	()=>'prod' as stage_T)
 const stage_R_NODE_ENV:Record<stage_T, string> = {
 	prod: 'production',
 }
