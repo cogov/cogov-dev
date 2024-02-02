@@ -21,17 +21,17 @@
     "cdk": "cdk"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.124.0",
+    "aws-cdk-lib": "2.125.0",
     "constructs": "^10.3.0",
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "@aws-sdk/client-cloudfront": "^3.501.0",
-    "@ctx-core/child_process": "^7.4.123",
-    "@types/jest": "^29.5.11",
-    "@types/node": "20.11.10",
-    "aws-cdk": "2.124.0",
-    "ctx-core": "^5.34.0",
+    "@aws-sdk/client-cloudfront": "^3.504.0",
+    "@ctx-core/child_process": "^7.4.131",
+    "@types/jest": "^29.5.12",
+    "@types/node": "20.11.16",
+    "aws-cdk": "2.125.0",
+    "ctx-core": "^5.36.4",
     "import-meta-resolve": "^4.0.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.7.0",
