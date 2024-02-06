@@ -3,7 +3,7 @@ import { is_entry_file_ } from 'ctx-core/fs'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
 import {
 	type relysjs__build_config_T,
-	relysjs__ready,
+	relysjs__ready__wait,
 	relysjs_browser__build,
 	relysjs_server__build
 } from 'relysjs/server'
@@ -26,7 +26,7 @@ export async function build(config?:relysjs__build_config_T) {
 		plugins: [css__replace__plugin_(), esmcss_esbuild_plugin_()],
 	})
 	await relysjs_browser__build(config)
-	await relysjs__ready()
+	await relysjs__ready__wait()
 }
 if (is_entry_file_(import.meta.url, process.argv[1])) {
 	build({
