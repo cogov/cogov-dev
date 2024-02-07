@@ -9,8 +9,8 @@
     "@cogov/css": "workspace:*",
     "@cogov/ui--browser": "workspace:*",
     "ctx-core": "^5.38.1",
-    "elysia": "^0.8.15",
-    "relementjs": "^0.64.1",
-    "relysjs": "^1.6.2"
+    "elysia": "^0.8.16",
+    "relementjs": "^0.64.2",
+    "relysjs": "^1.7.1"
   }
 }
