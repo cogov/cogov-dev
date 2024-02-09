@@ -12,7 +12,7 @@ import { type ISecurityGroup } from 'aws-cdk-lib/aws-ec2'
 import { Code, Function, Runtime } from 'aws-cdk-lib/aws-lambda'
 import { Construct } from 'constructs'
 import { param_r_ } from 'ctx-core/cli-args'
-import { be_, type Ctx_wide_T } from 'ctx-core/object'
+import { be_, type wide_ctx_T } from 'ctx-core/object'
 import { resolve } from 'import-meta-resolve'
 import { join } from 'path'
 import { cdk__app_ } from './cdk__app_.js'
@@ -28,7 +28,7 @@ const { stage_a } = param_r_(
 	{ stage_a: '-s, --stage', },
 	{ stage_a: [''], })
 const dir = new URL(await resolve('.', import.meta.url)).pathname
-export async function www_cdk__stack__build(ctx:Ctx_wide_T<''>) {
+export async function www_cdk__stack__build(ctx:wide_ctx_T<''>) {
 	process.chdir(join(dir, '..'))
 	www_cdk__www__distribution_(ctx)
 	cdk__app_(ctx).synth()
