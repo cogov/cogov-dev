@@ -1,5 +1,8 @@
 import { css__replace__plugin_ } from '@cogov/css'
+import { preprocess } from '@ctx-core/preprocess'
+import { import_meta_env_ } from 'ctx-core/env'
 import { is_entry_file_ } from 'ctx-core/fs'
+import { type Plugin } from 'esbuild'
 import { esmcss_esbuild_plugin_ } from 'esmcss'
 import {
 	type relysjs__build_config_T,
@@ -10,22 +13,18 @@ import {
 import { config__init } from './app/index.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
+	const preprocess_plugin = preprocess_plugin_()
 	await relysjs_server__build({
 		...config ?? {},
 		target: 'es2022',
 		external: ['/assets/*', 'relementjs', 'elysia-compression'],
 		// logLevel: 'verbose',
-		loader: {
-			'.gif': 'file',
-			'.jpeg': 'file',
-			'.jpg': 'file',
-			'.mp4': 'file',
-			'.png': 'file',
-			'.svg': 'file',
-		},
-		plugins: [css__replace__plugin_(), esmcss_esbuild_plugin_()],
+		plugins: [css__replace__plugin_(), esmcss_esbuild_plugin_(), preprocess_plugin],
 	})
-	await relysjs_browser__build(config)
+	await relysjs_browser__build({
+		...config ?? {},
+		plugins: [css__replace__plugin_(), esmcss_esbuild_plugin_(), preprocess_plugin],
+	})
 	await relysjs__ready__wait()
 }
 if (is_entry_file_(import.meta.url, process.argv[1])) {
@@ -38,4 +37,22 @@ if (is_entry_file_(import.meta.url, process.argv[1])) {
 			console.error(err)
 			process.exit(1)
 		})
+}
+function preprocess_plugin_():Plugin {
+	return {
+		name: 'hyop',
+		setup(build) {
+			if (import_meta_env_().NODE_ENV !== 'production') {
+				build.onLoad({ filter: /(\/ctx-core\/?.*|\/hyop\/?.*)$/ }, async ({ path })=>{
+					const source = await Bun.file(path).text()
+					return {
+						contents: preprocess(
+							source,
+							{ DEBUG: '1' },
+							{ type: 'js' })
+					}
+				})
+			}
+		}
+	}
 }
