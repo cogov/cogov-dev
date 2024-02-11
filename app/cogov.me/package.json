@@ -6,7 +6,7 @@
   "scripts": {
     "build": "bun ./src/build.ts",
     "clear": "rm -rf ./dist",
-    "dev": "bun --watch ./src/index.ts",
+    "dev": "bun ./src/index.ts",
     "start": "bun ./start.ts"
   },
   "dependencies": {
