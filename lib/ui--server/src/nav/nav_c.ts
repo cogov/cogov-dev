@@ -31,7 +31,7 @@ const nav__open__item_aa:nav__open__item_a_T[] = [
 ]
 export function nav_c_<env_T extends relement_env_T>({ segment }:{ segment?:string } = {}) {
 	return (
-		div_({ class: 'nav_c', hy__bind: 'nav_c' },
+		div_({ class: 'nav_c', hyop: 'nav_c' },
 			div_({ class: 'nav' },
 				a_({
 						href: '/',

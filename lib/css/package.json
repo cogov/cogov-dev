@@ -6,7 +6,7 @@
   "types": "./src/index.ts",
   "dependencies": {
     "esbuild": "^0.20.0",
-    "esmcss": "^0.1.7",
-    "relysjs": "^1.11.1"
+    "esmcss": "^0.1.8",
+    "relysjs": "^1.11.3"
   }
 }
