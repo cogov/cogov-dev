@@ -1,19 +1,19 @@
-import { type Node_T, raw_ } from 'relementjs'
+import './raymond_d_powell.css.js'
+import { raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
 import { asset_path_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
-import { footer_c_ } from '../footer/index.js'
-import { layout_c_ } from '../layout/index.js'
-import './raymond_d_powell_page.css.js'
+import { site__footer_ } from '../footer/index.js'
+import { layout__doc_html_ } from '../layout/index.js'
 const cogov__founder_png = await asset_path_(import('../public/assets/images/cogov__founder.png'))
-export function raymond_d_powell_page_($p:page_params_T) {
+export function raymond_d_powell__doc_html_($p:page_params_T) {
 	return (
-		layout_c_($p,
+		layout__doc_html_($p,
 			main_({ class: 'raymond-d-powell-page page' },
 				quote_(),
 				about_(),
-				footer_c_()))
-	) as Node_T<'server', HTMLElementTagNameMap['main']>
+				site__footer_()))
+	)
 	function quote_() {
 		// language=html
 		return raw_(`

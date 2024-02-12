@@ -1,1 +1,1 @@
-export * from './vision_page.js'
+export * from './vision__doc_html.html.js'

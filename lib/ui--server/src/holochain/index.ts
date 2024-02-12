@@ -1,1 +1,1 @@
-export * from './holochain_page.js'
+export * from './holochain__doc_html.html.js'

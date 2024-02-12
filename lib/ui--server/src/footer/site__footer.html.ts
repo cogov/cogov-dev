@@ -1,7 +1,7 @@
-import { type Node_T, raw_, type relement_env_T } from 'relementjs'
-import { a_, div_, img_, p_, section_ } from 'relementjs/html'
+import './site__footer.css.js'
+import { raw_, type relement_env_T } from 'relementjs'
+import { a_, div_, footer_, img_, p_ } from 'relementjs/html'
 import { asset_path_a_ } from 'relysjs'
-import './footer.css.js'
 const [
 	cogov__messengericon_png,
 	cogov__facebook_png,
@@ -15,9 +15,9 @@ const [
 	import('../public/assets/images/cogov__linkedin.png'),
 	import('../public/assets/images/cogov__github.png'),
 )
-export function footer_c_<env_T extends relement_env_T>() {
+export function site__footer_<env_T extends relement_env_T>() {
 	return (
-		section_({ class: 'footer_c' },
+		footer_<env_T>({ class: 'site__footer' },
 			div_({ class: 'footer__socials' },
 				[
 					['https://www.facebook.com/messages/t/cogov.tech', cogov__messengericon_png, 'Messenger'],
@@ -41,5 +41,5 @@ export function footer_c_<env_T extends relement_env_T>() {
 			),
 			p_({ class: 'footer__copyright' },
 				raw_('Copyright &copy;2019 CoGov.Tech, All Rights Reserved.')))
-	) as Node_T<env_T, HTMLElementTagNameMap['section']>
+	)
 }

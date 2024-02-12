@@ -1,9 +1,9 @@
-import { fragment_, raw_, type tag__dom_T } from 'relementjs'
+import './layout.css.js'
+import { fragment_, raw_, type tag_dom_T } from 'relementjs'
 import { doc_html_ } from 'relementjs/server'
 import { asset_path_a_ } from 'relysjs'
-import { assets_, assets__new, type assets_T, request_, type route_ctx_T } from 'relysjs/server'
-import { nav_c_ } from '../nav/index.js'
-import './layout.css.js'
+import { assets_, assets__new, type assets_T, request_, type request_ctx_T } from 'relysjs/server'
+import { nav__div_ } from '../nav/index.js'
 const [
 	cogov__logo__blue_large_png,
 	cogov__logo__blue_png,
@@ -11,15 +11,15 @@ const [
 	import('../public/assets/images/cogov__logo--blue-large.png'),
 	import('../public/assets/images/cogov__logo--blue.png'),
 )
-export function layout_c_({
+export function layout__doc_html_({
 	ctx,
 	title,
 	assets,
 }:{
-	ctx:route_ctx_T
+	ctx:request_ctx_T
 	title?:string,
 	assets?:assets_T
-}, ...children:tag__dom_T<'server'>) {
+}, ...children:tag_dom_T[]) {
 	const { url } = request_(ctx)
 	const uri = new URL(url)
 	title ||= 'CoGov: Collaborative Governance Technologies'
@@ -52,8 +52,8 @@ export function layout_c_({
 	).join('\n')}
 </head>
 <body>
-	${nav_c_()}
+	${nav__div_()}
 	${fragment_(...children)}
 </body>
-	`.trim())) as tag__dom_T<'server'>
+	`.trim()))
 }

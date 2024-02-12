@@ -2,7 +2,7 @@ import { cogov__var__css__replace } from '@cogov/css'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
-.footer_c {
+.site__footer {
 	background-color: white;
 	padding: 3rem 5rem;
 	display: flex;

@@ -1,17 +1,17 @@
-import { type Node_T, raw_ } from 'relementjs'
+import './war_on_sense_making.css.js'
+import { raw_ } from 'relementjs'
 import { div_, main_ } from 'relementjs/html'
 import type { page_params_T } from '../_types.js'
-import { footer_c_ } from '../footer/index.js'
-import { layout_c_ } from '../layout/index.js'
-import './war_on_sense_making_page.css.js'
-export function war_on_sense_making_page_($p:page_params_T) {
+import { site__footer_ } from '../footer/index.js'
+import { layout__doc_html_ } from '../layout/index.js'
+export function war_on_sense_making__doc_html_($p:page_params_T) {
 	return (
-		layout_c_($p,
+		layout__doc_html_($p,
 			main_({ class: 'war-on-sense-making-page page' },
 				header_(),
 				content_(),
-				footer_c_()))
-	) as Node_T<'server', HTMLElementTagNameMap['main']>
+				site__footer_()))
+	)
 	function header_() {
 		return div_({ class: 'war_on_sense_making_page__header' })
 	}

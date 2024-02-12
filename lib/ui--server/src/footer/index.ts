@@ -1,1 +1,1 @@
-export * from './footer_c.js'
+export * from './site__footer.html.js'

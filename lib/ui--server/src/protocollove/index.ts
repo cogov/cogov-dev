@@ -1,1 +1,1 @@
-export * from './protocollove_page.js'
+export * from './protocollove__doc_html.html.js'

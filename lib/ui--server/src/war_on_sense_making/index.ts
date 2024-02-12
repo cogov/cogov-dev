@@ -1,1 +1,1 @@
-export * from './war_on_sense_making_page.js'
+export * from './war_on_sense_making__doc_html.html.js'

@@ -1,1 +1,1 @@
-export * from './specs_page.js'
+export * from './specs__doc_html.html.js'

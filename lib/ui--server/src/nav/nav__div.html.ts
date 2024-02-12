@@ -1,7 +1,7 @@
+import './nav.css.js'
 import { type Node_T, type relement_env_T } from 'relementjs'
 import { a_, div_, img_, p_ } from 'relementjs/html'
 import { asset_path_a_ } from 'relysjs'
-import './nav.css.js'
 const [
 	cogov__logo__blue_png,
 	cogov__menu_png,
@@ -29,9 +29,9 @@ const nav__open__item_aa:nav__open__item_a_T[] = [
 	['/declaration', 'Declaration'],
 	['/connect', 'Connect'],
 ]
-export function nav_c_<env_T extends relement_env_T>({ segment }:{ segment?:string } = {}) {
+export function nav__div_<env_T extends relement_env_T>({ segment }:{ segment?:string } = {}) {
 	return (
-		div_({ class: 'nav_c', hyop: 'nav_c' },
+		div_<env_T>({ class: 'nav_c', hyop: 'nav__div__hyop' },
 			div_({ class: 'nav' },
 				a_({
 						href: '/',

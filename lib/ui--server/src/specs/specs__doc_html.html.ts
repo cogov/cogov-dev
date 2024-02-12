@@ -1,10 +1,10 @@
-import { type Node_T, raw_ } from 'relementjs'
+import './specs.css.js'
+import { raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
 import { asset_path_a_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
-import { footer_c_ } from '../footer/index.js'
-import { layout_c_ } from '../layout/index.js'
-import './specs_page.css.js'
+import { site__footer_ } from '../footer/index.js'
+import { layout__doc_html_ } from '../layout/index.js'
 const [
 	cogov__protocol__one_png,
 	cogov__protocol__two_png,
@@ -14,14 +14,14 @@ const [
 	import('../public/assets/images/cogov__protocol--two.png'),
 	import('../public/assets/images/cogov__protocol--three.png'),
 )
-export function specs_page_($p:page_params_T) {
+export function specs__doc_html_($p:page_params_T) {
 	return (
-		layout_c_($p,
+		layout__doc_html_($p,
 			main_({ class: 'specs_page page' },
 				header_(),
 				content_(),
-				footer_c_()))
-	) as Node_T<'server', HTMLElementTagNameMap['main']>
+				site__footer_()))
+	)
 	function header_() {
 		// language=html
 		return raw_(`

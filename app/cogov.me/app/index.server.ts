@@ -1,14 +1,14 @@
 import {
-	connect_page_,
-	declaration_page_,
-	ecosystem_page_,
-	holochain_page_,
-	home_page_,
-	protocollove_page_,
-	raymond_d_powell_page_,
-	services_page_,
-	specs_page_,
-	vision_page_
+	connect__doc_html_,
+	declaration__doc_html_,
+	ecosystem__doc_html_,
+	holochain__doc_html_,
+	home__doc_html_,
+	protocollove__doc_html_,
+	raymond_d_powell__doc_html_,
+	services__doc_html_,
+	specs__doc_html_,
+	vision__doc_html_
 } from '@cogov/ui--server'
 import { Elysia } from 'elysia'
 import type { DecoratorBase } from 'elysia/types'
@@ -17,14 +17,14 @@ export default middleware_(middleware_ctx=>{
 	return new Elysia<'', DecoratorBase&elysia_context_T>({
 		name: 'root_routes'
 	})
-		.get('/', html_route_(middleware_ctx, home_page_))
-		.get('/connect', html_route_(middleware_ctx, connect_page_))
-		.get('/declaration', html_route_(middleware_ctx, declaration_page_))
-		.get('/ecosystem', html_route_(middleware_ctx, ecosystem_page_))
-		.get('/holochain', html_route_(middleware_ctx, holochain_page_))
-		.get('/protocol.love', html_route_(middleware_ctx, protocollove_page_))
-		.get('/services', html_route_(middleware_ctx, services_page_))
-		.get('/specs', html_route_(middleware_ctx, specs_page_))
-		.get('/team/raymond-d-powell', html_route_(middleware_ctx, raymond_d_powell_page_))
-		.get('/vision', html_route_(middleware_ctx, vision_page_))
+		.get('/', html_route_(middleware_ctx, home__doc_html_))
+		.get('/connect', html_route_(middleware_ctx, connect__doc_html_))
+		.get('/declaration', html_route_(middleware_ctx, declaration__doc_html_))
+		.get('/ecosystem', html_route_(middleware_ctx, ecosystem__doc_html_))
+		.get('/holochain', html_route_(middleware_ctx, holochain__doc_html_))
+		.get('/protocol.love', html_route_(middleware_ctx, protocollove__doc_html_))
+		.get('/services', html_route_(middleware_ctx, services__doc_html_))
+		.get('/specs', html_route_(middleware_ctx, specs__doc_html_))
+		.get('/team/raymond-d-powell', html_route_(middleware_ctx, raymond_d_powell__doc_html_))
+		.get('/vision', html_route_(middleware_ctx, vision__doc_html_))
 })
