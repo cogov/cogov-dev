@@ -1,24 +1,12 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import { asset_path_a_ } from 'relysjs'
-const [
-	cogov__unenclosability_png,
-	cogov__scalability_png,
-	cogov__transparency_png,
-	cogov__iteration_png,
-	cogov__interoperability_png,
-	cogov__developer_png,
-	cogov__philosopher_png,
-	cogov__creator_png,
-] = await asset_path_a_(
-	import('../public/assets/images/cogov__unenclosability.png'),
-	import('../public/assets/images/cogov__scalability.png'),
-	import('../public/assets/images/cogov__transparency.png'),
-	import('../public/assets/images/cogov__iteration.png'),
-	import('../public/assets/images/cogov__interoperability.png'),
-	import('../public/assets/images/cogov__developer.png'),
-	import('../public/assets/images/cogov__philosopher.png'),
-	import('../public/assets/images/cogov__creator.png'),
-)
+import cogov__creator_png from '../public/assets/images/cogov__creator.png'
+import cogov__developer_png from '../public/assets/images/cogov__developer.png'
+import cogov__interoperability_png from '../public/assets/images/cogov__interoperability.png'
+import cogov__iteration_png from '../public/assets/images/cogov__iteration.png'
+import cogov__philosopher_png from '../public/assets/images/cogov__philosopher.png'
+import cogov__scalability_png from '../public/assets/images/cogov__scalability.png'
+import cogov__transparency_png from '../public/assets/images/cogov__transparency.png'
+import cogov__unenclosability_png from '../public/assets/images/cogov__unenclosability.png'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`

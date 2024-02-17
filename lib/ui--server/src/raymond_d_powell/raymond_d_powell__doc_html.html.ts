@@ -1,11 +1,10 @@
 import './raymond_d_powell.css.js'
 import { raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
-import { asset_path_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-const cogov__founder_png = await asset_path_(import('../public/assets/images/cogov__founder.png'))
+import cogov__founder_png from '../public/assets/images/cogov__founder.png'
 export function raymond_d_powell__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,

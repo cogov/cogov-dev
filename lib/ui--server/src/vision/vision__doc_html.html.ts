@@ -1,15 +1,10 @@
 import './vision.css.js'
 import { raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
-import { asset_path_a_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-const [
-	cogov__consciousness_levels_png,
-] = await asset_path_a_(
-	import('../public/assets/images/cogov__consciousness-levels.png'),
-)
+import cogov__consciousness_levels_png from '../public/assets/images/cogov__consciousness-levels.png'
 export function vision__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,

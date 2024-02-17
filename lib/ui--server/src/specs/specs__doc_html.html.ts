@@ -1,19 +1,12 @@
 import './specs.css.js'
 import { raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
-import { asset_path_a_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-const [
-	cogov__protocol__one_png,
-	cogov__protocol__two_png,
-	cogov__protocol__three_png,
-] = await asset_path_a_(
-	import('../public/assets/images/cogov__protocol--one.png'),
-	import('../public/assets/images/cogov__protocol--two.png'),
-	import('../public/assets/images/cogov__protocol--three.png'),
-)
+import cogov__protocol__one_png from '../public/assets/images/cogov__protocol--one.png'
+import cogov__protocol__three_png from '../public/assets/images/cogov__protocol--three.png'
+import cogov__protocol__two_png from '../public/assets/images/cogov__protocol--two.png'
 export function specs__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,

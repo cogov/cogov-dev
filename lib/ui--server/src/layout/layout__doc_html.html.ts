@@ -1,16 +1,10 @@
 import './layout.css.js'
 import { fragment_, raw_, type tag_dom_T } from 'relementjs'
 import { doc_html_ } from 'relementjs/server'
-import { asset_path_a_ } from 'relysjs'
 import { assets_, assets__new, type assets_T, request_, type request_ctx_T } from 'relysjs/server'
 import { nav__div_ } from '../nav/index.js'
-const [
-	cogov__logo__blue_large_png,
-	cogov__logo__blue_png,
-] = await asset_path_a_(
-	import('../public/assets/images/cogov__logo--blue-large.png'),
-	import('../public/assets/images/cogov__logo--blue.png'),
-)
+import cogov__logo__blue_large_png from '../public/assets/images/cogov__logo--blue-large.png'
+import cogov__logo__blue_png from '../public/assets/images/cogov__logo--blue.png'
 export function layout__doc_html_({
 	ctx,
 	title,

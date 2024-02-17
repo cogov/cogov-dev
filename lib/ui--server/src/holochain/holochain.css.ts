@@ -1,12 +1,6 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import { asset_path_a_ } from 'relysjs'
-const [
-	cogov__northerlights_png,
-	cogov__northerlights__mobile_png,
-] = await asset_path_a_(
-	import('../public/assets/images/cogov__northerlights.png'),
-	import('../public/assets/images/cogov__northerlights--mobile.png'),
-)
+import cogov__northerlights__mobile_png from '../public/assets/images/cogov__northerlights--mobile.png'
+import cogov__northerlights_png from '../public/assets/images/cogov__northerlights.png'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`

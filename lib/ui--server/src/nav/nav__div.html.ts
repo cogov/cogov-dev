@@ -1,14 +1,8 @@
 import './nav.css.js'
 import { type Node_T, type relement_env_T } from 'relementjs'
 import { a_, div_, img_, p_ } from 'relementjs/html'
-import { asset_path_a_ } from 'relysjs'
-const [
-	cogov__logo__blue_png,
-	cogov__menu_png,
-] = await asset_path_a_(
-	import('../public/assets/images/cogov__logo--blue.png'),
-	import('../public/assets/images/cogov__menu.png'),
-)
+import cogov__logo__blue_png from '../public/assets/images/cogov__logo--blue.png'
+import cogov__menu_png from '../public/assets/images/cogov__menu.png'
 const nav__item_aa:nav__item_a_T[] = [
 	['/protocol.love', 'protocol-love', 'Protocol.Love'],
 	['/specs', 'specs', 'Tech Specs'],

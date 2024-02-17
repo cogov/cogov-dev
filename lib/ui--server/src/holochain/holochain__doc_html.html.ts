@@ -1,17 +1,11 @@
 import './holochain.css.js'
 import { raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
-import { asset_path_a_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-const [
-	holochain_logo_png,
-	holo_logo_png,
-] = await asset_path_a_(
-	import('../public/assets/images/holochain-logo.png'),
-	import('../public/assets/images/holo-logo.png'),
-)
+import holo_logo_png from '../public/assets/images/holo-logo.png'
+import holochain_logo_png from '../public/assets/images/holochain-logo.png'
 export function holochain__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,

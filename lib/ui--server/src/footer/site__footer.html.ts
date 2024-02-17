@@ -1,20 +1,11 @@
 import './site__footer.css.js'
 import { raw_, type relement_env_T } from 'relementjs'
 import { a_, div_, footer_, img_, p_ } from 'relementjs/html'
-import { asset_path_a_ } from 'relysjs'
-const [
-	cogov__messengericon_png,
-	cogov__facebook_png,
-	cogov__twitter_png,
-	cogov__linkedin_png,
-	cogov__github_png,
-] = await asset_path_a_(
-	import('../public/assets/images/cogov__messengericon.png'),
-	import('../public/assets/images/cogov__facebook.png'),
-	import('../public/assets/images/cogov__twitter.png'),
-	import('../public/assets/images/cogov__linkedin.png'),
-	import('../public/assets/images/cogov__github.png'),
-)
+import cogov__facebook_png from '../public/assets/images/cogov__facebook.png'
+import cogov__github_png from '../public/assets/images/cogov__github.png'
+import cogov__linkedin_png from '../public/assets/images/cogov__linkedin.png'
+import cogov__messengericon_png from '../public/assets/images/cogov__messengericon.png'
+import cogov__twitter_png from '../public/assets/images/cogov__twitter.png'
 export function site__footer_<env_T extends relement_env_T>() {
 	return (
 		footer_<env_T>({ class: 'site__footer' },

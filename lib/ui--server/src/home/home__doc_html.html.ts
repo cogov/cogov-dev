@@ -1,43 +1,24 @@
 import './home.css.js'
 import { raw_ } from 'relementjs'
 import { a_, main_ } from 'relementjs/html'
-import { asset_path_a_ } from 'relysjs'
 import type { page_params_T } from '../_types.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-const [
-	sacred_geo_mp4,
-	cogov__home_logo_png,
-	cogov__metacurrency_png,
-	cogov__onenation_png,
-	cogov__lightleadership_png,
-	cogov__superluminal_systems_png,
-	cogov__core_network_png,
-	cogov__unify_png,
-	cogov__socialevolution_png,
-	cogov__freedomculture_png,
-	cogov__fourworlds_png,
-	cogov__s7_png,
-	cogov__junto_logo_png,
-	cogov__future_proper_logo_png,
-	cogov__eden_is_rising_logo_png,
-] = await asset_path_a_(
-	import('../public/assets/videos/sacred-geo.mp4'),
-	import('../public/assets/images/cogov__home-logo.png'),
-	import('../public/assets/images/cogov__metacurrency.png'),
-	import('../public/assets/images/cogov__onenation.png'),
-	import('../public/assets/images/cogov__lightleadership.png'),
-	import('../public/assets/images/cogov__superluminal-systems.png'),
-	import('../public/assets/images/cogov__core-network.png'),
-	import('../public/assets/images/cogov__unify.png'),
-	import('../public/assets/images/cogov__socialevolution.png'),
-	import('../public/assets/images/cogov__freedomculture.png'),
-	import('../public/assets/images/cogov__fourworlds.png'),
-	import('../public/assets/images/cogov__s7.png'),
-	import('../public/assets/images/cogov__junto-logo.png'),
-	import('../public/assets/images/cogov__future-proper-logo.png'),
-	import('../public/assets/images/cogov__eden-is-rising-logo.png'),
-)
+import cogov__core_network_png from '../public/assets/images/cogov__core-network.png'
+import cogov__eden_is_rising_logo_png from '../public/assets/images/cogov__eden-is-rising-logo.png'
+import cogov__fourworlds_png from '../public/assets/images/cogov__fourworlds.png'
+import cogov__freedomculture_png from '../public/assets/images/cogov__freedomculture.png'
+import cogov__future_proper_logo_png from '../public/assets/images/cogov__future-proper-logo.png'
+import cogov__home_logo_png from '../public/assets/images/cogov__home-logo.png'
+import cogov__junto_logo_png from '../public/assets/images/cogov__junto-logo.png'
+import cogov__lightleadership_png from '../public/assets/images/cogov__lightleadership.png'
+import cogov__metacurrency_png from '../public/assets/images/cogov__metacurrency.png'
+import cogov__onenation_png from '../public/assets/images/cogov__onenation.png'
+import cogov__s7_png from '../public/assets/images/cogov__s7.png'
+import cogov__socialevolution_png from '../public/assets/images/cogov__socialevolution.png'
+import cogov__superluminal_systems_png from '../public/assets/images/cogov__superluminal-systems.png'
+import cogov__unify_png from '../public/assets/images/cogov__unify.png'
+import sacred_geo_mp4 from '../public/assets/videos/sacred-geo.mp4'
 export function home__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,
