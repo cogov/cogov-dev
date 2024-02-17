@@ -11,6 +11,6 @@
     "ctx-core": "^6.4.2",
     "elysia": "^0.8.17",
     "relementjs": "^0.73.2",
-    "relysjs": "^1.14.2"
+    "relysjs": "^1.14.3"
   }
 }
