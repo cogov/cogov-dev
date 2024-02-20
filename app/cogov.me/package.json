@@ -19,7 +19,7 @@
     "elysia": "^0.8.17",
     "esmcss": "^0.2.2",
     "relementjs": "^0.73.3",
-    "relysjs": "^1.14.4"
+    "relysjs": "^1.14.6"
   },
   "devDependencies": {
     "@types/node": "20.11.19",
