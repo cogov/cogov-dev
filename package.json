@@ -10,6 +10,7 @@
 		"start": "cd ./app/cogov.me && bun start"
 	},
 	"devDependencies": {
+		"@btakita/dev-bin": "workspace:*",
 		"@cogov/-dev-bin": "workspace:*",
 		"@ctx-core/jetbrains": "^7.3.144",
 		"@ctx-core/monorepo": "^21.4.52"
