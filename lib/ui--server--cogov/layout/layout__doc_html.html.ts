@@ -36,6 +36,7 @@ export function layout__doc_html_({
 	<meta property="og:site_name" content=${site_name}/>
 	<meta property="og:description" content=${description}/>
 	<link rel="icon" type="image/png" href="${cogov__logo__blue_png}"/>
+	<link rel="sitemap" type="/sitemap.xml" href="${cogov__logo__blue_png}"/>
 	<link rel="shortcut icon" type="image/png" href="${cogov__logo__blue_png}"/>
 	<title>${title}</title>
 	${assets.css_a.map(css=>
