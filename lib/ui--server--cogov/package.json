@@ -1,13 +1,14 @@
 {
-  "name": "@cogov/ui--server",
+  "name": "@cogov/ui--server--cogov",
   "version": "1.0.0",
   "type": "module",
-  "main": "./src/index.ts",
-  "module": "./src/index.ts",
-  "types": "./src/index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
   "dependencies": {
     "@cogov/css": "workspace:*",
-    "@cogov/ui--browser": "workspace:*",
+    "@cogov/ui--browser--cogov": "workspace:*",
     "ctx-core": "^6.5.0",
     "elysia": "^0.8.17",
     "relementjs": "^0.73.7",

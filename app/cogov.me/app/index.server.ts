@@ -9,7 +9,7 @@ import {
 	services__doc_html_,
 	specs__doc_html_,
 	vision__doc_html_
-} from '@cogov/ui--server'
+} from '@cogov/ui--server--cogov'
 import { Elysia } from 'elysia'
 import type { DecoratorBase } from 'elysia/types'
 import { type elysia_context_T, html_route_, middleware_ } from 'relysjs/server'
