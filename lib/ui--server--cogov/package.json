@@ -9,6 +9,7 @@
   "dependencies": {
     "@cogov/css": "workspace:*",
     "@cogov/ui--browser--cogov": "workspace:*",
+    "@rappstack/ui--any": "workspace:*",
     "ctx-core": "^6.5.0",
     "elysia": "^0.8.17",
     "relementjs": "^0.73.7",
