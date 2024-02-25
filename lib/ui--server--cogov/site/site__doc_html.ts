@@ -1,67 +1,46 @@
-import { md__raw_ } from '@rappstack/ui--any/md'
+import './site.css.js'
 import { tb_a_ } from '@rappstack/ui--any/anchor'
-import { class_, style_ } from 'ctx-core/html'
+import { md__raw_ } from '@rappstack/ui--any/md'
+import { class_ } from 'ctx-core/html'
+import { raw_ } from 'relementjs'
 import { div_, main_ } from 'relementjs/html'
-import { type request_ctx_T } from 'relysjs/server'
-import nature_origami_bg_jpg from '../../../public/assets/images/nature-origami-bg.jpg'
-import { back_link__a_, layout__doc_html_, site__footer_, site__header_ } from '../layout/index.js'
-export function site__doc_html_({ ctx }:{ ctx:request_ctx_T }) {
+import type { page_params_T } from '../_types.js'
+import { site__footer_ } from '../footer/index.js'
+import { layout__doc_html_ } from '../layout/index.js'
+export function site__doc_html_($p:page_params_T) {
 	return (
-		layout__doc_html_({
-			ctx,
-			title: 'About this Site',
-			html_props: {
-				class: class_('site__doc_html'),
-			},
-			body__props: {
-				class: class_(
-					'bg-cover',
-					'bg-no-repeat'),
-				style: style_({
-					'background-image': 'url(' + nature_origami_bg_jpg + ')'
-				})
-			}
+		layout__doc_html_($p,
+			main_({ class: 'site_page page' },
+				header_(),
+				content_(),
+				site__footer_()))
+	)
+	function header_() {
+		// language=html
+		return raw_(`
+			<div class="site_page__header page__header">
+				<p class="site_page__header__title">About this Site</p>
+			</div>
+		`)
+	}
+	function content_() {
+		return div_({
+			class: 'site_page__content page__content'
 		}, [
-			main_({
-				class: class_(
-					'min-h-screen',
-					'relative',
-					'backdrop-blur-3xl',
-					'pb-12'),
+			div_({
+				class: class_('site_page__content__body')
 			}, [
-				site__header_({
-					ctx,
-					title: 'About this site'
-				}),
-				div_({
-					class: class_(
-						'm-auto',
-						'prose',
-						'p-2',
-						'rounded',
-						'max-w-prose',
-						'bg-cyan-600/40',
-						'border-1px',
-						'border-white/.3',
-						'shadow-md',
-						'[&>h2]:my-2',
-						'[&>h2]:text-2xl',
-					)
-				}, [
-					// @formatter:off
-					// language=md
-					md__raw_(`
-This site is developed by ${tb_a_({ href: 'https://briantakita.me' }, 'Brian Takita')} under the Apache 2 license for Brooke Brodack & her audience. You are free to study the ${tb_a_({ href: 'https://github.com/btakita/brookebrodack-dev' }, 'source code')}, modify it, fork it, contribute pull requests, etc.
+				// @formatter:off
+				// language=md
+				md__raw_(`
+This site is developed by ${tb_a_({ href: 'https://briantakita.me' }, 'Brian Takita')} in loving memory of Raymond Powell & the people who he has impacted in his life. The ${tb_a_({ href: 'https://github.com/cogov/cogov-dev' }, 'source code')} for this site is licensed under the Apache 2 license.
 
 ## Technology Stack
 
-${tb_a_({ href: 'https://github.com/rappstack' }, 'rappstack')} ${tb_a_({ href: 'https://github.com/ctx-core/rmemo' }, 'rmemo')} ${tb_a_({ href: 'https://github.com/relysjs/relysjs' }, 'relysjs')} ${tb_a_({ href: 'https://github.com/relementjs/relementjs' }, 'relysjs')} ${tb_a_({ href: 'https://github.com/ctx-core/ctx-core' }, 'ctx-core')} ${tb_a_({ href: 'https://tailwindcss.com/' }, 'TailwindCSS')} ${tb_a_({ href: 'https://github.com/elysiajs/elysia' }, 'elysiajs')} ${tb_a_({ href: 'https://orm.drizzle.team/' }, 'Drizzle ORM')} ${tb_a_({ href: 'https://www.sqlite.org/index.html' }, 'SQLite')} ${tb_a_({ href: 'https://bun.sh/' }, 'bunjs')} ${tb_a_({ href: 'https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API' }, 'web animations')} ${tb_a_({ href: 'https://developers.google.com/youtube/iframe_api_reference' }, 'YouTube Player API')} ${tb_a_({ href: 'https://developers.google.com/youtube/v3' }, 'YouTube Data API')} ${tb_a_({ href: 'http://web.archive.org/' }, 'WayBack Machine')}
-				`),
+${tb_a_({ href: 'https://github.com/rappstack' }, 'rappstack')} ${tb_a_({ href: 'https://github.com/ctx-core/rmemo' }, 'rmemo')} ${tb_a_({ href: 'https://github.com/relysjs/relysjs' }, 'relysjs')} ${tb_a_({ href: 'https://github.com/relementjs/relementjs' }, 'relysjs')} ${tb_a_({ href: 'https://github.com/ctx-core/ctx-core' }, 'ctx-core')} ${tb_a_({ href: 'https://tailwindcss.com/' }, 'TailwindCSS')} ${tb_a_({ href: 'https://github.com/elysiajs/elysia' }, 'elysiajs')} ${tb_a_({ href: 'https://orm.drizzle.team/' }, 'Drizzle ORM')} ${tb_a_({ href: 'https://www.sqlite.org/index.html' }, 'SQLite')} ${tb_a_({ href: 'https://bun.sh/' }, 'bunjs')}
+				`)
 				// @formatter:on
-				]),
-			]),
-			back_link__a_({}),
-			site__footer_({ ctx })
+			])
 		])
-	)
+	}
 }

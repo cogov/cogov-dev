@@ -1,6 +1,8 @@
 import './site__footer.css.js'
+import { class_ } from 'ctx-core/html'
 import { raw_, type relement_env_T } from 'relementjs'
 import { a_, div_, footer_, img_, p_ } from 'relementjs/html'
+import { fa_osi_ } from '../icon/index.js'
 import cogov__facebook_png from '../public/assets/images/cogov__facebook.png'
 import cogov__github_png from '../public/assets/images/cogov__github.png'
 import cogov__linkedin_png from '../public/assets/images/cogov__linkedin.png'
@@ -25,10 +27,15 @@ export function site__footer_<env_T extends relement_env_T>() {
 						},
 						src && img_({ class: 'footer__social__icon', src, alt: title }))),
 				a_({
-					href: 'https://briantakita.me',
-					target: '_blank',
+					href: '/site',
 					class: 'removelink footer__social',
-				}, 'Site developed by Brian Takita')
+					alt: 'About this Site'
+				}, [
+					fa_osi_({
+						class: 'removelink footer__social__icon',
+						stroke: 'black'
+					})
+				]),
 			),
 			p_({ class: 'footer__copyright' },
 				raw_('Copyright &copy;2019 CoGov.Tech, All Rights Reserved.')))

@@ -6,7 +6,7 @@ import {
 	home__doc_html_,
 	protocollove__doc_html_,
 	raymond_d_powell__doc_html_,
-	services__doc_html_,
+	services__doc_html_, site__doc_html_,
 	specs__doc_html_,
 	vision__doc_html_
 } from '@cogov/ui--server--cogov'
@@ -24,6 +24,7 @@ export default middleware_(middleware_ctx=>{
 		.get('/holochain', html_route_(middleware_ctx, holochain__doc_html_))
 		.get('/protocol.love', html_route_(middleware_ctx, protocollove__doc_html_))
 		.get('/services', html_route_(middleware_ctx, services__doc_html_))
+		.get('/site', html_route_(middleware_ctx, site__doc_html_))
 		.get('/specs', html_route_(middleware_ctx, specs__doc_html_))
 		.get('/team/raymond-d-powell', html_route_(middleware_ctx, raymond_d_powell__doc_html_))
 		.get('/vision', html_route_(middleware_ctx, vision__doc_html_))

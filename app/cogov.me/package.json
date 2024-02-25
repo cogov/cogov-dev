@@ -15,6 +15,7 @@
     "@cogov/ui--server--cogov": "workspace:*",
     "@ctx-core/preprocess": "^0.1.2",
     "@elysiajs/static": "^0.8.1",
+    "cssnano": "^6.0.5",
     "ctx-core": "^6.5.0",
     "elysia": "^0.8.17",
     "esmcss": "^0.2.2",
@@ -22,6 +23,7 @@
     "relysjs": "^1.14.10"
   },
   "devDependencies": {
+    "@rebuildjs/tailwindcss": "^0.8.47",
     "@types/node": "20.11.20",
     "esbuild": "^0.20.1"
   }
