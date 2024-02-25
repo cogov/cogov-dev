@@ -15,11 +15,11 @@
     "@cogov/ui--server": "workspace:*",
     "@ctx-core/preprocess": "^0.1.2",
     "@elysiajs/static": "^0.8.1",
-    "ctx-core": "^6.4.5",
+    "ctx-core": "^6.5.0",
     "elysia": "^0.8.17",
     "esmcss": "^0.2.2",
-    "relementjs": "^0.73.5",
-    "relysjs": "^1.14.8"
+    "relementjs": "^0.73.7",
+    "relysjs": "^1.14.10"
   },
   "devDependencies": {
     "@types/node": "20.11.20",
