@@ -33,7 +33,6 @@ export function site__footer_<env_T extends relement_env_T>() {
 				}, [
 					fa_osi_({
 						class: 'removelink footer__social__icon',
-						stroke: 'black'
 					})
 				]),
 			),
