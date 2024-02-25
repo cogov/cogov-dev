@@ -1,7 +1,5 @@
-import { nav__div__hyop } from '@cogov/ui--browser'
-import { relement__use } from 'relementjs'
-import { browser__relement, single_hyop } from 'relementjs/browser'
-relement__use(browser__relement)
+import { nav__div__hyop } from '@cogov/ui--browser/nav'
+import { single_hyop } from 'relementjs/browser'
 window.addEventListener('load', ()=>{
 	queueMicrotask(()=>{
 		single_hyop(document, {
