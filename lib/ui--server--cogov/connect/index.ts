@@ -1,1 +1,1 @@
-export * from './connect__doc_html.html.js'
+export * from './connect__doc_html.js'

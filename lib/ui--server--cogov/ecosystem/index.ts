@@ -1,1 +1,1 @@
-export * from './ecosystem__doc_html.html.js'
+export * from './ecosystem__doc_html.js'

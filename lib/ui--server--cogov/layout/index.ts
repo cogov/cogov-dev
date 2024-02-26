@@ -1,1 +1,1 @@
-export * from './layout__doc_html.html.js'
+export * from './layout__doc_html.js'

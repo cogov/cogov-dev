@@ -1,1 +1,1 @@
-export * from './declaration__doc_html.html.js'
+export * from './declaration__doc_html.js'
