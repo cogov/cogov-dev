@@ -20,10 +20,10 @@
     "elysia": "^0.8.17",
     "esmcss": "^0.2.2",
     "relementjs": "^0.73.7",
-    "relysjs": "^1.14.10"
+    "relysjs": "^1.14.11"
   },
   "devDependencies": {
-    "@rebuildjs/tailwindcss": "^0.8.47",
+    "@rebuildjs/tailwindcss": "^0.8.48",
     "@types/node": "20.11.20",
     "esbuild": "^0.20.1"
   }
