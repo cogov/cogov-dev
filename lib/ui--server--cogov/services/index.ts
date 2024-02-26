@@ -1,1 +1,1 @@
-export * from './services__doc_html.html.js'
+export * from './services__doc_html.js'

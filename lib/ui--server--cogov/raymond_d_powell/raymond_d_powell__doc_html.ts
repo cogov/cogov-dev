@@ -1,22 +1,30 @@
 import './raymond_d_powell.css.js'
+import { class_ } from 'ctx-core/html'
 import { raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
 import type { page_params_T } from '../_types.js'
+import { main_class } from '../css/index.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
 import cogov__founder_png from '../public/assets/images/cogov__founder.png'
 export function raymond_d_powell__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,
-			main_({ class: 'raymond-d-powell-page page' },
+			main_({
+				class: class_(
+					'raymond-d-powell-page',
+					'page',
+					main_class)
+			}, [
 				quote_(),
 				about_(),
-				site__footer_()))
+				site__footer_()
+			]))
 	)
 	function quote_() {
 		// language=html
 		return raw_(`
-			<div class="raymond_d_powell_page__quote page__header">
+			<div class="raymond_d_powell_page__quote page__header mb-24">
 				<p class="raymond_d_powell_page__quote__title">Raymond D. Powell</p>
 				<p class="raymond_d_powell_page__quote__quote">
 					"The CoGov mission is to build systems that allow humans to recognize the

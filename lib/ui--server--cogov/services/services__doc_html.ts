@@ -1,21 +1,29 @@
 import './services.css.js'
+import { class_ } from 'ctx-core/html'
 import { raw_ } from 'relementjs'
 import { main_ } from 'relementjs/html'
 import type { page_params_T } from '../_types.js'
+import { main_class } from '../css/index.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
 export function services__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,
-			main_({ class: 'services-page page' },
+			main_({
+				class: class_(
+					'services-page',
+					'page',
+					main_class)
+			}, [
 				header_(),
 				content_(),
-				site__footer_()))
+				site__footer_()
+			]))
 	)
 	function header_() {
 		// language=html
 		return raw_(`
-			<div class="services_page__header page__header">
+			<div class="services_page__header page__header mb-24">
 				<p class="services_page__header__title">Our Services</p>
 				<p class="services_page__header__subtitle">
 					Get in touch and see how we can help you!

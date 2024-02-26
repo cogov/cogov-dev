@@ -1,1 +1,1 @@
-export * from './nav__div.html.js'
+export * from './nav__div.js'

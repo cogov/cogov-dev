@@ -5,6 +5,7 @@ export default ()=>{
 :root {
 	--accent: 124, 58, 237;
 	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	--color-primary: #195C89;
 	--cogov--primary--color: #195C89;
 	--cogov--primary-light--color: #195C89;
 	--cogov--primary-dark--color: #683B7A;
@@ -48,22 +49,6 @@ body {
 	overflow-x: hidden;
 	outline: none;
 	letter-spacing: .5px;
-}
-body main {
-	width: 100%;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-body main.page {
-	margin-top: var(--nav--height);
-}
-@media (max-width: var(--phone--max-width)) {
-	body main.page {
-		margin-top: var(--mobile--nav--height);
-	}
-}
-body main .page__header {
-	margin-bottom: 6rem;
 }
 body main .page__content {
 	padding: 0 17%;

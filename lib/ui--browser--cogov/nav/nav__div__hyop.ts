@@ -1,11 +1,13 @@
 /// <reference lib="dom" />
-export function nav__div__hyop(nav_c:HTMLDivElement) {
-	const nav__open_c = nav_c.querySelector('.nav__open_c')
-	for (const nav__toggle_el of Array.from(nav_c.querySelectorAll('.nav .nav__toggle'))) {
-		nav__toggle_el.addEventListener('click', toggle)
-	}
+let nav__open_c:HTMLElement
+export function nav__open_c__hyop(_nav__open_c:HTMLElement) {
+	nav__open_c = _nav__open_c
+}
+export function nav__toggle__hyop(nav__toggle:HTMLElement) {
+	nav__toggle.addEventListener('click', toggle)
 	function toggle(e:MouseEvent) {
 		e.preventDefault()
-		nav__open_c.classList.toggle('visible')
+		nav__open_c.classList.toggle('hidden')
+		nav__open_c.classList.toggle('block')
 	}
 }

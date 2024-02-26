@@ -1,3 +1,4 @@
+import './index.css'
 import {
 	connect__doc_html_,
 	declaration__doc_html_,

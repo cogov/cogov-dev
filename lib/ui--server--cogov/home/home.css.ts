@@ -34,24 +34,14 @@ export default ()=>{
 	width: 100%;
 	background-image: linear-gradient(to right, var(--cogov--primary--color), var(--cogov--grey--color));
 	opacity: .9;
-	z-index: 200;
+	z-index: 10;
 }
 .home_page__header__backdrop__video {
 	background-color: grey;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	z-index: 10;
-}
-.home_page__header__content {
-	position: absolute;
-	top: 18%;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	z-index: 300;
-	height: 50rem;
-	width: 90%;
+	z-index: 20;
 }
 @media (max-width: var(--port--tab--max-width)) {
 	.home_page__header__content {

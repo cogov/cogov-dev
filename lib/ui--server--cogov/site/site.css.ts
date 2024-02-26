@@ -2,9 +2,6 @@ import { cogov__var__css__replace } from '@cogov/css'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 .site_page {
 	margin-top: 7rem;
 	height: 100%;
