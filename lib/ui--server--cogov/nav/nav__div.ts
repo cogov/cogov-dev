@@ -212,7 +212,7 @@ export function nav__div_<env_T extends relement_env_T>({ segment }:{ segment?:s
 				rel: 'noopener noreferrer',
 				class: 'whitepaper'
 			}, [
-				div_({ class: div_class }, 'Whitepaper')
+				div_({ class: div_class }, 'whitepaper')
 			])
 		]
 	}
