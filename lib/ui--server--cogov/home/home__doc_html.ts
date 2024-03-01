@@ -62,7 +62,7 @@ export function home__doc_html_($p:page_params_T) {
 					'text-white'
 				)}">
 					<a href="#home_page__about" class="removelink inline-block mt-0.5 mx-auto" title="About CoGov">
-						<img class="home_page__header__logo" src="${cogov__home_logo_webp}"/>
+						<img class="home_page__header__logo" src="${cogov__home_logo_webp}" alt="About CoGov"/>
 					</a>
 					<h2 class="home_page__header__title">Collaborative Governance Technologies</h2>
 					<h3 class="home_page__header__subtitle">

@@ -27,6 +27,7 @@ export function layout__doc_html_({
 	return doc_html_({ lang: 'en '}, raw_(`
 <head>
 	<meta charset="UTF-8"/>
+	<meta name="description" content=${description}/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta name="theme-color" content="#333333"/>
 	<meta property="og:title" content=${title}/>

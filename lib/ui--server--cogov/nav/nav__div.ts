@@ -157,7 +157,8 @@ export function nav__div_<env_T extends relement_env_T>({ segment }:{ segment?:s
 						'h-8',
 						'port:ml-8',
 						'cursor-pointer'),
-					src: cogov__menu_webp
+					src: cogov__menu_webp,
+					alt: 'Toggle Navigation'
 				})
 			])
 		)
