@@ -24,7 +24,7 @@ export function layout__doc_html_({
 		'of governance and social coordination systems that YOU design!'
 	assets = assets__new(assets_(ctx), assets)
 	// language=html
-	return doc_html_(raw_(`
+	return doc_html_({ lang: 'en '}, raw_(`
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>

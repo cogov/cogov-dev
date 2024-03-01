@@ -18,7 +18,7 @@ export default async function app__start() {
 			is_prod_(app_ctx)
 				? {
 					headers_: ()=>({
-						'Cache-Control': 'max-age=2592000, public'
+						'Cache-Control': 'max-age=31536000, public'
 					})
 				}
 				: {}

@@ -135,6 +135,7 @@ export function nav__div_<env_T extends relement_env_T>({ segment }:{ segment?:s
 					a_({
 						href: '.',
 						class: 'nav__toggle',
+						title: 'Toggle Navigation',
 						/** @see {import('@cogov/ui--browser--cogov/nav').nav__toggle__hyop} */
 						hyop: 'nav__toggle__hyop'
 					}, [
