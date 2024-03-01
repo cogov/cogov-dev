@@ -6,8 +6,8 @@ import type { page_params_T } from '../_types.js'
 import { main_class } from '../css/index.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-import holo_logo_png from '../public/assets/images/holo-logo.png'
-import holochain_logo_png from '../public/assets/images/holochain-logo.png'
+import holo_logo_webp from '../public/assets/images/holo-logo.webp'
+import holochain_logo_webp from '../public/assets/images/holochain-logo.webp'
 export function holochain__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,
@@ -40,7 +40,7 @@ export function holochain__doc_html_($p:page_params_T) {
 				<div class="holochain_page__cogov__body">
 					<div class="holochain_page__cogov__left">
 						<div class="holochain_page__cogov__logo__container">
-							<img class="holochain_page__cogov__logo" src="${holochain_logo_png}"/>
+							<img class="holochain_page__cogov__logo" src="${holochain_logo_webp}"/>
 							<p class="holochain_page__cogov__title">Holochain</p>
 						</div>
 						<p class="holochain_page__cogov__body">
@@ -52,7 +52,7 @@ export function holochain__doc_html_($p:page_params_T) {
 					</div>
 					<div class="holochain_page__cogov__right">
 						<div class="holochain_page__cogov__logo__container">
-							<img class="holochain_page__cogov__logo" src="${holo_logo_png}"/>
+							<img class="holochain_page__cogov__logo" src="${holo_logo_webp}"/>
 							<p class="holochain_page__cogov__title">
 								Holo
 							</p>

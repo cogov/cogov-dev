@@ -6,7 +6,7 @@ import type { page_params_T } from '../_types.js'
 import { main_class } from '../css/index.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-import cogov__founder_png from '../public/assets/images/cogov__founder.png'
+import cogov__founder_webp from '../public/assets/images/cogov__founder.webp'
 export function raymond_d_powell__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,
@@ -41,7 +41,7 @@ export function raymond_d_powell__doc_html_($p:page_params_T) {
 				<div class="raymond_d_powell_page__about__left">
 					<img
 						class="raymond_d_powell_page__about__left__image"
-						src="${cogov__founder_png}"
+						src="${cogov__founder_webp}"
 						alt="Cogov Founder: Raymond Powell"
 					/>
 				</div>

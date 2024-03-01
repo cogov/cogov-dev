@@ -6,7 +6,7 @@ import type { page_params_T } from '../_types.js'
 import { main_class } from '../css/index.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-import cogov__consciousness_levels_png from '../public/assets/images/cogov__consciousness-levels.png'
+import cogov__consciousness_levels_webp from '../public/assets/images/cogov__consciousness-levels.webp'
 export function vision__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,
@@ -49,7 +49,7 @@ export function vision__doc_html_($p:page_params_T) {
 				</div>
 				<div class="vision_page__content__levels">
 					<p class="vision_page__content__levels__title">Levels of Consciousness:</p>
-					<img src="${cogov__consciousness_levels_png}" alt="" class="vision_page__content__levels__photo"/>
+					<img src="${cogov__consciousness_levels_webp}" alt="" class="vision_page__content__levels__photo"/>
 				</div>
 				<div class="vision_page__content__text">
 					<p class="vision_page__content__title">Achieving Higher Consciousness Through Technology</p>

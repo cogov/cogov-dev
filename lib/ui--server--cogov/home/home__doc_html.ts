@@ -6,20 +6,20 @@ import type { page_params_T } from '../_types.js'
 import { main_class } from '../css/index.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-import cogov__core_network_png from '../public/assets/images/cogov__core-network.png'
-import cogov__eden_is_rising_logo_png from '../public/assets/images/cogov__eden-is-rising-logo.png'
-import cogov__fourworlds_png from '../public/assets/images/cogov__fourworlds.png'
-import cogov__freedomculture_png from '../public/assets/images/cogov__freedomculture.png'
-import cogov__future_proper_logo_png from '../public/assets/images/cogov__future-proper-logo.png'
-import cogov__home_logo_png from '../public/assets/images/cogov__home-logo.png'
-import cogov__junto_logo_png from '../public/assets/images/cogov__junto-logo.png'
-import cogov__lightleadership_png from '../public/assets/images/cogov__lightleadership.png'
-import cogov__metacurrency_png from '../public/assets/images/cogov__metacurrency.png'
-import cogov__onenation_png from '../public/assets/images/cogov__onenation.png'
-import cogov__s7_png from '../public/assets/images/cogov__s7.png'
-import cogov__socialevolution_png from '../public/assets/images/cogov__socialevolution.png'
-import cogov__superluminal_systems_png from '../public/assets/images/cogov__superluminal-systems.png'
-import cogov__unify_png from '../public/assets/images/cogov__unify.png'
+import cogov__core_network_webp from '../public/assets/images/cogov__core-network.webp'
+import cogov__eden_is_rising_logo_webp from '../public/assets/images/cogov__eden-is-rising-logo.webp'
+import cogov__fourworlds_webp from '../public/assets/images/cogov__fourworlds.webp'
+import cogov__freedomculture_webp from '../public/assets/images/cogov__freedomculture.webp'
+import cogov__future_proper_logo_webp from '../public/assets/images/cogov__future-proper-logo.webp'
+import cogov__home_logo_webp from '../public/assets/images/cogov__home-logo.webp'
+import cogov__junto_logo_webp from '../public/assets/images/cogov__junto-logo.webp'
+import cogov__lightleadership_webp from '../public/assets/images/cogov__lightleadership.webp'
+import cogov__metacurrency_webp from '../public/assets/images/cogov__metacurrency.webp'
+import cogov__onenation_webp from '../public/assets/images/cogov__onenation.webp'
+import cogov__s7_webp from '../public/assets/images/cogov__s7.webp'
+import cogov__socialevolution_webp from '../public/assets/images/cogov__socialevolution.webp'
+import cogov__superluminal_systems_webp from '../public/assets/images/cogov__superluminal-systems.webp'
+import cogov__unify_webp from '../public/assets/images/cogov__unify.webp'
 import sacred_geo_mp4 from '../public/assets/videos/sacred-geo.mp4'
 export function home__doc_html_($p:page_params_T) {
 	return (
@@ -62,7 +62,7 @@ export function home__doc_html_($p:page_params_T) {
 					'text-white'
 				)}">
 					<a href="#home_page__about" class="removelink inline-block mt-0.5 mx-auto ">
-						<img class="home_page__header__logo" src="${cogov__home_logo_png}"/>
+						<img class="home_page__header__logo" src="${cogov__home_logo_webp}"/>
 					</a>
 					<h2 class="home_page__header__title">Collaborative Governance Technologies</h2>
 					<h3 class="home_page__header__subtitle">
@@ -192,89 +192,89 @@ export function home__doc_html_($p:page_params_T) {
 				<div class="home_page__collaborators__collaborators">
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://www.metacurrency.org" target="blank">
-							<img src="${cogov__metacurrency_png}" alt=""
+							<img src="${cogov__metacurrency_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">MetaCurrency<br/>Project</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://www.onenation.party/1" target="blank">
-							<img src="${cogov__onenation_png}" alt=""
+							<img src="${cogov__onenation_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">OneNation</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://lightleadership.com/" target="blank">
-							<img src="${cogov__lightleadership_png}" alt=""
+							<img src="${cogov__lightleadership_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Light Leadership</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://superluminal.is/" target="blank">
-							<img src="${cogov__superluminal_systems_png}" alt=""
+							<img src="${cogov__superluminal_systems_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Superluminal Systems</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://core.network/" target="blank">
-							<img src="${cogov__core_network_png}" alt=""
+							<img src="${cogov__core_network_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Core.Network</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://www.unify.org/" target="blank">
-							<img src="${cogov__unify_png}" alt="" class="home_page__collaborators__collaborator__logo"/>
+							<img src="${cogov__unify_webp}" alt="" class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">UNIFY</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://social-evolution.com/" target="blank">
-							<img src="${cogov__socialevolution_png}" alt=""
+							<img src="${cogov__socialevolution_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Social Evolution</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://freedomculture.org/" target="blank">
-							<img src="${cogov__freedomculture_png}" alt=""
+							<img src="${cogov__freedomculture_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Freedom Culture</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="http://www.fwii.net/" target="blank">
-							<img src="${cogov__fourworlds_png}" alt=""
+							<img src="${cogov__fourworlds_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Four Worlds <br/>International Institute</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="http://www.iwg.life/s7foundation/" target="blank">
-							<img src="${cogov__s7_png}" alt="" class="home_page__collaborators__collaborator__logo"/>
+							<img src="${cogov__s7_webp}" alt="" class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">S7&nbsp;Foundation</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://junto.foundation/" target="blank">
-							<img src="${cogov__junto_logo_png}" alt=""
+							<img src="${cogov__junto_logo_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Junto<br/>Foundation</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="https://www.futureproper.world/" target="blank">
-							<img src="${cogov__future_proper_logo_png}" alt=""
+							<img src="${cogov__future_proper_logo_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Future Proper</p>
 						</a>
 					</div>
 					<div class="home_page__collaborators__collaborator">
 						<a class="home_page__collaborators__collaborator" href="http://edenisrising.com/" target="blank">
-							<img src="${cogov__eden_is_rising_logo_png}" alt=""
+							<img src="${cogov__eden_is_rising_logo_webp}" alt=""
 								class="home_page__collaborators__collaborator__logo"/>
 							<p class="home_page__collaborators__collaborator__text">Eden</p>
 						</a>

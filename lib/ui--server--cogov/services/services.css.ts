@@ -1,5 +1,5 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import cogov__services_png from '../public/assets/images/cogov__services.png'
+import cogov__services_webp from '../public/assets/images/cogov__services.webp'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
@@ -12,7 +12,7 @@ export default ()=>{
 .services_page__header {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__services_png}');
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__services_webp}');
 	background-position: center;
 	background-size: cover;
 }

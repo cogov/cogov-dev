@@ -2,8 +2,8 @@ import './nav.css.js'
 import { class_ } from 'ctx-core/html'
 import { type relement_env_T } from 'relementjs'
 import { a_, div_, img_, p_ } from 'relementjs/html'
-import cogov__logo__blue_png from '../public/assets/images/cogov__logo--blue.png'
-import cogov__menu_png from '../public/assets/images/cogov__menu.png'
+import cogov__logo__blue_webp from '../public/assets/images/cogov__logo--blue.webp'
+import cogov__menu_webp from '../public/assets/images/cogov__menu.webp'
 const nav__item_aa:nav__item_a_T[] = [
 	['/protocol.love', 'protocol-love', 'Protocol.Love'],
 	['/specs', 'specs', 'Tech Specs'],
@@ -66,7 +66,7 @@ export function nav__div_<env_T extends relement_env_T>({ segment }:{ segment?:s
 							class: class_(
 								'nav__logo__image',
 								'h-full'),
-							src: cogov__logo__blue_png,
+							src: cogov__logo__blue_webp,
 							alt: ''
 						}),
 						p_({
@@ -156,7 +156,7 @@ export function nav__div_<env_T extends relement_env_T>({ segment }:{ segment?:s
 						'h-8',
 						'port:ml-8',
 						'cursor-pointer'),
-					src: cogov__menu_png
+					src: cogov__menu_webp
 				})
 			])
 		)

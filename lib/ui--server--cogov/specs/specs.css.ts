@@ -1,5 +1,5 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import cogov__protocol_png from '../public/assets/images/cogov__protocol.png'
+import cogov__protocol_webp from '../public/assets/images/cogov__protocol.webp'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
@@ -14,7 +14,7 @@ export default ()=>{
 	height: 85vh;
 	background-image:
 		linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)),
-		url('${cogov__protocol_png}');
+		url('${cogov__protocol_webp}');
 	background-position: center;
 	background-size: cover;
 }

@@ -1,13 +1,13 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import cogov__stars__mobile_png from '../public/assets/images/cogov__stars--mobile.png'
-import cogov__stars_png from '../public/assets/images/cogov__stars.png'
+import cogov__stars__mobile_webp from '../public/assets/images/cogov__stars--mobile.webp'
+import cogov__stars_webp from '../public/assets/images/cogov__stars.webp'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
 .vision_page__header {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__stars_png}');
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__stars_webp}');
 	background-position: center;
 	background-size: cover;
 }
@@ -20,7 +20,7 @@ export default ()=>{
 	.vision_page__header {
 		padding-left: 1rem;
 		padding-right: 1rem;
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__stars__mobile_png}');
+		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__stars__mobile_webp}');
 	}
 }
 .vision_page__header__title {

@@ -1,6 +1,6 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import cogov__declaration__mobile_png from '../public/assets/images/cogov__declaration--mobile.png'
-import cogov__declaration_png from '../public/assets/images/cogov__declaration.png'
+import cogov__declaration__mobile_webp from '../public/assets/images/cogov__declaration--mobile.webp'
+import cogov__declaration_webp from '../public/assets/images/cogov__declaration.webp'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
@@ -13,7 +13,7 @@ export default ()=>{
 .declaration_page__header {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url(${cogov__declaration_png});
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url(${cogov__declaration_webp});
 	background-position: center;
 	background-size: cover;
 }
@@ -24,7 +24,7 @@ export default ()=>{
 }
 @media (max-width: var(--phone--max-width)) {
 	.declaration_page__header {
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url(${cogov__declaration__mobile_png});
+		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url(${cogov__declaration__mobile_webp});
 	}
 }
 .declaration_page__header__title {

@@ -1,6 +1,6 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import cogov__background__founder__mobile_png from '../public/assets/images/cogov__background--founder--mobile.png'
-import cogov__background_founder_png from '../public/assets/images/cogov__background--founder.png'
+import cogov__background__founder__mobile_webp from '../public/assets/images/cogov__background--founder--mobile.webp'
+import cogov__background_founder_webp from '../public/assets/images/cogov__background--founder.webp'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
@@ -13,7 +13,7 @@ export default ()=>{
 .raymond_d_powell_page__quote {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__background_founder_png}');
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__background_founder_webp}');
 	background-position: center;
 	background-size: cover;
 }
@@ -24,7 +24,7 @@ export default ()=>{
 }
 @media (max-width: var(--phone--max-width)) {
 	.raymond_d_powell_page__quote {
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__background__founder__mobile_png}');
+		background-image: linear-gradient(to right, rgba(51, 51, 51, .4), rgba(34, 34, 34, .4)), url('${cogov__background__founder__mobile_webp}');
 	}
 }
 .raymond_d_powell_page__quote__title {

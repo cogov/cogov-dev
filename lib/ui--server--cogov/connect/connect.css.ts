@@ -1,6 +1,5 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import cogov__mandala__three_png from '../public/assets/images/cogov__mandala--three.png'
-import cogov__mandala__three__mobile_png from '../public/assets/images/cogov__mandala--three--mobile.png'
+import cogov__mandala__three_webp from '../public/assets/images/cogov__mandala--three.webp'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
@@ -13,7 +12,7 @@ export default ()=>{
 .connect_page__header {
 	padding: 12%;
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(51, 51, 51, .5), rgba(34, 34, 34, .5)), url(${cogov__mandala__three_png});
+	background-image: linear-gradient(to right, rgba(51, 51, 51, .5), rgba(34, 34, 34, .5)), url(${cogov__mandala__three_webp});
 	background-position: center;
 	background-size: cover;
 }
@@ -24,7 +23,7 @@ export default ()=>{
 }
 @media (max-width: var(--phone--max-width)) {
 	.connect_page__header {
-		background-image: linear-gradient(to right, rgba(51, 51, 51, .5), rgba(34, 34, 34, .5)), url(${cogov__mandala__three_png});
+		background-image: linear-gradient(to right, rgba(51, 51, 51, .5), rgba(34, 34, 34, .5)), url(${cogov__mandala__three_webp});
 	}
 }
 .connect_page__header__title {

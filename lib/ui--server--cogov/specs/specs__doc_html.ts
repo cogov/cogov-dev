@@ -6,9 +6,9 @@ import type { page_params_T } from '../_types.js'
 import { main_class } from '../css/index.js'
 import { site__footer_ } from '../footer/index.js'
 import { layout__doc_html_ } from '../layout/index.js'
-import cogov__protocol__one_png from '../public/assets/images/cogov__protocol--one.png'
-import cogov__protocol__three_png from '../public/assets/images/cogov__protocol--three.png'
-import cogov__protocol__two_png from '../public/assets/images/cogov__protocol--two.png'
+import cogov__protocol__one_webp from '../public/assets/images/cogov__protocol--one.webp'
+import cogov__protocol__three_webp from '../public/assets/images/cogov__protocol--three.webp'
+import cogov__protocol__two_webp from '../public/assets/images/cogov__protocol--two.webp'
 export function specs__doc_html_($p:page_params_T) {
 	return (
 		layout__doc_html_($p,
@@ -78,7 +78,7 @@ export function specs__doc_html_($p:page_params_T) {
 					>distributed storage standards</a> that have been in operation for decades.
 					This creates redundancy and validation of application data across randomized nodes.
 				</p>
-				<img src="${cogov__protocol__one_png}" alt=""
+				<img src="${cogov__protocol__one_webp}" alt=""
 					class="specs_page__content__image specs_page__content__image__one"/>
 				<br/><br/>
 				<p class="specs_page__content__body">
@@ -99,7 +99,7 @@ export function specs__doc_html_($p:page_params_T) {
 					This visual shows a sample of various types of entries and how they “hang off” each other.
 					It is by no means a complete diagram.
 				</p>
-				<img src="${cogov__protocol__two_png}" alt=""
+				<img src="${cogov__protocol__two_webp}" alt=""
 					class="specs_page__content__image specs_page__content__image__two"/>
 				<p class="specs_page__content__body">
 					However, the above is not an illustration of how data is actually stored.
@@ -159,7 +159,7 @@ export function specs__doc_html_($p:page_params_T) {
 					<br/>A very early 2016 mock-up of what a CoGov Ledger Browser might look like can be found at
 					<a href="http://demo.cogov.tech/" class="addlink" target="blank">http://demo.cogov.tech/</a>
 					<br/><br/>
-					<img src="${cogov__protocol__three_png}" alt=""
+					<img src="${cogov__protocol__three_webp}" alt=""
 						class="specs_page__content__image specs_page__content__image__three"/>
 				</p>
 			</div>

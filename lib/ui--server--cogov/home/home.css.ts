@@ -1,12 +1,12 @@
 import { cogov__var__css__replace } from '@cogov/css'
-import cogov__creator_png from '../public/assets/images/cogov__creator.png'
-import cogov__developer_png from '../public/assets/images/cogov__developer.png'
-import cogov__interoperability_png from '../public/assets/images/cogov__interoperability.png'
-import cogov__iteration_png from '../public/assets/images/cogov__iteration.png'
-import cogov__philosopher_png from '../public/assets/images/cogov__philosopher.png'
-import cogov__scalability_png from '../public/assets/images/cogov__scalability.png'
-import cogov__transparency_png from '../public/assets/images/cogov__transparency.png'
-import cogov__unenclosability_png from '../public/assets/images/cogov__unenclosability.png'
+import cogov__creator_webp from '../public/assets/images/cogov__creator.webp'
+import cogov__developer_webp from '../public/assets/images/cogov__developer.webp'
+import cogov__interoperability_webp from '../public/assets/images/cogov__interoperability.webp'
+import cogov__iteration_webp from '../public/assets/images/cogov__iteration.webp'
+import cogov__philosopher_webp from '../public/assets/images/cogov__philosopher.webp'
+import cogov__scalability_webp from '../public/assets/images/cogov__scalability.webp'
+import cogov__transparency_webp from '../public/assets/images/cogov__transparency.webp'
+import cogov__unenclosability_webp from '../public/assets/images/cogov__unenclosability.webp'
 export default ()=>{
 	// language=css
 	return cogov__var__css__replace(`
@@ -208,19 +208,19 @@ export default ()=>{
 	}
 }
 .home_page__about__item__photo__one {
-	background-image: url('${cogov__unenclosability_png}');
+	background-image: url('${cogov__unenclosability_webp}');
 }
 .home_page__about__item__photo__two {
-	background-image: url('${cogov__scalability_png}');
+	background-image: url('${cogov__scalability_webp}');
 }
 .home_page__about__item__photo__three {
-	background-image: url('${cogov__transparency_png}');
+	background-image: url('${cogov__transparency_webp}');
 }
 .home_page__about__item__photo__four {
-	background-image: url('${cogov__iteration_png}');
+	background-image: url('${cogov__iteration_webp}');
 }
 .home_page__about__item__photo__five {
-	background-image: url('${cogov__interoperability_png}');
+	background-image: url('${cogov__interoperability_webp}');
 }
 .home_page__about__item__text {
 	width: 40vw;
@@ -311,13 +311,13 @@ export default ()=>{
 	background-size: cover;
 }
 .home_page__details__header__developer {
-	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__developer_png}');
+	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__developer_webp}');
 }
 .home_page__details__header__philosopher {
-	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__philosopher_png}');
+	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__philosopher_webp}');
 }
 .home_page__details__header__creator {
-	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__creator_png}');
+	background-image: linear-gradient(to right, rgba(34, 34, 34, .5), rgba(34, 34, 34, .5)), url('${cogov__creator_webp}');
 }
 .home_page__details__header__title {
 	color: white;

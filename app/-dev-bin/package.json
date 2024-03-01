@@ -5,6 +5,10 @@
 	"version": "0.0.0",
 	"bin": {
 		"_env__validate": "./bin/_env__validate.sh",
+		"assets--download": "bin/assets--download.sh",
+		"assets--download--sync": "bin/assets--download--sync.sh",
+		"assets--upload": "bin/assets--upload.sh",
+		"assets--upload--sync": "bin/assets--upload--sync.sh",
 		"caddy--run": "./bin/caddy--run.sh",
 		"docker-compose--build": "bin/docker-compose--build.sh",
 		"docker-compose--restart": "bin/docker-compose--restart.sh",
