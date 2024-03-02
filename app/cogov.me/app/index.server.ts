@@ -23,12 +23,8 @@ import {
 	request_ctx__ensure
 } from 'relysjs/server'
 const robots_txt = `
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
-
 Sitemap: https://cogov.me/sitemap.xml
 `.trim()
 export default middleware_(middleware_ctx=>{
