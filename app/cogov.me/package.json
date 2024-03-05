@@ -20,7 +20,7 @@
     "cssnano": "^6.0.5",
     "ctx-core": "^6.5.3",
     "elysia": "^0.8.17",
-    "esmcss": "^0.2.2",
+    "esmcss": "^0.2.3",
     "relementjs": "^0.74.3",
     "relysjs": "^1.14.18",
     "tailwindcss": "^3.4.1"
