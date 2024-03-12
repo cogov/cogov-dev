@@ -8,7 +8,7 @@
 		"./nav": "./nav/index.ts"
 	},
 	"dependencies": {
-		"ctx-core": "^6.5.4",
-		"relementjs": "^0.74.4"
+		"ctx-core": "^6.5.5",
+		"relementjs": "^0.74.5"
 	}
 }
