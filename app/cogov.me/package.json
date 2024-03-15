@@ -15,19 +15,19 @@
     "@cogov/ui--server--cogov": "workspace:*",
     "@ctx-core/preprocess": "^0.1.2",
     "@elysiajs/static": "^0.8.1",
-    "@rebuildjs/tailwindcss": "^0.8.62",
+    "@rebuildjs/tailwindcss": "^0.8.65",
     "@tailwindcss/typography": "^0.5.10",
     "cssnano": "^6.1.0",
-    "ctx-core": "^6.5.6",
+    "ctx-core": "^6.5.8",
     "elysia": "^0.8.17",
-    "esmcss": "^0.2.3",
-    "relementjs": "^0.74.6",
-    "relysjs": "^1.16.5",
+    "esmcss": "^0.2.4",
+    "relementjs": "^0.74.8",
+    "relysjs": "^1.16.8",
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@rebuildjs/tailwindcss": "^0.8.62",
-    "@types/node": "20.11.27",
-    "esbuild": "^0.20.1"
+    "@rebuildjs/tailwindcss": "^0.8.65",
+    "@types/node": "20.11.28",
+    "esbuild": "^0.20.2"
   }
 }
