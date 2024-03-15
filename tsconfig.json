@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"allowSyntheticDefaultImports": true,
 		"baseUrl": ".",
-		"composite": true,
+		"composite": false,
 		"declaration": true,
 		"esModuleInterop": true,
 		"jsxImportSource": "solid-js",
