@@ -13,7 +13,7 @@
     "ctx-core": "^6.5.8",
     "elysia": "^1.0.0",
     "relementjs": "^0.74.8",
-    "relysjs": "^1.16.9",
+    "relysjs": "^1.16.12",
     "tailwindcss": "^3.4.1"
   }
 }
