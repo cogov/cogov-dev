@@ -9,6 +9,6 @@
 		"@cogov/deploy": "workspace:^",
 		"@ctx-core/arch-vps": "^0.11.173",
 		"ctx-core": "^6.6.2",
-		"typescript": "5.4.2"
+		"typescript": "5.4.3"
 	}
 }
