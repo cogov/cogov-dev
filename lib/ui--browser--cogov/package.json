@@ -9,6 +9,6 @@
 	},
 	"dependencies": {
 		"ctx-core": "^6.6.2",
-		"relementjs": "^0.75.2"
+		"relementjs": "^0.75.5"
 	}
 }
