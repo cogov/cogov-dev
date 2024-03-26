@@ -13,22 +13,16 @@ import {
 	specs__doc_html_,
 	vision__doc_html_
 } from '@cogov/ui--server--cogov'
+import { redirect_response__new } from '@rappstack/domain--server/response'
 import { Elysia } from 'elysia'
-import type { DecoratorBase } from 'elysia/types'
-import {
-	type elysia_context_T,
-	html_response__new,
-	html_route_,
-	middleware_,
-	request_ctx__ensure
-} from 'relysjs/server'
+import { html_response__new, html_route_, middleware_, request_ctx__ensure } from 'relysjs/server'
 const robots_txt = `
 User-agent: *
 Allow: /
 Sitemap: https://cogov.me/sitemap.xml
 `.trim()
 export default middleware_(middleware_ctx=>{
-	return new Elysia<'', DecoratorBase&elysia_context_T>({
+	return new Elysia({
 		name: 'root_routes'
 	})
 		.get('/', html_route_(middleware_ctx, home__doc_html_))
@@ -40,6 +34,9 @@ export default middleware_(middleware_ctx=>{
 		.get('/services', html_route_(middleware_ctx, services__doc_html_))
 		.get('/site', html_route_(middleware_ctx, site__doc_html_))
 		.get('/specs', html_route_(middleware_ctx, specs__doc_html_))
+		.get('/team', ()=>{
+			return redirect_response__new(302, '/team/raymond-d-powell')
+		})
 		.get('/team/raymond-d-powell', html_route_(middleware_ctx, raymond_d_powell__doc_html_))
 		.get('/vision', html_route_(middleware_ctx, vision__doc_html_))
 		.get('/robots.txt', ()=>
