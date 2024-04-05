@@ -26,15 +26,15 @@
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "@aws-sdk/client-cloudfront": "^3.540.0",
-    "@ctx-core/child_process": "^7.4.175",
+    "@aws-sdk/client-cloudfront": "^3.549.0",
+    "@ctx-core/child_process": "^7.4.176",
     "@types/jest": "^29.5.12",
-    "@types/node": "20.12.3",
+    "@types/node": "20.12.4",
     "aws-cdk": "2.135.0",
-    "ctx-core": "^7.1.1",
+    "ctx-core": "^7.1.2",
     "import-meta-resolve": "^4.0.0",
     "ts-node": "^10.9.2",
-    "tsx": "^4.7.1",
-    "typescript": "5.4.3"
+    "tsx": "^4.7.2",
+    "typescript": "5.4.4"
   }
 }
