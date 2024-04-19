@@ -12,8 +12,8 @@
 	"devDependencies": {
 		"@btakita/dev-bin": "workspace:*",
 		"@cogov/-dev-bin": "workspace:*",
-		"@ctx-core/jetbrains": "^7.3.175",
-		"@ctx-core/monorepo": "^21.4.100"
+		"@ctx-core/jetbrains": "^7.3.176",
+		"@ctx-core/monorepo": "^21.4.101"
 	},
 	"workspaces": [
 		"app/*",
