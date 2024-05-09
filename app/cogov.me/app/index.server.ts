@@ -15,7 +15,10 @@ import {
 } from '@cogov/ui--server--cogov'
 import { redirect_response__new } from '@rappstack/domain--server/response'
 import { Elysia } from 'elysia'
-import { html_response__new, html_route_, middleware_, request_ctx__ensure } from 'relysjs/server'
+import type { request_ctx_T } from 'rebuildjs/server'
+import { html_response__new, middleware_, type middleware_ctx_T } from 'relysjs/server'
+import { site } from '../config.js'
+import { request_ctx__ensure } from '../ctx/index.js'
 const robots_txt = `
 User-agent: *
 Allow: /
@@ -46,10 +49,24 @@ export default middleware_(middleware_ctx=>{
 		.get('/sitemap.xml', context=>
 			html_response__new(
 				sitemap__xml_({
-					ctx: request_ctx__ensure(middleware_ctx, context)
+					ctx: request_ctx__ensure(middleware_ctx, context, { site })
 				}), {
 					headers: {
 						'Content-Type': 'application/xml'
 					}
 				}))
 })
+function html_route_(
+	middleware_ctx:middleware_ctx_T,
+	page_:($p:{ ctx:request_ctx_T })=>(string|ReadableStream<string>),
+	response_init?:ResponseInit
+) {
+	return (context:{
+		request:Request
+		store:{ [x:string]:unknown }
+	})=>html_response__new(
+		page_({
+			ctx: request_ctx__ensure(middleware_ctx, context, { site })
+		}),
+		response_init)
+}

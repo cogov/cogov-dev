@@ -40,7 +40,7 @@ export function site__doc_html_($p:page_params_T) {
 			}, [
 				// @formatter:off
 				// language=md
-				md__raw_(ctx, `
+				md__raw_({ ctx }, `
 The contents of this site is written by Raymond Powell. This site is developed by ${tb_a_({ href: 'https://briantakita.me' }, 'Brian Takita')} in loving memory of Raymond Powell & the people who he has impacted in his life. The ${tb_a_({ href: 'https://github.com/cogov/cogov-dev' }, 'source code')} for this site is licensed under the Apache 2 license.
 
 ## Technology Stack
