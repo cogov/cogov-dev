@@ -13,7 +13,7 @@
 		"@btakita/dev-bin": "workspace:*",
 		"@cogov/-dev-bin": "workspace:*",
 		"@ctx-core/jetbrains": "^7.3.183",
-		"@ctx-core/monorepo": "^21.4.114"
+		"@ctx-core/monorepo": "^21.4.115"
 	},
 	"workspaces": [
 		"app/*",
