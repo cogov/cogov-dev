@@ -11,9 +11,9 @@
     "@cogov/ui--browser--cogov": "workspace:*",
     "@rappstack/ui--any": "workspace:*",
     "ctx-core": "^7.2.7",
-    "elysia": "^1.0.17",
+    "elysia": "^1.0.18",
     "relementjs": "^0.80.7",
-    "relysjs": "^1.21.25",
+    "relysjs": "^1.21.27",
     "tailwindcss": "^3.4.3"
   }
 }

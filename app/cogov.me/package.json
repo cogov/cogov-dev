@@ -16,20 +16,20 @@
     "@ctx-core/preprocess": "^0.1.3",
     "@elysiajs/static": "^1.0.3",
     "@rappstack/domain--server": "workspace:*",
-    "@rebuildjs/tailwindcss": "^0.10.18",
+    "@rebuildjs/tailwindcss": "^0.10.19",
     "@tailwindcss/typography": "^0.5.13",
     "cssnano": "^7.0.1",
     "ctx-core": "^7.2.7",
-    "elysia": "^1.0.17",
+    "elysia": "^1.0.18",
     "esmcss": "^0.2.7",
     "marked": "^12.0.2",
     "marked-gfm-heading-id": "^3.1.3",
     "relementjs": "^0.80.7",
-    "relysjs": "^1.21.25",
+    "relysjs": "^1.21.27",
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
-    "@rebuildjs/tailwindcss": "^0.10.18",
+    "@rebuildjs/tailwindcss": "^0.10.19",
     "@types/node": "20.12.11",
     "esbuild": "^0.21.1"
   }
