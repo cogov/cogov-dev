@@ -10,10 +10,10 @@
     "@cogov/css": "workspace:*",
     "@cogov/ui--browser--cogov": "workspace:*",
     "@rappstack/ui--any": "workspace:*",
-    "ctx-core": "^7.2.8",
+    "ctx-core": "^7.2.9",
     "elysia": "^1.0.20",
-    "relementjs": "^0.80.8",
-    "relysjs": "^1.21.28",
+    "relementjs": "^0.80.9",
+    "relysjs": "^1.21.29",
     "tailwindcss": "^3.4.3"
   }
 }
