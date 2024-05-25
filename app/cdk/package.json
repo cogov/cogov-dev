@@ -27,11 +27,11 @@
   },
   "devDependencies": {
     "@aws-sdk/client-cloudfront": "^3.583.0",
-    "@ctx-core/child_process": "^7.4.191",
+    "@ctx-core/child_process": "^7.4.192",
     "@types/jest": "^29.5.12",
     "@types/node": "20.12.12",
     "aws-cdk": "2.143.0",
-    "ctx-core": "^7.2.10",
+    "ctx-core": "^7.2.11",
     "import-meta-resolve": "^4.1.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.11.0",
