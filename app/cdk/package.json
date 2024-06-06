@@ -27,14 +27,14 @@
   },
   "devDependencies": {
     "@aws-sdk/client-cloudfront": "^3.590.0",
-    "@ctx-core/child_process": "^7.4.196",
+    "@ctx-core/child_process": "^7.4.197",
     "@types/jest": "^29.5.12",
-    "@types/node": "20.14.1",
+    "@types/node": "20.14.2",
     "aws-cdk": "2.144.0",
-    "ctx-core": "^7.2.16",
+    "ctx-core": "^7.2.17",
     "import-meta-resolve": "^4.1.0",
     "ts-node": "^10.9.2",
-    "tsx": "^4.11.2",
+    "tsx": "^4.12.0",
     "typescript": "5.4.5"
   }
 }
