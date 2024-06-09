@@ -34,7 +34,7 @@
     "ctx-core": "^7.2.17",
     "import-meta-resolve": "^4.1.0",
     "ts-node": "^10.9.2",
-    "tsx": "^4.14.0",
+    "tsx": "^4.14.1",
     "typescript": "5.4.5"
   }
 }
