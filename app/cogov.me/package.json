@@ -25,7 +25,7 @@
     "marked": "^13.0.0",
     "marked-gfm-heading-id": "^4.0.0",
     "relementjs": "^0.80.17",
-    "relysjs": "^1.21.47",
+    "relysjs": "^1.21.48",
     "tailwindcss": "^3.4.4"
   },
   "devDependencies": {
