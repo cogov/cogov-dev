@@ -26,12 +26,12 @@
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "@aws-sdk/client-cloudfront": "^3.598.0",
-    "@ctx-core/child_process": "^7.4.200",
+    "@aws-sdk/client-cloudfront": "^3.600.0",
+    "@ctx-core/child_process": "^7.4.202",
     "@types/jest": "^29.5.12",
     "aws-cdk": "2.146.0",
-    "bun-types": "^1.1.13",
-    "ctx-core": "^7.2.20",
+    "bun-types": "^1.1.14",
+    "ctx-core": "^7.2.22",
     "import-meta-resolve": "^4.1.0",
     "typescript": "5.4.5"
   }
