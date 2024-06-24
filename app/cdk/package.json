@@ -30,7 +30,7 @@
     "@ctx-core/child_process": "^7.4.204",
     "@types/jest": "^29.5.12",
     "aws-cdk": "2.147.0",
-    "bun-types": "^1.1.15",
+    "bun-types": "^1.1.16",
     "ctx-core": "^7.2.24",
     "import-meta-resolve": "^4.1.0",
     "typescript": "5.5.2"
