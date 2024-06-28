@@ -29,8 +29,8 @@
 	},
 	"homepage": "https://cogov.me",
 	"devDependencies": {
-		"ctx-core": "^7.2.24",
-		"rmemo": "^0.51.24"
+		"ctx-core": "^7.2.25",
+		"rmemo": "^0.51.25"
 	},
 	"sideEffects": false
 }
