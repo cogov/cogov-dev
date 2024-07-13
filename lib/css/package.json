@@ -7,6 +7,6 @@
   "dependencies": {
     "esbuild": "^0.23.0",
     "esmcss": "^0.2.12",
-    "relysjs": "^1.21.64"
+    "relysjs": "^1.21.65"
   }
 }
