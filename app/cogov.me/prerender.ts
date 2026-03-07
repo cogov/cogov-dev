@@ -3,9 +3,9 @@
  * Usage: bun build.ts && bun prerender.ts
  */
 import { cloudflare_export_ } from 'relysjs/server/export/cloudflare'
-const base_url = process.env.PRERENDER_BASE || 'http://localhost:4020'
+import { resolve } from 'node:path'
 const { exported, errors } = await cloudflare_export_({
-	base_url,
+	server_import: resolve('dist/server/index.js'),
 	site_url: 'https://cogov.me',
 	out_dir: 'dist/browser',
 	sitemap: true,
