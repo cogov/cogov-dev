@@ -157,7 +157,7 @@ export function specs__doc_html_($p:page_params_T) {
 					<br/>TransferCurrency
 					<br/><br/>
 					<br/>A very early 2016 mock-up of what a CoGov Ledger Browser might look like can be found at
-					<a href="http://demo.cogov.tech/" class="addlink" target="blank">http://demo.cogov.tech/</a>
+					<a href="http://demo.cogov.me/" class="addlink" target="blank">http://demo.cogov.me/</a>
 					<br/><br/>
 					<img src="${cogov__protocol__three_webp}" alt=""
 						class="specs_page__content__image specs_page__content__image__three"/>

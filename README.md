@@ -29,7 +29,7 @@ If you use [tmux](https://github.com/tmux/tmux/wiki), take a look at the tmux sc
 bin/tmux-web.sh
 ```
 
-### cogov.tech site
+### cogov.me site (formerly cogov.tech)
 
 ```shell
 cd packages/home

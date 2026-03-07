@@ -37,6 +37,6 @@ export function site__footer_<env_T extends relement_env_T>() {
 				]),
 			),
 			p_({ class: 'footer__copyright' },
-				raw_('Copyright &copy;2019 CoGov.Tech, All Rights Reserved.')))
+				raw_('Copyright &copy;2019 CoGov.me, All Rights Reserved.')))
 	)
 }
