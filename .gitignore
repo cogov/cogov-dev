@@ -8,3 +8,7 @@ tmp
 /letsencrypt
 /dist
 /public
+
+.yalc/
+yalc.lock
+.agent-doc/

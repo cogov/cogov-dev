@@ -18,5 +18,9 @@
 	"workspaces": [
 		"app/*",
 		"lib/*"
-	]
+	],
+	"dependencies": {
+		"@sinclair/typebox": "^0.34.48",
+		"relysjs": "file:.yalc/relysjs"
+	}
 }
