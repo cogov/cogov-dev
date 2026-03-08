@@ -2,13 +2,14 @@ name = "demo-cogov-me"
 compatibility_date = "2026-03-07"
 main = "worker/index.ts"
 
-[assets]
-directory = "dist/browser"
+routes = [
+	{ pattern = "demo.cogov.me", custom_domain = true }
+]
 
 [[d1_databases]]
 binding = "DB"
 database_name = "cogov-demo"
-database_id = ""
+database_id = "9f61f8d1-d7bb-4aec-b242-43bdc1d9e047"
 
 [vars]
 SITE_URL = "https://demo.cogov.me"
