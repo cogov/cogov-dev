@@ -1,37 +1,32 @@
 # cogov
 
-CoGov fosters the emergence of coherent collective intelligence 
+CoGov fosters the emergence of coherent collective intelligence
 by enabling the rapid iteration of governance and social coordination systems that YOU design!
 
 ## Development
 
-This library uses [lerna](https://lerna.js.org/) & [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/)
- to manage the monorepo.
- 
-To install the packages, run:
+This project uses [bun](https://bun.sh/) workspaces to manage the monorepo.
+
+To install and run:
 
 ```shell
 git clone git@github.com:cogov/cogov-dev.git
 cd cogov-dev
 git submodule init
 git submodule update
-# install nvm https://github.com/nvm-sh/nvm
-nvm i
-npm i yarn
-yarn
+bun install
 ```
 
-### tmux
-
-If you use [tmux](https://github.com/tmux/tmux/wiki), take a look at the tmux scripts in the `bin` directory.
+### cogov.me site
 
 ```shell
-bin/tmux-web.sh
+bun dev
 ```
 
-### cogov.me site (formerly cogov.tech)
+### Production build & deploy
 
 ```shell
-cd packages/home
-yarn run dev
+NODE_ENV=production bun build
+NODE_ENV=production bun prerender
+npx wrangler pages deploy dist/browser --project-name=cogov-me
 ```
