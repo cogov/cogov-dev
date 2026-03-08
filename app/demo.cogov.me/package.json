@@ -1,0 +1,19 @@
+{
+	"name": "@cogov/demo.cogov.me",
+	"private": true,
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy",
+		"db:init": "wrangler d1 execute cogov-demo --local --file=db/0000_init.sql"
+	},
+	"dependencies": {
+		"@cogov/domain--server--cogov-demo": "workspace:*",
+		"@cogov/ui--server--cogov-demo": "workspace:*",
+		"drizzle-orm": "^0.32.0",
+		"hono": "^4.0.0",
+		"rhonojs": "file:.yalc/rhonojs"
+	},
+	"devDependencies": {
+		"wrangler": "^4.0.0"
+	}
+}

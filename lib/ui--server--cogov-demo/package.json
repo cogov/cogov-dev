@@ -1,0 +1,7 @@
+{
+	"name": "@cogov/ui--server--cogov-demo",
+	"private": true,
+	"exports": {
+		".": "./index.ts"
+	}
+}

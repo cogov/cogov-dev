@@ -1,0 +1,7 @@
+export { home__doc_html_ } from './home/home__doc_html.js'
+export { collectives__doc_html_ } from './collectives/collectives__doc_html.js'
+export { council__doc_html_ } from './council/council__doc_html.js'
+export { members__doc_html_ } from './members/members__doc_html.js'
+export { person__doc_html_ } from './person/person__doc_html.js'
+export { privilege_set__doc_html_ } from './privilege-set/privilege_set__doc_html.js'
+export { proposal__doc_html_ } from './proposal/proposal__doc_html.js'

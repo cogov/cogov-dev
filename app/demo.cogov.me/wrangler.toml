@@ -1,0 +1,14 @@
+name = "demo-cogov-me"
+compatibility_date = "2026-03-07"
+main = "worker/index.ts"
+
+[assets]
+directory = "dist/browser"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cogov-demo"
+database_id = ""
+
+[vars]
+SITE_URL = "https://demo.cogov.me"

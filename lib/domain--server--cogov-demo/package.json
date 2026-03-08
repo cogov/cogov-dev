@@ -1,0 +1,10 @@
+{
+	"name": "@cogov/domain--server--cogov-demo",
+	"private": true,
+	"exports": {
+		"./schema": "./schema/index.ts"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.32.0"
+	}
+}
