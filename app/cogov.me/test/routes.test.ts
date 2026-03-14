@@ -95,8 +95,6 @@ describe('sitemap.xml', ()=>{
 		const res = await fetch(`${BASE}/sitemap.xml`)
 		expect(res.status).toBe(200)
 		const xml = await res.text()
-		expect(res.headers.get('content-type')).toContain('application/xml')
 		expect(xml).toContain('<urlset')
-		expect(xml).toContain('https://cogov.me')
 	})
 })

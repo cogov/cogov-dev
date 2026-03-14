@@ -90,8 +90,8 @@ export function nav__div_<env_T extends relement_env_T>({ segment }:{ segment?:s
 						'justify-end',
 						'port:justify-between',
 						'port:pl-4',
-						'space-x-8',
-						'port:space-x-0'),
+						'gap-8',
+						'port:gap-0'),
 				}, [
 					nav__item_aa.map(nav__item_a=>[
 						div_({

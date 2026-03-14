@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@source "../../../../lib/ui--server--cogov/**/*.ts";
+@source "../../../../lib/ui--server--cogov-demo/**/*.ts";
+
+@theme {
+	--font-sans: 'Urbanist';
+	--font-serif: 'Urbanist';
+
+	/* Custom breakpoints (added alongside Tailwind defaults) */
+	--breakpoint-phone: 599px;
+	--breakpoint-port: 900px;
+	--breakpoint-pack-min: 901px;
+	--breakpoint-pack: 960px;
+	--breakpoint-land-min: 961px;
+	--breakpoint-land: 1200px;
+	--breakpoint-big: 1800px;
+}
+
+@custom-variant phone (@media (width <= 599px));
+@custom-variant port (@media (width <= 900px));
+@custom-variant pack (@media (width >= 901px) and (width <= 960px));
+@custom-variant land (@media (width >= 961px) and (width <= 1200px));
+@custom-variant big (@media (width >= 1800px));
