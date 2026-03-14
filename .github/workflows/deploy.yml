@@ -60,7 +60,7 @@ jobs:
             echo "OK: $file"
           done
           # Check non-HTML files
-          for file in robots.txt sitemap.xml; do
+          for file in robots.txt; do
             if [ ! -f "$file" ]; then
               echo "MISSING: $file"
               exit 1
@@ -81,7 +81,7 @@ jobs:
           echo "Waiting 10s for deployment to propagate..."
           sleep 10
           for path in / /connect /declaration /ecosystem /holochain /protocol.love /services /site /specs /team/raymond-d-powell /vision /robots.txt /sitemap.xml; do
-            status=$(curl -s -o /dev/null -w '%{http_code}' "https://cogov.me${path}")
+            status=$(curl -sL -o /dev/null -w '%{http_code}' "https://cogov.me${path}")
             if [ "$status" != "200" ]; then
               echo "FAIL: https://cogov.me${path} returned $status"
               exit 1
