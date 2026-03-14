@@ -35,6 +35,7 @@ jobs:
         run: cd app/cogov.me && bun run build
         env:
           NODE_ENV: production
+          ASSET_BASE_URL: ${{ secrets.ASSET_BASE_URL }}
 
       - name: Prerender
         run: |
