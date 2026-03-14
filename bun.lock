@@ -94,7 +94,7 @@
         "cssnano": "^7.0.4",
         "ctx-core": "^7.2.27",
         "elysia": "^1.4.27",
-        "esbuild-plugin-object-store-asset": "^0.0.1",
+        "esbuild-plugin-object-store-asset": "^0.0.2",
         "esmcss": "^0.2.12",
         "marked": "^13.0.2",
         "marked-gfm-heading-id": "^4.0.0",
@@ -177,9 +177,6 @@
     "lib/ui--server--cogov-demo": {
       "name": "@cogov/ui--server--cogov-demo",
     },
-  },
-  "overrides": {
-    "object-store-asset": "^0.0.1",
   },
   "packages": {
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "", {}, "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="],
@@ -306,7 +303,7 @@
 
     "@ctx-core/jetbrains": ["@ctx-core/jetbrains@7.3.209", "", { "dependencies": { "ctx-core": "*", "dir-glob": "^3.0.1", "globby": "^16.1.1", "path-type": "^6.0.0" }, "bin": { "idea-exclude-config": "bin/idea-exclude-config.mjs" } }, "sha512-9uybPuzWbr4F/hJaBU9dla7oqkxFFDe/djlupK5qj7ZTHGeYzI0IkUyiWNBFx+d7BgwmQkwf0GnND1AdSENbXA=="],
 
-    "@ctx-core/monorepo": ["@ctx-core/monorepo@21.4.161", "", { "dependencies": { "@ctx-core/child_process": "*", "@ctx-core/ctx-core-package-tools": "*", "@ctx-core/fs": "*", "@ctx-core/package": "*", "@types/node": "^25.3.3", "ctx-core": "*", "detect-indent": "^7.0.2", "dir-glob": "^3.0.1", "js-yaml": "^4.1.1", "ora": "9.3.0", "path-type": "^6.0.0", "semver": "^7.7.4", "tiny-glob": "^0.2.9", "tsx": "^4.21.0" }, "bin": { "changeset-COMMIT_EDITMSG": "bin/changeset-COMMIT_EDITMSG.sh", "changeset-version-COMMIT_EDITMSG": "bin/changeset-version-COMMIT_EDITMSG.sh", "CHANGELOG-diff-COMMIT_EDITMSG": "bin/CHANGELOG-diff-COMMIT_EDITMSG.sh", "ensure.sh": "bin/ensure.sh", "export_files_in_dir": "bin/export_files_in_dir.mjs", "find--top-level-directories--npm-files": "bin/find--top-level-directories--npm-files.sh", "git-commit--submodules": "bin/git-commit--submodules.sh", "monorepo_npm__dependencies__update": "bin/monorepo_npm__dependencies__update.mjs", "monorepo_npm__version__sync": "bin/monorepo_npm__version__sync.mjs", "monorepo_pnpm__circular_dependencies__detect": "bin/monorepo_pnpm__circular_dependencies__detect.mjs", "monorepo_pnpm__dependencies__update": "bin/monorepo_pnpm__dependencies__update.mjs", "package-manifest-changeset": "bin/package-manifest-changeset.sh", "package-manifest-COMMIT_EDITMSG": "bin/package-manifest-COMMIT_EDITMSG.sh", "npm-copy--package-bin-config": "bin/npm-copy--package-bin-config.sh", "npm-publish--force": "bin/publish--force.sh", "package_json_exports_directory_list": "bin/package_json_exports_directory_list.mjs", "package_json_files_directory_list": "bin/package_json_files_directory_list.mjs", "publish--force": "bin/publish--force.sh", "pwd--packages": "bin/pwd--packages.sh", "recursive-surrounding-trim-COMMIT_EDITMSG": "bin/recursive-surrounding-trim-COMMIT_EDITMSG.sh", "recursive-git-commit": "bin/recursive-git-commit.sh", "refresh-ctx-core-package.json": "bin/refresh-ctx-core-package.json.mjs", "run-parallel--workspaces": "bin/run-parallel--workspaces.mjs", "sort-packages": "bin/sort-packages.mjs", "sort-packages-exec": "bin/sort-packages-exec.mjs", "surrounding-trim": "bin/surrounding-trim.sh", "tsc-clean--packages": "bin/tsc-clean--packages.sh", "update-npm-packages": "bin/update-npm-packages.sh", "update-git-module--github--ssh": "bin/update-git-module--github--ssh.sh" } }, "sha512-PpiEvUhKqfaO+gWxMGo3B8aEO6iWuJoV1TKzq5RzDEPKZyzUYEDsm2RxZvqLvTUkHUQV9mAXuoqhQ44Pe5o+mQ=="],
+    "@ctx-core/monorepo": ["@ctx-core/monorepo@21.4.162", "", { "dependencies": { "@ctx-core/child_process": "*", "@ctx-core/ctx-core-package-tools": "*", "@ctx-core/fs": "*", "@ctx-core/package": "*", "@types/node": "^25.3.3", "ctx-core": "*", "detect-indent": "^7.0.2", "dir-glob": "^3.0.1", "js-yaml": "^4.1.1", "ora": "9.3.0", "path-type": "^6.0.0", "semver": "^7.7.4", "tiny-glob": "^0.2.9", "tsx": "^4.21.0" }, "bin": { "changeset-COMMIT_EDITMSG": "bin/changeset-COMMIT_EDITMSG.sh", "changeset-version-COMMIT_EDITMSG": "bin/changeset-version-COMMIT_EDITMSG.sh", "CHANGELOG-diff-COMMIT_EDITMSG": "bin/CHANGELOG-diff-COMMIT_EDITMSG.sh", "ensure.sh": "bin/ensure.sh", "export_files_in_dir": "bin/export_files_in_dir.mjs", "find--top-level-directories--npm-files": "bin/find--top-level-directories--npm-files.sh", "git-commit--submodules": "bin/git-commit--submodules.sh", "monorepo_npm__dependencies__update": "bin/monorepo_npm__dependencies__update.mjs", "monorepo_npm__version__sync": "bin/monorepo_npm__version__sync.mjs", "monorepo_pnpm__circular_dependencies__detect": "bin/monorepo_pnpm__circular_dependencies__detect.mjs", "monorepo_pnpm__dependencies__update": "bin/monorepo_pnpm__dependencies__update.mjs", "monorepo_yalc__publish__all": "bin/monorepo_yalc__publish__all.mjs", "package-manifest-changeset": "bin/package-manifest-changeset.sh", "package-manifest-COMMIT_EDITMSG": "bin/package-manifest-COMMIT_EDITMSG.sh", "npm-copy--package-bin-config": "bin/npm-copy--package-bin-config.sh", "npm-publish--force": "bin/publish--force.sh", "package_json_exports_directory_list": "bin/package_json_exports_directory_list.mjs", "package_json_files_directory_list": "bin/package_json_files_directory_list.mjs", "publish--force": "bin/publish--force.sh", "pwd--packages": "bin/pwd--packages.sh", "recursive-surrounding-trim-COMMIT_EDITMSG": "bin/recursive-surrounding-trim-COMMIT_EDITMSG.sh", "recursive-git-commit": "bin/recursive-git-commit.sh", "refresh-ctx-core-package.json": "bin/refresh-ctx-core-package.json.mjs", "run-parallel--workspaces": "bin/run-parallel--workspaces.mjs", "sort-packages": "bin/sort-packages.mjs", "sort-packages-exec": "bin/sort-packages-exec.mjs", "surrounding-trim": "bin/surrounding-trim.sh", "tsc-clean--packages": "bin/tsc-clean--packages.sh", "update-npm-packages": "bin/update-npm-packages.sh", "update-git-module--github--ssh": "bin/update-git-module--github--ssh.sh" } }, "sha512-cwctwkGXBclOXiCirbM7KqbosK+U/AQzIx1KHulnOGUnVrehUZvgij4xjb4brz9RDrQhFxghMCAAiX7cUCUwzw=="],
 
     "@ctx-core/package": ["@ctx-core/package@9.3.227", "", { "dependencies": { "ctx-core": "*", "import-meta-resolve": "^4.2.0", "semver": "^7.7.4" }, "bin": { "verify-node-version": "bin/verify-node-version.mjs", "verify-version-node.js": "bin/verify-node-version.mjs" } }, "sha512-vIR7WKNLqLr02AQoxR2PKzL5NAw8jeHWrZo3sqcWq22eibgm4vUq77cNKREgQuoutlw8Mc1cFGNfW9fGCrRITw=="],
 
@@ -622,7 +619,7 @@
 
     "balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
-    "baseline-browser-mapping": ["baseline-browser-mapping@2.10.7", "", { "bin": { "baseline-browser-mapping": "dist/cli.cjs" } }, "sha512-1ghYO3HnxGec0TCGBXiDLVns4eCSx4zJpxnHrlqFQajmhfKMQBzUGDdkMK7fUW7PTHTeLf+j87aTuKuuwWzMGw=="],
+    "baseline-browser-mapping": ["baseline-browser-mapping@2.10.8", "", { "bin": { "baseline-browser-mapping": "dist/cli.cjs" } }, "sha512-PCLz/LXGBsNTErbtB6i5u4eLpHeMfi93aUv5duMmj6caNu6IphS4q6UevDnL36sZQv9lrP11dbPKGMaXPwMKfQ=="],
 
     "blake3-wasm": ["blake3-wasm@2.1.5", "", {}, "sha512-F1+K8EbfOZE49dtoPtmxUQrpXaBIl3ICvasLh+nJta0xkz+9kF/7uet9fLnwKqhDrmj6g+6K3Tw9yQPUg2ka5g=="],
 
@@ -734,7 +731,7 @@
 
     "esbuild": ["esbuild@0.23.1", "", { "optionalDependencies": { "@esbuild/aix-ppc64": "0.23.1", "@esbuild/android-arm": "0.23.1", "@esbuild/android-arm64": "0.23.1", "@esbuild/android-x64": "0.23.1", "@esbuild/darwin-arm64": "0.23.1", "@esbuild/darwin-x64": "0.23.1", "@esbuild/freebsd-arm64": "0.23.1", "@esbuild/freebsd-x64": "0.23.1", "@esbuild/linux-arm": "0.23.1", "@esbuild/linux-arm64": "0.23.1", "@esbuild/linux-ia32": "0.23.1", "@esbuild/linux-loong64": "0.23.1", "@esbuild/linux-mips64el": "0.23.1", "@esbuild/linux-ppc64": "0.23.1", "@esbuild/linux-riscv64": "0.23.1", "@esbuild/linux-s390x": "0.23.1", "@esbuild/linux-x64": "0.23.1", "@esbuild/netbsd-x64": "0.23.1", "@esbuild/openbsd-arm64": "0.23.1", "@esbuild/openbsd-x64": "0.23.1", "@esbuild/sunos-x64": "0.23.1", "@esbuild/win32-arm64": "0.23.1", "@esbuild/win32-ia32": "0.23.1", "@esbuild/win32-x64": "0.23.1" }, "bin": { "esbuild": "bin/esbuild" } }, "sha512-VVNz/9Sa0bs5SELtn3f7qhJCDPCF5oMEl5cO9/SSinpE9hbPVvxbd572HH5AKiP7WD8INO53GgfDDhRjkylHEg=="],
 
-    "esbuild-plugin-object-store-asset": ["esbuild-plugin-object-store-asset@0.0.1", "", { "dependencies": { "object-store-asset": "workspace:*" }, "peerDependencies": { "esbuild": "^0.27.3" } }, "sha512-geb4Wsp5CCRZ1jGqyNAsqRADuBIBSXQc2SXKaisGE7GzX3fouKGS9GOk1GF/Pity6w3a9pKHwfALdGb/ouhxqw=="],
+    "esbuild-plugin-object-store-asset": ["esbuild-plugin-object-store-asset@0.0.2", "", { "dependencies": { "object-store-asset": ">=0.0.1" }, "peerDependencies": { "esbuild": "^0.27.3" } }, "sha512-OTkClTzK8MSHQWprD/ZHmpB7uGgQ7ualRdnwzCDaeT7pB8ijjuRPnbtFuHZ9XZBkAck2gTuVrdsA1iamiKLGTQ=="],
 
     "esbuild-register": ["esbuild-register@3.6.0", "", { "dependencies": { "debug": "^4.3.4" }, "peerDependencies": { "esbuild": ">=0.12 <1" } }, "sha512-H2/S7Pm8a9CL1uhp9OvjwrBh5Pvx0H8qVOxNu8Wed9Y7qv56MPtq+GGM8RJpq6glYJn9Wspr8uw7l55uyinNeg=="],
 
@@ -1257,8 +1254,6 @@
     "tsx/fsevents": ["fsevents@2.3.3", "", { "os": "darwin" }, "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=="],
 
     "wrangler/esbuild": ["esbuild@0.27.3", "", { "optionalDependencies": { "@esbuild/aix-ppc64": "0.27.3", "@esbuild/android-arm": "0.27.3", "@esbuild/android-arm64": "0.27.3", "@esbuild/android-x64": "0.27.3", "@esbuild/darwin-arm64": "0.27.3", "@esbuild/darwin-x64": "0.27.3", "@esbuild/freebsd-arm64": "0.27.3", "@esbuild/freebsd-x64": "0.27.3", "@esbuild/linux-arm": "0.27.3", "@esbuild/linux-arm64": "0.27.3", "@esbuild/linux-ia32": "0.27.3", "@esbuild/linux-loong64": "0.27.3", "@esbuild/linux-mips64el": "0.27.3", "@esbuild/linux-ppc64": "0.27.3", "@esbuild/linux-riscv64": "0.27.3", "@esbuild/linux-s390x": "0.27.3", "@esbuild/linux-x64": "0.27.3", "@esbuild/netbsd-arm64": "0.27.3", "@esbuild/netbsd-x64": "0.27.3", "@esbuild/openbsd-arm64": "0.27.3", "@esbuild/openbsd-x64": "0.27.3", "@esbuild/openharmony-arm64": "0.27.3", "@esbuild/sunos-x64": "0.27.3", "@esbuild/win32-arm64": "0.27.3", "@esbuild/win32-ia32": "0.27.3", "@esbuild/win32-x64": "0.27.3" }, "bin": { "esbuild": "bin/esbuild" } }, "sha512-8VwMnyGCONIs6cWue2IdpHxHnAjzxnw2Zr7MkVxB2vjmQ2ivqGFb4LEG3SMnv0Gb2F/G/2yA8zUaiL1gywDCCg=="],
-
-    "wrangler/fsevents": ["fsevents@2.3.3", "", { "os": "darwin" }, "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=="],
 
     "@aws-crypto/sha256-browser/@smithy/util-utf8/@smithy/util-buffer-from": ["@smithy/util-buffer-from@2.2.0", "", { "dependencies": { "@smithy/is-array-buffer": "^2.2.0", "tslib": "^2.6.2" } }, "sha512-IJdWBbTcMQ6DA0gdNhh/BwrLkDR+ADW5Kr1aZmd4k3DIF6ezMV4R2NIAmT08wQJ3yUK82thHWmC/TnK/wpMMIA=="],
 
