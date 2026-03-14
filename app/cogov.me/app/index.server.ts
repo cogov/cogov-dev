@@ -1,4 +1,7 @@
 import './index.css'
+import { relement__use } from 'relementjs'
+import { server__relement } from 'relementjs/server'
+relement__use(server__relement)
 import {
 	connect__doc_html_,
 	declaration__doc_html_,

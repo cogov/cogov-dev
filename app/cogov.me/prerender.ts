@@ -1,11 +1,11 @@
 /**
  * Static site export for Cloudflare Pages deployment.
- * Usage: bun build.ts && bun prerender.ts
+ * Expects the server to already be running.
+ * Usage: bun build.ts && bun start.ts & sleep 3 && bun prerender.ts
  */
 import { cloudflare_export_ } from 'relysjs/server/export/cloudflare'
-import { resolve } from 'node:path'
 const { exported, errors } = await cloudflare_export_({
-	server_import: resolve('dist/server/index.js'),
+	base_url: process.env.PRERENDER_BASE || 'http://localhost:4020',
 	site_url: 'https://cogov.me',
 	out_dir: 'dist/browser',
 	sitemap: true,
