@@ -46,9 +46,46 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Verify build output
+        run: |
+          cd app/cogov.me/dist/browser
+          echo "Checking for expected HTML files..."
+          for page in index connect declaration ecosystem holochain protocol.love services site specs vision team/raymond-d-powell; do
+            file="${page}/index.html"
+            if [ "$page" = "index" ]; then file="index.html"; fi
+            if [ ! -f "$file" ]; then
+              echo "MISSING: $file"
+              exit 1
+            fi
+            echo "OK: $file"
+          done
+          # Check non-HTML files
+          for file in robots.txt sitemap.xml; do
+            if [ ! -f "$file" ]; then
+              echo "MISSING: $file"
+              exit 1
+            fi
+            echo "OK: $file"
+          done
+          echo "All expected files present."
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy app/cogov.me/dist/browser --project-name=cogov-me
+
+      - name: Smoke test live site
+        run: |
+          echo "Waiting 10s for deployment to propagate..."
+          sleep 10
+          for path in / /connect /declaration /ecosystem /holochain /protocol.love /services /site /specs /team/raymond-d-powell /vision /robots.txt /sitemap.xml; do
+            status=$(curl -s -o /dev/null -w '%{http_code}' "https://cogov.me${path}")
+            if [ "$status" != "200" ]; then
+              echo "FAIL: https://cogov.me${path} returned $status"
+              exit 1
+            fi
+            echo "OK ($status): https://cogov.me${path}"
+          done
+          echo "All smoke tests passed."

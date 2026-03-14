@@ -7,7 +7,8 @@
     "build": "bun build.ts",
     "clear": "rm -rf ./dist",
     "dev": "bun index.ts",
-    "start": "bun ./start.ts"
+    "start": "bun ./start.ts",
+    "test": "bun test"
   },
   "dependencies": {
     "@cogov/css": "workspace:*",
