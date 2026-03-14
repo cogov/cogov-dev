@@ -50,7 +50,7 @@ jobs:
         run: |
           cd app/cogov.me/dist/browser
           echo "Checking for expected HTML files..."
-          for page in index connect declaration ecosystem holochain protocol.love services site specs vision team/raymond-d-powell; do
+          for page in index connect declaration ecosystem holochain services site specs vision team/raymond-d-powell; do
             file="${page}/index.html"
             if [ "$page" = "index" ]; then file="index.html"; fi
             if [ ! -f "$file" ]; then
