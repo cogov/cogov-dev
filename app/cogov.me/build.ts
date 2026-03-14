@@ -1,5 +1,4 @@
 import { css__replace__plugin_ } from '@cogov/css'
-import { object_store_asset_esbuild_plugin_ } from 'esbuild-plugin-object-store-asset'
 import { preprocess } from '@ctx-core/preprocess'
 import { rebuild_tailwind_plugin_ } from '@rebuildjs/tailwindcss'
 import cssnano from 'cssnano'
@@ -18,10 +17,6 @@ import {
 import { config__init } from './config.js'
 export async function build(config?:relysjs__build_config_T) {
 	config__init()
-	const object_store_asset = object_store_asset_esbuild_plugin_({
-		asset_base_url: import_meta_env_().ASSET_BASE_URL,
-		base_path: import_meta_env_().ASSET_BASE_PATH,
-	})
 	const css__replace__plugin = css__replace__plugin_()
 	const esmcss_esbuild_plugin = esmcss_esbuild_plugin_()
 	const preprocess_plugin = preprocess_plugin_()
@@ -38,7 +33,6 @@ export async function build(config?:relysjs__build_config_T) {
 			external: await server_external_(),
 			// logLevel: 'verbose',
 			plugins: [
-				object_store_asset,
 				css__replace__plugin,
 				esmcss_esbuild_plugin,
 				preprocess_plugin,
@@ -48,7 +42,6 @@ export async function build(config?:relysjs__build_config_T) {
 		relysjs_browser__build({
 			...config ?? {},
 			plugins: [
-				object_store_asset,
 				css__replace__plugin,
 				esmcss_esbuild_plugin,
 				preprocess_plugin,

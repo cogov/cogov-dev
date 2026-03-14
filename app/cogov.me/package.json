@@ -23,7 +23,6 @@
     "@tailwindcss/typography": "^0.5.16",
     "cssnano": "^7.0.4",
     "ctx-core": "^7.2.27",
-    "esbuild-plugin-object-store-asset": "^0.0.2",
     "elysia": "^1.4.27",
     "esmcss": "^0.2.12",
     "marked": "^13.0.2",
