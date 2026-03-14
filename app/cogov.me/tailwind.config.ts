@@ -5,7 +5,6 @@ import {
 	phone__max_width, port__tab__max_width,
 	sm__min_width
 } from '@cogov/css'
-import typography from '@tailwindcss/typography'
 import { type Config } from 'tailwindcss'
 const config:Config = {
 	content: [],
@@ -23,6 +22,5 @@ const config:Config = {
 			serif: ['Urbanist'],
 		},
 	},
-	plugins: [typography],
 }
 export default config

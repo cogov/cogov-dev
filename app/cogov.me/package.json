@@ -19,8 +19,8 @@
     "@rappstack/domain--server": "^0.1.0",
     "@rappstack/ui--any": "^0.1.0",
     "@rappstack/ui--server": "^0.1.0",
-    "@rebuildjs/tailwindcss": "^0.10.49",
-    "@tailwindcss/typography": "^0.5.13",
+    "@rebuildjs/tailwindcss": "^0.11.1",
+    "@tailwindcss/typography": "^0.5.16",
     "cssnano": "^7.0.4",
     "ctx-core": "^7.2.27",
     "elysia": "^1.4.27",
@@ -29,10 +29,10 @@
     "marked-gfm-heading-id": "^4.0.0",
     "relementjs": "^0.80.26",
     "relysjs": "^1.21.75",
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
-    "@rebuildjs/tailwindcss": "^0.10.49",
+    "@rebuildjs/tailwindcss": "^0.11.1",
     "@types/node": "20.14.10",
     "esbuild": "^0.23.0"
   }
