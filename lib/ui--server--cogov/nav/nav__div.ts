@@ -202,6 +202,13 @@ export function nav__div_<env_T extends relement_env_T>({ segment }:{ segment?:s
 			'hover:scale-105')
 		return [
 			a_({
+				href: 'https://demo.cogov.me/',
+				target: 'blank',
+				rel: 'noopener noreferrer',
+			}, [
+				div_({ class: div_class }, 'Demo')
+			]),
+			a_({
 				href: 'https://cogov.tools',
 				target: 'blank',
 				rel: 'noopener noreferrer',
