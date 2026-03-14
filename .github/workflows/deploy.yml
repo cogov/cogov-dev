@@ -33,14 +33,18 @@ jobs:
 
       - name: Build
         run: cd app/cogov.me && bun run build
+        env:
+          NODE_ENV: production
 
       - name: Prerender
         run: |
           cd app/cogov.me
-          bun ./index.ts &
+          bun ./start.ts &
           sleep 5
           bun ./prerender.ts
           kill %1
+        env:
+          NODE_ENV: production
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
