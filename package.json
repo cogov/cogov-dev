@@ -21,6 +21,6 @@
 	],
 	"dependencies": {
 		"@sinclair/typebox": "^0.34.48",
-		"relysjs": "file:.yalc/relysjs"
+		"relysjs": "^1.21.75"
 	}
 }
