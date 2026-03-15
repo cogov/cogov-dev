@@ -12,3 +12,4 @@ tmp
 .yalc/
 yalc.lock
 .agent-doc/
+*.iml
