@@ -7,6 +7,7 @@
       "dependencies": {
         "@sinclair/typebox": "^0.34.48",
         "relysjs": "^1.21.76",
+        "rhonojs": "^0.1.2",
       },
       "devDependencies": {
         "@btakita/dev-bin": "^0.1.0",
@@ -1036,7 +1037,7 @@
 
     "reusify": ["reusify@1.1.0", "", {}, "sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw=="],
 
-    "rhonojs": ["rhonojs@0.1.1", "", { "dependencies": { "ctx-core": "*", "hono": "^4.0.0", "rebuildjs": "*" }, "peerDependencies": { "esbuild": "^0.27.3" } }, "sha512-hR/bvSKFJULSbSNxfKkRL3H3MoWWq9jUzBZb7P/1HC5rgYUnc60Vj/FP6HnfUJ1QXgLni3oNDJejCPHnNvMrxg=="],
+    "rhonojs": ["rhonojs@0.1.2", "", { "dependencies": { "ctx-core": "*", "hono": "^4.0.0", "rebuildjs": "*" }, "peerDependencies": { "esbuild": "^0.27.3" } }, "sha512-MA6ExDWYg0NDBBo+ksHegHLknAxtYMZ8nXcaJd5a5zCvm1blld7W0H5g5nrop458dHNS/ePgB5F1A4f7Tch9Pw=="],
 
     "rmemo": ["rmemo@0.51.34", "", { "dependencies": { "ctx-core": "*" } }, "sha512-/8NSJZrHYg31kV/Q/yB7TKyfV92DCobHfNYEF+O3nQzMDNnx8iills/P9gHWgXysecT+jr06X3+1W7WRf0GSpg=="],
 
