@@ -89,4 +89,11 @@ jobs:
             fi
             echo "OK ($status): https://cogov.me${path}"
           done
+          # Asset smoke test
+          status=$(curl -sfL -o /dev/null -w '%{http_code}' "https://assets.cogov.me/images/cogov__icon.png")
+          if [ "$status" != "200" ]; then
+            echo "FAIL: https://assets.cogov.me/images/cogov__icon.png returned $status"
+            exit 1
+          fi
+          echo "OK ($status): https://assets.cogov.me/images/cogov__icon.png"
           echo "All smoke tests passed."
